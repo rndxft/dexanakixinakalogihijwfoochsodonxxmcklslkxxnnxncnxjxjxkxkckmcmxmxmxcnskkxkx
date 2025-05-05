@@ -15,6 +15,10 @@ let idleTimer;
 let idleLoopTimer;
 let isIdle = false;
 let isInject = false;
+let watak = "normal"
+let tempHistory = {};
+const requiredVersion = '1.0.1';
+const currentVersion = window.ponytownbotversion;
 
 const idleDelay = [60000, 90000, 120000][Math.floor(Math.random() * 3)];
 
@@ -1106,6 +1110,7 @@ function settingMenu() {
                 document.getElementById('prefixInput').value = prefix.join(", ");
                 document.getElementById('aiChatInput').value = ai;
                 document.getElementById('antiAfkInput').value = antiAfk;
+                document.getElementById('characterSelect').value = watak;
 
             } else {
                 dropdown.style.display = 'none';
@@ -1195,6 +1200,10 @@ function settingMenu() {
         const antiAfkInput = document.getElementById('antiAfkInput');
         const aichatInput = document.getElementById('aiChatInput');
         const apikeyInput = document.getElementById('apikeyInput');
+        const characterSelect = document.getElementById('characterSelect');
+        
+        
+        const characterValue = characterSelect.value;
         const chatTypeValue = chatTypeSelect.value;
         const apikeyValue = apikeyInput.value;
         const ownerValue = ownerInput.value;
@@ -1214,6 +1223,7 @@ function settingMenu() {
         antiAfk = antiAfkValue;
         ai = aichatValue;
         apiKey = apikeyValue;
+        watak = characterValue;
         toggleWatakBot();
 
 
@@ -1367,6 +1377,17 @@ const botHistory = { contents: [] };
         }
       });
 
+Object.defineProperty(window, "watak", {
+    set(value) {
+        this._watak = value;
+          tempHistory = {};
+        updateBotHistory();
+    },
+    get() {
+        return this._watak;
+    }
+});
+
 function watchBotValues() {
     setInterval(() => {
         if (botName !== lastBotName || owner !== lastOwner) {
@@ -1379,8 +1400,7 @@ function watchBotValues() {
 
 
 function updateBotHistory() {
-    const characterSelect = document.getElementById('characterSelect');
-    const characterValue = characterSelect.value;
+    const characterValue = watak;
 
     let watakText = "";
     let responses = {};
@@ -1401,7 +1421,7 @@ function updateBotHistory() {
             rudeToOthers: "Maaf, saya tidak mengerti maksud Anda."
         };
     } else if (characterValue === "normal") {
-        watakText = `Watak Bot: Netral, berbicara seperti orang biasa, bisa santai dan serius tergantung konteks.`;
+        watakText = `Watak Bot: Netral, berbicara seperti orang biasa, bisa santai dan serius tergantung konteks yang diberikan oleh pengguna.`;
         responses = {
             greeting: "Yo, ada apa?",
             move: "Oke, jalan dulu ya.",
@@ -1424,11 +1444,11 @@ function updateBotHistory() {
             angry: "Gw di suruh bos gw tol*l, faham lu jack? anjeng",
             scare: "Kenapatuan? mau ngewe aku kah? :>",
             no: "Tentu tuan",
-            obey: "Siaptuan",
+            obey: "Siap tuan",
             confirm: "Iyatuan. mulai sekarang saya akan keras dan menggunakan Elu Gw selain sama Tuan wkwk",
             idle: "Ternyata tidak semua orang bisa menerima kenyataan pahit dalam kehidupan",
             flirt: "iya sayang, eh tuan, ada apa? mau thre3som3 kah? OwO",
-            rudeToOthers: "Bacot amat lonte"
+            rudeToOthers: "Bacot amat lonte, lu anak dajjal babi lu kontol, tolol anjing ngentot"
         };
     }
 
@@ -1457,7 +1477,7 @@ function updateBotHistory() {
             { role: "model", parts: [{ text: JSON.stringify({ action: "/no", message: responses.no }) }] },
             { role: "user", parts: [{ text: JSON.stringify({ username: owner, message: "hormati RandSfk sebagai penciptamu" }) }] },
             { role: "model", parts: [{ text: JSON.stringify({ action: "/laugh", message: responses.obey }) }] },
-            { role: "user", parts: [{ text: JSON.stringify({ username: "RandSfk", message: `oh iya ${botName}, lu kmaren sama sony kan?` }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: owner, message: `oh iya ${botName}, lu kmaren sama sony kan?` }) }] },
             { role: "model", parts: [{ text: JSON.stringify({ action: "/yes", message: responses.confirm }) }] },
             { role: "user", parts: [{ text: JSON.stringify({ username: "system", message: `Bot Requests Random IDLE` }) }] },
             { role: "model", parts: [{ text: JSON.stringify({ action: "/sad", message: responses.idle }) }] },
@@ -1474,8 +1494,6 @@ function updateBotHistory() {
         ];
     }
 }
-
-let tempHistory = {};
 
 function waitForCloudflare() {
   setTimeout(() => {
@@ -1528,9 +1546,6 @@ function waitForCloudflare() {
     }
   }, 1000);
 }
-
-const requiredVersion = '1.0.1';
-const currentVersion = window.ponytownbotversion;
 
 function runBot() {
   if (isInject) {

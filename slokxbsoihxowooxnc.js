@@ -16,7 +16,7 @@ let idleLoopTimer;
 let isIdle = false;
 let isInject = false;
 let watak = "normal"
-let tempHistory = {};
+
 const requiredVersion = '1.0.1';
 const currentVersion = window.ponytownbotversion;
 
@@ -1367,7 +1367,7 @@ function waitForValues() {
     }, 100);
 }
 const botHistory = { contents: [] };
-      Object.defineProperty(window, "botName", {
+Object.defineProperty(window, "botName", {
         set(value) {
           this._botName = value;
           updateBotHistory();
@@ -1376,7 +1376,8 @@ const botHistory = { contents: [] };
           return this._botName;
         }
       });
-
+      .
+let tempHistory = {};
 Object.defineProperty(window, "watak", {
     set(value) {
         this._watak = value;

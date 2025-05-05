@@ -1106,12 +1106,6 @@ function settingMenu() {
                 document.getElementById('prefixInput').value = prefix.join(", ");
                 document.getElementById('aiChatInput').value = ai;
                 document.getElementById('antiAfkInput').value = antiAfk;
-                const watakBotWrapper = document.getElementById('watakBotWrapper');
-                function toggleWatakBot() {
-                    const isAIOn = ai === 'true';
-                    watakBotWrapper.style.display = isAIOn ? 'flex' : 'none';
-                }
-                toggleWatakBot();
 
             } else {
                 dropdown.style.display = 'none';
@@ -1188,7 +1182,10 @@ function settingMenu() {
         console.error(error.message);
         setTimeout(settingMenu, 2000);
     }
-    
+    function toggleWatakBot() {
+        const watakBotWrapper = document.getElementById('watakBotWrapper');
+        watakBotWrapper.style.display = ai ? 'flex' : 'none';
+    }
     const button = document.querySelector('.btn.btn-primary');
     button.addEventListener('click', function () {
         const ownerInput = document.getElementById('ownerInput');
@@ -1217,6 +1214,7 @@ function settingMenu() {
         antiAfk = antiAfkValue;
         ai = aichatValue;
         apiKey = apikeyValue;
+        toggleWatakBot();
 
 
         if (botName === botValue) {

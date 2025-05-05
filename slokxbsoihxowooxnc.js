@@ -1376,7 +1376,7 @@ Object.defineProperty(window, "botName", {
           return this._botName;
         }
       });
-      .
+      
 let tempHistory = {};
 Object.defineProperty(window, "watak", {
     set(value) {

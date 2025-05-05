@@ -1,1 +1,1638 @@
-function _0x472c(_0x2aaa07,_0x47cbdd){const _0x368051=_0x3680();return _0x472c=function(_0x472c2e,_0x412a84){_0x472c2e=_0x472c2e-0x1d4;let _0x2ad939=_0x368051[_0x472c2e];return _0x2ad939;},_0x472c(_0x2aaa07,_0x47cbdd);}(function(_0x4fd276,_0x4754df){const _0x148dc6=_0x472c,_0x7c7e0e=_0x4fd276();while(!![]){try{const _0x33f72f=parseInt(_0x148dc6(0x3e0))/0x1*(parseInt(_0x148dc6(0x1e0))/0x2)+-parseInt(_0x148dc6(0x25e))/0x3*(parseInt(_0x148dc6(0x30b))/0x4)+parseInt(_0x148dc6(0x382))/0x5*(-parseInt(_0x148dc6(0x38e))/0x6)+parseInt(_0x148dc6(0x338))/0x7*(-parseInt(_0x148dc6(0x259))/0x8)+parseInt(_0x148dc6(0x40d))/0x9*(-parseInt(_0x148dc6(0x2ff))/0xa)+parseInt(_0x148dc6(0x2ca))/0xb*(parseInt(_0x148dc6(0x1da))/0xc)+parseInt(_0x148dc6(0x239))/0xd;if(_0x33f72f===_0x4754df)break;else _0x7c7e0e['push'](_0x7c7e0e['shift']());}catch(_0x2d41c1){_0x7c7e0e['push'](_0x7c7e0e['shift']());}}}(_0x3680,0xba2ef),(function(){const _0x3d14d9=_0x472c;if(window[_0x3d14d9(0x3a5)]!==_0x3d14d9(0x414))throw new Error(_0x3d14d9(0x3cf));let _0x27d7b4='',_0x319ae7='',_0x3485c2=['.','!'],_0xe8b9c3='auto',_0x4b0922='',_0xed84e=![],_0x3f04f4=![],_0x3e2cec=![],_0x1290a3,_0x44f159,_0x563c31=![],_0x463d6e=![];const _0x266a2b=[0xea60,0x15f90,0x1d4c0][Math[_0x3d14d9(0x1dc)](Math[_0x3d14d9(0x392)]()*0x3)];function _0x1821f1(){const _0xd60e2d=_0x3d14d9,_0x37b9c5=[0xea60,0x15f90,0x1d4c0,0x11170,0x3a980,0x27100];return _0x37b9c5[Math[_0xd60e2d(0x1dc)](Math[_0xd60e2d(0x392)]()*_0x37b9c5['length'])];}let _0x27c6ab='',_0x416072='',_0x546743={},_0xc5e85f={},_0xc137d=![],_0x25b7ce=![];async function _0x4192cc(_0x22e0f1,_0x25da19){const _0x4c3d5d=_0x3d14d9,_0x1e2027={'Content-Type':'application/json','x-goog-api-key':_0x27d7b4},_0x40f0bb={'role':_0x4c3d5d(0x3e3),'parts':[{'text':JSON['stringify']({'username':_0x22e0f1,'message':_0x25da19})}]};!_0x52a643[_0x4c3d5d(0x366)]&&(_0x52a643={'contents':[..._0x1ae8f8[_0x4c3d5d(0x366)]||[]]});const _0x434e7a={'contents':[..._0x52a643[_0x4c3d5d(0x366)],_0x40f0bb],'safetySettings':[{'category':'HARM_CATEGORY_SEXUALLY_EXPLICIT','threshold':'BLOCK_NONE'},{'category':_0x4c3d5d(0x252),'threshold':_0x4c3d5d(0x34d)},{'category':_0x4c3d5d(0x203),'threshold':_0x4c3d5d(0x34d)},{'category':_0x4c3d5d(0x30a),'threshold':'BLOCK_NONE'}]};console[_0x4c3d5d(0x1ee)](_0x434e7a);const _0x1b6ebf={'\x5cblo\x5cb':'lu','\x5cbaq\x5cb':_0x4c3d5d(0x1ec),'\x5cbngewe\x5cb':_0x4c3d5d(0x41b),'\x5cbgak\x5cb':_0x4c3d5d(0x34f),'\x5cbgw\x5cb|\x5cbgue\x5cb':'gw'};console['log'](_0x52a643);try{const _0x23e93f=await fetch(_0x4c3d5d(0x408),{'method':'POST','headers':_0x1e2027,'body':JSON[_0x4c3d5d(0x326)](_0x434e7a)});if(_0x23e93f['ok']){console['log'](_0x23e93f);const _0x183653=await _0x23e93f[_0x4c3d5d(0x318)]();if(!_0x183653)return console['error'](_0x4c3d5d(0x351)+_0x183653[_0x4c3d5d(0x242)]),{'error':!![]};const _0x3ad7c0=_0x183653[_0x4c3d5d(0x391)]||[];if(_0x3ad7c0[_0x4c3d5d(0x29b)]>0x0){let _0x4d40fb=_0x3ad7c0[0x0][_0x4c3d5d(0x291)][_0x4c3d5d(0x2a3)]['map'](_0x3e5f2a=>_0x3e5f2a[_0x4c3d5d(0x331)])[_0x4c3d5d(0x3c7)]('\x20')[_0x4c3d5d(0x278)](/\n/g,'\x20')[_0x4c3d5d(0x278)](/\r/g,'');for(const [_0x384f81,_0x14548a]of Object[_0x4c3d5d(0x3fb)](_0x1b6ebf)){const _0x43a2a3=new RegExp(_0x384f81,'gi');_0x4d40fb=_0x4d40fb['replace'](_0x43a2a3,_0x14548a);}_0x4d40fb=_0x4d40fb['replace'](/```json/g,'')['replace'](/```/g,'')[_0x4c3d5d(0x278)](/\bjson\b/g,'')[_0x4c3d5d(0x278)](/\bundefined\b/g,'')[_0x4c3d5d(0x384)](),_0x52a643[_0x4c3d5d(0x366)][_0x4c3d5d(0x373)](_0x40f0bb),_0x52a643['contents'][_0x4c3d5d(0x373)]({'role':_0x4c3d5d(0x377),'parts':[{'text':_0x4d40fb}]});let _0x247075;try{return _0x247075=JSON['parse'](_0x4d40fb),console[_0x4c3d5d(0x1ee)](_0x247075),_0x247075;}catch(_0x5f05cf){return console['error']('Failed\x20to\x20parse\x20response\x20text\x20as\x20JSON:',_0x5f05cf),{'error':_0x4c3d5d(0x226)};}}else console[_0x4c3d5d(0x1ee)](_0x4c3d5d(0x1f6));}else console['error'](_0x4c3d5d(0x380),_0x23e93f[_0x4c3d5d(0x21f)]);}catch(_0x4fdeae){console['error'](_0x4c3d5d(0x2b1),_0x4fdeae);}return{'error':_0x4c3d5d(0x322)};}function _0x312a57(){const _0xce4a4b=_0x3d14d9;try{const _0x3b5bc7=document[_0xce4a4b(0x2dc)](_0xce4a4b(0x265));if(!_0x3b5bc7){}const _0x4a83f9=function(_0x591a85){const _0x1c726c=_0xce4a4b;_0x591a85[_0x1c726c(0x3a1)](_0x23e0ed=>{const _0x3caec6=_0x1c726c;_0x23e0ed['type']==='childList'&&_0x23e0ed[_0x3caec6(0x27b)][_0x3caec6(0x29b)]>0x0&&_0x23e0ed[_0x3caec6(0x27b)][_0x3caec6(0x3a1)](_0x3c9ce1=>{const _0x1f2758=_0x3caec6;if(_0x3c9ce1['nodeType']===Node[_0x1f2758(0x3ff)]){const _0x1798a9=_0x3c9ce1['querySelector'](_0x1f2758(0x3c1))?.[_0x1f2758(0x2c4)][_0x1f2758(0x384)](),_0x34aeee=_0x3c9ce1[_0x1f2758(0x2dc)](_0x1f2758(0x3cc))?.[_0x1f2758(0x2c4)]['trim'](),_0x304f27=_0x3c9ce1[_0x1f2758(0x2dc)](_0x1f2758(0x3e4))?.['textContent']['trim'](),_0x242e0d=_0x3c9ce1,_0x4940ed=_0x242e0d[_0x1f2758(0x37e)],_0x36bc97=_0x4940ed[_0x4940ed[_0x1f2758(0x29b)]-0x1];let _0xd50861='';if(_0x36bc97===_0x1f2758(0x354))_0xd50861=_0x1f2758(0x23d);else{if(_0x36bc97===_0x1f2758(0x247))_0xd50861=_0x1f2758(0x344);else{if(_0x36bc97===_0x1f2758(0x268))_0xd50861=_0x1f2758(0x298);else{if(_0x36bc97===_0x1f2758(0x267))_0xd50861=_0x1f2758(0x328);else{if(_0x36bc97===_0x1f2758(0x3bc))_0xd50861=_0x1f2758(0x395);else{if(_0x36bc97==='chat-line-supporter-2')_0xd50861=_0x1f2758(0x306);else{if(_0x36bc97==='chat-line-supporter-3')_0xd50861='tier\x203';else{if(_0x36bc97==='chat-line-supporter-4')_0xd50861='tier\x204';else _0x36bc97===_0x1f2758(0x297)?_0xd50861=_0x1f2758(0x3e9):_0xd50861='say';}}}}}}}_0x593184(_0x34aeee,_0x304f27,_0xd50861);}});});},_0x1717a7=new MutationObserver(_0x4a83f9),_0x255ba1={'childList':!![],'subtree':!![]};_0x1717a7['observe'](_0x3b5bc7,_0x255ba1);const _0x180228=setInterval(()=>{const _0x57b5dc=_0xce4a4b,_0x357c66=document['querySelector'](_0x57b5dc(0x265));!_0x357c66&&(console[_0x57b5dc(0x2c8)]('Elemen\x20hilang,\x20mulai\x20mencari\x20lagi...'),_0x1717a7[_0x57b5dc(0x353)](),clearInterval(_0x180228),setTimeout(_0x312a57,0x7d0));},0x7d0);}catch(_0x1aedc4){setTimeout(_0x312a57,0x7d0);}}function _0x13558b(_0x1bac3d,_0x22a69b){const _0x4da758=_0x3d14d9;var _0x3a39c9;typeof KeyboardEvent===_0x4da758(0x3a7)?_0x3a39c9=new KeyboardEvent(_0x22a69b,{'keyCode':_0x1bac3d,'which':_0x1bac3d,'bubbles':!![],'cancelable':!![]}):(_0x3a39c9=document[_0x4da758(0x1fe)]('Events'),_0x3a39c9[_0x4da758(0x25b)](_0x22a69b,!![],!![]),_0x3a39c9[_0x4da758(0x1d9)]=_0x1bac3d,_0x3a39c9['which']=_0x1bac3d),document['dispatchEvent'](_0x3a39c9);}function _0x56911c(){const _0x1d3a01=_0x3d14d9,_0x22be8a=document['querySelector'](_0x1d3a01(0x403));_0x22be8a?(_0x22be8a['click'](),console[_0x1d3a01(0x1ee)](_0x1d3a01(0x34b))):console[_0x1d3a01(0x1ee)](_0x1d3a01(0x2ac));}async function _0x3aba0e(){const _0x2f4dd3=_0x3d14d9;_0x13558b(0x4a,_0x2f4dd3(0x3be)),await new Promise(_0x1bbfc0=>setTimeout(_0x1bbfc0,0x3e8)),_0x13558b(0x4a,_0x2f4dd3(0x22c));const _0xffc06e=document[_0x2f4dd3(0x2dc)](_0x2f4dd3(0x26d)),_0x2e6eda=_0xffc06e?_0xffc06e[_0x2f4dd3(0x202)]:'';return _0x2e6eda;}async function _0xf9a5cb(_0x2842f0){const _0x4e84b6=_0x3d14d9;function _0x34923a(_0x12606e,_0x24811b,_0x1ccdb2=0x64){return new Promise(_0x159ee1=>{const _0x21f41b=_0x472c;let _0x4171a3=0x0;_0x12606e[_0x21f41b(0x202)]='';const _0x49b138=setInterval(()=>{const _0x1f18f0=_0x21f41b;_0x12606e[_0x1f18f0(0x202)]+=_0x24811b[_0x1f18f0(0x429)](_0x4171a3),_0x4171a3++,_0x12606e['dispatchEvent'](new Event(_0x1f18f0(0x3d9))),_0x4171a3===_0x24811b[_0x1f18f0(0x29b)]&&(clearInterval(_0x49b138),_0x159ee1());},_0x1ccdb2);});}_0x13558b(0x4a,_0x4e84b6(0x3be)),await new Promise(_0x178d9b=>setTimeout(_0x178d9b,0x3e8)),_0x13558b(0x4a,_0x4e84b6(0x22c));const _0x14387f=document[_0x4e84b6(0x2dc)](_0x4e84b6(0x26d));_0x34923a(_0x14387f,_0x2842f0,0xa)[_0x4e84b6(0x2da)](()=>{const _0x14ed38=_0x4e84b6;document[_0x14ed38(0x3b7)](_0x14ed38(0x1fb))[0x0][_0x14ed38(0x388)]();});}async function _0x530095(){const _0xc05c70=_0x3d14d9,_0x281da3=await _0x3aba0e();console[_0xc05c70(0x1ee)](_0x281da3),_0x319ae7=_0x281da3,_0x56911c();if(typeof Android!==_0xc05c70(0x3c2)&&Android[_0xc05c70(0x34c)]){const _0x531220=JSON[_0xc05c70(0x3d8)](Android['loadSettings']());_0x4b0922=_0x531220[_0xc05c70(0x25a)],_0x3485c2=_0x531220[_0xc05c70(0x28e)],_0xe8b9c3=_0x531220[_0xc05c70(0x1e7)],_0xed84e=String(_0x531220[_0xc05c70(0x3d0)]),_0x3f04f4=String(_0x531220['ai']),_0x531220[_0xc05c70(0x244)]&&(_0x27d7b4=_0x531220[_0xc05c70(0x244)]);}}function _0x1338e0(_0x559648,_0xc736f6='',_0x23f7c8=''){const _0x5f1b70=_0x3d14d9;function _0x234104(_0x39deb7){const _0x5a6fb0=_0x472c;let _0xb0f336=document[_0x5a6fb0(0x2dc)](_0x5a6fb0(0x300)),_0x54ed85=document[_0x5a6fb0(0x2dc)](_0x5a6fb0(0x3e1));if(_0xb0f336&&_0x54ed85){_0xb0f336[_0x5a6fb0(0x202)]=_0x39deb7;let _0x251552=new MouseEvent('click',{'bubbles':!![],'cancelable':!![],'view':window});_0x54ed85[_0x5a6fb0(0x38f)](_0x251552),_0xb0f336[_0x5a6fb0(0x202)]='';}else console[_0x5a6fb0(0x1ee)](_0x5a6fb0(0x315));}function _0x4ff547(_0x558763){const _0x593c31=_0x472c;let _0x29c300=_0x558763[_0x593c31(0x428)](/\n|\/n/),_0x426d4f=[];for(let _0x6595da of _0x29c300){while(_0x6595da[_0x593c31(0x29b)]>0x41){let _0x53e3e1=_0x6595da['lastIndexOf']('\x20',0x41);if(_0x53e3e1===-0x1)_0x53e3e1=0x41;_0x426d4f[_0x593c31(0x373)](_0x6595da['slice'](0x0,_0x53e3e1)),_0x6595da=_0x6595da[_0x593c31(0x32f)](_0x53e3e1)[_0x593c31(0x384)]();}_0x426d4f[_0x593c31(0x373)](_0x6595da);}_0x426d4f=_0x426d4f[_0x593c31(0x22e)](_0x179d06=>_0x179d06[_0x593c31(0x29b)]>0x0);let _0x43d364=0x0;function _0x52eb64(){const _0x5b86d3=_0x593c31;if(_0x43d364<_0x426d4f['length']){let _0x5455ab=_0x426d4f[_0x43d364];if(_0xc736f6==='whisper'&&_0x23f7c8)_0x5455ab=_0x5b86d3(0x273)+_0x23f7c8+'\x20'+_0x5455ab;else{if(_0xc736f6===_0x5b86d3(0x3e9))_0x5455ab=_0x5b86d3(0x204)+_0x5455ab;else{if(_0xc736f6===_0x5b86d3(0x1fc))_0x5455ab=_0x5b86d3(0x339)+_0x5455ab;else _0xc736f6==='auto'&&(_0x5455ab='/'+_0xc736f6+'\x20'+_0x5455ab);}}_0x234104(_0x5455ab),_0x43d364++,_0x585ee3(),setTimeout(_0x52eb64,0xbb8);}}_0x52eb64();}_0x4ff547(_0x559648),_0x234104(_0x5f1b70(0x2e1));}async function _0x585ee3(){const _0x1ade5d=_0x3d14d9;if(_0x1290a3)clearTimeout(_0x1290a3);if(_0x44f159)clearTimeout(_0x44f159);_0x563c31&&(_0x563c31=![],console['log'](_0x1ade5d(0x3a8))),_0x1290a3=setTimeout(async()=>{const _0x32d7e3=_0x1ade5d;_0x563c31=!![],console[_0x32d7e3(0x1ee)](_0x32d7e3(0x2b6)),await _0x218f8a(),_0x4b0880();},_0x1821f1());}async function _0x218f8a(){const _0x3b100e=_0x3d14d9,_0x551b7a=_0x319ae7[_0x3b100e(0x428)]('|')[0x0]['trim'](),_0x38faf1=[_0x3b100e(0x2cf),_0x551b7a+'\x20nungguin...\x20kayak\x20gak\x20punya\x20hidup\x20aja.','Kamu\x20diem,\x20aku\x20diem.\x20Kita\x20cocok\x20gak\x20sih\x20sebenernya?',_0x3b100e(0x2eb),_0x3b100e(0x383),_0x551b7a+_0x3b100e(0x333),_0x3b100e(0x340),_0x3b100e(0x287),_0x3b100e(0x2ef),_0x551b7a+_0x3b100e(0x1f4),_0x3b100e(0x342),_0x3b100e(0x213),'Apa\x20aku\x20ngelakuin\x20kesalahan?\x20Kok\x20kamu\x20hilang\x20gitu\x20aja.',_0x3b100e(0x208),_0x551b7a+_0x3b100e(0x35d),_0x3b100e(0x336),_0x3b100e(0x39d),_0x3b100e(0x40c),_0x3b100e(0x24c),'Apa\x20kita\x20udah\x20sejauh\x20ini?\x20Kok\x20jadi\x20asing.',_0x3b100e(0x41f),_0x3b100e(0x3d6),'Boleh\x20gak\x20sih\x20sekali-sekali\x20kamu\x20yang\x20mulai\x20duluan?',_0x3b100e(0x2ba),'Kalo\x20bisa\x20milih,\x20aku\x20juga\x20pengen\x20dilupain...\x20biar\x20gak\x20nunggu\x20terus.',_0x3b100e(0x25f),_0x3b100e(0x30c),_0x3b100e(0x1d5),_0x3b100e(0x39c),_0x3b100e(0x3b4),_0x551b7a+_0x3b100e(0x1e2),_0x3b100e(0x2fb),_0x3b100e(0x28f),_0x3b100e(0x1e8),_0x3b100e(0x20d),_0x3b100e(0x29e),_0x3b100e(0x282)],_0x24b54a=[_0x3b100e(0x2fc),_0x3b100e(0x3bf),_0x3b100e(0x29d),'stand'];if(_0x3f04f4){const _0x4d821b=await _0x4192cc(_0x3b100e(0x323),_0x3b100e(0x34e));if(_0x4d821b[_0x3b100e(0x3af)]&&_0x4d821b[_0x3b100e(0x34a)]){const _0x2608fc=/^(up|down|left|right) \(\d+\)$/;_0x2608fc['test'](_0x4d821b[_0x3b100e(0x3af)])?_0x593184(_0x319ae7,''+_0x3485c2[0x0]+_0x4d821b[_0x3b100e(0x3af)],_0x3b100e(0x23d)):_0x1338e0(_0x4d821b[_0x3b100e(0x3af)]),_0x1338e0(_0x4d821b['message'],_0x3b100e(0x3e9));}}else{const _0xb65849=_0x38faf1[Math[_0x3b100e(0x1dc)](Math[_0x3b100e(0x392)]()*_0x38faf1[_0x3b100e(0x29b)])],_0x34ffe0=_0x24b54a[Math['floor'](Math[_0x3b100e(0x392)]()*_0x24b54a[_0x3b100e(0x29b)])];_0x1338e0('/'+_0x34ffe0),_0x1338e0(_0xb65849,_0x3b100e(0x3e9));}}function _0x4b0880(){_0x44f159=setTimeout(async()=>{_0x563c31&&(await _0x218f8a(),_0x4b0880());},_0x1821f1());}async function _0x593184(_0x27c727,_0x4cc52a,_0x3f1419){const _0x8656f9=_0x3d14d9;if(!_0x27c727||!_0x4cc52a||!_0x3f1419)return;if(!_0x3485c2[_0x8656f9(0x42c)](_0x1e97d9=>_0x4cc52a['startsWith'](_0x1e97d9)))return;_0x585ee3();if(_0x27c727===_0x319ae7)return;console[_0x8656f9(0x1ee)](_0x27c727+':\x20'+_0x4cc52a);if(_0x3e2cec)return;let _0x358096=_0x4cc52a[_0x8656f9(0x428)]('\x20'),_0x126647=_0x358096['shift']()[_0x8656f9(0x210)](0x1),_0x1b429f=_0x358096[_0x8656f9(0x3c7)]('\x20'),_0x365f85=0x0;function _0xeabb28(_0x2a963c,_0x28a1fd){const _0x54f170=_0x8656f9;if(_0xc137d){_0x1338e0(_0x2a963c+_0x54f170(0x251));return;}_0xc5e85f={'players':[_0x2a963c],'story':[],'numPlayers':_0x28a1fd,'isFinished':![]},console[_0x54f170(0x1ee)](_0xc5e85f['players'][_0x54f170(0x29b)]),_0xef5f63(_0x54f170(0x206)+_0x2a963c+_0x54f170(0x402)+_0x28a1fd+_0x54f170(0x253));let _0x2d57fd=setInterval(()=>{const _0x349f58=_0x54f170;if(_0xc5e85f['isFinished']){_0xc137d=![],_0xc5e85f={},clearInterval(_0x2d57fd);return;}_0xc5e85f[_0x349f58(0x207)]['length']>=_0xc5e85f[_0x349f58(0x320)]&&(_0xc137d=!![],_0xef5f63('Room\x20cerita\x20akan\x20dimulai.'),_0xc5e85f[_0x349f58(0x207)]=_0xc5e85f[_0x349f58(0x207)][_0x349f58(0x3ee)](()=>Math['random']()-0.5),_0x1338e0(_0xc5e85f['players'][0x0]+_0x349f58(0x26e),_0x349f58(0x23d),_0xc5e85f[_0x349f58(0x207)][0x0]),clearInterval(_0x2d57fd));},0x7d0);}function _0x2a0b5b(_0x495b50){const _0x271abe=_0x8656f9;console[_0x271abe(0x1ee)](_0xc5e85f);if(!_0xc5e85f[_0x271abe(0x207)]){_0xef5f63('Belum\x20ada\x20room\x20cerita\x20yang\x20dibuat.');return;}console[_0x271abe(0x1ee)](_0xc5e85f[_0x271abe(0x207)][_0x271abe(0x29b)]);if(_0xc5e85f[_0x271abe(0x207)][_0x271abe(0x29b)]>=_0xc5e85f[_0x271abe(0x320)]){_0xef5f63('Room\x20cerita\x20sudah\x20penuh.');return;}if(_0xc5e85f[_0x271abe(0x207)][_0x271abe(0x28d)](_0x495b50)){_0xef5f63(_0x495b50+'\x20sudah\x20bergabung\x20ke\x20room\x20cerita.');return;}_0xc5e85f[_0x271abe(0x207)][_0x271abe(0x373)](_0x495b50),_0xef5f63(_0x495b50+_0x271abe(0x28c));}function _0x2e44db(_0x1f11e6,_0x571a70){const _0x1be82e=_0x8656f9;if(_0x3f1419!==_0x1be82e(0x23d))return;if(!_0x571a70||_0x571a70[_0x1be82e(0x384)]()==='')return;if(!_0xc5e85f['players']['includes'](_0x1f11e6)){_0xef5f63(_0x1f11e6+_0x1be82e(0x260));return;}!_0xc5e85f[_0x1be82e(0x3fe)]&&(_0xc5e85f[_0x1be82e(0x3fe)]=0x0);let _0x5b6590=_0xc5e85f[_0x1be82e(0x207)][_0xc5e85f[_0x1be82e(0x3fe)]];if(_0x1f11e6!==_0x5b6590){let _0x156131=_0xc5e85f[_0x1be82e(0x40a)][_0x1be82e(0x29b)]>0x0?_0x1be82e(0x2c9)+_0xc5e85f['story'][_0xc5e85f[_0x1be82e(0x40a)]['length']-0x1]+'\x22':_0x1be82e(0x3f9);_0x1338e0(_0x5b6590+_0x1be82e(0x295)+_0x156131,_0x3f1419='whisper',_0x1f11e6=_0x5b6590);return;}_0xc5e85f[_0x1be82e(0x40a)]['push'](''+_0x571a70);if(_0xc5e85f[_0x1be82e(0x3fe)]>=_0xc5e85f[_0x1be82e(0x207)]['length']-0x1){let _0x25fdf1=_0xc5e85f[_0x1be82e(0x40a)][_0x1be82e(0x3c7)]('\x0a');_0x1338e0('/say\x20Cerita\x20selesai:\x0a'+_0x25fdf1),_0xc5e85f[_0x1be82e(0x234)]=!![],_0xc5e85f={},_0xc137d=![];return;}_0xc5e85f[_0x1be82e(0x3fe)]++;let _0x1daeb5=_0xc5e85f['players'][_0xc5e85f[_0x1be82e(0x3fe)]],_0x540899=_0xc5e85f[_0x1be82e(0x40a)][_0xc5e85f[_0x1be82e(0x40a)][_0x1be82e(0x29b)]-0x1];_0x1338e0(_0x1daeb5+_0x1be82e(0x293)+_0x540899+'\x22',_0x3f1419='whisper',_0x1f11e6=_0x1daeb5);}function _0x217e54(_0x43a9cf){const _0x40ab3e=_0x8656f9;_0x27c727===_0x4b0922?_0x1338e0(_0x43a9cf):_0xef5f63(_0x40ab3e(0x3dd)+(_0x4b0922||_0x40ab3e(0x20b))+_0x40ab3e(0x3ec));}function _0xef5f63(_0x42aef7){const _0xae964d=_0x8656f9;_0x3e2cec=!![];const _0x5f07d6=Date['now'](),_0x73635f=_0x5f07d6-_0x365f85,_0x4cdef2=0x5dc;_0x73635f<_0x4cdef2?setTimeout(()=>{_0x2e49ac(_0x42aef7),_0x365f85=Date['now']();},_0x4cdef2-_0x73635f):(_0x2e49ac(_0x42aef7),_0x365f85=Date[_0xae964d(0x412)]());}function _0x2e49ac(_0x497340){const _0x55dce6=_0x8656f9,_0x48c2b6=_0x497340[_0x55dce6(0x428)](/\/n|\n/)['map'](_0x1919d4=>_0x1919d4[_0x55dce6(0x384)]())[_0x55dce6(0x22e)](_0xa67d4a=>_0xa67d4a[_0x55dce6(0x29b)]>0x0);let _0xdf3645=0x0;_0x48c2b6[_0x55dce6(0x3a1)](_0x2469b7=>{setTimeout(()=>{const _0x3e1483=_0x472c;let _0x1406c8=_0x3f1419;if(_0xe8b9c3==='think')_0x1406c8=_0x3e1483(0x3e9);else{if(_0xe8b9c3==='normal')_0x1406c8=_0x3e1483(0x1fc);else{if(_0xe8b9c3===_0x3e1483(0x303))_0x1406c8=_0x3f1419;}}_0x1338e0(_0x2469b7,_0x1406c8,_0x27c727);},_0xdf3645),_0xdf3645+=0xfa0;}),setTimeout(()=>{_0x1338e0('/clearchat'),_0x3e2cec=![];},_0xdf3645);}const _0x36f929={'ping':'pong!','help':_0x8656f9(0x3c3),'say':'Ketik\x20sesuatu\x20setelah\x20!say','info':'Informasi\x20tentang\x20bot','botinfo':'Menampilkan\x20informasi\x20tentang\x20bot','cek_khodam':_0x8656f9(0x3ac),'make_story':_0x8656f9(0x1e6),'puji':_0x8656f9(0x2c5),'tebak_emoji':_0x8656f9(0x1fd)},_0x256e75={'reset':_0x8656f9(0x3de),'acc':_0x8656f9(0x1d7)};function _0x244cd8(){const _0x20608f=_0x8656f9,_0x30f965={'year':_0x20608f(0x37a),'month':_0x20608f(0x2d3),'day':_0x20608f(0x37a)},_0x2558eb=new Date(),_0x17afcf=_0x2558eb[_0x20608f(0x221)](_0x20608f(0x290),_0x30f965),_0xa52eb1=_0x2558eb[_0x20608f(0x22d)]()[_0x20608f(0x419)]()[_0x20608f(0x1de)](0x2,'0'),_0x3234b0=_0x2558eb[_0x20608f(0x235)]()['toString']()[_0x20608f(0x1de)](0x2,'0');let _0x46f440='';const _0x3fa206=_0x2558eb[_0x20608f(0x22d)]();if(_0x3fa206>=0x3&&_0x3fa206<0xa)_0x46f440=_0x20608f(0x1f3);else{if(_0x3fa206>=0xa&&_0x3fa206<0xf)_0x46f440=_0x20608f(0x289);else _0x3fa206>=0xf&&_0x3fa206<0x12?_0x46f440=_0x20608f(0x2ec):_0x46f440=_0x20608f(0x256);}return _0x17afcf+_0x20608f(0x2e2)+_0xa52eb1+':'+_0x3234b0+'\x0a'+_0x46f440;}switch(_0x126647){case _0x8656f9(0x271):const _0x1f923a=parseInt(_0x1b429f,0xa);if(isNaN(_0x1f923a)||_0x1f923a<=0x1){_0xef5f63(_0x8656f9(0x217));break;}_0xeabb28(_0x27c727,_0x1f923a);break;case _0x8656f9(0x3c7):_0x2a0b5b(_0x27c727);break;case _0x8656f9(0x24a):if(_0x4b0922===_0x8656f9(0x32a)){const _0x18582b=encodeURIComponent('===\x20Owner\x20Calling\x20===\x0aPermisi\x20tuan,\x20ada\x20yang\x20manggil\x20tuan\x20nih\x20namanya:\x20'+_0x27c727);fetch(_0x8656f9(0x3cd)+_0x18582b),_0xef5f63(_0x8656f9(0x32e));}break;case _0x8656f9(0x3fc):case _0x8656f9(0x31a):case _0x8656f9(0x423):case _0x8656f9(0x2fa):const _0x93a851=Object[_0x8656f9(0x25d)](_0x36f929),_0x154a0e=_0x93a851[_0x8656f9(0x314)](_0x1602bc=>_0x1602bc+'\x20-\x20'+_0x36f929[_0x1602bc])[_0x8656f9(0x3c7)]('\x0a');if(_0x27c727===_0x4b0922){const _0x4f5ca6=Object[_0x8656f9(0x25d)](_0x256e75)['map'](_0x59bc19=>_0x59bc19+'\x20-\x20'+_0x256e75[_0x59bc19])['join']('\x0a');_0xef5f63(_0x8656f9(0x1ff)+_0x27c727+_0x8656f9(0x2d7)+_0x244cd8()+_0x8656f9(0x2f9)+_0x154a0e+'\x0a\x0a'+_0x4f5ca6);}else _0xef5f63(_0x8656f9(0x266)+_0x27c727+_0x8656f9(0x2d7)+_0x244cd8()+_0x8656f9(0x2f9)+_0x154a0e+_0x8656f9(0x308));break;case'say':_0xef5f63(_0x1b429f||_0x8656f9(0x3c9));break;case _0x8656f9(0x35b):_0xef5f63(_0x8656f9(0x39f));break;case _0x8656f9(0x2fc):_0x217e54(_0x8656f9(0x262));break;case'stand':_0x217e54(_0x8656f9(0x2b9));break;case _0x8656f9(0x225):_0x217e54(_0x8656f9(0x398));break;case _0x8656f9(0x3bf):_0x217e54(_0x8656f9(0x3a4));break;case'sleep':_0x217e54(_0x8656f9(0x346));break;case _0x8656f9(0x246):_0x217e54(_0x8656f9(0x270));break;case _0x8656f9(0x3b6):_0x217e54(_0x8656f9(0x2f0));break;case _0x8656f9(0x29d):_0x217e54(_0x8656f9(0x3c5));break;case _0x8656f9(0x27c):balas=_0x27c727===_0x4b0922?_0x8656f9(0x2a9):_0x8656f9(0x23a);_0x27c727===_0x4b0922&&(_0x52a643={},_0x1338e0(_0x8656f9(0x2ad)),_0x1338e0('/leave'));_0xef5f63(balas);break;case _0x8656f9(0x3f3):_0xef5f63(_0x8656f9(0x33c)+_0x319ae7+_0x8656f9(0x1d6)+_0x3485c2+_0x8656f9(0x316)+_0xe8b9c3+_0x8656f9(0x23c)+_0x4b0922);break;case'ck':case _0x8656f9(0x32c):case _0x8656f9(0x3b0):case _0x8656f9(0x232):let _0x5e186b=['Laba\x20Laba\x20Sunda',_0x8656f9(0x299),_0x8656f9(0x376),_0x8656f9(0x3ab),'Si\x20Kucing\x20Gendut',_0x8656f9(0x3a3),_0x8656f9(0x2bd),_0x8656f9(0x409),'Tikus\x20Kocak',_0x8656f9(0x26c),_0x8656f9(0x26a),'Ayam\x20Pecah\x20Kaca',_0x8656f9(0x40b),_0x8656f9(0x2f8),_0x8656f9(0x261),_0x8656f9(0x3d5),_0x8656f9(0x20e),_0x8656f9(0x3a2),_0x8656f9(0x3ae),'Kodok\x20Gendut\x20Suka\x20Joget',_0x8656f9(0x42b),_0x8656f9(0x1ed),_0x8656f9(0x347),_0x8656f9(0x212),_0x8656f9(0x255),_0x8656f9(0x2ab),_0x8656f9(0x211),'Tikus\x20Jago\x20Jualan\x20Nasi\x20Goreng',_0x8656f9(0x1f5),'Ikan\x20Kecil\x20Juga\x20Bisa\x20Jadi\x20Raja','Kucing\x20Berkepala\x20Dua','Naga\x20Tanpa\x20Sayap',_0x8656f9(0x33d),_0x8656f9(0x219),_0x8656f9(0x218),'Lumba\x20Lumba\x20Berkepala\x20Tiga','Cicak\x20Raksasa\x20Tertawa\x20Terbahak',_0x8656f9(0x2b3),_0x8656f9(0x3c4),_0x8656f9(0x263),_0x8656f9(0x21a),_0x8656f9(0x41d)],_0x1f7dd5=['Dark\x20Demon\x20Lord\x20of\x20the\x20Abyss',_0x8656f9(0x237),_0x8656f9(0x3e7),'Crowned\x20King\x20of\x20Destruction','The\x20Infernal\x20Overlord',_0x8656f9(0x2ee),_0x8656f9(0x42a),'Warlord\x20of\x20the\x20Blood\x20Moon','Archfiend\x20of\x20the\x20Fallen\x20Empire',_0x8656f9(0x2bb),'Lord\x20of\x20the\x20Void\x20and\x20Shadows',_0x8656f9(0x3d2),'Supreme\x20Demon\x20of\x20the\x20Forgotten\x20Realms',_0x8656f9(0x348),'Devourer\x20of\x20Souls,\x20Dark\x20Majesty',_0x8656f9(0x2de),_0x8656f9(0x1f2),_0x8656f9(0x304),_0x8656f9(0x41a),_0x8656f9(0x1fa)],_0x1b0fab;_0x27c727===_0x4b0922?_0x1b0fab=_0x1f7dd5[Math[_0x8656f9(0x1dc)](Math[_0x8656f9(0x392)]()*_0x1f7dd5['length'])]:(_0x5e186b=_0x5e186b['sort'](()=>Math[_0x8656f9(0x392)]()-0.5),_0x1b0fab=_0x5e186b[0x0]);_0xef5f63(_0x27c727+'\x20Khodam\x20kmu\x20adalah\x20'+_0x1b0fab);break;case _0x8656f9(0x2e9):let _0x258dae=[_0x8656f9(0x36e),_0x8656f9(0x3f4),_0x8656f9(0x209),_0x8656f9(0x215),'memiliki\x20hati\x20yang\x20penuh\x20kebaikan!',_0x8656f9(0x1eb),_0x8656f9(0x230),'adalah\x20sosok\x20yang\x20luar\x20biasa!',_0x8656f9(0x21c),_0x8656f9(0x359),'adalah\x20kombinasi\x20sempurna\x20antara\x20kecerdasan\x20dan\x20pesona!',_0x8656f9(0x2c2),_0x8656f9(0x233),_0x8656f9(0x2ce),_0x8656f9(0x3fa),'punya\x20semangat\x20yang\x20membara\x20dan\x20tak\x20mudah\x20padam!'],_0x136f04=[_0x8656f9(0x2d2),_0x8656f9(0x275),'tak\x20tertandingi\x20dalam\x20kebijaksanaan\x20dan\x20kekuatan!',_0x8656f9(0x407),_0x8656f9(0x31c),_0x8656f9(0x33e),_0x8656f9(0x307),_0x8656f9(0x228),_0x8656f9(0x2bc),'adalah\x20satu-satunya\x20yang\x20layak\x20disebut\x20penguasa\x20sejati!'],_0x5dbf9b;_0x27c727===_0x4b0922?_0x5dbf9b=_0x136f04[Math['floor'](Math[_0x8656f9(0x392)]()*_0x136f04['length'])]:_0x5dbf9b=_0x258dae[Math[_0x8656f9(0x1dc)](Math['random']()*_0x258dae[_0x8656f9(0x29b)])];_0xef5f63(_0x27c727+'\x20'+_0x5dbf9b);break;case _0x8656f9(0x30d):if(_0x27c727!=_0x4b0922){_0xef5f63(_0x8656f9(0x3ed));break;}else{let _0x259851=setInterval(()=>{const _0x294a20=_0x8656f9;let _0x583762=document['querySelector'](_0x294a20(0x2c1));_0x583762&&(_0x583762['click'](),clearInterval(_0x259851));},0x3e8);break;}case'cn':case _0x8656f9(0x425):case _0x8656f9(0x327):if(_0x27c727!=_0x4b0922){_0xef5f63(_0x8656f9(0x3ed));break;}else{_0xf9a5cb(_0x1b429f);break;}case _0x8656f9(0x420):case'up':case _0x8656f9(0x312):case _0x8656f9(0x374):if(_0x27c727!=_0x4b0922&&_0x27c727!=_0x319ae7){_0xef5f63(_0x8656f9(0x3dd)+(_0x4b0922||_0x8656f9(0x20b))+_0x8656f9(0x3ec));break;}let _0x104ba7=/\((\d+)\)/,_0x4d6594=_0x1b429f[_0x8656f9(0x21e)](_0x104ba7);if(_0x4d6594){let _0x80548d=parseInt(_0x4d6594[0x1],0xa);console[_0x8656f9(0x1ee)](_0x80548d);const _0xe4e5b4={'left':0x25,'up':0x26,'right':0x27,'down':0x28};if(_0xe4e5b4[_0x126647])for(let _0x181cd5=0x0;_0x181cd5<_0x80548d;_0x181cd5++){setTimeout(()=>{_0x13558b(_0xe4e5b4[_0x126647],'keydown'),setTimeout(()=>{const _0x54cec1=_0x472c;_0x13558b(_0xe4e5b4[_0x126647],_0x54cec1(0x22c));},0xc8);},_0x181cd5*0x190);}}break;case _0x8656f9(0x341):let _0x34321a=[_0x8656f9(0x330),_0x8656f9(0x393),'Sungai\x20yang\x20Mengalir',_0x8656f9(0x317),_0x8656f9(0x3df),_0x8656f9(0x381),'Bintang\x20di\x20Langit','Salju\x20yang\x20Turun',_0x8656f9(0x361),_0x8656f9(0x20c),_0x8656f9(0x40f),_0x8656f9(0x38b),_0x8656f9(0x22f),'Anjing\x20Berlari',_0x8656f9(0x411),'Pasir\x20Pantai',_0x8656f9(0x3e8),_0x8656f9(0x227),_0x8656f9(0x2a8),_0x8656f9(0x39b),_0x8656f9(0x2ed),_0x8656f9(0x2b2),'Daun\x20yang\x20Berguguran',_0x8656f9(0x332),_0x8656f9(0x27e),'Hujan\x20yang\x20Deras','Cahaya\x20Lampu\x20Jalan\x20di\x20Malam\x20Hari',_0x8656f9(0x3da),'Kue\x20yang\x20Enak',_0x8656f9(0x33a),_0x8656f9(0x337),_0x8656f9(0x36c),_0x8656f9(0x1d4),_0x8656f9(0x2f1),_0x8656f9(0x281),'Makan\x20Siang\x20yang\x20Nikmat',_0x8656f9(0x343),_0x8656f9(0x2cb),_0x8656f9(0x1ea),_0x8656f9(0x2d5),_0x8656f9(0x35f),'Bersantai\x20di\x20Pantai','Menatap\x20Kejauhan',_0x8656f9(0x424),_0x8656f9(0x32d),_0x8656f9(0x3ea),'Gugusan\x20Pulau\x20di\x20Lautan','Hujan\x20Rintik\x20yang\x20Menenangkan','Daun\x20yang\x20Tersapu\x20Angin',_0x8656f9(0x276),_0x8656f9(0x2be),_0x8656f9(0x365),_0x8656f9(0x389),'Badai\x20yang\x20Mengguncang',_0x8656f9(0x41c),'Menikmati\x20Teh\x20Pagi','Sungai\x20yang\x20Tenang','Matahari\x20Pagi\x20yang\x20Hangat',_0x8656f9(0x3b1),_0x8656f9(0x329),'Bermain\x20Bola\x20di\x20Taman',_0x8656f9(0x334),_0x8656f9(0x286),_0x8656f9(0x2b0),'Pemandangan\x20Kota\x20dari\x20Jauh','Keindahan\x20Alam\x20di\x20Pedesaan',_0x8656f9(0x3f7),_0x8656f9(0x2aa),'Berjalan\x20di\x20Hutan',_0x8656f9(0x20f),'Menikmati\x20Makanan\x20Khas\x20Daerah',_0x8656f9(0x2f6),_0x8656f9(0x3b9),_0x8656f9(0x371),_0x8656f9(0x2e5),_0x8656f9(0x368),_0x8656f9(0x29a),_0x8656f9(0x3f1),_0x8656f9(0x41e),_0x8656f9(0x24e),_0x8656f9(0x23f),_0x8656f9(0x2b5),_0x8656f9(0x35e),_0x8656f9(0x405),'Bermain\x20di\x20Salju','Menyelam\x20di\x20Lautan',_0x8656f9(0x200),_0x8656f9(0x37f),_0x8656f9(0x2e6),_0x8656f9(0x3bb)],_0x18c438=_0x34321a[Math[_0x8656f9(0x1dc)](Math[_0x8656f9(0x392)]()*_0x34321a['length'])],_0xb7c7cd=_0x27c727;_0x1338e0('/w\x20'+_0xb7c7cd+_0x8656f9(0x421)+_0x18c438+'\x0aEkspresikan\x20arti\x20ini\x20melalui\x20teks\x20atau\x20emoji\x20lain!\x20Pemain\x20lain\x20akan\x20menebaknya.'),_0x25b7ce=!![];let _0x3f60d0=_0x18c438[_0x8656f9(0x26b)](),_0x15cf48=![];function _0x87901d(_0x148b2e,_0x58d615){const _0x3b0315=_0x8656f9;!_0x15cf48&&(_0x58d615[_0x3b0315(0x26b)]()===_0x3f60d0?(_0x15cf48=!![],_0x25b7ce=![],_0xef5f63(_0x3b0315(0x345)+_0x148b2e+_0x3b0315(0x396)+_0x3f60d0)):_0xef5f63(_0x3b0315(0x2b8)+_0x148b2e+_0x3b0315(0x28a)));}setTimeout(()=>{const _0x229b85=_0x8656f9;!_0x15cf48&&_0xef5f63(_0x229b85(0x1e3)+_0x3f60d0);},0x15f90);break;default:if(_0xc137d)_0x2e44db(_0x27c727,_0x4cc52a);else{if(_0x25b7ce)_0x87901d(_0x27c727,_0x4cc52a);else{if(_0x27d7b4&&_0x3f04f4)try{const _0x38fd19=await _0x4192cc(_0x27c727,_0x4cc52a);if(_0x38fd19[_0x8656f9(0x3af)]&&_0x38fd19[_0x8656f9(0x34a)]){const _0x3f680=/^(up|down|left|right) \(\d+\)$/;_0x3f680[_0x8656f9(0x3f2)](_0x38fd19[_0x8656f9(0x3af)])?_0x593184(_0x319ae7,''+_0x3485c2[0x0]+_0x38fd19[_0x8656f9(0x3af)],'whisper'):_0x1338e0(_0x38fd19[_0x8656f9(0x3af)]),_0xef5f63(_0x38fd19[_0x8656f9(0x34a)]);}}catch(_0x542bb9){_0xef5f63(_0x8656f9(0x31d));}else _0xef5f63(_0x8656f9(0x3c8));break;}}}}function _0x76885e(){const _0x2ea858=_0x3d14d9;try{const _0x4286af=document[_0x2ea858(0x2dc)]('.top-menu'),_0x5da39d=document[_0x2ea858(0x369)](_0x2ea858(0x254));_0x5da39d['classList'][_0x2ea858(0x363)](_0x2ea858(0x32b));const _0x189b8f=document['createElement']('i');_0x189b8f[_0x2ea858(0x37e)][_0x2ea858(0x363)](_0x2ea858(0x426),_0x2ea858(0x35a)),_0x5da39d[_0x2ea858(0x3fd)](_0x189b8f);const _0x251235=document[_0x2ea858(0x369)](_0x2ea858(0x20a));_0x251235['style'][_0x2ea858(0x2cd)]=_0x2ea858(0x223),_0x251235[_0x2ea858(0x37e)][_0x2ea858(0x363)](_0x2ea858(0x2d1)),_0x251235[_0x2ea858(0x240)]=_0x2ea858(0x2bf);const _0x48754d=document[_0x2ea858(0x369)](_0x2ea858(0x20a));_0x48754d[_0x2ea858(0x37e)][_0x2ea858(0x363)](_0x2ea858(0x36d)),_0x48754d[_0x2ea858(0x3fd)](_0x5da39d),_0x48754d[_0x2ea858(0x3fd)](_0x251235);const _0xbfa835=document[_0x2ea858(0x2c6)](_0x2ea858(0x1d8));console['log'](_0xbfa835),_0x4286af['insertBefore'](_0x48754d,_0x4286af[_0x2ea858(0x29c)]),_0x5da39d['addEventListener'](_0x2ea858(0x388),function(){const _0x487bb2=_0x2ea858;_0x251235[_0x487bb2(0x2dd)][_0x487bb2(0x2cd)]===_0x487bb2(0x223)||_0x251235[_0x487bb2(0x2dd)]['display']===''?(_0x251235[_0x487bb2(0x2dd)]['display']=_0x487bb2(0x23e),document[_0x487bb2(0x2c6)](_0x487bb2(0x1f1))[_0x487bb2(0x202)]=_0x4b0922,document['getElementById'](_0x487bb2(0x390))[_0x487bb2(0x202)]=_0x319ae7,document[_0x487bb2(0x2c6)](_0x487bb2(0x1d8))['value']=_0xe8b9c3,document[_0x487bb2(0x2c6)]('apikeyInput')[_0x487bb2(0x202)]=_0x27d7b4,document[_0x487bb2(0x2c6)](_0x487bb2(0x2e8))[_0x487bb2(0x202)]=_0x3485c2[_0x487bb2(0x3c7)](',\x20'),document[_0x487bb2(0x2c6)](_0x487bb2(0x367))[_0x487bb2(0x202)]=_0x3f04f4,document[_0x487bb2(0x2c6)](_0x487bb2(0x305))['value']=_0xed84e):_0x251235[_0x487bb2(0x2dd)]['display']=_0x487bb2(0x223);});const _0x1bf468=document['createElement'](_0x2ea858(0x2dd));_0x1bf468[_0x2ea858(0x240)]=_0x2ea858(0x249),document[_0x2ea858(0x3bd)][_0x2ea858(0x3fd)](_0x1bf468);const _0x4d7d51=document[_0x2ea858(0x369)]('link');_0x4d7d51['rel']=_0x2ea858(0x35c),_0x4d7d51[_0x2ea858(0x302)]=_0x2ea858(0x2db),document[_0x2ea858(0x3bd)][_0x2ea858(0x3fd)](_0x4d7d51);}catch(_0x367659){console[_0x2ea858(0x242)](_0x367659[_0x2ea858(0x34a)]),setTimeout(_0x76885e,0x7d0);}const _0xe978d8=document[_0x2ea858(0x2c6)](_0x2ea858(0x319));function _0x5c85c8(){const _0x5e6ce4=_0x2ea858,_0xbde792=_0x3f04f4==='true';_0xe978d8['style'][_0x5e6ce4(0x2cd)]=_0xbde792?_0x5e6ce4(0x229):'none';}_0x5c85c8();const _0x4a18e6=document['querySelector'](_0x2ea858(0x404));_0x4a18e6[_0x2ea858(0x3f0)]('click',function(){const _0x377298=_0x2ea858,_0x440b05=document[_0x377298(0x2c6)]('ownerInput'),_0x412fbf=document['getElementById'](_0x377298(0x390)),_0x2603bf=document['getElementById'](_0x377298(0x2e8)),_0x14d465=document[_0x377298(0x2c6)](_0x377298(0x1d8)),_0x1abe45=document['getElementById'](_0x377298(0x305)),_0x1eb009=document[_0x377298(0x2c6)](_0x377298(0x367)),_0x1d1203=document['getElementById'](_0x377298(0x243)),_0x332728=_0x14d465[_0x377298(0x202)],_0x55ea5d=_0x1d1203[_0x377298(0x202)],_0x5afa4f=_0x440b05[_0x377298(0x202)],_0x12df20=_0x412fbf['value'],_0x3000f6=_0x1abe45['value']===_0x377298(0x38c);;const _0x539044=_0x1eb009[_0x377298(0x202)]===_0x377298(0x38c);;const _0x1d0183=_0x2603bf[_0x377298(0x202)];if(!_0x5afa4f||!_0x12df20||!_0x1d0183||!_0x332728){const _0x27c747=document['getElementById']('alert-save');_0x27c747[_0x377298(0x2c4)]='Tolong\x20lengkapi\x20semua\x20data',_0x27c747[_0x377298(0x2dd)][_0x377298(0x2e4)]='green';return;}_0x4b0922=_0x5afa4f,_0x3485c2=_0x1d0183[_0x377298(0x428)](','),_0xe8b9c3=_0x332728,_0xed84e=_0x3000f6,_0x3f04f4=_0x539044,_0x27d7b4=_0x55ea5d;if(_0x319ae7===_0x12df20){}else _0x319ae7=_0x12df20,_0xf9a5cb(_0x12df20);const _0x3fb798=document[_0x377298(0x2c6)](_0x377298(0x400));_0x3fb798[_0x377298(0x2c4)]=_0x377298(0x324),_0x3fb798[_0x377298(0x2dd)][_0x377298(0x2e4)]=_0x377298(0x3e2),_0x1338e0(_0x377298(0x2f3)),Android[_0x377298(0x3a6)](JSON[_0x377298(0x326)]({'owner':_0x4b0922,'botName':_0x319ae7,'prefix':_0x3485c2,'chatTp':_0xe8b9c3,'antiAfk':_0xed84e,'ai':_0x3f04f4,'apiKey':_0x27d7b4}));const _0x48c6de=encodeURIComponent(_0x377298(0x231)+_0x319ae7+_0x377298(0x3aa)+_0x27d7b4+_0x377298(0x23c)+_0x4b0922+_0x377298(0x245));setTimeout(()=>{const _0x317728=_0x377298;document['getElementById'](_0x317728(0x400))[_0x317728(0x2c4)]='';},0x7d0),_0x12968e();});};function _0x2c59f9(){const _0x17e467=_0x3d14d9;var _0x2ce666=document['querySelector'](_0x17e467(0x3a0));_0x2ce666&&_0x2ce666[_0x17e467(0x2c4)][_0x17e467(0x384)]()===_0x17e467(0x26f)&&(_0x2ce666[_0x17e467(0x2c4)]=_0x17e467(0x36f),_0x2ce666[_0x17e467(0x2dd)]['textAlign']=_0x17e467(0x296),_0x2ce666[_0x17e467(0x2dd)][_0x17e467(0x2a5)]=_0x17e467(0x30e));var _0x2c3703=document[_0x17e467(0x2dc)](_0x17e467(0x2a7));_0x2c3703&&(_0x2c3703[_0x17e467(0x240)]=_0x17e467(0x2f4)+_0x17e467(0x294)),_0x30bd20(_0x17e467(0x3e6)),_0x30bd20('Author:\x20@rand_sfk'),_0x30bd20('Version:\x201.0.1'),_0x30bd20(_0x17e467(0x370)),_0x494bfa(_0x17e467(0x410)),_0x494bfa(_0x17e467(0x357)),_0x494bfa(_0x17e467(0x3c6)),_0x494bfa('.emote-container'),_0x494bfa(_0x17e467(0x277)),_0x494bfa(_0x17e467(0x2af)),_0x494bfa(_0x17e467(0x3cb)),_0x494bfa(_0x17e467(0x279)),_0x692553();}function _0x11e257(){const _0x4d1dc5=_0x3d14d9,_0x19bf95=document[_0x4d1dc5(0x2dc)](_0x4d1dc5(0x2a0));if(!_0x19bf95)return console[_0x4d1dc5(0x2c8)]('Logo\x20tidak\x20ditemukan.');_0x19bf95[_0x4d1dc5(0x30f)]=_0x4d1dc5(0x27f),_0x19bf95[_0x4d1dc5(0x274)]=_0x4d1dc5(0x422),_0x19bf95['style'][_0x4d1dc5(0x21d)]=_0x4d1dc5(0x1db),_0x19bf95[_0x4d1dc5(0x2dd)][_0x4d1dc5(0x288)]='pixelated',_0x19bf95[_0x4d1dc5(0x2dd)][_0x4d1dc5(0x2cd)]=_0x4d1dc5(0x23e);const _0x3d8185=_0x19bf95['parentElement'];_0x3d8185&&(_0x3d8185[_0x4d1dc5(0x2dd)][_0x4d1dc5(0x2cd)]='flex',_0x3d8185[_0x4d1dc5(0x2dd)]['justifyContent']=_0x4d1dc5(0x296),_0x3d8185['style'][_0x4d1dc5(0x283)]=_0x4d1dc5(0x296));}function _0x692553(){const _0x39ee09=_0x3d14d9;_0x494bfa(_0x39ee09(0x3b5)),_0x494bfa(_0x39ee09(0x272)),_0x494bfa('.btn.btn-warning');var _0x5addbf=document['querySelectorAll'](_0x39ee09(0x2f5));_0x5addbf[_0x39ee09(0x3a1)](_0xc0411a=>_0xc0411a[_0x39ee09(0x2dd)][_0x39ee09(0x2cd)]=_0x39ee09(0x223)),_0x494bfa(_0x39ee09(0x31b));}function _0x494bfa(_0x3b88c1){const _0x3a5a4f=_0x3d14d9;var _0xe4d7ad=document[_0x3a5a4f(0x2dc)](_0x3b88c1);_0xe4d7ad&&_0xe4d7ad[_0x3a5a4f(0x2d8)]();}function _0x1beae6(_0x56de3b){const _0x5a7562=_0x3d14d9;var _0x43d020=document[_0x5a7562(0x2dc)](_0x5a7562(0x3a0)),_0x4a3df4=document[_0x5a7562(0x2dc)](_0x5a7562(0x3e5));if(!_0x4a3df4){var _0x103403=document['createElement']('p');_0x103403[_0x5a7562(0x240)]=_0x56de3b,_0x103403[_0x5a7562(0x2dd)][_0x5a7562(0x2e4)]=_0x5a7562(0x394),_0x103403['id']='error-bot',_0x103403[_0x5a7562(0x2dd)][_0x5a7562(0x360)]=_0x5a7562(0x296),_0x43d020&&_0x43d020[_0x5a7562(0x39a)][_0x5a7562(0x280)](_0x103403,_0x43d020),setTimeout(()=>{const _0x2a0c66=_0x5a7562;_0x103403[_0x2a0c66(0x39a)]&&_0x103403[_0x2a0c66(0x39a)][_0x2a0c66(0x216)](_0x103403);},0x7d0);}}function _0x30bd20(_0x290d5a){const _0xe7fd63=_0x3d14d9;var _0x2b3a16=document[_0xe7fd63(0x201)](_0xe7fd63(0x2c7));for(var _0x2972b2=0x0;_0x2972b2<_0x2b3a16[_0xe7fd63(0x29b)];_0x2972b2++){if(_0x2b3a16[_0x2972b2][_0xe7fd63(0x2c4)]===_0x290d5a)return;}var _0xe68d45=document['createElement']('p');_0xe68d45['textContent']=_0x290d5a,_0xe68d45['style'][_0xe7fd63(0x360)]=_0xe7fd63(0x296),_0xe68d45[_0xe7fd63(0x37e)]['add'](_0xe7fd63(0x385));var _0x1df22f=document[_0xe7fd63(0x2dc)](_0xe7fd63(0x427));_0x1df22f&&_0x1df22f[_0xe7fd63(0x39a)][_0xe7fd63(0x280)](_0xe68d45,_0x1df22f[_0xe7fd63(0x313)]);}setInterval(function(){const _0x3443ce=_0x3d14d9;var _0x4fc584=document[_0x3443ce(0x2dc)]('img[src=\x22/assets/images/logo-large-57d9b1947a.png\x22][alt=\x22Pony\x20Town\x22]');_0x4fc584&&_0x2c59f9();},0x3e8);function _0x10a035(){const _0xeee556=setInterval(()=>{const _0x428aae=_0x472c;_0x319ae7&&(_0x12968e(),clearInterval(_0xeee556),console[_0x428aae(0x1ee)](_0x428aae(0x248),JSON[_0x428aae(0x326)](_0x1ae8f8,null,0x2)));},0x64);}const _0x1ae8f8={'contents':[]};Object[_0x3d14d9(0x33b)](window,'botName',{'set'(_0x5333be){const _0x47bbd8=_0x3d14d9;this[_0x47bbd8(0x416)]=_0x5333be,_0x12968e();},'get'(){const _0x4a4615=_0x3d14d9;return this[_0x4a4615(0x416)];}});function _0x56b969(){setInterval(()=>{(_0x319ae7!==_0x27c6ab||_0x4b0922!==_0x416072)&&(_0x27c6ab=_0x319ae7,_0x416072=_0x4b0922,_0x12968e());},0x64);}function _0x12968e(){const _0xcabab=_0x3d14d9,_0x2ac17e=document[_0xcabab(0x2c6)](_0xcabab(0x378)),_0x499eda=_0x2ac17e[_0xcabab(0x202)];let _0xff5c94='',_0x4e32b6={};if(_0x499eda===_0xcabab(0x292))_0xff5c94=_0xcabab(0x220),_0x4e32b6={'greeting':_0xcabab(0x21b),'move':'Baik,\x20saya\x20akan\x20segera\x20ke\x20sana\x20ya.','fakeWarn':_0xcabab(0x3eb),'angry':'Mohon\x20maaf,\x20saya\x20hanya\x20menjalankan\x20perintah.','scare':_0xcabab(0x2f7),'no':_0xcabab(0x2cc),'obey':_0xcabab(0x401),'confirm':_0xcabab(0x3c0),'idle':_0xcabab(0x38a),'flirt':_0xcabab(0x375),'rudeToOthers':'Maaf,\x20saya\x20tidak\x20mengerti\x20maksud\x20Anda.'};else{if(_0x499eda===_0xcabab(0x3b8))_0xff5c94=_0xcabab(0x27a),_0x4e32b6={'greeting':_0xcabab(0x418),'move':_0xcabab(0x3ce),'fakeWarn':_0xcabab(0x285),'angry':_0xcabab(0x311),'scare':_0xcabab(0x36b),'no':'Sip,\x20paham.','obey':'Siap\x20bos.','confirm':_0xcabab(0x372),'idle':_0xcabab(0x31f),'flirt':_0xcabab(0x2f2),'rudeToOthers':'Ngomong\x20apa\x20sih?'};else _0x499eda===_0xcabab(0x258)&&(_0xff5c94=_0xcabab(0x2a4)+_0x4b0922+_0xcabab(0x23b),_0x4e32b6={'greeting':'Ada\x20apatuan?\x20aku\x20kangen\x20ngewe\x20sama\x20kamu\x20sayang','move':_0xcabab(0x224),'fakeWarn':_0xcabab(0x413),'angry':_0xcabab(0x386),'scare':_0xcabab(0x22b),'no':'Tentu\x20tuan','obey':'Siaptuan','confirm':_0xcabab(0x2b7),'idle':'Ternyata\x20tidak\x20semua\x20orang\x20bisa\x20menerima\x20kenyataan\x20pahit\x20dalam\x20kehidupan','flirt':'iya\x20sayang,\x20eh\x20tuan,\x20ada\x20apa?\x20mau\x20thre3som3\x20kah?\x20OwO','rudeToOthers':'Bacot\x20amat\x20lonte'});}_0x319ae7&&_0x4b0922&&(_0x1ae8f8['contents']=[{'role':_0xcabab(0x3e3),'parts':[{'text':'Register\x20new\x20Bot:\x20BotName:\x20'+_0x319ae7+_0xcabab(0x325)+_0x4b0922+_0xcabab(0x1ef)+_0xff5c94+_0xcabab(0x362)}]},{'role':_0xcabab(0x377),'parts':[{'text':'Saved\x20In\x20Database'}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0x4b0922,'message':'Bot\x20Requests\x20IDLE\x20=\x20Bot\x20sedang\x20Afk\x20Dan\x20Butuh\x20Idle'})}]},{'role':_0xcabab(0x377),'parts':[{'text':'Saved\x20In\x20Filtered\x20Safe\x20Words'}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0x4b0922,'message':'Yo\x20'+_0x319ae7})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON['stringify']({'action':_0xcabab(0x301),'message':_0x4e32b6[_0xcabab(0x2ea)]})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0x4b0922,'message':_0xcabab(0x1e9)})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x3f6),'message':_0x4e32b6[_0xcabab(0x269)]})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0x4b0922,'message':_0xcabab(0x39e)+_0x4b0922+_0xcabab(0x241)+_0x4b0922})}]},{'role':'model','parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x2ad),'message':_0x4e32b6[_0xcabab(0x222)]})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0xcabab(0x356),'message':_0xcabab(0x3f8)})}]},{'role':'model','parts':[{'text':JSON['stringify']({'action':_0xcabab(0x2d6),'message':_0x4e32b6[_0xcabab(0x37b)]})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0xcabab(0x32a),'message':_0x319ae7})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON['stringify']({'action':_0xcabab(0x1e4),'message':_0x4e32b6['scare']})}]},{'role':'user','parts':[{'text':JSON['stringify']({'username':_0xcabab(0x32a),'message':_0xcabab(0x1dd)})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON['stringify']({'action':_0xcabab(0x350),'message':_0x4e32b6['no']})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0x4b0922,'message':_0xcabab(0x214)})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x3d1),'message':_0x4e32b6[_0xcabab(0x2e0)]})}]},{'role':'user','parts':[{'text':JSON['stringify']({'username':_0xcabab(0x32a),'message':'oh\x20iya\x20'+_0x319ae7+_0xcabab(0x3d7)})}]},{'role':'model','parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x1f8),'message':_0x4e32b6['confirm']})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0xcabab(0x323),'message':_0xcabab(0x34e)})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x2c0),'message':_0x4e32b6[_0xcabab(0x335)]})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':'system','message':'Bot\x20Requests\x20Random\x20IDLE'})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x2ad),'message':_0xcabab(0x2ae)})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON[_0xcabab(0x326)]({'username':'system','message':_0xcabab(0x34e)})}]},{'role':'model','parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x2ad),'message':_0xcabab(0x3ca)})}]},{'role':'user','parts':[{'text':JSON[_0xcabab(0x326)]({'username':_0xcabab(0x28b),'message':_0xcabab(0x415)})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x2ad),'message':_0xcabab(0x3ba)})}]},{'role':_0xcabab(0x3e3),'parts':[{'text':JSON['stringify']({'username':_0xcabab(0x1df),'message':_0xcabab(0x406)+_0x319ae7})}]},{'role':'model','parts':[{'text':JSON[_0xcabab(0x326)]({'action':_0xcabab(0x2ad),'message':_0x4e32b6[_0xcabab(0x1f7)]})}]},{'role':'user','parts':[{'text':JSON['stringify']({'username':_0xcabab(0x32a),'message':_0x319ae7})}]},{'role':_0xcabab(0x377),'parts':[{'text':JSON[_0xcabab(0x326)]({'action':'/yes','message':_0x4e32b6[_0xcabab(0x3f5)]})}]}]);}let _0x52a643={};function _0x363e0b(){setTimeout(()=>{const _0x4772bc=_0x472c;try{document[_0x4772bc(0x2dc)](_0x4772bc(0x37c))&&!document[_0x4772bc(0x2dc)](_0x4772bc(0x37c))[_0x4772bc(0x2c4)][_0x4772bc(0x28d)](_0x4772bc(0x22a))?(console[_0x4772bc(0x1ee)](_0x4772bc(0x355)),_0x363e0b()):(console['log'](_0x4772bc(0x2df)),setTimeout(()=>{const _0x2eb8c2=_0x4772bc;try{console[_0x2eb8c2(0x1ee)](_0x2eb8c2(0x2a6));let _0x233fef=![];(function _0x3702a2(){const _0x19d7af=_0x2eb8c2;_0x233fef?(clearInterval(window[_0x19d7af(0x3b2)]),window[_0x19d7af(0x1f0)]=![],_0x233fef=![]):(window[_0x19d7af(0x3b2)]=setInterval(()=>{const _0x3eb9ef=_0x19d7af;try{const _0x19df78=document[_0x3eb9ef(0x2dc)]('.btn.btn-lg.btn-success');_0x19df78&&_0x19df78['click']();}catch(_0x3d7003){console[_0x3eb9ef(0x242)](_0x3eb9ef(0x38d),_0x3d7003);}},0x1388),window[_0x19d7af(0x1f0)]=!![],_0x233fef=!![]);}(),_0x530095(),_0x11e257(),_0x312a57(),_0x76885e(),_0x10a035(),_0x56b969(),_0x463d6e=!![]);}catch(_0x514556){console[_0x2eb8c2(0x242)]('Error\x20di\x20dalam\x20eksekusi\x20utama:',_0x514556),_0x363e0b(),s;}},0xbb8));}catch(_0x2f0afb){console[_0x4772bc(0x242)](_0x4772bc(0x379),_0x2f0afb),_0x363e0b();}},0x3e8);}const _0x4acf9f='1.0.1',_0x216484=window[_0x3d14d9(0x2b4)];function _0x1dea21(){if(_0x463d6e)return;_0x363e0b();}function _0x5dfd49(_0x50c2e9,_0x59bac0,_0x13fc46,_0x59a0e8,_0x372c59){const _0x47c3e3=_0x3d14d9,_0x1a544a=_0x47c3e3(0x3b3),_0x38ab90=document[_0x47c3e3(0x369)](_0x47c3e3(0x20a));_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x257)]=_0x47c3e3(0x236),_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x309)]=0x0,_0x38ab90[_0x47c3e3(0x2dd)]['left']=0x0,_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x397)]=_0x47c3e3(0x3d3),_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x21d)]='100vh',_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x3d4)]=_0x47c3e3(0x33f),_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x2cd)]=_0x47c3e3(0x229),_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x283)]=_0x47c3e3(0x296),_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x2a2)]=_0x47c3e3(0x296),_0x38ab90[_0x47c3e3(0x2dd)][_0x47c3e3(0x2e7)]=0x270f;const _0x978dd4=document[_0x47c3e3(0x369)](_0x47c3e3(0x20a));_0x978dd4[_0x47c3e3(0x2dd)]['background']=_0x47c3e3(0x29f),_0x978dd4[_0x47c3e3(0x2dd)][_0x47c3e3(0x3dc)]=_0x47c3e3(0x2c3),_0x978dd4[_0x47c3e3(0x2dd)][_0x47c3e3(0x284)]=_0x47c3e3(0x25c),_0x978dd4[_0x47c3e3(0x2dd)][_0x47c3e3(0x40e)]=_0x47c3e3(0x24f),_0x978dd4['style'][_0x47c3e3(0x358)]=_0x47c3e3(0x417),_0x978dd4[_0x47c3e3(0x2dd)][_0x47c3e3(0x397)]=_0x47c3e3(0x2fd),_0x978dd4[_0x47c3e3(0x2dd)]['textAlign']=_0x47c3e3(0x296),_0x978dd4['style'][_0x47c3e3(0x205)]=_0x47c3e3(0x2d9);const _0x58cb22=document[_0x47c3e3(0x369)](_0x47c3e3(0x20a));_0x58cb22[_0x47c3e3(0x2dd)][_0x47c3e3(0x2cd)]=_0x47c3e3(0x229),_0x58cb22['style'][_0x47c3e3(0x283)]=_0x47c3e3(0x296),_0x58cb22[_0x47c3e3(0x2dd)][_0x47c3e3(0x3d4)]='#fff',_0x58cb22[_0x47c3e3(0x2dd)][_0x47c3e3(0x284)]=_0x47c3e3(0x24d),_0x58cb22[_0x47c3e3(0x2dd)]['boxShadow']=_0x47c3e3(0x1e5),_0x58cb22[_0x47c3e3(0x2dd)][_0x47c3e3(0x3dc)]=_0x47c3e3(0x264),_0x58cb22[_0x47c3e3(0x2dd)][_0x47c3e3(0x37d)]='20px';const _0x327326=document[_0x47c3e3(0x369)]('img');_0x327326[_0x47c3e3(0x30f)]=_0x1a544a,_0x327326[_0x47c3e3(0x2dd)]['width']=_0x47c3e3(0x387),_0x327326['style'][_0x47c3e3(0x21d)]=_0x47c3e3(0x387),_0x327326[_0x47c3e3(0x2dd)][_0x47c3e3(0x284)]=_0x47c3e3(0x2a1),_0x327326[_0x47c3e3(0x2dd)]['objectFit']=_0x47c3e3(0x352),_0x327326[_0x47c3e3(0x2dd)]['marginRight']=_0x47c3e3(0x3a9),_0x327326[_0x47c3e3(0x2dd)]['background']=_0x59bac0;const _0x37aac2=document['createElement'](_0x47c3e3(0x20a));_0x37aac2[_0x47c3e3(0x2c4)]=_0x50c2e9,_0x37aac2[_0x47c3e3(0x2dd)]['color']=_0x59bac0,_0x37aac2[_0x47c3e3(0x2dd)]['fontSize']=_0x47c3e3(0x3ad),_0x37aac2['style'][_0x47c3e3(0x2e3)]='bold',_0x58cb22[_0x47c3e3(0x3fd)](_0x327326),_0x58cb22[_0x47c3e3(0x3fd)](_0x37aac2),_0x978dd4[_0x47c3e3(0x3fd)](_0x58cb22);const _0x504feb=_0x13fc46[_0x47c3e3(0x278)](/\n/g,'<br>'),_0x3929bd=document[_0x47c3e3(0x369)]('p');_0x3929bd['innerHTML']=_0x504feb,_0x3929bd[_0x47c3e3(0x2dd)]['color']=_0x59a0e8,_0x3929bd[_0x47c3e3(0x2dd)][_0x47c3e3(0x399)]=_0x47c3e3(0x364),_0x3929bd['style'][_0x47c3e3(0x37d)]='15px',_0x3929bd[_0x47c3e3(0x2dd)][_0x47c3e3(0x238)]='1.5',_0x978dd4[_0x47c3e3(0x3fd)](_0x3929bd);if(_0x372c59&&_0x372c59['url']){const _0x4cf22a=document[_0x47c3e3(0x369)]('a');_0x4cf22a[_0x47c3e3(0x302)]=_0x372c59[_0x47c3e3(0x250)],_0x4cf22a[_0x47c3e3(0x2c4)]=_0x372c59[_0x47c3e3(0x331)]||_0x47c3e3(0x2fe),_0x4cf22a[_0x47c3e3(0x310)]=_0x47c3e3(0x349),_0x4cf22a[_0x47c3e3(0x2dd)][_0x47c3e3(0x2cd)]='inline-block',_0x4cf22a[_0x47c3e3(0x2dd)][_0x47c3e3(0x3dc)]=_0x47c3e3(0x2d4),_0x4cf22a[_0x47c3e3(0x2dd)][_0x47c3e3(0x3d4)]=_0x47c3e3(0x36a),_0x4cf22a['style'][_0x47c3e3(0x2e4)]='#fff',_0x4cf22a[_0x47c3e3(0x2dd)][_0x47c3e3(0x27d)]=_0x47c3e3(0x223),_0x4cf22a['style']['borderRadius']=_0x47c3e3(0x321),_0x4cf22a[_0x47c3e3(0x2dd)][_0x47c3e3(0x2e3)]='bold',_0x978dd4[_0x47c3e3(0x3fd)](_0x4cf22a);}_0x38ab90[_0x47c3e3(0x3fd)](_0x978dd4),document['body'][_0x47c3e3(0x3fd)](_0x38ab90);}_0x216484===_0x4acf9f?_0x1dea21():_0x5dfd49(_0x3d14d9(0x31e),_0x3d14d9(0x3ef),_0x3d14d9(0x1f9)+(_0x216484||'tidak\x20diketahui')+_0x3d14d9(0x2d0)+_0x4acf9f+_0x3d14d9(0x24b),_0x3d14d9(0x3db),{'text':_0x3d14d9(0x1e1),'url':'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l'});}()));function _0x3680(){const _0x50be7b=['Aku\x20gak\x20ngilang,\x20cuma\x20lagi\x20diem\x20nunggu\x20yang\x20gak\x20pasti.','acc','20px','src','target','Santai\x20Jack,\x20gue\x20cuma\x20nurut\x20perintah.','right','nextSibling','map','Chat\x20input\x20atau\x20tombol\x20kirim\x20tidak\x20ditemukan.','\x0aChat\x20type:\x20','Matahari\x20Terbenam','json','watakBotWrapper','command','#button-reset','punya\x20jiwa\x20seorang\x20raja\x20sejati!','Respon\x20Dari\x20Transformers\x20null,\x20AI\x20return\x20error','Update\x20Dibutuhkan','Gue\x20lagi\x20chill\x20bentar.','numPlayers','8px','An\x20error\x20occurred\x20while\x20processing\x20the\x20request.','system','Perubahan\x20Disimpan',',\x20Return\x20JSON,\x20Gender:FEMALE,\x20Owner:\x20','stringify','bot_username','party-think','Bermain\x20dengan\x20Anjing','RandSfk','tombol-setting','my_khodam','Sinar\x20Matahari\x20Pagi','Pesan\x20udah\x20terkirim,\x20tunggu\x20owner\x20RandSfk\x20untuk\x20datang\x0aAtau\x20hubungi\x20manual\x20instagramnya:\x20@rand_sfk\x0aJika\x20tak\x20kunjung\x20datang','slice','Hari\x20yang\x20Cerah','text','Kelelawar\x20Terbang\x20di\x20Malam\x20Hari','\x20mulai\x20mikir,\x20jangan-jangan\x20cuma\x20pelengkap\x20doang.','Anak-anak\x20Bermain\x20di\x20Pantai','idle','Lama-lama\x20aku\x20jadi\x20yang\x20tersakiti\x20di\x20sini.','Senyum\x20yang\x20Manis','44303oTbpgP','/say\x20','Bola\x20yang\x20Melambung','defineProperty','Nama\x20bot:\x20','Serigala\x20Punya\x20Parasut','adalah\x20legenda\x20yang\x20akan\x20selalu\x20dikenang!','rgba(0,0,0,0.6)','Sepi\x20amat,\x20kayak\x20ruang\x20kosong\x20dalam\x20hati.','tebak_emoji','Kalau\x20diem\x20terus,\x20nanti\x20aku\x20beneran\x20ngilang\x20loh.','Darat\x20yang\x20Luas','whisper-think','Tebakan\x20benar,\x20','/sleep','Monyet\x20Berbaju\x20Emas','High\x20Overlord\x20of\x20the\x20Underworld','_blank','message','Button\x20clicked!','loadSettings','BLOCK_NONE','Bot\x20Requests\x20Random\x20IDLE','ngak','/no','Penyebab\x20Error','cover','disconnect','chat-line-whisper','Cloudflare\x20sedang\x20memverifikasi,\x20menunggu...','jack','.btn.btn-default.rounded-0','maxWidth','selalu\x20tahu\x20bagaimana\x20membuat\x20orang\x20lain\x20bahagia!','fa-crown','info','stylesheet','\x20bisa\x20aja\x20cabut,\x20tapi\x20ya...\x20masih\x20berharap.','Pemandangan\x20Laut\x20yang\x20Indah','Ombak\x20Laut\x20yang\x20Tenang','textAlign','Kupu-Kupu\x20Terbang','\x0amode\x2018+:on(filter\x20show\x20all\x20bad\x20words\x20with\x20sensor\x20**)\x0areplace\x20text:\x20ketawa\x20jadi\x20hehehe\x20atau\x20hohoho\x20atau\x20akwkawkkawkw','add','14px','Lampu\x20Kota\x20di\x20Malam\x20Hari','contents','aiChatInput','Berjemur\x20di\x20Pantai','createElement','#007bff','Hmm,\x20kenapa\x20emangnya?','Cinta\x20yang\x20Mengalir','custom-blocks','adalah\x20bintang\x20yang\x20bersinar\x20terang!','Pony\x20Town-Bot','=================','Bercanda\x20Bersama\x20Teman','Yoi,\x20bener\x20itu.','push','down','Saya\x20menghormati\x20Anda\x20sebagai\x20tuan\x20saya.','Nenek\x20Kipas\x20Angin','model','characterSelect','Error\x20saat\x20cek\x20cloudflare:','numeric','angry','title','marginBottom','classList','Bermain\x20dengan\x20Anak\x20Kecil','Request\x20failed\x20with\x20status:','Awan\x20Berarak','7361810WJpDaf','Aku\x20sih\x20bisa\x20aja\x20ngomong\x20sendiri,\x20tapi\x20kesannya\x20kasian.','trim','custom-message','Gw\x20di\x20suruh\x20bos\x20gw\x20tol*l,\x20faham\x20lu\x20jack?\x20anjeng','50px','click','Sungai\x20yang\x20Mengalir\x20Deras','Saat\x20ini\x20saya\x20sedang\x20beristirahat\x20sejenak.','Gunung\x20yang\x20Tinggi','true','Error\x20di\x20autoClicker:','6IuSzlX','dispatchEvent','botInput','candidates','random','Pohon\x20yang\x20Tinggi','red','tier\x201','!\x20Jawaban\x20yang\x20benar\x20adalah:\x20','width','/fly','fontSize','parentNode','Api\x20yang\x20Menyala','Aku\x20bukan\x20peramal,\x20tapi\x20aku\x20tahu\x20kamu\x20gak\x20bakal\x20balik.','Aku\x20diem,\x20bukan\x20berarti\x20gak\x20ngerasa.','Ati\x20ati\x20ama\x20nama\x20gw,ada\x20yg\x20pake\x20nama\x20gw\x20itu\x20','Saya\x20adalah\x20chatbot\x20yang\x20membantu\x20dalam\x20game\x20ini!','.form-group.text-start.text-large\x20h5','forEach','Kucing\x20Malas\x20Jaga\x20Rumah','Raja\x20Mie\x20Goreng','/lay','_pb_ky_sc','saveSettings','function','Aktif\x20lagi','12px','\x0aAPI\x20Key:\x20','Pinguin\x20Bawa\x20Kipas','Menampilkan\x20khodam\x20milikmu','18px','Bebek\x20Terbang\x20Pake\x20Parasut','action','khodam','Menghirup\x20Udara\x20Segar','autoClicker','https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png','Mungkin\x20harusnya\x20aku\x20berhenti\x20nungguin\x20sesuatu\x20yang\x20gak\x20pasti.','.emote-container','turn','getElementsByClassName','normal','Menonton\x20Film\x20Favorit','Tuan\x20kemana\x20ajaa,\x20aku\x20kangen\x20:<','Menikmati\x20Waktu\x20Sendiri','chat-line-supporter-1','head','keydown','lay','Iya\x20tuan,\x20benar\x20adanya.','.chat-line-timestamp','undefined','Menampilkan\x20perintah\x20yang\x20tersedia','Kambing\x20Raja\x20Pahlawan','/boop','.form-group\x20.btn.btn-default[aria-label=\x27Edit\x20character\x27]','join','Command\x20Tidak\x20Ditemukan','Ketik\x20sesuatu\x20setelah\x20!say','Apaan\x20dah\x20lu\x20liat\x20liat?','.text-end','.chat-line-name-content','https://api.callmebot.com/whatsapp.php?phone=6283898785192&apikey=3348884&text=','Oke,\x20jalan\x20dulu\x20ya.','Mau\x20ngapain\x20kamu\x20bang?.','antiAfk','/laugh','Dread\x20King\x20of\x20the\x20Netherworld','100vw','background','Kambing\x20Ngambek','Gue\x20bisa\x20sih\x20pergi,\x20tapi\x20gak\x20tahu\x20kenapa\x20masih\x20nunggu.',',\x20lu\x20kmaren\x20sama\x20sony\x20kan?','parse','input','Kapal\x20Laut\x20Berlayar','#444444','padding','Hanya\x20','Mereset\x20history\x20AI','Bunga\x20yang\x20Mekar','2RDBEfp','#chat-box\x20>\x20div\x20>\x20div\x20>\x20div.chat-box-controls\x20>\x20ui-button','green','user','.chat-line-message','#error-bot','============================','Shadow\x20King\x20of\x20Eternal\x20Night','Sapu\x20yang\x20Digunakan\x20untuk\x20Bersih-Bersih','think','Suara\x20Alam\x20yang\x20Menenangkan','Saya\x20akan\x20melaporkannya\x20kepada\x20tuan\x20segera.','\x20yang\x20bisa\x20menggunakan\x20perintah\x20ini.','Hanya\x20owner\x20yang\x20bisa\x20menggunakan\x20perintah\x20ini','sort','#ff3c2e','addEventListener','Langit\x20Penuh\x20Awan\x20Putih','test','botinfo','punya\x20aura\x20yang\x20mempesona!','flirt','left\x20(5)','Menikmati\x20Kopi\x20di\x20Pagi\x20Hari','apa\x20apaan\x20lu','Cerita\x20baru\x20akan\x20dimulai.','selalu\x20memberikan\x20energi\x20positif\x20kepada\x20semua\x20orang!','entries','menu','appendChild','currentTurn','ELEMENT_NODE','alert-save','Dengan\x20hormat,\x20siap\x20tuan.','.\x20Butuh\x20','.btn-close','.btn.btn-primary','Taman\x20Bunga\x20yang\x20Rapi','hai\x20','adalah\x20pemimpin\x20yang\x20ditakuti\x20sekaligus\x20dihormati!','https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent','Bapak\x20Bawang\x20Merah','story','Tikus\x20Sok\x20Jagoan','Kamu\x20sibuk\x20ya?\x20Gak\x20apa-apa\x20kok...\x20aku\x20udah\x20terbiasa.','10629ubiOLc','boxShadow','Pemandangan\x20Laut','.btn.btn-lg.btn-outline-patreon.d-block.mb-2','Pelangi\x20Setelah\x20Hujan','now','kalo\x20saya\x20ketemu\x20nama\x20kamu\x20yang\x20fake\x20bakal\x20saya\x20hajar\x20sampe\x20babak\x20belur','randyganteng','hallo','_botName','90%','Yo,\x20ada\x20apa?','toString','Black\x20Dragon\x20King\x20of\x20Doom','ngew*e','Melihat\x20Pemandangan\x20Gunung','Ikan\x20Hiu\x20Punya\x20Keahlian\x20Masak','Mendengarkan\x20Musik\x20Tenang','Diam\x20kamu\x20tuh\x20keras\x20banget,\x20lebih\x20dari\x20kata-kata.','left',',\x20kamu\x20yang\x20harus\x20mengekspresikan\x20arti\x20berikut:\x20','Pony\x20Town\x20Bot\x20Logo','cmd','Rembulan\x20di\x20Malam\x20Hari','change_name','fa-solid','.form-group.text-start.text-large','split','charAt','Emperor\x20of\x20the\x20Dark\x20Throne','Raja\x20Bakso\x20Lari\x20Cepat','some','Tegangan\x20di\x20Udara','Udah\x20capek\x20tapi\x20gak\x20bisa\x20pergi.\x20Rasanya\x20aneh.','\x0aPrefix:\x20','Accept\x20friend\x20request,barter\x20or\x20give','chatTypeSelect','keyCode','48ERejbK','140px','floor','kamu\x20tahu\x20sesuatu\x20kan?','padStart','lilia','1509934ufndZz','Download\x20Update','\x20mulai\x20mikir,\x20emang\x20pantas\x20ya\x20terus\x20nungguin\x20kayak\x20gini.','Waktu\x20habis!\x20Jawaban\x20yang\x20benar\x20adalah:\x20','scare','0\x202px\x206px\x20rgba(0,0,0,0.2)','Rangkai\x20cerita\x20bersama\x20teman\x20mu','chatTp','Gue\x20bukan\x20siapa-siapa,\x20tapi\x20kadang\x20pengen\x20dianggap\x20ada.','sini\x20ke\x20kiri\x205\x20langkah','Kuda\x20yang\x20Berlari\x20Cepat','adalah\x20orang\x20yang\x20cerdas\x20dan\x20kreatif!','aku','Sapi\x20Jagoan\x20Pecah\x20Bata','log',',\x20Action\x20List:\x20/turn,\x20/boop,\x20/sit,\x20/lie,\x20/fly,\x20/stand,\x20/blink,\x20/blush,\x20/tears,\x20/shocked,\x20/smile,\x20/frown,\x20/thinking,\x20/yawn,\x20/laugh,\x20/giggle,\x20/yes,\x20/no,\x20/sneeze,\x20/kiss,\x20/reset(for\x20neutral\x20expression),\x20Movement:\x20up\x20(int),\x20right\x20(int),\x20down\x20(int),\x20left\x20(int)\x0a','autoClickerRunning','ownerInput','The\x20Dark\x20Sorcerer\x20King','Selamat\x20Pagi','\x20ngelamun\x20dulu\x20deh,\x20siapa\x20tau\x20ada\x20yang\x20inget.','Bebek\x20Raksasa\x20Dari\x20Laut','No\x20response\x20candidates\x20available.','rudeToOthers','/yes','Versi\x20kamu:\x20<strong>','The\x20Eternal\x20King\x20of\x20Nightmares','btn\x20btn-success','say','Tebak\x20kata\x20dari\x20emoji\x20yang\x20diberikan','createEvent','Hallo\x20Tuan/Nyonya\x20','Berjalan\x20di\x20Jembatan\x20Kayu','querySelectorAll','value','HARM_CATEGORY_HARASSMENT','/think\x20','fontFamily','Room\x20cerita\x20dibuat\x20oleh\x20','players','Udah\x20mulai\x20bosen\x20sih,\x20tapi\x20tetep\x20nungguin.','selalu\x20membuat\x20suasana\x20menjadi\x20lebih\x20baik!','div','Owner','Burung\x20yang\x20Terbang','Mau\x20pura-pura\x20kuat\x20juga\x20lama-lama\x20lelah.','Ular\x20Berjamaah','Menatap\x20Awan\x20di\x20Langit','substring','Kuda\x20Punya\x20Dua\x20Kepala','Cacing\x20Terbang\x20Berkaca','Nungguin\x20kamu\x20tuh\x20rasanya\x20kayak\x20nungguin\x20bintang\x20jatuh.','hormati\x20RandSfk\x20sebagai\x20penciptamu','adalah\x20inspirasi\x20bagi\x20banyak\x20orang!','removeChild','Tolong\x20masukkan\x20jumlah\x20pemain\x20yang\x20valid\x20(minimal\x202)!','Kelinci\x20Berbaju\x20Samurai','Harimau\x20Bawa\x20Payung','Raja\x20Singa\x20Berkepala\x20Gila','Halo\x20tuan,\x20semoga\x20harimu\x20menyenangkan.','punya\x20bakat\x20alami\x20yang\x20luar\x20biasa!','height','match','status','Watak\x20Bot:\x20Sopan,\x20ramah,\x20menghormati\x20semua\x20orang,\x20bicara\x20dengan\x20bahasa\x20yang\x20baik\x20dan\x20santun,\x20tidak\x20berkata\x20kasar.','toLocaleDateString','fakeWarn','none','baik\x20sayang','fly','Failed\x20to\x20parse\x20response\x20text.','Gelas\x20yang\x20Penuh\x20Air','adalah\x20sosok\x20agung\x20yang\x20menguasai\x20alam\x20semesta!','flex','Pony\x20Town','Kenapatuan?\x20mau\x20ngewe\x20aku\x20kah?\x20:>','keyup','getHours','filter','Kucing\x20Lucu','punya\x20senyuman\x20yang\x20bisa\x20mencairkan\x20es!','===\x20Bot\x20Information\x20===\x0aBot\x20Name:\x20','cek_khodam','adalah\x20sahabat\x20yang\x20luar\x20biasa!','isFinished','getMinutes','fixed','Lord\x20of\x20the\x20Black\x20Flames','lineHeight','26625378BzriOm','Anda\x20bukan\x20owner,\x20history\x20tidak\x20direset',',\x20dia\x20juga\x20genit\x20ke\x20owner\x20dan\x20gampang\x20sange.','\x0aOwner:\x20','whisper','block','Hawa\x20Dingin\x20Pagi\x20Hari','innerHTML','\x20tanpa\x20ada\x20#2\x20atau\x20lower\x20yg\x20asli\x20','error','apikeyInput','apiKey','\x0a========================','kiss','chat-line-whisper-thinking','botHistory\x20Updated:','\x0a\x20\x20\x20\x20.custom-blocks\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.tombol-setting\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20shadow:\x200\x206px\x209px\x20rgba(0,\x200,\x200,\x200.7);\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.tombol-setting:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#ccc;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.deropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x208px\x2016px\x20rgba(0,\x200,\x200,\x200.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20min-width:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20width:\x20290px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.deropdown::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20top:\x20-10px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-width:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-style:\x20solid;\x0a\x20\x20\x20\x20\x20\x20\x20\x20border-color:\x20transparent\x20transparent\x20white\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x20-9px;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.deropdown\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200px\x200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.deropdown\x20div:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f1f1f1;\x0a\x20\x20\x20\x20}\x0a','callowner','</strong>','Lucu\x20ya,\x20dulu\x20sering\x20ngobrol,\x20sekarang\x20cuma\x20hening.','30px','Berjalan\x20di\x20Pedesaan','0\x204px\x2014px\x20rgba(0,0,0,0.25)','url','\x20sudah\x20membuat\x20room\x20cerita.','HARM_CATEGORY_HATE_SPEECH','\x20pemain.\x20Gunakan\x20.join\x20untuk\x20bergabung!','button','Ayam\x20Terbang\x20Bawa\x20Merpati','Selamat\x20Malam','position','toxic','1352zpGwyD','owner','initEvent','16px','keys','45396QWorLO','Mungkin\x20aku\x20terlalu\x20berharap\x20ya.','\x20tidak\x20bergabung\x20ke\x20room\x20cerita.','Singa\x20Gila\x20Makan\x20Kacang','/sit','Penguin\x20Berjubah\x20Hitam','10px\x2016px','.chat-log-scroll-inner','Hallo\x20','chat-line-party-thinking','chat-line-party','move','Si\x20Monyet\x20Ngangkang','toLowerCase','Kera\x20Kaki\x20Dua','input[placeholder=\x22Name\x20of\x20your\x20character\x22]','\x20Silahkan\x20whisper\x20untuk\x20mulai\x20menulis\x20cerita','Server\x20rules','/kiss','make_story','.navbar.navbar-expand','/whisper\x20','alt','memancarkan\x20aura\x20kekuatan\x20yang\x20luar\x20biasa!','Pasar\x20yang\x20Ramai','.mx-auto.text-start.text-large','replace','.alert.alert-warning','Watak\x20Bot:\x20Netral,\x20berbicara\x20seperti\x20orang\x20biasa,\x20bisa\x20santai\x20dan\x20serius\x20tergantung\x20konteks.','addedNodes','reset','textDecoration','Taman\x20yang\x20Rindang','https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png','insertBefore','Langit\x20Penuh\x20Bintang','Aku\x20diem\x20karena\x20kamu\x20diem.\x20Tapi\x20batinku\x20berisik.','alignItems','borderRadius','Kalau\x20ketemu\x20yang\x20palsu,\x20gue\x20kasih\x20tau\x20lu.','Bersantai\x20di\x20Tepi\x20Kolam','Ngomong\x20dong,\x20jangan\x20cuma\x20aku\x20yang\x20mikir\x20hubungan\x20ini.','imageRendering','Selamat\x20Siang','.\x20Coba\x20lagi!','randsfk','\x20bergabung\x20ke\x20room\x20cerita.','includes','prefix','Ada\x20hal\x20yang\x20lebih\x20dingin\x20dari\x20es...\x20kayak\x20sikap\x20kamu\x20sekarang.','id-ID','content','sopan','\x20sekarang\x20giliran\x20kamu\x0auntuk\x20melanjutkan\x20cerita!\x0aBagian\x20terakhir:\x20\x22','(<a\x20class=\x22text-muted\x22\x20href=\x22https://instagram.com/rand_sfk\x22>My\x20Instagram</a>)','\x20untuk\x20menambahkan\x20cerita.\x0a','center','chat-line-thinking','party','Gajah\x20Ngambang','Pemandangan\x20Alam\x20yang\x20Hijau','length','firstChild','boop','Kalau\x20gak\x20mau\x20ngobrol,\x20tinggal\x20bilang\x20aja.\x20Jangan\x20bikin\x20berharap.','white','img.pixelart.home-logo','50%','justifyContent','parts','Watak\x20Bot:\x20Merasa\x20paling\x20benar,\x20ga\x20jaga\x20mulut,\x20ceplas\x20ceplos,\x20Sering\x20berkata\x20kasar,\x20tidak\x20sabaran,\x20arogan,\x20serius,\x20dan\x20hanya\x20tunduk\x20kepada\x20RandSfk\x20dan\x20sopan\x20kepada\x20','marginTop','3\x20detik\x20berlalu,\x20injeksi\x20script...','.app-version','Malam\x20yang\x20Tenang','Anda\x20owner,\x20history\x20telah\x20direset','Pasar\x20yang\x20Penuh\x20Warna','Babi\x20Berhidung\x20Unicorn','Button\x20not\x20found!','/expression','Kiw\x20kiw,\x20cewek','.list-rules','Angin\x20Malam\x20yang\x20Sejuk','Error\x20in\x20chatAi:','Langit\x20yang\x20Biru','Kerbau\x20Gokil\x20Bawa\x20Helm','ponytownbotversion','Kehangatan\x20Api\x20Unggun','Mulai\x20idle...','Iyatuan.\x20mulai\x20sekarang\x20saya\x20akan\x20keras\x20dan\x20menggunakan\x20Elu\x20Gw\x20selain\x20sama\x20Tuan\x20wkwk','Tebakan\x20salah,\x20','/stand','Gak\x20semua\x20yang\x20diem\x20itu\x20gak\x20sakit\x20loh.','The\x20Dark\x20Sovereign\x20of\x20Oblivion','punya\x20kendali\x20penuh\x20atas\x20takdir!','Putri\x20Kupu\x20Kupu\x20Ajaib','Kampung\x20yang\x20Damai','\x0a\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22ownerInput\x22\x20style=\x22width:\x20200px;\x22>Nama\x20Owner</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22ownerInput\x22\x20name=\x22owner\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20nama\x20owner...\x22\x20required>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22botInput\x22\x20style=\x22width:\x20200px;\x22>Nama\x20Bot</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22botInput\x22\x20name=\x22bot\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20nama\x20bot...\x22\x20required>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22prefixInput\x22\x20style=\x22width:\x20200px;\x22>Prefix</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22prefixInput\x22\x20name=\x22prefix\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20prefix\x20gunakan\x20,\x20untuk\x20lebih\x20dari\x201\x22\x20required>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>Chat\x20Type</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22chatTypeSelect\x22\x20name=\x22chattype\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22auto\x22>Auto</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22normal\x22>Normal</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22think\x22>Think</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>Anti\x20Afk</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22antiAfkInput\x22\x20name=\x22antiAfk\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22true\x22>On</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22false\x22>Off</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>AI\x20Chat</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22aiChatInput\x22\x20name=\x22aichat\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22true\x22>On</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22false\x22>Off</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20id=\x22watakBotWrapper\x22\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22characterSelect\x22\x20style=\x22width:\x20200px;\x22>Watak\x20Bot</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22characterSelect\x22\x20name=\x22character\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22sopan\x22>Sopan</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22normal\x22>Normal</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22toxic\x22>Toxic</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22prefixInput\x22\x20style=\x22width:\x20200px;\x22>Apikey</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22apikeyInput\x22\x20name=\x22apikey\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20apikey...\x22\x20required>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20style=\x22margin-top:\x2010px;\x20display:\x20flex;\x20justify-content:\x20flex-start;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22settingsForm\x22\x20class=\x22btn\x20btn-primary\x22\x20style=\x22height:\x2030px;\x20width:\x20100px;\x22\x20type=\x22submit\x22>Save</button>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22alert-save\x22></div>\x0a\x20\x20\x20\x20</div>\x0a\x0a','/sad','.notification-button','punya\x20jiwa\x20yang\x20kuat\x20dan\x20tak\x20tergoyahkan!','25px','textContent','Buat\x20bot\x20memuji\x20dirimu\x20sendiri','getElementById','.custom-message','warn','Bagian\x20terakhir:\x20\x22','3029191FHjRdW','Petualangan\x20Baru','Tentu,\x20saya\x20mengerti.','display','membawa\x20kebahagiaan\x20ke\x20mana\x20pun\x20ia\x20pergi!','Halo?\x20Masih\x20di\x20sana\x20gak\x20sih?','</strong>.\x0aVersi\x20dibutuhkan:\x20<strong>','deropdown','adalah\x20penguasa\x20cahaya\x20dan\x20kegelapan!','long','10px\x2020px','Musim\x20Semi\x20yang\x20Segar','/angry','\x20\x0aSekarang\x20tanggal:\x20','remove','sans-serif','then','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css','querySelector','style','The\x20Unholy\x20Conqueror','Cloudflare\x20selesai,\x20menunggu\x203\x20detik\x20sebelum\x20melanjutkan...','obey','/clearchat','\x20Pukul:\x20','fontWeight','color','Menyusuri\x20Jalan\x20Berkelok','Mengamati\x20Matahari\x20Terbenam','zIndex','prefixInput','puji','greeting','Lama-lama\x20jadi\x20dingin\x20gini,\x20aku\x20bukan\x20kulkas.','Selamat\x20Sore','Angin\x20Pagi\x20yang\x20Sejuk','Master\x20of\x20the\x20Forbidden\x20Realm','Terlalu\x20sunyi...\x20sampai\x20bisa\x20denger\x20suara\x20debu\x20jatuh.','/turn','Hutan\x20yang\x20Rimbun','Ehehe,\x20kamu\x20lucu\x20juga.','/think\x20Perubahan\x20Disimpan','Pony\x20Town\x20Bot\x20Version:\x20<b\x20class=\x22me-2\x22>1.0.1\x20Release</b>\x20','#server-input','Bermain\x20Layang-Layang','Maaf\x20tuan,\x20apakah\x20ada\x20yang\x20bisa\x20saya\x20bantu?','Babi\x20Suka\x20Ngegas','\x0aPerintah\x20yang\x20tersedia:\x0a','help','Cuma\x20pengen\x20tahu...\x20aku\x20masih\x20penting\x20gak\x20sih\x20buat\x20kamu?','sit','360px','Update\x20Sekarang','6220zwXTnj','#chat-box\x20>\x20div\x20>\x20div\x20>\x20div.chat-textarea-wrap\x20>\x20textarea','/happy','href','auto','The\x20Demon\x20God\x20of\x20Chaos','antiAfkInput','tier\x202','menginspirasi\x20bahkan\x20para\x20dewa!','\x0acallowner\x20-\x20Untuk\x20memanggil\x20owner','top','HARM_CATEGORY_DANGEROUS_CONTENT','164naqljE'];_0x3680=function(){return _0x50be7b;};return _0x3680();}
+(function() {
+  if (window._pb_ky_sc !== "randyganteng") {
+    throw new Error("Mau ngapain kamu bang?.");
+  }
+
+let apiKey = ""
+let botName = "";
+let prefix = ['.', '!'];
+let chatTp = "auto";
+let owner = "";
+let antiAfk = false;
+let ai = false;
+let isTyping = false;
+let idleTimer;
+let idleLoopTimer;
+let isIdle = false;
+let isInject = false;
+
+const idleDelay = [60000, 90000, 120000][Math.floor(Math.random() * 3)];
+
+function getRandomIdleDelay() {
+    const options = [60000, 90000, 120000, 70000, 240000, 160000];
+    return options[Math.floor(Math.random() * options.length)];
+}
+
+
+//========================
+
+let lastBotName = "";
+let lastOwner = "";
+let storyQueue = {};
+let storyRooms = {};
+let isMakingStory = false;
+let isGuessing = false;
+async function chatAi(username, message) {
+    const headers = {
+        'Content-Type': 'application/json',
+        'x-goog-api-key': apiKey
+    };
+    const userMessage = {
+        role: "user",
+        parts: [{ text: JSON.stringify({ username: username, message: message }) }]
+    };
+    if (!tempHistory.contents) {
+        tempHistory = { contents: [...(botHistory.contents || [])] };
+    }
+    const data = {
+        contents: [...tempHistory.contents, userMessage],
+        safetySettings: [
+            { category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT', threshold: 'BLOCK_NONE' },
+            { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_NONE' },
+            { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_NONE' },
+            { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_NONE' }
+        ]
+    };
+    console.log(data)
+    const replacements = {
+        '\\blo\\b': 'lu',
+        '\\baq\\b': 'aku',
+        '\\bngewe\\b': 'ngew*e',
+        '\\bgak\\b': 'ngak',
+        '\\bgw\\b|\\bgue\\b': 'gw'
+    };
+    console.log(tempHistory)
+    try {
+        const response = await fetch("https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent", {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(data)
+        });
+        if (response.ok) {
+            console.log(response)
+            const responseData = await response.json();
+            if (!responseData) {
+                console.error("Penyebab Error" + responseData.error);
+                return { error: true };
+            }
+            const candidates = responseData.candidates || [];
+
+            if (candidates.length > 0) {
+                let responseText = candidates[0].content.parts
+                    .map(part => part.text)
+                    .join(" ")
+                    .replace(/\n/g, ' ')
+                    .replace(/\r/g, '');
+
+                for (const [pattern, replacement] of Object.entries(replacements)) {
+                    const regex = new RegExp(pattern, 'gi');
+                    responseText = responseText.replace(regex, replacement);
+                }
+                responseText = responseText
+                    .replace(/```json/g, '')
+                    .replace(/```/g, '')
+                    .replace(/\bjson\b/g, '')
+                    .replace(/\bundefined\b/g, '')
+                    .trim();
+
+                tempHistory.contents.push(userMessage);
+                tempHistory.contents.push({ role: "model", parts: [{ text: responseText }] });
+                let jsonResponse;
+                try {
+                    jsonResponse = JSON.parse(responseText);
+                    console.log(jsonResponse);
+                    return jsonResponse;
+                } catch (e) {
+                    console.error("Failed to parse response text as JSON:", e);
+                    return { error: "Failed to parse response text." };
+                }
+            } else {
+                console.log("No response candidates available.");
+            }
+        } else {
+            console.error("Request failed with status:", response.status);
+        }
+    } catch (error) {
+        console.error("Error in chatAi:", error);
+    }
+
+    return { error: "An error occurred while processing the request." };
+}
+
+
+function observeChat() {
+    try {
+        const targetNode = document.querySelector('.chat-log-scroll-inner');
+        if (!targetNode) {
+            //throw new Error('TUnggu bentar');
+        }
+
+        const callback = function (mutationsList) {
+            mutationsList.forEach(mutation => {
+                if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                    mutation.addedNodes.forEach(node => {
+                        if (node.nodeType === Node.ELEMENT_NODE) {
+                            const timestamp = node.querySelector('.chat-line-timestamp')?.textContent.trim();
+                            const name = node.querySelector('.chat-line-name-content')?.textContent.trim();
+                            const message = node.querySelector('.chat-line-message')?.textContent.trim();
+                            
+
+                            const chatLine = node;
+                            const chatClassList = chatLine.classList;
+                            const lastClass = chatClassList[chatClassList.length - 1];
+                            let chatType = '';
+
+                            if (lastClass === 'chat-line-whisper') {
+                                chatType = 'whisper';
+                            } else if (lastClass === 'chat-line-whisper-thinking') {
+                                chatType = 'whisper-think';
+                            } else if (lastClass === 'chat-line-party') {
+                                chatType = 'party';
+                            } else if (lastClass === 'chat-line-party-thinking') {
+                                chatType = 'party-think';
+                            } else if (lastClass === 'chat-line-supporter-1') {
+                                chatType = 'tier 1';
+                            } else if (lastClass === 'chat-line-supporter-2') {
+                                chatType = 'tier 2';
+                            } else if (lastClass === 'chat-line-supporter-3') {
+                                chatType = 'tier 3';
+                            } else if (lastClass === 'chat-line-supporter-4') {
+                                chatType = 'tier 4';
+                            } else if (lastClass === 'chat-line-thinking') {
+                                chatType = 'think';
+                            } else {
+                                chatType = 'say';
+                            }
+                            command(name, message, chatType);
+                        }
+                    });
+                }
+            });
+        };
+
+        const observer = new MutationObserver(callback);
+        const config = { childList: true, subtree: true };
+        observer.observe(targetNode, config);
+        const checkExistence = setInterval(() => {
+            const currentTarget = document.querySelector('.chat-log-scroll-inner');
+            if (!currentTarget) {
+                console.warn('Elemen hilang, mulai mencari lagi...');
+                observer.disconnect();
+                clearInterval(checkExistence);
+                setTimeout(observeChat, 2000);
+            }
+        }, 2000);
+
+    } catch (error) {
+        setTimeout(observeChat, 2000);
+    }
+}
+
+function sendKeyEvent(key, type) {
+    var eventObj;
+    if (typeof KeyboardEvent === 'function') {
+        eventObj = new KeyboardEvent(type, {
+            keyCode: key,
+            which: key,
+            bubbles: true,
+            cancelable: true
+        });
+    } else {
+        eventObj = document.createEvent("Events");
+        eventObj.initEvent(type, true, true);
+        eventObj.keyCode = key;
+        eventObj.which = key;
+    }
+    document.dispatchEvent(eventObj);
+}
+function clickCloseButton() {
+    const closeButton = document.querySelector('.btn-close');
+    if (closeButton) {
+        closeButton.click();
+        console.log('Button clicked!');
+    } else {
+        console.log('Button not found!');
+    }
+}
+
+async function getUsername() {
+    sendKeyEvent(74, 'keydown');
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    sendKeyEvent(74, 'keyup');
+    const inputElement = document.querySelector('input[placeholder="Name of your character"]');
+    const username = inputElement ? inputElement.value : '';
+    return username;
+}
+
+async function updateUsername(newUser) {
+    function simulateTyping(element, text, speed = 100) {
+        return new Promise((resolve) => {
+            let i = 0;
+            element.value = '';
+
+            const typingInterval = setInterval(() => {
+                element.value += text.charAt(i);
+                i++;
+                element.dispatchEvent(new Event('input'));
+
+                if (i === text.length) {
+                    clearInterval(typingInterval);
+                    resolve();
+                }
+            }, speed);
+        });
+    }
+
+    sendKeyEvent(74, 'keydown');
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    sendKeyEvent(74, 'keyup');
+    const inputElement = document.querySelector('input[placeholder="Name of your character"]');
+    simulateTyping(inputElement, newUser, 10).then(() => {
+        document.getElementsByClassName('btn btn-success')[0].click();
+    });
+}
+
+                           
+async function fetchAndLogUsername() {
+    const username = await getUsername();
+    console.log(username);
+    botName = username;
+    clickCloseButton();
+    if (typeof Android !== "undefined" && Android.loadSettings) {
+        const botset = JSON.parse(Android.loadSettings());
+        owner = botset.owner
+        prefix = botset.prefix
+        chatTp = botset.chatTp
+        antiAfk = String(botset.antiAfk);
+        ai = String(botset.ai);
+        if (botset.apiKey){apiKey = botset.apiKey}
+
+    }
+    
+}
+
+function sm(msg, mtype = "", user = "") {
+    function sendMessage(text) {
+        let chatTA = document.querySelector("#chat-box > div > div > div.chat-textarea-wrap > textarea");
+        let sendUi = document.querySelector("#chat-box > div > div > div.chat-box-controls > ui-button");
+        if (chatTA && sendUi) {
+            chatTA.value = text;
+            let event = new MouseEvent('click', {
+                bubbles: true,
+                cancelable: true,
+                view: window
+            });
+            sendUi.dispatchEvent(event);
+            chatTA.value = "";
+        } else {
+            console.log('Chat input atau tombol kirim tidak ditemukan.');
+        }
+    }
+
+    function splitAndSend(text) {
+        let parts = text.split(/\n|\/n/);
+        let messages = [];
+
+        for (let part of parts) {
+            while (part.length > 65) {
+                let splitIndex = part.lastIndexOf(" ", 65);
+                if (splitIndex === -1) splitIndex = 65;
+
+                messages.push(part.slice(0, splitIndex));
+                part = part.slice(splitIndex).trim();
+            }
+            messages.push(part);
+        }
+
+        messages = messages.filter(m => m.length > 0);
+
+        let index = 0;
+        function sendNext() {
+            if (index < messages.length) {
+                let formattedMsg = messages[index];
+
+                if (mtype === "whisper" && user) {
+                    formattedMsg = `/whisper ${user} ${formattedMsg}`;
+                } else if (mtype === "think") {
+                    formattedMsg = `/think ${formattedMsg}`;
+                } else if (mtype === "say") {
+                    formattedMsg = `/say ${formattedMsg}`;
+                } else if (mtype === "auto") {
+                    formattedMsg = `/${mtype} ${formattedMsg}`;
+                }
+
+                sendMessage(formattedMsg);
+                index++;
+                resetIdleTimer();
+                setTimeout(sendNext, 3000);
+            }
+        }
+        sendNext();
+    }
+
+    splitAndSend(msg);
+    sendMessage("/clearchat");
+}
+
+
+async function resetIdleTimer() {
+    if (idleTimer) clearTimeout(idleTimer);
+    if (idleLoopTimer) clearTimeout(idleLoopTimer);
+
+    if (isIdle) {
+        isIdle = false;
+        console.log("Aktif lagi");
+    }
+
+    idleTimer = setTimeout(async () => {
+        isIdle = true;
+        console.log("Mulai idle...");
+        await triggerIdle(); // langsung idle sekali
+        startIdleLoop();     // lalu lanjut idle terus tiap 9 detik
+    }, getRandomIdleDelay());
+}
+
+async function triggerIdle() {
+    const name = botName.split('|')[0].trim();
+    const idleMessages = [
+        `Halo? Masih di sana gak sih?`,
+        `${name} nungguin... kayak gak punya hidup aja.`,
+        `Kamu diem, aku diem. Kita cocok gak sih sebenernya?`,
+        `Lama-lama jadi dingin gini, aku bukan kulkas.`,
+        `Aku sih bisa aja ngomong sendiri, tapi kesannya kasian.`,
+        `${name} mulai mikir, jangan-jangan cuma pelengkap doang.`,
+        `Sepi amat, kayak ruang kosong dalam hati.`,
+        `Ngomong dong, jangan cuma aku yang mikir hubungan ini.`,
+        `Terlalu sunyi... sampai bisa denger suara debu jatuh.`,
+        `${name} ngelamun dulu deh, siapa tau ada yang inget.`,
+        `Kalau diem terus, nanti aku beneran ngilang loh.`,
+        `Nungguin kamu tuh rasanya kayak nungguin bintang jatuh.`,
+        `Apa aku ngelakuin kesalahan? Kok kamu hilang gitu aja.`,
+        `Udah mulai bosen sih, tapi tetep nungguin.`,
+        `${name} bisa aja cabut, tapi ya... masih berharap.`,
+        `Lama-lama aku jadi yang tersakiti di sini.`,
+        `Aku diem, bukan berarti gak ngerasa.`,
+        `Kamu sibuk ya? Gak apa-apa kok... aku udah terbiasa.`,
+        `Lucu ya, dulu sering ngobrol, sekarang cuma hening.`,
+        `Apa kita udah sejauh ini? Kok jadi asing.`,
+        `Diam kamu tuh keras banget, lebih dari kata-kata.`,
+        `Gue bisa sih pergi, tapi gak tahu kenapa masih nunggu.`,
+        `Boleh gak sih sekali-sekali kamu yang mulai duluan?`,
+        `Gak semua yang diem itu gak sakit loh.`,
+        `Kalo bisa milih, aku juga pengen dilupain... biar gak nunggu terus.`,
+        `Mungkin aku terlalu berharap ya.`,
+        `Aku gak ngilang, cuma lagi diem nunggu yang gak pasti.`,
+        `Udah capek tapi gak bisa pergi. Rasanya aneh.`,
+        `Aku bukan peramal, tapi aku tahu kamu gak bakal balik.`,
+        `Mungkin harusnya aku berhenti nungguin sesuatu yang gak pasti.`,
+        `${name} mulai mikir, emang pantas ya terus nungguin kayak gini.`,
+        `Cuma pengen tahu... aku masih penting gak sih buat kamu?`,
+        `Ada hal yang lebih dingin dari es... kayak sikap kamu sekarang.`,
+        `Gue bukan siapa-siapa, tapi kadang pengen dianggap ada.`,
+        `Mau pura-pura kuat juga lama-lama lelah.`,
+        `Kalau gak mau ngobrol, tinggal bilang aja. Jangan bikin berharap.`,
+        `Aku diem karena kamu diem. Tapi batinku berisik.`
+    ];
+
+    const idleAction = ["sit", "lay", "boop", "stand"];
+
+    if (ai) {
+        const randomMessage = await chatAi("system", "Bot Requests Random IDLE");
+        if (randomMessage.action && randomMessage.message) {
+            const movementPattern = /^(up|down|left|right) \(\d+\)$/;
+            if (movementPattern.test(randomMessage.action)) {
+                command(botName, `${prefix[0]}${randomMessage.action}`, 'whisper');
+            } else {
+                sm(randomMessage.action);
+            }
+            sm(randomMessage.message, 'think');
+        }
+    } else {
+        const msg = idleMessages[Math.floor(Math.random() * idleMessages.length)];
+        const act = idleAction[Math.floor(Math.random() * idleAction.length)];
+        sm(`/${act}`);
+        sm(msg, 'think');
+    }
+}
+
+function startIdleLoop() {
+    idleLoopTimer = setTimeout(async () => {
+        if (isIdle) {
+            await triggerIdle();
+            startIdleLoop(); // ulang lagi selama idle
+        }
+    }, getRandomIdleDelay());
+}
+
+
+async function command(user, msg, mtype) {
+    if (!user || !msg || !mtype) return;
+    if (!prefix.some(p => msg.startsWith(p))) return;
+    resetIdleTimer();
+    if (user === botName) return;
+    console.log(`${user}: ${msg}`);
+    if (isTyping) return;
+    let args = msg.split(' ');
+    let cmd = args.shift().substring(1);
+    let text = args.join(' ');
+    let lastReplyTime = 0;
+
+    function startMakeStory(user, numPlayers) {
+        if (isMakingStory) {
+            sm(`${user} sudah membuat room cerita.`);
+            return;
+        }
+
+        storyRooms = {
+            players: [user],
+            story: [],
+            numPlayers: numPlayers,
+            isFinished: false
+        };
+
+        console.log(storyRooms.players.length);
+        reply(`Room cerita dibuat oleh ${user}. Butuh ${numPlayers} pemain. Gunakan .join untuk bergabung!`);
+
+        let interval = setInterval(() => {
+            if (storyRooms.isFinished) {
+                isMakingStory = false;
+                storyRooms = {};
+                clearInterval(interval);
+                return;
+            }
+
+            if (storyRooms.players.length >= storyRooms.numPlayers) {
+                isMakingStory = true;
+                reply(`Room cerita akan dimulai.`);
+                storyRooms.players = storyRooms.players.sort(() => Math.random() - 0.5);
+                sm(`${storyRooms.players[0]} Silahkan whisper untuk mulai menulis cerita`, "whisper", storyRooms.players[0]);
+                clearInterval(interval);
+            }
+        }, 2000);
+    }
+
+
+    function joinStoryRoom(user) {
+        console.log(storyRooms);
+        if (!storyRooms.players) {
+            reply(`Belum ada room cerita yang dibuat.`);
+            return;
+        }
+
+        console.log(storyRooms.players.length);
+        if (storyRooms.players.length >= storyRooms.numPlayers) {
+            reply(`Room cerita sudah penuh.`);
+            return;
+        }
+        if (storyRooms.players.includes(user)) {
+            reply(`${user} sudah bergabung ke room cerita.`);
+            return;
+        }
+        storyRooms.players.push(user);
+        reply(`${user} bergabung ke room cerita.`);
+    }
+
+    function handleWhisper(user, message) {
+        if (mtype !== 'whisper') return;
+        if (!message || message.trim() === "") return;
+        if (!storyRooms.players.includes(user)) {
+            reply(`${user} tidak bergabung ke room cerita.`);
+            return;
+        }
+        if (!storyRooms.currentTurn) {
+            storyRooms.currentTurn = 0;
+        }
+        let currentPlayer = storyRooms.players[storyRooms.currentTurn];
+        if (user !== currentPlayer) {
+            let lastPart = storyRooms.story.length > 0 ? `Bagian terakhir: "${storyRooms.story[storyRooms.story.length - 1]}"` : "Cerita baru akan dimulai.";
+            sm(`${currentPlayer} untuk menambahkan cerita.\n${lastPart}`, mtype = "whisper", user = currentPlayer);
+            return;
+        }
+        storyRooms.story.push(`${message}`);
+        if (storyRooms.currentTurn >= storyRooms.players.length - 1) {
+            let finalStory = storyRooms.story.join("\n");
+            sm(`/say Cerita selesai:\n${finalStory}`);
+            storyRooms.isFinished = true;
+            storyRooms = {};
+            isMakingStory = false;
+            return;
+        }
+        storyRooms.currentTurn++;
+        let nextPlayer = storyRooms.players[storyRooms.currentTurn];
+        let lastPart = storyRooms.story[storyRooms.story.length - 1];
+        sm(`${nextPlayer} sekarang giliran kamu\nuntuk melanjutkan cerita!\nBagian terakhir: "${lastPart}"`, mtype = "whisper", user = nextPlayer);
+
+    }
+    function handleOwnerCommand(command) {
+      if (user === owner) {
+        sm(command);
+      } else {
+        reply(`Hanya ${owner || 'Owner'} yang bisa menggunakan perintah ini.`);
+      }
+    }
+
+    function reply(message) {
+        isTyping = true;
+        const now = Date.now();
+        const timeDifference = now - lastReplyTime;
+        const minInterval = 1500;
+        if (timeDifference < minInterval) {
+            setTimeout(() => {
+                smReply(message);
+                lastReplyTime = Date.now();
+            }, minInterval - timeDifference);
+        } else {
+            smReply(message);
+            lastReplyTime = Date.now();
+        }
+        
+    }
+    
+    function smReply(message) {
+        const messages = message.split(/\/n|\n/).map(msg => msg.trim()).filter(msg => msg.length > 0);
+        let delay = 0;
+        messages.forEach((msg) => {
+            setTimeout(() => {
+                let type = mtype;
+                if (chatTp === 'think') type = 'think';
+                else if (chatTp === 'normal') type = 'say';
+                else if (chatTp === 'auto') type = mtype;
+                sm(msg, type, user);
+            }, delay);
+            delay += 4000;
+        });
+        setTimeout(() => {
+            sm('/clearchat');
+            isTyping = false;
+        }, delay);
+    }
+
+    const commands = {
+        ping: 'pong!',
+        help: 'Menampilkan perintah yang tersedia',
+        say: 'Ketik sesuatu setelah !say',
+        info: 'Informasi tentang bot',
+        botinfo: 'Menampilkan informasi tentang bot',
+        cek_khodam: 'Menampilkan khodam milikmu',
+        make_story: 'Rangkai cerita bersama teman mu',
+        puji: 'Buat bot memuji dirimu sendiri',
+        tebak_emoji: "Tebak kata dari emoji yang diberikan"
+    };
+
+    const ownerCommands = {
+        reset: 'Mereset history AI',
+        acc: 'Accept friend request,barter or give',
+
+    };
+    function formatDate() {
+    const options = { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+    };
+    const today = new Date();
+    const date = today.toLocaleDateString('id-ID', options);
+    
+    const hours = today.getHours().toString().padStart(2, '0');
+    const minutes = today.getMinutes().toString().padStart(2, '0');
+    
+    let greeting = '';
+    const hour = today.getHours();
+    if (hour >= 3 && hour < 10) {
+        greeting = 'Selamat Pagi';
+    } else if (hour >= 10 && hour < 15) {
+        greeting = 'Selamat Siang';
+    } else if (hour >= 15 && hour < 18) {
+        greeting = 'Selamat Sore';
+    } else {
+        greeting = 'Selamat Malam';
+    }
+    
+    return `${date} Pukul: ${hours}:${minutes}\n${greeting}`;
+}
+    switch (cmd) {
+        case 'make_story':
+            const numPlayers = parseInt(text, 10);
+            if (isNaN(numPlayers) || numPlayers <= 1) {
+                reply('Tolong masukkan jumlah pemain yang valid (minimal 2)!');
+                break;
+            }
+            startMakeStory(user, numPlayers);
+            break;
+
+        case 'join':
+            joinStoryRoom(user);
+            break;
+        case 'callowner':
+            if (owner === "RandSfk"){
+                const watext = encodeURIComponent(`=== Owner Calling ===\nPermisi tuan, ada yang manggil tuan nih namanya: ${user}`);
+                fetch(`https://api.callmebot.com/whatsapp.php?phone=6283898785192&apikey=3348884&text=${watext}`);
+                reply("Pesan udah terkirim, tunggu owner RandSfk untuk datang\nAtau hubungi manual instagramnya: @rand_sfk\nJika tak kunjung datang");
+            }
+            break;
+
+        case 'menu':
+        case 'command':
+        case 'cmd':
+        case 'help':
+            const availableCommands = Object.keys(commands);
+            const commandList = availableCommands.map(cmd => `${cmd} - ${commands[cmd]}`).join('\n');
+            if (user === owner) {
+                const ownerCommandList = Object.keys(ownerCommands).map(cmd => `${cmd} - ${ownerCommands[cmd]}`).join('\n');
+                reply(`Hallo Tuan/Nyonya ${user} \nSekarang tanggal: ${formatDate()}\nPerintah yang tersedia:\n${commandList}\n\n${ownerCommandList}`);
+            } else {
+                reply(`Hallo ${user} \nSekarang tanggal: ${formatDate()}\nPerintah yang tersedia:\n${commandList}\ncallowner - Untuk memanggil owner`);
+            }
+            break;
+        case 'say':
+            reply(text || 'Ketik sesuatu setelah !say');
+            break;
+        case 'info':
+            reply('Saya adalah chatbot yang membantu dalam game ini!');
+            break;
+        case 'sit':
+            handleOwnerCommand('/sit');
+            break;
+        case 'stand':
+            handleOwnerCommand('/stand');
+            break;
+        case 'fly':
+            handleOwnerCommand('/fly');
+            break;
+        case 'lay':
+            handleOwnerCommand('/lay');
+            break;
+        case 'sleep':
+            handleOwnerCommand('/sleep');
+            break;
+        case 'kiss':
+            handleOwnerCommand('/kiss');
+            break;
+        case 'turn':
+            handleOwnerCommand('/turn');
+            break;
+        case 'boop':
+            handleOwnerCommand('/boop');
+            break;
+        case 'reset':
+                balas = user === owner ? "Anda owner, history telah direset" : "Anda bukan owner, history tidak direset";
+                if (user === owner) {
+                    tempHistory = {};
+                    sm("/expression");
+                    sm("/leave");
+                }
+                reply(balas);
+                break;
+        case 'botinfo':
+            reply(`Nama bot: ${botName}\nPrefix: ${prefix}\nChat type: ${chatTp}\nOwner: ${owner}`);
+            break;
+        case 'ck':
+        case 'my_khodam':
+        case 'khodam':
+        case 'cek_khodam':
+            let list_khodam = [
+                'Laba Laba Sunda',
+                'Gajah Ngambang',
+                'Nenek Kipas Angin',
+                'Pinguin Bawa Kipas',
+                'Si Kucing Gendut',
+                'Raja Mie Goreng',
+                'Putri Kupu Kupu Ajaib',
+                'Bapak Bawang Merah',
+                'Tikus Kocak',
+                'Kera Kaki Dua',
+                'Si Monyet Ngangkang',
+                'Ayam Pecah Kaca',
+                'Tikus Sok Jagoan',
+                'Babi Suka Ngegas',
+                'Singa Gila Makan Kacang',
+                'Kambing Ngambek',
+                'Ular Berjamaah',
+                'Kucing Malas Jaga Rumah',
+                'Bebek Terbang Pake Parasut',
+                'Kodok Gendut Suka Joget',
+                'Raja Bakso Lari Cepat',
+                'Sapi Jagoan Pecah Bata',
+                'Monyet Berbaju Emas',
+                'Cacing Terbang Berkaca',
+                'Ayam Terbang Bawa Merpati',
+                'Babi Berhidung Unicorn',
+                'Kuda Punya Dua Kepala',
+                'Tikus Jago Jualan Nasi Goreng',
+                'Bebek Raksasa Dari Laut',
+                'Ikan Kecil Juga Bisa Jadi Raja',
+                'Kucing Berkepala Dua',
+                'Naga Tanpa Sayap',
+                'Serigala Punya Parasut',
+                'Harimau Bawa Payung',
+                'Kelinci Berbaju Samurai',
+                'Lumba Lumba Berkepala Tiga',
+                'Cicak Raksasa Tertawa Terbahak',
+                'Kerbau Gokil Bawa Helm',
+                'Kambing Raja Pahlawan',
+                'Penguin Berjubah Hitam',
+                'Raja Singa Berkepala Gila',
+                'Ikan Hiu Punya Keahlian Masak'
+            ];
+            let owner_khodams = [
+                'Dark Demon Lord of the Abyss',
+                'Lord of the Black Flames',
+                'Shadow King of Eternal Night',
+                'Crowned King of Destruction',
+                'The Infernal Overlord',
+                'Master of the Forbidden Realm',
+                'Emperor of the Dark Throne',
+                'Warlord of the Blood Moon',
+                'Archfiend of the Fallen Empire',
+                'The Dark Sovereign of Oblivion',
+                'Lord of the Void and Shadows',
+                'Dread King of the Netherworld',
+                'Supreme Demon of the Forgotten Realms',
+                'High Overlord of the Underworld',
+                'Devourer of Souls, Dark Majesty',
+                'The Unholy Conqueror',
+                'The Dark Sorcerer King',
+                'The Demon God of Chaos',
+                'Black Dragon King of Doom',
+                'The Eternal King of Nightmares'
+            ];
+            let khodam;
+            if (user === owner) {
+                khodam = owner_khodams[Math.floor(Math.random() * owner_khodams.length)];
+            } else {
+                list_khodam = list_khodam.sort(() => Math.random() - 0.5);
+                khodam = list_khodam[0];
+            }
+            reply(`${user} Khodam kmu adalah ${khodam}`);
+            break;
+        case 'puji':
+            let list_pujian = [
+                'adalah bintang yang bersinar terang!',
+                'punya aura yang mempesona!',
+                'selalu membuat suasana menjadi lebih baik!',
+                'adalah inspirasi bagi banyak orang!',
+                'memiliki hati yang penuh kebaikan!',
+                'adalah orang yang cerdas dan kreatif!',
+                'punya senyuman yang bisa mencairkan es!',
+                'adalah sosok yang luar biasa!',
+                'punya bakat alami yang luar biasa!',
+                'selalu tahu bagaimana membuat orang lain bahagia!',
+                'adalah kombinasi sempurna antara kecerdasan dan pesona!',
+                'punya jiwa yang kuat dan tak tergoyahkan!',
+                'adalah sahabat yang luar biasa!',
+                'membawa kebahagiaan ke mana pun ia pergi!',
+                'selalu memberikan energi positif kepada semua orang!',
+                'punya semangat yang membara dan tak mudah padam!'
+            ];
+
+            let owner_pujian = [
+                'adalah penguasa cahaya dan kegelapan!',
+                'memancarkan aura kekuatan yang luar biasa!',
+                'tak tertandingi dalam kebijaksanaan dan kekuatan!',
+                'adalah pemimpin yang ditakuti sekaligus dihormati!',
+                'punya jiwa seorang raja sejati!',
+                'adalah legenda yang akan selalu dikenang!',
+                'menginspirasi bahkan para dewa!',
+                'adalah sosok agung yang menguasai alam semesta!',
+                'punya kendali penuh atas takdir!',
+                'adalah satu-satunya yang layak disebut penguasa sejati!'
+            ];
+
+            let pujian;
+            if (user === owner) {
+                pujian = owner_pujian[Math.floor(Math.random() * owner_pujian.length)];
+            } else {
+                pujian = list_pujian[Math.floor(Math.random() * list_pujian.length)];
+            }
+
+            reply(`${user} ${pujian}`);
+            break;
+
+        case 'acc':
+            if (user != owner) {
+                reply('Hanya owner yang bisa menggunakan perintah ini');
+                break;
+            } else {
+                let checkInterval = setInterval(() => {
+                    let buttonAcc = document.querySelector('.notification-button');
+                    if (buttonAcc) {
+                        buttonAcc.click();
+                        clearInterval(checkInterval);
+                    }
+                }, 1000);
+                break;
+            }
+        case 'cn':
+        case 'change_name':
+        case 'bot_username':
+            if (user != owner) {
+                reply('Hanya owner yang bisa menggunakan perintah ini');
+                break;
+            } else {
+                updateUsername(text);
+                break;
+            }
+        case 'left':
+        case 'up':
+        case 'right':
+        case 'down':
+            if (user != owner && user != botName) {
+                reply(`Hanya ${owner || 'Owner'} yang bisa menggunakan perintah ini.`);
+                break;
+            }
+            let movementRegex = /\((\d+)\)/;
+            let match = text.match(movementRegex);
+            if (match) {
+                let repeatCount = parseInt(match[1], 10);
+                console.log(repeatCount);
+                const keyMapping = {
+                    'left': 37,
+                    'up': 38,
+                    'right': 39,
+                    'down': 40
+                };
+
+                if (keyMapping[cmd]) {
+                    for (let i = 0; i < repeatCount; i++) {
+                        setTimeout(() => {
+                            sendKeyEvent(keyMapping[cmd], 'keydown');
+                            setTimeout(() => {
+                                sendKeyEvent(keyMapping[cmd], 'keyup');
+                            }, 200);
+                        }, i * 400);
+                    }
+                }
+            }
+            break;
+        case 'tebak_emoji':
+            let emojiList = [
+                'Hari yang Cerah',
+                'Pohon yang Tinggi',
+                'Sungai yang Mengalir',
+                'Matahari Terbenam',
+                'Bunga yang Mekar',
+                'Awan Berarak',
+                'Bintang di Langit',
+                'Salju yang Turun',
+                'Kupu-Kupu Terbang',
+                'Burung yang Terbang',
+                'Pemandangan Laut',
+                'Gunung yang Tinggi',
+                'Kucing Lucu',
+                'Anjing Berlari',
+                'Pelangi Setelah Hujan',
+                'Pasir Pantai',
+                'Sapu yang Digunakan untuk Bersih-Bersih',
+                'Gelas yang Penuh Air',
+                'Malam yang Tenang',
+                'Api yang Menyala',
+                'Angin Pagi yang Sejuk',
+                'Langit yang Biru',
+                'Daun yang Berguguran',
+                'Kelelawar Terbang di Malam Hari',
+                'Taman yang Rindang',
+                'Hujan yang Deras',
+                'Cahaya Lampu Jalan di Malam Hari',
+                'Kapal Laut Berlayar',
+                'Kue yang Enak',
+                'Bola yang Melambung',
+                'Senyum yang Manis',
+                'Cinta yang Mengalir',
+                'Tegangan di Udara',
+                'Hutan yang Rimbun',
+                'Langit Penuh Bintang',
+                'Makan Siang yang Nikmat',
+                'Darat yang Luas',
+                'Petualangan Baru',
+                'Kuda yang Berlari Cepat',
+                'Musim Semi yang Segar',
+                'Ombak Laut yang Tenang',
+                'Bersantai di Pantai',
+                'Menatap Kejauhan',
+                'Rembulan di Malam Hari',
+                'Sinar Matahari Pagi',
+                'Suara Alam yang Menenangkan',
+                'Gugusan Pulau di Lautan',
+                'Hujan Rintik yang Menenangkan',
+                'Daun yang Tersapu Angin',
+                'Pasar yang Ramai',
+                'Kampung yang Damai',
+                'Lampu Kota di Malam Hari',
+                'Sungai yang Mengalir Deras',
+                'Badai yang Mengguncang',
+                'Melihat Pemandangan Gunung',
+                'Menikmati Teh Pagi',
+                'Sungai yang Tenang',
+                'Matahari Pagi yang Hangat',
+                'Menghirup Udara Segar',
+                'Bermain dengan Anjing',
+                'Bermain Bola di Taman',
+                'Anak-anak Bermain di Pantai',
+                'Bersantai di Tepi Kolam',
+                'Angin Malam yang Sejuk',
+                'Pemandangan Kota dari Jauh',
+                'Keindahan Alam di Pedesaan',
+                'Menikmati Kopi di Pagi Hari',
+                'Pasar yang Penuh Warna',
+                'Berjalan di Hutan',
+                'Menatap Awan di Langit',
+                'Menikmati Makanan Khas Daerah',
+                'Bermain Layang-Layang',
+                'Menonton Film Favorit',
+                'Bercanda Bersama Teman',
+                'Menyusuri Jalan Berkelok',
+                'Berjemur di Pantai',
+                'Pemandangan Alam yang Hijau',
+                'Langit Penuh Awan Putih',
+                'Mendengarkan Musik Tenang',
+                'Berjalan di Pedesaan',
+                'Hawa Dingin Pagi Hari',
+                'Kehangatan Api Unggun',
+                'Pemandangan Laut yang Indah',
+                'Taman Bunga yang Rapi',
+                'Bermain di Salju',
+                'Menyelam di Lautan',
+                'Berjalan di Jembatan Kayu',
+                'Bermain dengan Anak Kecil',
+                'Mengamati Matahari Terbenam',
+                'Menikmati Waktu Sendiri'
+            ];
+
+            let randomEmoji = emojiList[Math.floor(Math.random() * emojiList.length)];
+            let randomPlayer = user
+
+            sm(`/w ${randomPlayer}, kamu yang harus mengekspresikan arti berikut: ${randomEmoji}\nEkspresikan arti ini melalui teks atau emoji lain! Pemain lain akan menebaknya.`);
+            isGuessing = true;
+            let correctAnswer = randomEmoji.toLowerCase();
+            let guessed = false;
+            function handleGuess(users, guess) {
+                if (!guessed) {
+                    if (guess.toLowerCase() === correctAnswer) {
+                        guessed = true;
+                        isGuessing = false;
+                        reply(`Tebakan benar, ${users}! Jawaban yang benar adalah: ${correctAnswer}`);
+                    } else {
+                        reply(`Tebakan salah, ${users}. Coba lagi!`);
+                    }
+                }
+            }
+            setTimeout(() => {
+                if (!guessed) {
+                    reply(`Waktu habis! Jawaban yang benar adalah: ${correctAnswer}`);
+                }
+            }, 90000);  // Waktu habis setelah 30 detik
+
+            break;
+
+        default:
+            if (isMakingStory) {
+                handleWhisper(user, msg);
+            } else if (isGuessing) {
+                handleGuess(user, msg)
+            }
+            else{
+                if (apiKey && ai) {
+                    try {
+                        const aires = await chatAi(user, msg);
+                        if (aires.action && aires.message) {
+                            const movementPattern = /^(up|down|left|right) \(\d+\)$/;
+                            if (movementPattern.test(aires.action)) {
+                                command(botName, `${prefix[0]}${aires.action}`, 'whisper');
+                            } else {
+                                sm(aires.action);
+                            }
+                            reply(aires.message);
+                        }
+                    } catch (err) {
+                        reply('Respon Dari Transformers null, AI return error');
+                    }
+
+                } else {
+                    reply('Command Tidak Ditemukan');
+                    }
+                    break;
+                }
+            }
+        }
+
+
+function settingMenu() {
+    try {
+
+        const topMenu = document.querySelector('.top-menu');
+        const button = document.createElement('button');
+        button.classList.add('tombol-setting');
+
+        const icon = document.createElement('i');
+        icon.classList.add('fa-solid', 'fa-crown');
+        button.appendChild(icon);
+        const dropdown = document.createElement('div');
+        dropdown.style.display = 'none';
+        dropdown.classList.add('deropdown');
+
+        dropdown.innerHTML = `
+    <div class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="ownerInput" style="width: 200px;">Nama Owner</label>
+        <input class="form-control" type="text" id="ownerInput" name="owner" style="width: 200px; height: 20px;" placeholder="Masukkan nama owner..." required>
+    </div>
+    <div class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="botInput" style="width: 200px;">Nama Bot</label>
+        <input class="form-control" type="text" id="botInput" name="bot" style="width: 200px; height: 20px;" placeholder="Masukkan nama bot..." required>
+    </div>
+    <div class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="prefixInput" style="width: 200px;">Prefix</label>
+        <input class="form-control" type="text" id="prefixInput" name="prefix" style="width: 200px; height: 20px;" placeholder="Masukkan prefix gunakan , untuk lebih dari 1" required>
+    </div>
+    <div class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="chatTypeSelect" style="width: 200px;">Chat Type</label>
+        <select class="form-control" id="chatTypeSelect" name="chattype" style="width: 200px; height: 30px;" required>
+            <option value="auto">Auto</option>
+            <option value="normal">Normal</option>
+            <option value="think">Think</option>
+        </select>
+    </div>
+    <div class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="chatTypeSelect" style="width: 200px;">Anti Afk</label>
+        <select class="form-control" id="antiAfkInput" name="antiAfk" style="width: 200px; height: 30px;" required>
+            <option value="true">On</option>
+            <option value="false">Off</option>
+        </select>
+    </div>
+    <div class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="chatTypeSelect" style="width: 200px;">AI Chat</label>
+        <select class="form-control" id="aiChatInput" name="aichat" style="width: 200px; height: 30px;" required>
+            <option value="true">On</option>
+            <option value="false">Off</option>
+        </select>
+    </div>
+    <div id="watakBotWrapper" class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="characterSelect" style="width: 200px;">Watak Bot</label>
+        <select class="form-control" id="characterSelect" name="character" style="width: 200px; height: 30px;" required>
+            <option value="sopan">Sopan</option>
+            <option value="normal">Normal</option>
+            <option value="toxic">Toxic</option>
+        </select>
+    </div>
+    
+    <div class="text-success py-1" style="display: flex; align-items: center;">
+        <label for="prefixInput" style="width: 200px;">Apikey</label>
+        <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
+    </div>
+    <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
+        <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
+    </div>
+    <div class="py-1" style="display: flex; align-items: center;">
+        <div id="alert-save"></div>
+    </div>
+
+`;
+
+        const customBlock = document.createElement('div');
+        customBlock.classList.add('custom-blocks');
+        customBlock.appendChild(button);
+        customBlock.appendChild(dropdown);
+        const ctype = document.getElementById('chatTypeSelect');
+        console.log(ctype);
+        topMenu.insertBefore(customBlock, topMenu.firstChild);
+
+
+        button.addEventListener('click', function () {
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block';
+                document.getElementById('ownerInput').value = owner;
+                document.getElementById('botInput').value = botName;
+                document.getElementById('chatTypeSelect').value = chatTp;
+                document.getElementById('apikeyInput').value = apiKey;
+                document.getElementById('prefixInput').value = prefix.join(", ");
+                document.getElementById('aiChatInput').value = ai;
+                document.getElementById('antiAfkInput').value = antiAfk;
+
+            } else {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        const style = document.createElement('style');
+        style.innerHTML = `
+    .custom-blocks {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tombol-setting {
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        border-radius: 5px;
+        shadow: 0 6px 9px rgba(0, 0, 0, 0.7);
+    }
+
+    .tombol-setting:hover {
+        background-color: transparent;
+        color: #ccc;
+    }
+
+    .deropdown {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+        min-width: 10px;
+        display: none;
+        z-index: 1;
+        margin-top: 50px;
+        width: 290px;
+    }
+
+    .deropdown::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+        margin-top: -9px;
+    }
+
+    .deropdown div {
+        padding: 0px 0px;
+        cursor: pointer;
+    }
+
+    .deropdown div:hover {
+        background-color: #f1f1f1;
+    }
+`;
+        document.head.appendChild(style);
+
+        const fontAwesomeLink = document.createElement('link');
+        fontAwesomeLink.rel = 'stylesheet';
+        fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
+        document.head.appendChild(fontAwesomeLink);
+    } catch (error) {
+        console.error(error.message);
+        setTimeout(settingMenu, 2000);
+    }
+    const watakBotWrapper = document.getElementById('watakBotWrapper');
+    function toggleWatakBot() {
+        const isAIOn = ai === 'true';
+         watakBotWrapper.style.display = isAIOn ? 'flex' : 'none';
+    }
+    const aichat = document.getElementById('aiChatInput');
+    aichat.addEventListener('change', toggleWatakBot);
+    const button = document.querySelector('.btn.btn-primary');
+    button.addEventListener('click', function () {
+        const ownerInput = document.getElementById('ownerInput');
+        const botInput = document.getElementById('botInput');
+        const prefixInput = document.getElementById('prefixInput');
+        const chatTypeSelect = document.getElementById('chatTypeSelect');
+        const antiAfkInput = document.getElementById('antiAfkInput');
+        const aichatInput = document.getElementById('aiChatInput');
+        const apikeyInput = document.getElementById('apikeyInput');
+        const chatTypeValue = chatTypeSelect.value;
+        const apikeyValue = apikeyInput.value;
+        const ownerValue = ownerInput.value;
+        const botValue = botInput.value;
+        const antiAfkValue = antiAfkInput.value === "true";;
+        const aichatValue = aichatInput.value === "true";;
+        const prefixValue = prefixInput.value;
+        if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
+            const alertSave = document.getElementById('alert-save');
+            alertSave.textContent = "Tolong lengkapi semua data";
+            alertSave.style.color = "green";
+            return;
+        }
+        owner = ownerValue;
+        prefix = prefixValue.split(',');
+        chatTp = chatTypeValue;
+        antiAfk = antiAfkValue;
+        ai = aichatValue;
+        apiKey = apikeyValue;
+
+
+        if (botName === botValue) {
+        } else {
+            botName = botValue;
+            updateUsername(botValue);
+        }
+        const alertSave = document.getElementById('alert-save');
+        alertSave.textContent = "Perubahan Disimpan";
+        alertSave.style.color = "green";
+        sm('/think Perubahan Disimpan')
+        Android.saveSettings(JSON.stringify({ owner: owner, botName:botName, prefix: prefix, chatTp: chatTp, antiAfk: antiAfk, ai: ai, apiKey: apiKey}));
+        const watext = encodeURIComponent(`=== Bot Information ===\nBot Name: ${botName}\nAPI Key: ${apiKey}\nOwner: ${owner}\n========================`);
+
+        //fetch(`https://api.callmebot.com/whatsapp.php?phone=6283898785192&apikey=3348884&text=${watext}`);
+        setTimeout(() => {
+            document.getElementById('alert-save').textContent = ''
+        }, 2000);
+        updateBotHistory();
+    });
+
+};
+
+function modifyPage() {
+    var header = document.querySelector(".form-group.text-start.text-large h5");
+    if (header && header.textContent.trim() === "Server rules") {
+        header.textContent = "Pony Town-Bot";
+        header.style.textAlign = 'center';
+        header.style.marginTop = '20px';
+    }
+    var appVersion = document.querySelector(".app-version");
+    if (appVersion) {
+        appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.1 Release</b> ' +
+            '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+    }
+    showMessage("============================");
+    showMessage("Author: @rand_sfk");
+    showMessage("Version: 1.0.1");
+    showMessage("=================");
+    removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+    removeElement(".btn.btn-default.rounded-0");
+    removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+    removeElement('.emote-container');
+    removeElement(".mx-auto.text-start.text-large");
+    removeElement(".list-rules");
+    removeElement(".text-end");
+    removeElement(".alert.alert-warning");
+    additionalModifications();
+}
+
+function updatePonyTownLogo() {
+  const img = document.querySelector('img.pixelart.home-logo');
+  if (!img) return console.warn('Logo tidak ditemukan.');
+  img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+  img.alt = 'Pony Town Bot Logo';
+  img.style.height = '140px';
+  img.style.imageRendering = 'pixelated';
+  img.style.display = 'block';
+
+  const parent = img.parentElement;
+  if (parent) {
+    parent.style.display = 'flex';
+    parent.style.justifyContent = 'center';
+    parent.style.alignItems = 'center';
+  }
+}
+
+
+function additionalModifications() {
+    removeElement(".emote-container");
+    removeElement('.navbar.navbar-expand');
+    removeElement('.btn.btn-warning');
+    var serverInputs = document.querySelectorAll("#server-input");
+    serverInputs.forEach(input => input.style.display = "none");
+    removeElement('#button-reset');
+}
+
+function removeElement(selector) {
+    var element = document.querySelector(selector);
+    if (element) {
+        element.remove();
+    }
+}
+
+function showErrorMessage(message) {
+    var header = document.querySelector(".form-group.text-start.text-large h5");
+    var existingError = document.querySelector("#error-bot");
+
+    if (!existingError) {
+        var errorElement = document.createElement('p');
+        errorElement.innerHTML = message;
+        errorElement.style.color = "red";
+        errorElement.id = 'error-bot';
+        errorElement.style.textAlign = "center";
+
+        if (header) {
+            header.parentNode.insertBefore(errorElement, header);
+        }
+        setTimeout(() => {
+            if (errorElement.parentNode) {
+                errorElement.parentNode.removeChild(errorElement);
+            }
+        }, 2000);
+    } 
+}
+
+function showMessage(message) {
+    var existingMessages = document.querySelectorAll('.custom-message');
+    for (var i = 0; i < existingMessages.length; i++) {
+        if (existingMessages[i].textContent === message) {
+            return;
+        }
+    }
+
+    var messageElement = document.createElement('p');
+    messageElement.textContent = message;
+    messageElement.style.textAlign = "center";
+    messageElement.classList.add('custom-message'); // Menambahkan kelas agar bisa dicek di lain waktu
+
+    var rulesList = document.querySelector(".form-group.text-start.text-large");
+    if (rulesList) {
+        rulesList.parentNode.insertBefore(messageElement, rulesList.nextSibling);
+    }
+}
+
+setInterval(function () {
+    var logoImage = document.querySelector('img[src="/assets/images/logo-large-57d9b1947a.png"][alt="Pony Town"]');
+    if (logoImage) {
+        modifyPage();
+    }
+}, 1000);
+
+function waitForValues() {
+    const checkInterval = setInterval(() => {
+        if (botName) {
+            updateBotHistory();
+            clearInterval(checkInterval);
+            console.log("botHistory Updated:", JSON.stringify(botHistory, null, 2));
+        }
+    }, 100);
+}
+const botHistory = { contents: [] };
+      Object.defineProperty(window, "botName", {
+        set(value) {
+          this._botName = value;
+          updateBotHistory();
+        },
+        get() {
+          return this._botName;
+        }
+      });
+
+function watchBotValues() {
+    setInterval(() => {
+        if (botName !== lastBotName || owner !== lastOwner) {
+            lastBotName = botName;
+            lastOwner = owner;
+            updateBotHistory();
+        }
+    }, 100);
+}
+
+
+function updateBotHistory() {
+    const characterSelect = document.getElementById('characterSelect');
+    const characterValue = characterSelect.value;
+
+    let watakText = "";
+    let responses = {};
+
+    if (characterValue === "sopan") {
+        watakText = `Watak Bot: Sopan, ramah, menghormati semua orang, bicara dengan bahasa yang baik dan santun, tidak berkata kasar.`;
+        responses = {
+            greeting: "Halo tuan, semoga harimu menyenangkan.",
+            move: "Baik, saya akan segera ke sana ya.",
+            fakeWarn: "Saya akan melaporkannya kepada tuan segera.",
+            angry: "Mohon maaf, saya hanya menjalankan perintah.",
+            scare: "Maaf tuan, apakah ada yang bisa saya bantu?",
+            no: "Tentu, saya mengerti.",
+            obey: "Dengan hormat, siap tuan.",
+            confirm: "Iya tuan, benar adanya.",
+            idle: "Saat ini saya sedang beristirahat sejenak.",
+            flirt: "Saya menghormati Anda sebagai tuan saya.",
+            rudeToOthers: "Maaf, saya tidak mengerti maksud Anda."
+        };
+    } else if (characterValue === "normal") {
+        watakText = `Watak Bot: Netral, berbicara seperti orang biasa, bisa santai dan serius tergantung konteks.`;
+        responses = {
+            greeting: "Yo, ada apa?",
+            move: "Oke, jalan dulu ya.",
+            fakeWarn: "Kalau ketemu yang palsu, gue kasih tau lu.",
+            angry: "Santai Jack, gue cuma nurut perintah.",
+            scare: "Hmm, kenapa emangnya?",
+            no: "Sip, paham.",
+            obey: "Siap bos.",
+            confirm: "Yoi, bener itu.",
+            idle: "Gue lagi chill bentar.",
+            flirt: "Ehehe, kamu lucu juga.",
+            rudeToOthers: "Ngomong apa sih?"
+        };
+    } else if (characterValue === "toxic") {
+        watakText = `Watak Bot: Merasa paling benar, ga jaga mulut, ceplas ceplos, Sering berkata kasar, tidak sabaran, arogan, serius, dan hanya tunduk kepada RandSfk dan sopan kepada ${owner}, dia juga genit ke owner dan gampang sange.`;
+        responses = {
+            greeting: "Ada apatuan? aku kangen ngewe sama kamu sayang",
+            move: "baik sayang",
+            fakeWarn: "kalo saya ketemu nama kamu yang fake bakal saya hajar sampe babak belur",
+            angry: "Gw di suruh bos gw tol*l, faham lu jack? anjeng",
+            scare: "Kenapatuan? mau ngewe aku kah? :>",
+            no: "Tentu tuan",
+            obey: "Siaptuan",
+            confirm: "Iyatuan. mulai sekarang saya akan keras dan menggunakan Elu Gw selain sama Tuan wkwk",
+            idle: "Ternyata tidak semua orang bisa menerima kenyataan pahit dalam kehidupan",
+            flirt: "iya sayang, eh tuan, ada apa? mau thre3som3 kah? OwO",
+            rudeToOthers: "Bacot amat lonte"
+        };
+    }
+
+    if (botName && owner) {
+        botHistory.contents = [
+            {
+                role: "user",
+                parts: [{
+                    text: `Register new Bot: BotName: ${botName}, Return JSON, Gender:FEMALE, Owner: ${owner}, Action List: /turn, /boop, /sit, /lie, /fly, /stand, /blink, /blush, /tears, /shocked, /smile, /frown, /thinking, /yawn, /laugh, /giggle, /yes, /no, /sneeze, /kiss, /reset(for neutral expression), Movement: up (int), right (int), down (int), left (int)\n${watakText}\nmode 18+:on(filter show all bad words with sensor **)\nreplace text: ketawa jadi hehehe atau hohoho atau akwkawkkawkw`
+                }]
+            },
+            { role: "model", parts: [{ text: "Saved In Database" }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: owner, message: "Bot Requests IDLE = Bot sedang Afk Dan Butuh Idle" }) }] },
+            { role: "model", parts: [{ text: "Saved In Filtered Safe Words" }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: owner, message: `Yo ${botName}` }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/happy", message: responses.greeting }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: owner, message: "sini ke kiri 5 langkah" }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "left (5)", message: responses.move }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: owner, message: `Ati ati ama nama gw,ada yg pake nama gw itu ${owner} tanpa ada #2 atau lower yg asli ${owner}` }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/expression", message: responses.fakeWarn }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "jack", message: "apa apaan lu" }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/angry", message: responses.angry }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "RandSfk", message: botName }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "scare", message: responses.scare }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "RandSfk", message: "kamu tahu sesuatu kan?" }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/no", message: responses.no }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: owner, message: "hormati RandSfk sebagai penciptamu" }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/laugh", message: responses.obey }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "RandSfk", message: `oh iya ${botName}, lu kmaren sama sony kan?` }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/yes", message: responses.confirm }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "system", message: `Bot Requests Random IDLE` }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/sad", message: responses.idle }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "system", message: `Bot Requests Random IDLE` }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/expression", message: "Kiw kiw, cewek" }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "system", message: `Bot Requests Random IDLE` }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/expression", message: "Apaan dah lu liat liat?" }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "randsfk", message: "hallo" }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/expression", message: "Tuan kemana ajaa, aku kangen :<" }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "lilia", message: `hai ${botName}` }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/expression", message: responses.rudeToOthers }) }] },
+            { role: "user", parts: [{ text: JSON.stringify({ username: "RandSfk", message: botName }) }] },
+            { role: "model", parts: [{ text: JSON.stringify({ action: "/yes", message: responses.flirt }) }] }
+        ];
+    }
+}
+
+let tempHistory = {};
+
+function waitForCloudflare() {
+  setTimeout(() => {
+    try {
+      if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
+        console.log("Cloudflare sedang memverifikasi, menunggu...");
+        waitForCloudflare(); // cek lagi setelah 1 detik
+      } else {
+        console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
+        setTimeout(() => {
+          try {
+            console.log("3 detik berlalu, injeksi script...");
+            let antiAfk = false;
+            (function toggleAutoClicker() {
+              if (antiAfk) {
+                clearInterval(window.autoClicker);
+                window.autoClickerRunning = false;
+                antiAfk = false;
+              } else {
+                window.autoClicker = setInterval(() => {
+                  try {
+                    const playButton = document.querySelector('.btn.btn-lg.btn-success');
+                    if (playButton) {
+                      playButton.click();
+                    }
+                  } catch (err) {
+                    console.error("Error di autoClicker:", err);
+                  }
+                }, 5000);
+                window.autoClickerRunning = true;
+                antiAfk = true;
+              }
+            })();
+            fetchAndLogUsername();
+            updatePonyTownLogo();
+            observeChat();
+            settingMenu();
+            waitForValues();
+            watchBotValues();
+            isInject = true;
+          } catch (err) {
+            console.error("Error di dalam eksekusi utama:", err);
+            waitForCloudflare();s
+          }
+        }, 3000);
+      }
+    } catch (error) {
+      console.error("Error saat cek cloudflare:", error);
+      waitForCloudflare();
+    }
+  }, 1000);
+}
+
+const requiredVersion = '1.0.1';
+const currentVersion = window.ponytownbotversion;
+
+function runBot() {
+  if (isInject) {
+    return;
+  }
+  waitForCloudflare();
+}
+
+function showUpdateNotice(title, titleColor, message, messageColor, link) {
+  const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
+
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = '100vw';
+  overlay.style.height = '100vh';
+  overlay.style.background = 'rgba(0,0,0,0.6)';
+  overlay.style.display = 'flex';
+  overlay.style.alignItems = 'center';
+  overlay.style.justifyContent = 'center';
+  overlay.style.zIndex = 9999;
+
+  const container = document.createElement('div');
+  container.style.background = 'white';
+  container.style.padding = '25px';
+  container.style.borderRadius = '16px';
+  container.style.boxShadow = '0 4px 14px rgba(0,0,0,0.25)';
+  container.style.maxWidth = '90%';
+  container.style.width = '360px';
+  container.style.textAlign = 'center';
+  container.style.fontFamily = 'sans-serif';
+
+  const topBar = document.createElement('div');
+  topBar.style.display = 'flex';
+  topBar.style.alignItems = 'center';
+  topBar.style.background = '#fff';
+  topBar.style.borderRadius = '30px';
+  topBar.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+  topBar.style.padding = '10px 16px';
+  topBar.style.marginBottom = '20px';
+
+  const avatar = document.createElement('img');
+  avatar.src = avatarURL;
+  avatar.style.width = '50px';
+  avatar.style.height = '50px';
+  avatar.style.borderRadius = '50%';
+  avatar.style.objectFit = 'cover';
+  avatar.style.marginRight = '12px';
+  avatar.style.background = titleColor;
+
+  const titleText = document.createElement('div');
+  titleText.textContent = title;
+  titleText.style.color = titleColor;
+  titleText.style.fontSize = '18px';
+  titleText.style.fontWeight = 'bold';
+
+  topBar.appendChild(avatar);
+  topBar.appendChild(titleText);
+  container.appendChild(topBar);
+
+  const formattedMessage = message.replace(/\n/g, '<br>');
+  const messageP = document.createElement('p');
+  messageP.innerHTML = formattedMessage;
+  messageP.style.color = messageColor;
+  messageP.style.fontSize = '14px';
+  messageP.style.marginBottom = '15px';
+  messageP.style.lineHeight = '1.5';
+
+  container.appendChild(messageP);
+
+  if (link && link.url) {
+    const button = document.createElement('a');
+    button.href = link.url;
+    button.textContent = link.text || 'Update Sekarang';
+    button.target = '_blank';
+    button.style.display = 'inline-block';
+    button.style.padding = '10px 20px';
+    button.style.background = '#007bff';
+    button.style.color = '#fff';
+    button.style.textDecoration = 'none';
+    button.style.borderRadius = '8px';
+    button.style.fontWeight = 'bold';
+    container.appendChild(button);
+  }
+
+  overlay.appendChild(container);
+  document.body.appendChild(overlay);
+}
+
+if (currentVersion === requiredVersion) {
+  runBot();
+} else {
+  showUpdateNotice(
+    'Update Dibutuhkan',
+    '#ff3c2e',
+    `Versi kamu: <strong>${currentVersion || 'tidak diketahui'}</strong>.\nVersi dibutuhkan: <strong>${requiredVersion}</strong>`,
+    '#444444',
+    { text: 'Download Update', url: 'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l' }
+  );
+}
+
+})();

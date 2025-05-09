@@ -1091,10 +1091,7 @@
   function GetCmd() {
       if (!localStorage.getItem('ptbot_apikey')) {
           function clearHomeContent() {
-              const homeContent = document.querySelector('.mx-auto.home-content');
-              if (homeContent) {
-                  homeContent.innerHTML = '';
-              }
+            removeElement(".mx-auto.text-start.text-large");
           }
           
           function addApiKeyForm() {

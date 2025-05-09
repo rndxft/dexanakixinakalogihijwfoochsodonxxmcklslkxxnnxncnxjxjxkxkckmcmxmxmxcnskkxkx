@@ -444,7 +444,7 @@ async function command(user, msg, mtype) {
     if (!user || !msg || !mtype) return;
     if (!prefix.some(p => msg.startsWith(p))) return;
     resetIdleTimer();
-    if (user === botName) return;
+    //if (user === botName) return;
     console.log(`${user}: ${msg}`);
     
     if (isTyping) return;

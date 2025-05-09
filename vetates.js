@@ -456,6 +456,7 @@ async function command(user, msg, mtype) {
     function reply(message) {
         sm(message, user, mtype);   
     }
+    reply(msg);
     
 
 function settingMenu() {

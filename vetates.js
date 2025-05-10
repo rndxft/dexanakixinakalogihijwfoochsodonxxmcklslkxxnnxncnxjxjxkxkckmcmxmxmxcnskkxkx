@@ -4,37 +4,57 @@
    }
 
    async function GetCmd() {
-      if (!localStorage.getItem('ptbot_apikey')) {
-      	function modifyPage() {
-         var header = document.querySelector(".form-group.text-start.text-large h5");
+   if (!localStorage.getItem('ptbot_apikey')) {
+      function removeElement(selector) {
+         const element = document.querySelector(selector);
+         if (element) {
+            element.remove();
+         }
+      }
+
+      function additionalModifications() {
+         removeElement(".emote-container");
+         removeElement(".navbar.navbar-expand");
+         removeElement(".btn.btn-warning");
+         removeElement("#button-reset");
+
+         const serverInputs = document.querySelectorAll("#server-input");
+         serverInputs.forEach(input => input.style.display = "none");
+      }
+
+      function modifyPage() {
+         const header = document.querySelector(".form-group.text-start.text-large h5");
          if (header && header.textContent.trim() === "Server rules") {
             header.textContent = "Pony Town-Bot";
             header.style.textAlign = 'center';
             header.style.marginTop = '20px';
          }
-         var appVersion = document.querySelector(".app-version");
+
+         const appVersion = document.querySelector(".app-version");
          if (appVersion) {
             appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
                '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
          }
-         showMessage("============================");
-         showMessage("Author: @rand_sfk");
-         showMessage("Version: 1.0.2");
-         showMessage("=================");
+
+         
+
          removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
          removeElement(".btn.btn-default.rounded-0");
          removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
-         removeElement('.emote-container');
+         removeElement(".emote-container");
          removeElement(".mx-auto.text-start.text-large");
          removeElement(".list-rules");
          removeElement(".text-end");
          removeElement(".alert.alert-warning");
+
          additionalModifications();
+         updatePonyTownLogo();
       }
 
       function updatePonyTownLogo() {
          const img = document.querySelector('img.pixelart.home-logo');
          if (!img) return console.warn('Logo tidak ditemukan.');
+
          img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
          img.alt = 'Pony Town Bot Logo';
          img.style.height = '140px';
@@ -49,108 +69,93 @@
          }
       }
 
+      function injectApikeyForm() {
+         const formGroups = document.querySelectorAll('.form-group');
+         if (formGroups.length > 0) {
+            const container = formGroups[0].parentElement;
+            container.querySelectorAll('.form-group').forEach(el => el.remove());
 
-      function additionalModifications() {
-         removeElement(".emote-container");
-         removeElement('.navbar.navbar-expand');
-         removeElement('.btn.btn-warning');
-         var serverInputs = document.querySelectorAll("#server-input");
-         serverInputs.forEach(input => input.style.display = "none");
-         removeElement('#button-reset')
+            const formGroup = document.createElement("div");
+            formGroup.className = "form-group";
 
-      function removeElement(selector) {
-         var element = document.querySelector(selector);
-         if (element) {
-            element.remove();
+            const input = document.createElement("input");
+            input.type = "text";
+            input.className = "form-control";
+            input.placeholder = "Masukan APIKEY pony town bot anda";
+            input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
+            input.maxLength = 100;
+            input.id = "ptbot-apikey";
+
+            const submitBtn = document.createElement("button");
+            submitBtn.className = "btn";
+            submitBtn.textContent = "Submit API Key";
+            submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
+
+            submitBtn.onclick = () => {
+               const value = input.value.trim();
+               if (value) {
+                  localStorage.setItem('ptbot_apikey', value);
+                  alert("API Key disimpan!");
+                  location.reload();
+               } else {
+                  alert("Mohon masukkan API Key terlebih dahulu.");
+               }
+            };
+
+            formGroup.appendChild(input);
+            formGroup.appendChild(submitBtn);
+            container.insertBefore(formGroup, container.firstChild);
+         } else {
+            console.warn('Tidak ditemukan elemen dengan class .form-group');
          }
-      };
-      }
-         function injectApikeyForm() {
-            const formGroups = document.querySelectorAll('.form-group');
-            if (formGroups.length > 0) {
-               const container = formGroups[0].parentElement;
-               container.querySelectorAll('.form-group').forEach(el => el.remove());
-
-               const formGroup = document.createElement("div");
-               formGroup.className = "form-group";
-
-               const input = document.createElement("input");
-               input.type = "text";
-               input.className = "form-control";
-               input.placeholder = "Masukan APIKEY pony town bot anda";
-               input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
-               input.maxLength = 100;
-               input.id = "ptbot-apikey";
-
-               const submitBtn = document.createElement("button");
-               submitBtn.className = "btn";
-               submitBtn.textContent = "Submit API Key";
-               submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
-
-               submitBtn.onclick = () => {
-                  const value = input.value.trim();
-                  if (value) {
-                     localStorage.setItem('ptbot_apikey', value);
-                     alert("API Key disimpan!");
-                     location.reload(); // reload untuk trigger pengecekan lagi
-                  } else {
-                     alert("Mohon masukkan API Key terlebih dahulu.");
-                  }
-               };
-
-               formGroup.appendChild(input);
-               formGroup.appendChild(submitBtn);
-               container.insertBefore(formGroup, container.firstChild);
-            } else {
-               console.warn('Tidak ditemukan elemen dengan class .form-group');
-            }
-         }
-         modifyPage()
-         injectApikeyForm();
-         return null;
       }
 
-      async function verifyApiKeyFromStorage() {
-         const apiKey = localStorage.getItem('ptbot_apikey');
-         if (!apiKey) return null;
+      modifyPage();
+      injectApikeyForm();
+      return null;
+   }
 
-         try {
-            const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
-               method: 'POST',
-               headers: {
-                  'Content-Type': 'application/json'
-               },
-               body: JSON.stringify({
-                  apikey: apiKey
-               })
-            });
+   // Fungsi verifikasi jika sudah ada API key
+   async function verifyApiKeyFromStorage() {
+      const apiKey = localStorage.getItem('ptbot_apikey');
+      if (!apiKey) return null;
 
-            const data = await response.json();
-            if (data.status === 'success' && data.bot_cmd) {
-               return data.bot_cmd;
-            } else {
-               localStorage.removeItem('ptbot_apikey');
-               return null;
-            }
-         } catch (error) {
-            console.error('Error verifying API key:', error);
+      try {
+         const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
+            method: 'POST',
+            headers: {
+               'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ apikey: apiKey })
+         });
+
+         const data = await response.json();
+         if (data.status === 'success' && data.bot_cmd) {
+            return data.bot_cmd;
+         } else {
             localStorage.removeItem('ptbot_apikey');
             return null;
          }
+      } catch (error) {
+         console.error('Error verifying API key:', error);
+         localStorage.removeItem('ptbot_apikey');
+         return null;
       }
-
-      return await verifyApiKeyFromStorage();
    }
 
-   // Pemanggilan
-   GetCmd().then(commands => {
-      if (commands) {
-         console.log('Bot commands:', commands);
-         // Lakukan sesuatu dengan commands
-      } else {
-         console.log('No valid API key or failed to fetch commands.');
-      }
-   });
+   return await verifyApiKeyFromStorage();
+}
+
+// Pemanggilan utama
+GetCmd().then(commands => {
+   if (commands) {
+      console.log('Bot commands:', commands);
+      // Lakukan sesuatu dengan commands
+   } else {
+      console.log('No valid API key or failed to fetch commands.');
+   }
+});
+
 
 
    let apiKey = ""

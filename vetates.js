@@ -2,12 +2,7 @@
    if (window._pb_ky_sc !== "randyganteng") {
       throw new Error("Mau ngapain kamu bang?.");
    }
-   function removeElement(selector) {
-         var element = document.querySelector(selector);
-         if (element) {
-            element.remove();
-         }
-      }
+
    async function GetCmd() {
       if (!localStorage.getItem('ptbot_apikey')) {
          function injectApikeyForm() {
@@ -50,14 +45,7 @@
                console.warn('Tidak ditemukan elemen dengan class .form-group');
             }
          }
-         removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
-         removeElement(".btn.btn-default.rounded-0");
-         removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
-         removeElement('.emote-container');
-         removeElement(".mx-auto.text-start.text-large");
-         removeElement(".list-rules");
-         removeElement(".text-end");
-         removeElement(".alert.alert-warning");
+         modifyPage()
          injectApikeyForm();
          return null;
       }
@@ -871,7 +859,14 @@
          removeElement('.btn.btn-warning');
          var serverInputs = document.querySelectorAll("#server-input");
          serverInputs.forEach(input => input.style.display = "none");
-         removeElement('#button-reset');
+         removeElement('#button-reset')
+
+      function removeElement(selector) {
+         var element = document.querySelector(selector);
+         if (element) {
+            element.remove();
+         }
+      };
       }
 
       function showErrorMessage(message) {

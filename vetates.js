@@ -81,6 +81,8 @@
 
             const formGroup = document.createElement("div");
             formGroup.className = "form-group";
+            formGroup.style.marginTop = "70px";
+            
 
             const input = document.createElement("input");
             input.type = "text";
@@ -92,8 +94,17 @@
 
             const submitBtn = document.createElement("button");
             submitBtn.className = "btn";
-            submitBtn.textContent = "Submit API Key";
+            submitBtn.textContent = "Submit";
             submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
+            submitBtn.style.display = "block";
+            submitBtn.style.margin = "10px auto 0";
+            submitBtn.style.backgroundColor = "#333"; // abu-abu gelap
+            submitBtn.style.color = "#fff";            // teks putih agar kontras
+            submitBtn.style.border = "none";           // hilangkan border default
+            submitBtn.style.padding = "10px 20px";     // ukuran tombol lebih enak
+            submitBtn.style.borderRadius = "5px";      // sudut membulat sedikit
+
+
 
             submitBtn.onclick = () => {
                const value = input.value.trim();

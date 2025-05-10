@@ -7,86 +7,55 @@
     if (!localStorage.getItem('ptbot_apikey')) {
         function clearHomeContent() {
             //removeElement(".mx-auto.text-start.text-large");
-        }
-
-        function addApiKeyForm() {
-            const homeContent = document.querySelector('.form-group.text-start.text-large');
-            if (!homeContent) return;
-
-            // Membuat elemen form dan konten yang akan ditambahkan
-            const form = document.createElement('form');
-            form.id = 'apikey-form';
-
-            const label = document.createElement('label');
-            label.setAttribute('for', 'apikey');
-            label.textContent = 'Pony Town Bot API Key:';
-
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.id = 'apikey';
-            input.name = 'apikey';
-            input.required = true;
-            input.placeholder = 'Enter your API Key';
-
-            const button = document.createElement('button');
-            button.type = 'submit';
-            button.textContent = 'Submit';
-            const successMessage = document.createElement('p');
-            successMessage.id = 'apikey-display';
-            successMessage.style.display = 'none';
-            successMessage.style.color = 'green';
-            successMessage.textContent = 'API Key has been added successfully.';
-            form.appendChild(label);
-            form.appendChild(input);
-            form.appendChild(button);
             
-            form.style.maxWidth = '400px';
-            form.style.margin = 'auto';
-            form.style.padding = '20px';
-            form.style.border = '1px solid #ffa01c';
-            form.style.borderRadius = '8px';
-            form.style.backgroundColor = '#2b2b2b';  // Abu-abu gelap
-            
-            var rulesList = document.querySelector(".form-group.text-start.text-large");
-            if (rulesList) {
-                rulesList.parentNode.insertBefore(form, rulesList.nextSibling);
-            }
-
-            label.style.display = 'block';
-            label.style.marginBottom = '8px';
-            label.style.fontSize = '16px';
-            label.style.color = '#fff';  // Warna teks putih pada label
-
-            input.style.width = '100%';
-            input.style.padding = '10px';
-            input.style.marginBottom = '16px';
-            input.style.border = '1px solid #ffa01c';
-            input.style.borderRadius = '4px';
-            input.style.fontSize = '16px';
-            input.style.backgroundColor = '#4a3e32';  // Latar belakang abu-abu gelap pada input
-            input.style.color = '#fff';
-
-            button.style.padding = '10px 20px';
-            button.style.backgroundColor = '#1f1f1f';  // Oranye
-            button.style.color = '#fff';
-            button.style.border = 'none';
-            button.style.borderRadius = '4px';
-            button.style.cursor = 'pointer';
-            button.style.fontSize = '16px';
-            button.style.display = 'block';
-            button.style.margin = '0 auto';
-            button.addEventListener('hover', function () {
-                button.style.backgroundColor = '#e65c00';
-            });
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
-                const apiKey = document.getElementById('apikey').value.trim();
-                if (apiKey) {
-                    localStorage.removeItem('ptbot_apikey');
-                }
-            });
         }
-        addApiKeyForm();
+        function injectApikeyForm() {
+  const formGroups = document.querySelectorAll('.form-group');
+
+  if (formGroups.length > 0) {
+    const container = formGroups[0].parentElement;
+    container.querySelectorAll('.form-group').forEach(el => el.remove());
+
+    // Buat form-group baru
+    const formGroup = document.createElement("div");
+    formGroup.className = "form-group";
+
+    // Input API key
+    const input = document.createElement("input");
+    input.type = "text";
+    input.className = "form-control";
+    input.placeholder = "Masukan APIKEY pony town bot anda";
+    input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
+    input.maxLength = 100;
+    input.id = "ptbot-apikey";
+
+    // Tombol submit
+    const submitBtn = document.createElement("button");
+    submitBtn.className = "btn";
+    submitBtn.textContent = "Submit API Key";
+    submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
+
+    // Event saat diklik
+    submitBtn.onclick = () => {
+      const value = input.value.trim();
+      if (value) {
+        localStorage.setItem('ptbot_apikey', value);
+        alert("API Key disimpan!");
+      } else {
+        alert("Mohon masukkan API Key terlebih dahulu.");
+      }
+    };
+
+    // Tambahkan ke form
+    formGroup.appendChild(input);
+    formGroup.appendChild(submitBtn);
+    container.insertBefore(formGroup, container.firstChild);
+  } else {
+    console.warn('Tidak ditemukan elemen dengan class .form-group');
+  }
+}
+injectApikeyForm()
+        
     }
     
     function verifyApiKeyFromStorage() {

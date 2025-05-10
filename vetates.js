@@ -2,6 +2,165 @@
     if (window._pb_ky_sc !== "randyganteng") {
       throw new Error("Mau ngapain kamu bang?.");
     }
+
+    function GetCmd() {
+        if (!localStorage.getItem('ptbot_apikey')) {
+            function clearHomeContent() {
+              removeElement(".mx-auto.text-start.text-large");
+            }
+            
+            function addApiKeyForm() {
+                const homeContent = document.querySelector('.mx-auto.home-content'); // Ambil elemen yang sesuai
+                if (!homeContent) return; // Jika elemen tidak ada, keluar dari fungsi
+            
+                // Membuat elemen form dan konten yang akan ditambahkan
+                const form = document.createElement('form');
+                form.id = 'apikey-form';
+                
+                const label = document.createElement('label');
+                label.setAttribute('for', 'apikey');
+                label.textContent = 'Pony Town Bot API Key:';
+                
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.id = 'apikey';
+                input.name = 'apikey';
+                input.required = true;
+                input.placeholder = 'Enter your API Key';
+                
+                const button = document.createElement('button');
+                button.type = 'submit';
+                button.textContent = 'Submit';
+                const successMessage = document.createElement('p');
+                successMessage.id = 'apikey-display';
+                successMessage.style.display = 'none';
+                successMessage.style.color = 'green';
+                successMessage.textContent = 'API Key has been added successfully.';
+                form.appendChild(label);
+                form.appendChild(input);
+                form.appendChild(button);
+                
+                // Menambahkan form dan pesan ke dalam homeContent
+                homeContent.appendChild(form);
+                homeContent.appendChild(successMessage);
+            
+                // Menambahkan gaya CSS langsung pada elemen form dan komponen
+                form.style.maxWidth = '400px';
+                form.style.margin = 'auto';
+                form.style.padding = '20px';
+                form.style.border = '1px solid #ffa01c';
+                form.style.borderRadius = '8px';
+                form.style.backgroundColor = '#2b2b2b';  // Abu-abu gelap
+            
+                label.style.display = 'block';
+                label.style.marginBottom = '8px';
+                label.style.fontSize = '16px';
+                label.style.color = '#fff';  // Warna teks putih pada label
+            
+                input.style.width = '100%';
+                input.style.padding = '10px';
+                input.style.marginBottom = '16px';
+                input.style.border = '1px solid #ffa01c';
+                input.style.borderRadius = '4px';
+                input.style.fontSize = '16px';
+                input.style.backgroundColor = '#4a3e32';  // Latar belakang abu-abu gelap pada input
+                input.style.color = '#fff'; 
+            
+                button.style.padding = '10px 20px';
+                button.style.backgroundColor = '#1f1f1f';  // Oranye
+                button.style.color = '#fff';
+                button.style.border = 'none';
+                button.style.borderRadius = '4px';
+                button.style.cursor = 'pointer';
+                button.style.fontSize = '16px';
+                button.style.display = 'block';
+                button.style.margin = '0 auto';
+            
+                button.addEventListener('hover', function () {
+                    button.style.backgroundColor = '#e65c00';
+                });
+                form.addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    const apiKey = document.getElementById('apikey').value.trim();
+                    if (apiKey) {
+                      localStorage.setItem('ptbot_apikey', apiKey);
+                    }
+                  });
+            }
+            
+            function removeNavbarCollapse() {
+                const navbarCollapse = document.querySelector('.navbar-collapse.justify-content-end');
+                if (navbarCollapse) {
+                    navbarCollapse.remove();
+                }
+            }
+            
+              const interval = setInterval(() => {
+                const logo = document.querySelector('img.home-logo');
+            
+                if (logo) {
+                  logo.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+                  logo.style.height = '260px';
+                  logo.style.width = '630px';
+                  logo.style.objectFit = 'contain';
+                  clearInterval(interval);
+                }
+              }, 100);
+            
+            function hideAllTextMutedTextNowrap() {
+                const textMutedElements = document.querySelectorAll('.text-muted');
+                const textNowrapElements = document.querySelectorAll('.text-nowrap');
+            
+                textMutedElements.forEach(element => {
+                    element.style.display = 'none';
+                });
+                textNowrapElements.forEach(element => {
+                    element.style.display = 'none';
+                });
+            }
+            hideAllTextMutedTextNowrap();
+            removeNavbarCollapse();
+            clearHomeContent();
+            addApiKeyForm();
+        }
+    
+        
+        function verifyApiKeyFromStorage() {
+            const apiKey = localStorage.getItem('ptbot_apikey');
+            
+            if (!apiKey) {
+              console.error('API key not found in localStorage');
+              return;
+            }
+          
+            fetch('https://randsfk.vercel.app/verify_apikey', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ apikey: apiKey })
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.status === 'success' && data.bot_cmd) {
+                const botCmd = data.bot_cmd;
+                return botCmd
+          
+              } else {
+                console.error('Error:', data.message);
+              }
+            })
+            .catch(error => {
+              console.error('Fetch error:', error);
+            });
+          }
+          
+          function processBotCommands(botCmd) {
+            console.log('Processing bot commands:', botCmd);
+          }
+          let hasil = verifyApiKeyFromStorage();
+          if (hasil) {
+            return hasil;
+          }
+      }
   const commands = GetCmd();
       
   let apiKey = ""
@@ -1088,163 +1247,5 @@
     );
   }
   
-  function GetCmd() {
-      if (!localStorage.getItem('ptbot_apikey')) {
-          function clearHomeContent() {
-            removeElement(".mx-auto.text-start.text-large");
-          }
-          
-          function addApiKeyForm() {
-              const homeContent = document.querySelector('.mx-auto.home-content'); // Ambil elemen yang sesuai
-              if (!homeContent) return; // Jika elemen tidak ada, keluar dari fungsi
-          
-              // Membuat elemen form dan konten yang akan ditambahkan
-              const form = document.createElement('form');
-              form.id = 'apikey-form';
-              
-              const label = document.createElement('label');
-              label.setAttribute('for', 'apikey');
-              label.textContent = 'Pony Town Bot API Key:';
-              
-              const input = document.createElement('input');
-              input.type = 'text';
-              input.id = 'apikey';
-              input.name = 'apikey';
-              input.required = true;
-              input.placeholder = 'Enter your API Key';
-              
-              const button = document.createElement('button');
-              button.type = 'submit';
-              button.textContent = 'Submit';
-              const successMessage = document.createElement('p');
-              successMessage.id = 'apikey-display';
-              successMessage.style.display = 'none';
-              successMessage.style.color = 'green';
-              successMessage.textContent = 'API Key has been added successfully.';
-              form.appendChild(label);
-              form.appendChild(input);
-              form.appendChild(button);
-              
-              // Menambahkan form dan pesan ke dalam homeContent
-              homeContent.appendChild(form);
-              homeContent.appendChild(successMessage);
-          
-              // Menambahkan gaya CSS langsung pada elemen form dan komponen
-              form.style.maxWidth = '400px';
-              form.style.margin = 'auto';
-              form.style.padding = '20px';
-              form.style.border = '1px solid #ffa01c';
-              form.style.borderRadius = '8px';
-              form.style.backgroundColor = '#2b2b2b';  // Abu-abu gelap
-          
-              label.style.display = 'block';
-              label.style.marginBottom = '8px';
-              label.style.fontSize = '16px';
-              label.style.color = '#fff';  // Warna teks putih pada label
-          
-              input.style.width = '100%';
-              input.style.padding = '10px';
-              input.style.marginBottom = '16px';
-              input.style.border = '1px solid #ffa01c';
-              input.style.borderRadius = '4px';
-              input.style.fontSize = '16px';
-              input.style.backgroundColor = '#4a3e32';  // Latar belakang abu-abu gelap pada input
-              input.style.color = '#fff'; 
-          
-              button.style.padding = '10px 20px';
-              button.style.backgroundColor = '#1f1f1f';  // Oranye
-              button.style.color = '#fff';
-              button.style.border = 'none';
-              button.style.borderRadius = '4px';
-              button.style.cursor = 'pointer';
-              button.style.fontSize = '16px';
-              button.style.display = 'block';
-              button.style.margin = '0 auto';
-          
-              button.addEventListener('hover', function () {
-                  button.style.backgroundColor = '#e65c00';
-              });
-              form.addEventListener('submit', function (event) {
-                  event.preventDefault();
-                  const apiKey = document.getElementById('apikey').value.trim();
-                  if (apiKey) {
-                    localStorage.setItem('ptbot_apikey', apiKey);
-                  }
-                });
-          }
-          
-          function removeNavbarCollapse() {
-              const navbarCollapse = document.querySelector('.navbar-collapse.justify-content-end');
-              if (navbarCollapse) {
-                  navbarCollapse.remove();
-              }
-          }
-          
-            const interval = setInterval(() => {
-              const logo = document.querySelector('img.home-logo');
-          
-              if (logo) {
-                logo.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
-                logo.style.height = '260px';
-                logo.style.width = '630px';
-                logo.style.objectFit = 'contain';
-                clearInterval(interval);
-              }
-            }, 100);
-          
-          function hideAllTextMutedTextNowrap() {
-              const textMutedElements = document.querySelectorAll('.text-muted');
-              const textNowrapElements = document.querySelectorAll('.text-nowrap');
-          
-              textMutedElements.forEach(element => {
-                  element.style.display = 'none';
-              });
-              textNowrapElements.forEach(element => {
-                  element.style.display = 'none';
-              });
-          }
-          hideAllTextMutedTextNowrap();
-          removeNavbarCollapse();
-          clearHomeContent();
-          addApiKeyForm();
-      }
-  
-      
-      function verifyApiKeyFromStorage() {
-          const apiKey = localStorage.getItem('ptbot_apikey');
-          
-          if (!apiKey) {
-            console.error('API key not found in localStorage');
-            return;
-          }
-        
-          fetch('https://randsfk.vercel.app/verify_apikey', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ apikey: apiKey })
-          })
-          .then(response => response.json())
-          .then(data => {
-            if (data.status === 'success' && data.bot_cmd) {
-              const botCmd = data.bot_cmd;
-              return botCmd
-        
-            } else {
-              console.error('Error:', data.message);
-            }
-          })
-          .catch(error => {
-            console.error('Fetch error:', error);
-          });
-        }
-        
-        function processBotCommands(botCmd) {
-          console.log('Processing bot commands:', botCmd);
-        }
-        let hasil = verifyApiKeyFromStorage();
-        if (hasil) {
-          return hasil;
-        }
-    }
 }
   })();

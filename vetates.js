@@ -2,7 +2,12 @@
    if (window._pb_ky_sc !== "randyganteng") {
       throw new Error("Mau ngapain kamu bang?.");
    }
-
+   function removeElement(selector) {
+         var element = document.querySelector(selector);
+         if (element) {
+            element.remove();
+         }
+      }
    async function GetCmd() {
       if (!localStorage.getItem('ptbot_apikey')) {
          function injectApikeyForm() {
@@ -640,15 +645,6 @@
               <option value="false">Off</option>
           </select>
       </div>
-      <div id="watakBotWrapper" class="text-success py-1" style="display: flex; align-items: center;">
-          <label for="characterSelect" style="width: 200px;">Watak Bot</label>
-          <select class="form-control" id="characterSelect" name="character" style="width: 200px; height: 30px;" required>
-              <option value="sopan">Sopan</option>
-              <option value="normal">Normal</option>
-              <option value="toxic">Toxic</option>
-          </select>
-      </div>
-      
       <div class="text-success py-1" style="display: flex; align-items: center;">
           <label for="prefixInput" style="width: 200px;">Apikey</label>
           <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
@@ -759,10 +755,7 @@
             setTimeout(settingMenu, 2000);
          }
 
-         function toggleWatakBot() {
-            const watakBotWrapper = document.getElementById('watakBotWrapper');
-            watakBotWrapper.style.display = ai ? 'flex' : 'none';
-         }
+         
          const button = document.querySelector('.btn.btn-primary');
          button.addEventListener('click', function () {
             const ownerInput = document.getElementById('ownerInput');
@@ -795,7 +788,7 @@
             antiAfk = antiAfkValue;
             ai = aichatValue;
             apiKey = apikeyValue;
-            watak = characterValue;
+            
             toggleWatakBot();
 
 
@@ -836,12 +829,12 @@
          }
          var appVersion = document.querySelector(".app-version");
          if (appVersion) {
-            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.1 Release</b> ' +
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
                '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
          }
          showMessage("============================");
          showMessage("Author: @rand_sfk");
-         showMessage("Version: 1.0.1");
+         showMessage("Version: 1.0.2");
          showMessage("=================");
          removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
          removeElement(".btn.btn-default.rounded-0");
@@ -879,13 +872,6 @@
          var serverInputs = document.querySelectorAll("#server-input");
          serverInputs.forEach(input => input.style.display = "none");
          removeElement('#button-reset');
-      }
-
-      function removeElement(selector) {
-         var element = document.querySelector(selector);
-         if (element) {
-            element.remove();
-         }
       }
 
       function showErrorMessage(message) {
@@ -959,16 +945,7 @@
       });
 
       let tempHistory = {};
-      Object.defineProperty(window, "watak", {
-         set(value) {
-            this._watak = value;
-            tempHistory = {};
-            updateBotHistory();
-         },
-         get() {
-            return this._watak;
-         }
-      });
+      
 
       function watchBotValues() {
          setInterval(() => {

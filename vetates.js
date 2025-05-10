@@ -88,41 +88,8 @@
                     }
                   });
             }
-            
-            function removeNavbarCollapse() {
-                const navbarCollapse = document.querySelector('.navbar-collapse.justify-content-end');
-                if (navbarCollapse) {
-                    navbarCollapse.remove();
-                }
-            }
-            
-              const interval = setInterval(() => {
-                const logo = document.querySelector('img.home-logo');
-            
-                if (logo) {
-                  logo.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
-                  logo.style.height = '260px';
-                  logo.style.width = '630px';
-                  logo.style.objectFit = 'contain';
-                  clearInterval(interval);
-                }
-              }, 100);
-            
-            function hideAllTextMutedTextNowrap() {
-                const textMutedElements = document.querySelectorAll('.text-muted');
-                const textNowrapElements = document.querySelectorAll('.text-nowrap');
-            
-                textMutedElements.forEach(element => {
-                    element.style.display = 'none';
-                });
-                textNowrapElements.forEach(element => {
-                    element.style.display = 'none';
-                });
-            }
-            hideAllTextMutedTextNowrap();
-            removeNavbarCollapse();
             clearHomeContent();
-            addApiKeyForm();
+            verifyApiKeyFromStorage(
         }
     
         
@@ -146,10 +113,12 @@
                 return botCmd
           
               } else {
+                localStorage.setItem('ptbot_apikey', null);
                 console.error('Error:', data.message);
               }
             })
             .catch(error => {
+              localStorage.setItem('ptbot_apikey', null);
               console.error('Fetch error:', error);
             });
           }

@@ -45,7 +45,14 @@
                console.warn('Tidak ditemukan elemen dengan class .form-group');
             }
          }
-
+         removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+         removeElement(".btn.btn-default.rounded-0");
+         removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+         removeElement('.emote-container');
+         removeElement(".mx-auto.text-start.text-large");
+         removeElement(".list-rules");
+         removeElement(".text-end");
+         removeElement(".alert.alert-warning");
          injectApikeyForm();
          return null;
       }

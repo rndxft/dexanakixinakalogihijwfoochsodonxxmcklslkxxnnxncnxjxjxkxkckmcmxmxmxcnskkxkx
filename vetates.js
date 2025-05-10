@@ -2,59 +2,26 @@
    if (window._pb_ky_sc !== "randyganteng") {
       throw new Error("Mau ngapain kamu bang?.");
    }
-
    async function GetCmd() {
    if (!localStorage.getItem('ptbot_apikey')) {
+      // Utility: hapus elemen dari DOM
       function removeElement(selector) {
          const element = document.querySelector(selector);
-         if (element) {
-            element.remove();
-         }
+         if (element) element.remove();
       }
 
-      function additionalModifications() {
-         removeElement(".emote-container");
-         removeElement(".navbar.navbar-expand");
-         removeElement(".btn.btn-warning");
-         removeElement("#button-reset");
-
-         const serverInputs = document.querySelectorAll("#server-input");
-         serverInputs.forEach(input => input.style.display = "none");
-      }
-
-      function modifyPage() {
-         const header = document.querySelector(".form-group.text-start.text-large h5");
-         if (header && header.textContent.trim() === "Server rules") {
-            header.textContent = "Pony Town-Bot";
-            header.style.textAlign = 'center';
-            header.style.marginTop = '20px';
-         }
-
-         const appVersion = document.querySelector(".app-version");
-         if (appVersion) {
-            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
-               '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
-         }
-
-         removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
-         removeElement(".btn.btn-default.rounded-0");
-         removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
-         removeElement(".emote-container");
-         removeElement(".mx-auto.text-start.text-large");
-         removeElement(".list-rules");
-         removeElement(".text-end");
-         removeElement(".alert.alert-warning");
-
-         additionalModifications();
-         updatePonyTownLogo();
-      }
+      // Utility: tampilkan pesan di halaman
       function showMessage(message) {
-         var existingMessages = document.querySelectorAll('.custom-message');
-         for (var i = 0; i < existingMessages.length; i++) {
-            if (existingMessages[i].textContent === message) {
-               return;
-            }
-         }
+         const msg = document.createElement('div');
+         msg.className = 'custom-message';
+         msg.textContent = message;
+         msg.style.color = '#0f0';
+         msg.style.fontFamily = 'monospace';
+         msg.style.margin = '4px';
+         document.body.appendChild(msg);
+      }
+
+      // Ganti logo Pony Town
       function updatePonyTownLogo() {
          const img = document.querySelector('img.pixelart.home-logo');
          if (!img) return console.warn('Logo tidak ditemukan.');
@@ -73,6 +40,48 @@
          }
       }
 
+      // Modifikasi tambahan layout
+      function additionalModifications() {
+         removeElement(".emote-container");
+         removeElement(".navbar.navbar-expand");
+         removeElement(".btn.btn-warning");
+         removeElement("#button-reset");
+
+         const serverInputs = document.querySelectorAll("#server-input");
+         serverInputs.forEach(input => input.style.display = "none");
+      }
+
+      // Modifikasi halaman utama
+      function modifyPage() {
+         const header = document.querySelector(".form-group.text-start.text-large h5");
+         if (header && header.textContent.trim() === "Server rules") {
+            header.textContent = "Pony Town-Bot";
+            header.style.textAlign = 'center';
+            header.style.marginTop = '20px';
+         }
+
+         const appVersion = document.querySelector(".app-version");
+         if (appVersion) {
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+               '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+         }
+
+         // Hapus elemen yang tidak perlu
+         removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+         removeElement(".btn.btn-default.rounded-0");
+         removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+         removeElement(".emote-container");
+         removeElement(".mx-auto.text-start.text-large");
+         removeElement(".list-rules");
+         removeElement(".text-end");
+         removeElement(".alert.alert-warning");
+
+         // Aksi tambahan dan logo
+         additionalModifications();
+         updatePonyTownLogo();
+      }
+
+      // Buat form input API key
       function injectApikeyForm() {
          const formGroups = document.querySelectorAll('.form-group');
          if (formGroups.length > 0) {
@@ -82,7 +91,6 @@
             const formGroup = document.createElement("div");
             formGroup.className = "form-group";
             formGroup.style.marginTop = "70px";
-            
 
             const input = document.createElement("input");
             input.type = "text";
@@ -98,13 +106,11 @@
             submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
             submitBtn.style.display = "block";
             submitBtn.style.margin = "10px auto 0";
-            submitBtn.style.backgroundColor = "#333"; // abu-abu gelap
-            submitBtn.style.color = "#fff";            // teks putih agar kontras
-            submitBtn.style.border = "none";           // hilangkan border default
-            submitBtn.style.padding = "10px 20px";     // ukuran tombol lebih enak
-            submitBtn.style.borderRadius = "5px";      // sudut membulat sedikit
-
-
+            submitBtn.style.backgroundColor = "#333";
+            submitBtn.style.color = "#fff";
+            submitBtn.style.border = "none";
+            submitBtn.style.padding = "10px 20px";
+            submitBtn.style.borderRadius = "5px";
 
             submitBtn.onclick = () => {
                const value = input.value.trim();
@@ -125,16 +131,17 @@
          }
       }
 
+      // Eksekusi jika tidak ada API Key
       modifyPage();
       injectApikeyForm();
       showMessage("============================");
       showMessage("Author: @rand_sfk");
       showMessage("Version: 1.0.2");
-      showMessage("=================");
+      showMessage("============================");
       return null;
    }
 
-   // Fungsi verifikasi jika sudah ada API key
+   // Verifikasi API Key jika sudah ada
    async function verifyApiKeyFromStorage() {
       const apiKey = localStorage.getItem('ptbot_apikey');
       if (!apiKey) return null;
@@ -165,15 +172,16 @@
    return await verifyApiKeyFromStorage();
 }
 
-// Pemanggilan utama
+// Panggil GetCmd
 GetCmd().then(commands => {
    if (commands) {
       console.log('Bot commands:', commands);
-      // Lakukan sesuatu dengan commands
    } else {
       console.log('No valid API key or failed to fetch commands.');
    }
 });
+
+
 
 
 

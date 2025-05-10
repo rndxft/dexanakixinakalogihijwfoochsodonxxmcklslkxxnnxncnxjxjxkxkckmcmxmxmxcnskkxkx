@@ -6,7 +6,7 @@
     function GetCmd() {
         if (!localStorage.getItem('ptbot_apikey')) {
             function clearHomeContent() {
-                //updatePonyTownLogo();
+                updatePonyTownLogo();
                 showApiKeyFrom();
             }
             

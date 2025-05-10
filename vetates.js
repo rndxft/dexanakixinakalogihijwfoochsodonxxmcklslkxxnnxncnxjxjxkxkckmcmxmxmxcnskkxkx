@@ -6,7 +6,7 @@
    function GetCmd() {
     if (!localStorage.getItem('ptbot_apikey')) {
         function clearHomeContent() {
-            removeElement(".mx-auto.text-start.text-large");
+            //removeElement(".mx-auto.text-start.text-large");
         }
 
         function addApiKeyForm() {
@@ -40,17 +40,17 @@
             form.appendChild(input);
             form.appendChild(button);
             
-            var rulesList = document.querySelector(".form-group.text-start.text-large");
-            if (rulesList) {
-                rulesList.parentNode.insertBefore(form, rulesList.nextSibling);
-            }
-            
             form.style.maxWidth = '400px';
             form.style.margin = 'auto';
             form.style.padding = '20px';
             form.style.border = '1px solid #ffa01c';
             form.style.borderRadius = '8px';
             form.style.backgroundColor = '#2b2b2b';  // Abu-abu gelap
+            
+            var rulesList = document.querySelector(".form-group.text-start.text-large");
+            if (rulesList) {
+                rulesList.parentNode.insertBefore(form, rulesList.nextSibling);
+            }
 
             label.style.display = 'block';
             label.style.marginBottom = '8px';
@@ -86,15 +86,15 @@
                 }
             });
         }
-        clearHomeContent();
         addApiKeyForm();
     }
-
+    
     function verifyApiKeyFromStorage() {
         const apiKey = localStorage.getItem('ptbot_apikey');
 
         if (!apiKey) {
             console.error('API key not found in localStorage');
+            localStorage.removeItem('ptbot_apikey');
             return;
         }
 
@@ -119,6 +119,9 @@
 
             });
     }
+    
+}
+
     let hasil = verifyApiKeyFromStorage();
     if (hasil) {
         return hasil;

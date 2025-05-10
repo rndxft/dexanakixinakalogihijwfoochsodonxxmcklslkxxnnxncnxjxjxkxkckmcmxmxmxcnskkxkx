@@ -119,10 +119,6 @@
 
             });
     }
-
-    function processBotCommands(botCmd) {
-        console.log('Processing bot commands:', botCmd);
-    }
     let hasil = verifyApiKeyFromStorage();
     if (hasil) {
         return hasil;

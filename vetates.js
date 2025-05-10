@@ -133,11 +133,11 @@
 
       // Eksekusi jika tidak ada API Key
       modifyPage();
-      injectApikeyForm();
       showMessage("============================");
       showMessage("Author: @rand_sfk");
       showMessage("Version: 1.0.2");
       showMessage("============================");
+      injectApikeyForm();
       return null;
    }
 

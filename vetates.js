@@ -3,182 +3,174 @@
       throw new Error("Mau ngapain kamu bang?.");
    }
    async function GetCmd() {
-   if (!localStorage.getItem('ptbot_apikey')) {
-      // Utility: hapus elemen dari DOM
-      function removeElement(selector) {
-         const element = document.querySelector(selector);
-         if (element) element.remove();
-      }
-
-      // Utility: tampilkan pesan di halaman
-      function showMessage(message) {
-         const msg = document.createElement('div');
-         msg.className = 'custom-message';
-         msg.textContent = message;
-         msg.style.color = '#0f0';
-         msg.style.fontFamily = 'monospace';
-         msg.style.margin = '4px';
-         document.body.appendChild(msg);
-      }
-
-      // Ganti logo Pony Town
-      function updatePonyTownLogo() {
-         const img = document.querySelector('img.pixelart.home-logo');
-         if (!img) return console.warn('Logo tidak ditemukan.');
-
-         img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
-         img.alt = 'Pony Town Bot Logo';
-         img.style.height = '140px';
-         img.style.imageRendering = 'pixelated';
-         img.style.display = 'block';
-
-         const parent = img.parentElement;
-         if (parent) {
-            parent.style.display = 'flex';
-            parent.style.justifyContent = 'center';
-            parent.style.alignItems = 'center';
-         }
-      }
-
-      // Modifikasi tambahan layout
-      function additionalModifications() {
-         removeElement(".emote-container");
-         removeElement(".navbar.navbar-expand");
-         removeElement(".btn.btn-warning");
-         removeElement("#button-reset");
-
-         const serverInputs = document.querySelectorAll("#server-input");
-         serverInputs.forEach(input => input.style.display = "none");
-      }
-
-      // Modifikasi halaman utama
-      function modifyPage() {
-         const header = document.querySelector(".form-group.text-start.text-large h5");
-         if (header && header.textContent.trim() === "Server rules") {
-            header.textContent = "Pony Town-Bot";
-            header.style.textAlign = 'center';
-            header.style.marginTop = '20px';
+      if (!localStorage.getItem('ptbot_apikey')) {
+         // Utility: hapus elemen dari DOM
+         function removeElement(selector) {
+            const element = document.querySelector(selector);
+            if (element) element.remove();
          }
 
-         const appVersion = document.querySelector(".app-version");
-         if (appVersion) {
-            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
-               '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+         // Utility: tampilkan pesan di halaman
+         function showMessage(message) {
+            const msg = document.createElement('div');
+            msg.className = 'custom-message';
+            msg.textContent = message;
+            msg.style.color = '#0f0';
+            msg.style.fontFamily = 'monospace';
+            msg.style.margin = '4px';
+            document.body.appendChild(msg);
          }
 
-         // Hapus elemen yang tidak perlu
-         removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
-         removeElement(".btn.btn-default.rounded-0");
-         removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
-         removeElement(".emote-container");
-         removeElement(".mx-auto.text-start.text-large");
-         removeElement(".list-rules");
-         removeElement(".text-end");
-         removeElement(".alert.alert-warning");
+         // Ganti logo Pony Town
+         function updatePonyTownLogo() {
+            const img = document.querySelector('img.pixelart.home-logo');
+            if (!img) return console.warn('Logo tidak ditemukan.');
 
-         // Aksi tambahan dan logo
-         additionalModifications();
-         updatePonyTownLogo();
-      }
+            img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+            img.alt = 'Pony Town Bot Logo';
+            img.style.height = '140px';
+            img.style.imageRendering = 'pixelated';
+            img.style.display = 'block';
 
-      // Buat form input API key
-      function injectApikeyForm() {
-         const formGroups = document.querySelectorAll('.form-group');
-         if (formGroups.length > 0) {
-            const container = formGroups[0].parentElement;
-            container.querySelectorAll('.form-group').forEach(el => el.remove());
-
-            const formGroup = document.createElement("div");
-            formGroup.className = "form-group";
-            formGroup.style.marginTop = "70px";
-
-            const input = document.createElement("input");
-            input.type = "text";
-            input.className = "form-control";
-            input.placeholder = "Masukan APIKEY pony town bot anda";
-            input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
-            input.maxLength = 100;
-            input.id = "ptbot-apikey";
-
-            const submitBtn = document.createElement("button");
-            submitBtn.className = "btn";
-            submitBtn.textContent = "Submit";
-            submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
-            submitBtn.style.display = "block";
-            submitBtn.style.margin = "10px auto 0";
-            submitBtn.style.backgroundColor = "#333";
-            submitBtn.style.color = "#fff";
-            submitBtn.style.border = "none";
-            submitBtn.style.padding = "10px 20px";
-            submitBtn.style.borderRadius = "5px";
-
-            submitBtn.onclick = () => {
-               const value = input.value.trim();
-               if (value) {
-                  localStorage.setItem('ptbot_apikey', value);
-                  alert("API Key disimpan!");
-                  location.reload();
-               } else {
-                  alert("Mohon masukkan API Key terlebih dahulu.");
-               }
-            };
-
-            formGroup.appendChild(input);
-            formGroup.appendChild(submitBtn);
-            container.insertBefore(formGroup, container.firstChild);
-         } else {
-            console.warn('Tidak ditemukan elemen dengan class .form-group');
+            const parent = img.parentElement;
+            if (parent) {
+               parent.style.display = 'flex';
+               parent.style.justifyContent = 'center';
+               parent.style.alignItems = 'center';
+            }
          }
+
+         // Modifikasi tambahan layout
+         function additionalModifications() {
+            removeElement(".emote-container");
+            removeElement(".navbar.navbar-expand");
+            removeElement(".btn.btn-warning");
+            removeElement("#button-reset");
+
+            const serverInputs = document.querySelectorAll("#server-input");
+            serverInputs.forEach(input => input.style.display = "none");
+         }
+
+         // Modifikasi halaman utama
+         function modifyPage() {
+            const header = document.querySelector(".form-group.text-start.text-large h5");
+            if (header && header.textContent.trim() === "Server rules") {
+               header.textContent = "Pony Town-Bot";
+               header.style.textAlign = 'center';
+               header.style.marginTop = '20px';
+            }
+
+            const appVersion = document.querySelector(".app-version");
+            if (appVersion) {
+               appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                  '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+            }
+
+            // Hapus elemen yang tidak perlu
+            removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+            removeElement(".btn.btn-default.rounded-0");
+            removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+            removeElement(".emote-container");
+            removeElement(".mx-auto.text-start.text-large");
+            removeElement(".list-rules");
+            removeElement(".text-end");
+            removeElement(".alert.alert-warning");
+
+            // Aksi tambahan dan logo
+            additionalModifications();
+            updatePonyTownLogo();
+         }
+
+         // Buat form input API key
+         function injectApikeyForm() {
+            const formGroups = document.querySelectorAll('.form-group');
+            if (formGroups.length > 0) {
+               const container = formGroups[0].parentElement;
+               container.querySelectorAll('.form-group').forEach(el => el.remove());
+
+               const formGroup = document.createElement("div");
+               formGroup.className = "form-group";
+               formGroup.style.marginTop = "70px";
+
+               const input = document.createElement("input");
+               input.type = "text";
+               input.className = "form-control";
+               input.placeholder = "Masukan APIKEY pony town bot anda";
+               input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
+               input.maxLength = 100;
+               input.id = "ptbot-apikey";
+
+               const submitBtn = document.createElement("button");
+               submitBtn.className = "btn";
+               submitBtn.textContent = "Submit";
+               submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
+               submitBtn.style.display = "block";
+               submitBtn.style.margin = "10px auto 0";
+               submitBtn.style.backgroundColor = "#333";
+               submitBtn.style.color = "#fff";
+               submitBtn.style.border = "none";
+               submitBtn.style.padding = "10px 20px";
+               submitBtn.style.borderRadius = "5px";
+
+               submitBtn.onclick = () => {
+                  const value = input.value.trim();
+                  if (value) {
+                     localStorage.setItem('ptbot_apikey', value);
+                     alert("API Key disimpan!");
+                     location.reload();
+                  } else {
+                     alert("Mohon masukkan API Key terlebih dahulu.");
+                  }
+               };
+
+               formGroup.appendChild(input);
+               formGroup.appendChild(submitBtn);
+               container.insertBefore(formGroup, container.firstChild);
+            } else {
+               console.warn('Tidak ditemukan elemen dengan class .form-group');
+            }
+         }
+
+         // Eksekusi jika tidak ada API Key
+         modifyPage();
+         injectApikeyForm();
+         return null;
       }
 
-      // Eksekusi jika tidak ada API Key
-      modifyPage();
-      injectApikeyForm();
-      return null;
-   }
+      // Verifikasi API Key jika sudah ada
+      async function verifyApiKeyFromStorage() {
+         const apiKey = localStorage.getItem('ptbot_apikey');
+         if (!apiKey) return null;
 
-   // Verifikasi API Key jika sudah ada
-   async function verifyApiKeyFromStorage() {
-      const apiKey = localStorage.getItem('ptbot_apikey');
-      if (!apiKey) return null;
+         try {
+            const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json'
+               },
+               body: JSON.stringify({
+                  apikey: apiKey
+               })
+            });
 
-      try {
-         const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
-            method: 'POST',
-            headers: {
-               'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ apikey: apiKey })
-         });
-
-         const data = await response.json();
-         if (data.status === 'success' && data.bot_cmd) {
-            return data.bot_cmd;
-         } else {
+            const data = await response.json();
+            if (data.status === 'success' && data.bot_cmd) {
+               return data.bot_cmd;
+            } else {
+               localStorage.removeItem('ptbot_apikey');
+               return null;
+            }
+         } catch (error) {
+            console.error('Error verifying API key:', error);
             localStorage.removeItem('ptbot_apikey');
             return null;
          }
-      } catch (error) {
-         console.error('Error verifying API key:', error);
-         localStorage.removeItem('ptbot_apikey');
-         return null;
       }
+
+      return await verifyApiKeyFromStorage();
    }
 
-   return await verifyApiKeyFromStorage();
-}
-
-// Panggil GetCmd
-GetCmd().then(commands => {
-   if (commands) {
-      console.log('Bot commands:', commands);
-   } else {
-      console.log('No valid API key or failed to fetch commands.');
-   }
-});
-
-
-
+   // Panggil GetCmd
 
 
    let apiKey = ""
@@ -831,7 +823,7 @@ GetCmd().then(commands => {
             setTimeout(settingMenu, 2000);
          }
 
-         
+
          const button = document.querySelector('.btn.btn-primary');
          button.addEventListener('click', function () {
             const ownerInput = document.getElementById('ownerInput');
@@ -864,7 +856,7 @@ GetCmd().then(commands => {
             antiAfk = antiAfkValue;
             ai = aichatValue;
             apiKey = apikeyValue;
-            
+
             toggleWatakBot();
 
 
@@ -949,12 +941,12 @@ GetCmd().then(commands => {
          serverInputs.forEach(input => input.style.display = "none");
          removeElement('#button-reset')
 
-      function removeElement(selector) {
-         var element = document.querySelector(selector);
-         if (element) {
-            element.remove();
-         }
-      };
+         function removeElement(selector) {
+            var element = document.querySelector(selector);
+            if (element) {
+               element.remove();
+            }
+         };
       }
 
       function showErrorMessage(message) {
@@ -1028,7 +1020,7 @@ GetCmd().then(commands => {
       });
 
       let tempHistory = {};
-      
+
 
       function watchBotValues() {
          setInterval(() => {
@@ -1410,6 +1402,14 @@ GetCmd().then(commands => {
                               antiAfk = true;
                            }
                         })();
+                        GetCmd().then(commands => {
+                           if (commands) {
+                              console.log('Bot commands:', commands);
+                           } else {
+                              console.log('No valid API key or failed to fetch commands.');
+                           }
+                        });
+
                         fetchAndLogUsername();
                         updatePonyTownLogo();
                         observeChat();

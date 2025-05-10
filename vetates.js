@@ -5,6 +5,66 @@
 
    async function GetCmd() {
       if (!localStorage.getItem('ptbot_apikey')) {
+      	function modifyPage() {
+         var header = document.querySelector(".form-group.text-start.text-large h5");
+         if (header && header.textContent.trim() === "Server rules") {
+            header.textContent = "Pony Town-Bot";
+            header.style.textAlign = 'center';
+            header.style.marginTop = '20px';
+         }
+         var appVersion = document.querySelector(".app-version");
+         if (appVersion) {
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+               '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+         }
+         showMessage("============================");
+         showMessage("Author: @rand_sfk");
+         showMessage("Version: 1.0.2");
+         showMessage("=================");
+         removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+         removeElement(".btn.btn-default.rounded-0");
+         removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+         removeElement('.emote-container');
+         removeElement(".mx-auto.text-start.text-large");
+         removeElement(".list-rules");
+         removeElement(".text-end");
+         removeElement(".alert.alert-warning");
+         additionalModifications();
+      }
+
+      function updatePonyTownLogo() {
+         const img = document.querySelector('img.pixelart.home-logo');
+         if (!img) return console.warn('Logo tidak ditemukan.');
+         img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+         img.alt = 'Pony Town Bot Logo';
+         img.style.height = '140px';
+         img.style.imageRendering = 'pixelated';
+         img.style.display = 'block';
+
+         const parent = img.parentElement;
+         if (parent) {
+            parent.style.display = 'flex';
+            parent.style.justifyContent = 'center';
+            parent.style.alignItems = 'center';
+         }
+      }
+
+
+      function additionalModifications() {
+         removeElement(".emote-container");
+         removeElement('.navbar.navbar-expand');
+         removeElement('.btn.btn-warning');
+         var serverInputs = document.querySelectorAll("#server-input");
+         serverInputs.forEach(input => input.style.display = "none");
+         removeElement('#button-reset')
+
+      function removeElement(selector) {
+         var element = document.querySelector(selector);
+         if (element) {
+            element.remove();
+         }
+      };
+      }
          function injectApikeyForm() {
             const formGroups = document.querySelectorAll('.form-group');
             if (formGroups.length > 0) {

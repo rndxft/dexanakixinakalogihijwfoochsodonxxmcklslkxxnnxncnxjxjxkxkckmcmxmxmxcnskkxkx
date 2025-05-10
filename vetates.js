@@ -36,8 +36,6 @@
                '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
          }
 
-         
-
          removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
          removeElement(".btn.btn-default.rounded-0");
          removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
@@ -50,7 +48,13 @@
          additionalModifications();
          updatePonyTownLogo();
       }
-
+      function showMessage(message) {
+         var existingMessages = document.querySelectorAll('.custom-message');
+         for (var i = 0; i < existingMessages.length; i++) {
+            if (existingMessages[i].textContent === message) {
+               return;
+            }
+         }
       function updatePonyTownLogo() {
          const img = document.querySelector('img.pixelart.home-logo');
          if (!img) return console.warn('Logo tidak ditemukan.');
@@ -112,6 +116,10 @@
 
       modifyPage();
       injectApikeyForm();
+      showMessage("============================");
+      showMessage("Author: @rand_sfk");
+      showMessage("Version: 1.0.2");
+      showMessage("=================");
       return null;
    }
 

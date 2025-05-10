@@ -4,110 +4,103 @@
     }
 
     function GetCmd() {
-        if (!localStorage.getItem('ptbot_apikey')) {
-            function clearHomeContent() {
-                updatePonyTownLogo();
-                showApiKeyFrom();
-            }
-            
-            function showApiKeyForm() {
-                // Cek apakah form sudah ada sebelumnya
-                var existingForm = document.querySelector('.apikey-form');
-                if (existingForm) {
-                    return; // Jika form sudah ada, tidak perlu membuat form baru
-                }
-            
-                // Membuat elemen form
-                var formElement = document.createElement('form');
-                formElement.classList.add('apikey-form'); // Menambahkan kelas agar bisa dicek di lain waktu
-            
-                // Membuat input untuk API Key
-                var inputLabel = document.createElement('label');
-                inputLabel.textContent = 'Enter your API Key:';
-                inputLabel.setAttribute('for', 'apikey');
-                
-                var inputElement = document.createElement('input');
-                inputElement.type = 'text';
-                inputElement.id = 'apikey';
-                inputElement.name = 'apikey';
-                inputElement.placeholder = 'Your API Key here...';
-                inputElement.required = true;
-            
-                // Membuat tombol submit
-                var submitButton = document.createElement('button');
-                submitButton.type = 'submit';
-                submitButton.textContent = 'Submit';
-                submitButton.style.marginTop = '10px';
-            
-                // Menambahkan elemen input dan tombol ke dalam form
-                formElement.appendChild(inputLabel);
-                formElement.appendChild(inputElement);
-                formElement.appendChild(submitButton);
-            
-                // Menyisipkan form setelah elemen dengan kelas 'form-group.text-start.text-large'
-                var rulesList = document.querySelector(".form-group.text-start.text-large");
-                if (rulesList) {
-                    rulesList.parentNode.insertBefore(formElement, rulesList.nextSibling);
-                } else {
-                    console.log('Elemen dengan kelas ".form-group.text-start.text-large" tidak ditemukan');
-                }
-            
-                // Menambahkan event listener pada form untuk menangani submit
-                formElement.addEventListener('submit', function (event) {
-                    event.preventDefault(); // Mencegah form untuk reload halaman
-                    const apiKey = inputElement.value;
-                    console.log('API Key submitted: ', apiKey);
-            
-                    // Simpan API Key di localStorage atau kirim ke server
-                    localStorage.setItem('ptbot_apikey', apiKey);
-                    alert('API Key has been saved!');
-                });
-            }
-
+        function clearHomeContent() {
+            showApiKeyForm();
         }
-            clearHomeContent();
-            verifyApiKeyFromStorage(
+        if (!localStorage.getItem('ptbot_apikey')) {
+            clearHomeContent(); // If no API key, show form
+        } else {
+            verifyApiKeyFromStorage(); // Verify the API key if exists
+        }
     }
     
-        
-        function verifyApiKeyFromStorage() {
-            const apiKey = localStorage.getItem('ptbot_apikey');
-            
-            if (!apiKey) {
-              console.error('API key not found in localStorage');
-              return;
-            }
-          
-            fetch('https://randsfk.vercel.app/verify_apikey', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ apikey: apiKey })
-            })
-            .then(response => response.json())
-            .then(data => {
-              if (data.status === 'success' && data.bot_cmd) {
+    // Function to show the API key form
+    function showApiKeyForm() {
+        // Check if form already exists to avoid creating duplicates
+        var existingForm = document.querySelector('.apikey-form');
+        if (existingForm) {
+            return; // Exit if form already exists
+        }
+    
+        // Create form element
+        var formElement = document.createElement('form');
+        formElement.classList.add('apikey-form'); // Add class for future reference
+    
+        // Create input for API key
+        var inputLabel = document.createElement('label');
+        inputLabel.textContent = 'Enter your API Key:';
+        inputLabel.setAttribute('for', 'apikey');
+    
+        var inputElement = document.createElement('input');
+        inputElement.type = 'text';
+        inputElement.id = 'apikey';
+        inputElement.name = 'apikey';
+        inputElement.placeholder = 'Your API Key here...';
+        inputElement.required = true;
+    
+        // Create submit button
+        var submitButton = document.createElement('button');
+        submitButton.type = 'submit';
+        submitButton.textContent = 'Submit';
+        submitButton.style.marginTop = '10px';
+    
+        // Append input and button to form
+        formElement.appendChild(inputLabel);
+        formElement.appendChild(inputElement);
+        formElement.appendChild(submitButton);
+    
+        // Insert form after target element
+        var rulesList = document.querySelector(".form-group.text-start.text-large");
+        if (rulesList) {
+            rulesList.parentNode.insertBefore(formElement, rulesList.nextSibling);
+        } else {
+            console.log('Element with class ".form-group.text-start.text-large" not found');
+        }
+    
+        // Add submit event listener to the form
+        formElement.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission reload
+            const apiKey = inputElement.value;
+            console.log('API Key submitted: ', apiKey);
+    
+            // Save API key to localStorage
+            localStorage.setItem('ptbot_apikey', apiKey);
+            alert('API Key has been saved!');
+        });
+    }
+    
+    // Function to verify API key from localStorage
+    function verifyApiKeyFromStorage() {
+        const apiKey = localStorage.getItem('ptbot_apikey');
+    
+        if (!apiKey) {
+            console.error('API key not found in localStorage');
+            return;
+        }
+    
+        // Verify API key with server
+        fetch('https://randsfk.vercel.app/verify_apikey', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ apikey: apiKey })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success' && data.bot_cmd) {
                 const botCmd = data.bot_cmd;
-                return botCmd
-          
-              } else {
-                localStorage.setItem('ptbot_apikey', null);
+                console.log('Bot command:', botCmd);
+                return botCmd; // Return bot command
+            } else {
+                localStorage.removeItem('ptbot_apikey');
                 console.error('Error:', data.message);
-              }
-            })
-            .catch(error => {
-              localStorage.setItem('ptbot_apikey', null);
-              console.error('Fetch error:', error);
-            });
-          }
-          
-          function processBotCommands(botCmd) {
-            console.log('Processing bot commands:', botCmd);
-          }
-          let hasil = verifyApiKeyFromStorage();
-          if (hasil) {
-            return hasil;
-          }
-      }
+            }
+        })
+        .catch(error => {
+            localStorage.removeItem('ptbot_apikey');
+            console.error('Fetch error:', error);
+        });
+    }
+
   const commands = GetCmd();
       
   let apiKey = ""

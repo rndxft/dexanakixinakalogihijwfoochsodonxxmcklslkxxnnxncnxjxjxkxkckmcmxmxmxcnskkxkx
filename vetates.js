@@ -10,7 +10,7 @@
             }
             
             function addApiKeyForm() {
-                const homeContent = document.querySelector('.mx-auto.home-content'); // Ambil elemen yang sesuai
+                const homeContent = document.querySelector('.mx-auto.text-start.text-large'); // Ambil elemen yang sesuai
                 if (!homeContent) return; // Jika elemen tidak ada, keluar dari fungsi
             
                 // Membuat elemen form dan konten yang akan ditambahkan

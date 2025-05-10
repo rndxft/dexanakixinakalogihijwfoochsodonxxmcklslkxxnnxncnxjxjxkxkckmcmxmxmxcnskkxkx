@@ -10,7 +10,7 @@
         }
 
         function addApiKeyForm() {
-            const homeContent = document.querySelector('.form-group');
+            const homeContent = document.querySelector('.form-group.text-start.text-large');
             if (!homeContent) return;
 
             // Membuat elemen form dan konten yang akan ditambahkan
@@ -39,12 +39,12 @@
             form.appendChild(label);
             form.appendChild(input);
             form.appendChild(button);
-
-            // Menambahkan form dan pesan ke dalam homeContent
-            homeContent.appendChild(form);
-            homeContent.appendChild(successMessage);
-
-            // Menambahkan gaya CSS langsung pada elemen form dan komponen
+            
+            var rulesList = document.querySelector(".form-group.text-start.text-large");
+            if (rulesList) {
+                rulesList.parentNode.insertBefore(form, rulesList.nextSibling);
+            }
+            
             form.style.maxWidth = '400px';
             form.style.margin = 'auto';
             form.style.padding = '20px';
@@ -75,7 +75,6 @@
             button.style.fontSize = '16px';
             button.style.display = 'block';
             button.style.margin = '0 auto';
-
             button.addEventListener('hover', function () {
                 button.style.backgroundColor = '#e65c00';
             });
@@ -83,47 +82,13 @@
                 event.preventDefault();
                 const apiKey = document.getElementById('apikey').value.trim();
                 if (apiKey) {
-                    localStorage.setItem('ptbot_apikey', apiKey);
+                    localStorage.removeItem('ptbot_apikey');
                 }
             });
         }
-
-        function removeNavbarCollapse() {
-            const navbarCollapse = document.querySelector('.navbar-collapse.justify-content-end');
-            if (navbarCollapse) {
-                navbarCollapse.remove();
-            }
-        }
-
-        const interval = setInterval(() => {
-            const logo = document.querySelector('img.home-logo');
-
-            if (logo) {
-                logo.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
-                logo.style.height = '260px';
-                logo.style.width = '630px';
-                logo.style.objectFit = 'contain';
-                clearInterval(interval);
-            }
-        }, 100);
-
-        function hideAllTextMutedTextNowrap() {
-            const textMutedElements = document.querySelectorAll('.text-muted');
-            const textNowrapElements = document.querySelectorAll('.text-nowrap');
-
-            textMutedElements.forEach(element => {
-                element.style.display = 'none';
-            });
-            textNowrapElements.forEach(element => {
-                element.style.display = 'none';
-            });
-        }
-        hideAllTextMutedTextNowrap();
-        removeNavbarCollapse();
         clearHomeContent();
         addApiKeyForm();
     }
-
 
     function verifyApiKeyFromStorage() {
         const apiKey = localStorage.getItem('ptbot_apikey');

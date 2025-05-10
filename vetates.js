@@ -7,90 +7,67 @@
         if (!localStorage.getItem('ptbot_apikey')) {
             function clearHomeContent() {
                 //updatePonyTownLogo();
-                modifyPage();
+                showApiKeyFrom();
             }
             
-            function addApiKeyForm() {
-                const homeContent = document.querySelector('.form-group.text-start.text-large'); // Ambil elemen yang sesuai
-                if (!homeContent) return; // Jika elemen tidak ada, keluar dari fungsi
+            function showApiKeyForm() {
+                // Cek apakah form sudah ada sebelumnya
+                var existingForm = document.querySelector('.apikey-form');
+                if (existingForm) {
+                    return; // Jika form sudah ada, tidak perlu membuat form baru
+                }
             
-                // Membuat elemen form dan konten yang akan ditambahkan
-                const form = document.createElement('form');
-                form.id = 'apikey-form';
+                // Membuat elemen form
+                var formElement = document.createElement('form');
+                formElement.classList.add('apikey-form'); // Menambahkan kelas agar bisa dicek di lain waktu
+            
+                // Membuat input untuk API Key
+                var inputLabel = document.createElement('label');
+                inputLabel.textContent = 'Enter your API Key:';
+                inputLabel.setAttribute('for', 'apikey');
                 
-                const label = document.createElement('label');
-                label.setAttribute('for', 'apikey');
-                label.textContent = 'Pony Town Bot API Key:';
-                
-                const input = document.createElement('input');
-                input.type = 'text';
-                input.id = 'apikey';
-                input.name = 'apikey';
-                input.required = true;
-                input.placeholder = 'Enter your API Key';
-                
-                const button = document.createElement('button');
-                button.type = 'submit';
-                button.textContent = 'Submit';
-                const successMessage = document.createElement('p');
-                successMessage.id = 'apikey-display';
-                successMessage.style.display = 'none';
-                successMessage.style.color = 'green';
-                successMessage.textContent = 'API Key has been added successfully.';
-                form.appendChild(label);
-                form.appendChild(input);
-                form.appendChild(button);
-                
-                // Menambahkan form dan pesan ke dalam homeContent
-                homeContent.appendChild(form);
-                homeContent.appendChild(successMessage);
+                var inputElement = document.createElement('input');
+                inputElement.type = 'text';
+                inputElement.id = 'apikey';
+                inputElement.name = 'apikey';
+                inputElement.placeholder = 'Your API Key here...';
+                inputElement.required = true;
             
-                // Menambahkan gaya CSS langsung pada elemen form dan komponen
-                form.style.maxWidth = '400px';
-                form.style.margin = 'auto';
-                form.style.padding = '20px';
-                form.style.border = '1px solid #ffa01c';
-                form.style.borderRadius = '8px';
-                form.style.backgroundColor = '#2b2b2b';  // Abu-abu gelap
+                // Membuat tombol submit
+                var submitButton = document.createElement('button');
+                submitButton.type = 'submit';
+                submitButton.textContent = 'Submit';
+                submitButton.style.marginTop = '10px';
             
-                label.style.display = 'block';
-                label.style.marginBottom = '8px';
-                label.style.fontSize = '16px';
-                label.style.color = '#fff';  // Warna teks putih pada label
+                // Menambahkan elemen input dan tombol ke dalam form
+                formElement.appendChild(inputLabel);
+                formElement.appendChild(inputElement);
+                formElement.appendChild(submitButton);
             
-                input.style.width = '100%';
-                input.style.padding = '10px';
-                input.style.marginBottom = '16px';
-                input.style.border = '1px solid #ffa01c';
-                input.style.borderRadius = '4px';
-                input.style.fontSize = '16px';
-                input.style.backgroundColor = '#4a3e32';  // Latar belakang abu-abu gelap pada input
-                input.style.color = '#fff'; 
+                // Menyisipkan form setelah elemen dengan kelas 'form-group.text-start.text-large'
+                var rulesList = document.querySelector(".form-group.text-start.text-large");
+                if (rulesList) {
+                    rulesList.parentNode.insertBefore(formElement, rulesList.nextSibling);
+                } else {
+                    console.log('Elemen dengan kelas ".form-group.text-start.text-large" tidak ditemukan');
+                }
             
-                button.style.padding = '10px 20px';
-                button.style.backgroundColor = '#1f1f1f';  // Oranye
-                button.style.color = '#fff';
-                button.style.border = 'none';
-                button.style.borderRadius = '4px';
-                button.style.cursor = 'pointer';
-                button.style.fontSize = '16px';
-                button.style.display = 'block';
-                button.style.margin = '0 auto';
+                // Menambahkan event listener pada form untuk menangani submit
+                formElement.addEventListener('submit', function (event) {
+                    event.preventDefault(); // Mencegah form untuk reload halaman
+                    const apiKey = inputElement.value;
+                    console.log('API Key submitted: ', apiKey);
             
-                button.addEventListener('hover', function () {
-                    button.style.backgroundColor = '#e65c00';
+                    // Simpan API Key di localStorage atau kirim ke server
+                    localStorage.setItem('ptbot_apikey', apiKey);
+                    alert('API Key has been saved!');
                 });
-                form.addEventListener('submit', function (event) {
-                    event.preventDefault();
-                    const apiKey = document.getElementById('apikey').value.trim();
-                    if (apiKey) {
-                      localStorage.setItem('ptbot_apikey', apiKey);
-                    }
-                  });
             }
+
+        }
             clearHomeContent();
             verifyApiKeyFromStorage(
-        }
+    }
     
         
         function verifyApiKeyFromStorage() {

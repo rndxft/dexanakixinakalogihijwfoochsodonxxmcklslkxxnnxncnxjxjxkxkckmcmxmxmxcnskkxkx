@@ -103,7 +103,7 @@ async function GetCmd() {
                     const value = input.value.trim();
                     if (value) {
                         localStorage.setItem('ptbot_apikey', value);
-                        verifyApiKeyFromStorage();
+                        window.location.reload()
                     } else {
                         alert("Mohon masukkan API Key terlebih dahulu.");
                     }

@@ -887,8 +887,10 @@ function jalankanBot() {
 
             return finalResponse;
         }
-        botRespons = handleCommand(msg);
-        reply(botRespons);
+        botRespons = handleCommand(cmd);
+        if (botRespons) {
+            reply(botRespons);
+        }
 
     }
 
@@ -1047,7 +1049,7 @@ function jalankanBot() {
 
         } catch (error) {
             console.error(error.message);
-            setTimeout(settingMenu, 2000); // Menunda jika ada error
+            setTimeout(settingMenu, 2000);
         }
 
         resetButton.addEventListener('click', function () {
@@ -1058,7 +1060,8 @@ function jalankanBot() {
             setTimeout(() => {
                 alertSave.textContent = '';
             }, 2000);
-            sm('/leave')
+            window.location.reload()
+
         });
 
         const saveButton = document.querySelector('.btn.btn-primary');

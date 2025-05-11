@@ -191,7 +191,6 @@ function jalankanBot() {
     let idleLoopTimer;
     let isIdle = false;
     let isInject = false;
-    let watak = "normal"
     let isBreaking = false
 
     const requiredVersion = '1.0.1';
@@ -209,10 +208,6 @@ function jalankanBot() {
 
     let lastBotName = "";
     let lastOwner = "";
-    let storyQueue = {};
-    let storyRooms = {};
-    let isMakingStory = false;
-    let isGuessing = false;
     async function chatAi(username, message) {
         const headers = {
             'Content-Type': 'application/json',
@@ -702,9 +697,7 @@ function jalankanBot() {
         if (!prefix.some(p => msg.startsWith(p))) return;
         resetIdleTimer();
         //if (user === botName) return;
-        console.log(`${user}: ${msg}`);
-
-        if (isTyping) return;
+        //if (isTyping) return;
         let args = msg.split(' ');
         let cmd = args.shift().substring(1);
         let text = args.join(' ');
@@ -713,7 +706,7 @@ function jalankanBot() {
         function reply(message) {
             sm(message, user, mtype);
         }
-
+        reply(message)
         function parseCommandData(commandData) {
             const parsedData = {};
 
@@ -1096,13 +1089,11 @@ function jalankanBot() {
             antiAfk = antiAfkValue;
             ai = aichatValue;
             apiKey = apikeyValue;
-
+            updateUsername(botName);
             const alertSave = document.getElementById('alert-save');
             alertSave.textContent = "Perubahan Disimpan";
             alertSave.style.color = "green";
             sm('/think Perubahan Disimpan')
-
-            // Menyimpan pengaturan
             Android.saveSettings(JSON.stringify({
                 owner: owner,
                 botName: botName,

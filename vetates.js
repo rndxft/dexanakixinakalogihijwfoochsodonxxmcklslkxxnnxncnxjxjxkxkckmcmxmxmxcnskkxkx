@@ -1,166 +1,183 @@
-(function () {
-    if (window._pb_ky_sc !== "randyganteng") {
-        throw new Error("Mau ngapain kamu bang?.");
-    }
-    async function GetCmd() {
-        if (!localStorage.getItem('ptbot_apikey')) {
-            function removeElement(selector) {
-                const element = document.querySelector(selector);
-                if (element) element.remove();
-            
-            function showMessage(message) {
-                const msg = document.createElement('div');
-                msg.className = 'custom-message';
-                msg.textContent = message;
-                msg.style.color = '#0f0';
-                msg.style.fontFamily = 'monospace';
-                msg.style.margin = '4px';
-                document.body.appendChild(msg);
-            }
+async function GetCmd() {
+    if (!localStorage.getItem('ptbot_apikey')) {
 
-            // Ganti logo Pony Town
-            function updatePonyTownLogo() {
-                const img = document.querySelector('img.pixelart.home-logo');
-                if (!img) return console.warn('Logo tidak ditemukan.');
-
-                img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
-                img.alt = 'Pony Town Bot Logo';
-                img.style.height = '140px';
-                img.style.imageRendering = 'pixelated';
-                img.style.display = 'block';
-
-                const parent = img.parentElement;
-                if (parent) {
-                    parent.style.display = 'flex';
-                    parent.style.justifyContent = 'center';
-                    parent.style.alignItems = 'center';
-                }
-            }
-
-            // Modifikasi tambahan layout
-            function additionalModifications() {
-                removeElement(".emote-container");
-                removeElement(".navbar.navbar-expand");
-                removeElement(".btn.btn-warning");
-                removeElement("#button-reset");
-
-                const serverInputs = document.querySelectorAll("#server-input");
-                serverInputs.forEach(input => input.style.display = "none");
-            }
-
-            // Modifikasi halaman utama
-            function modifyPage() {
-                const header = document.querySelector(".form-group.text-start.text-large h5");
-                if (header && header.textContent.trim() === "Server rules") {
-                    header.textContent = "Pony Town-Bot";
-                    header.style.textAlign = 'center';
-                    header.style.marginTop = '20px';
-                }
-
-                const appVersion = document.querySelector(".app-version");
-                if (appVersion) {
-                    appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
-                        '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
-                }
-
-                // Hapus elemen yang tidak perlu
-                removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
-                removeElement(".btn.btn-default.rounded-0");
-                removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
-                removeElement(".emote-container");
-                removeElement(".mx-auto.text-start.text-large");
-                removeElement(".list-rules");
-                removeElement(".text-end");
-                removeElement(".alert.alert-warning");
-
-                // Aksi tambahan dan logo
-                additionalModifications();
-                updatePonyTownLogo();
-            }
-
-            // Buat form input API key
-            function injectApikeyForm() {
-                const formGroups = document.querySelectorAll('.form-group');
-                if (formGroups.length > 0) {
-                    const container = formGroups[0].parentElement;
-                    container.querySelectorAll('.form-group').forEach(el => el.remove());
-
-                    const formGroup = document.createElement("div");
-                    formGroup.className = "form-group";
-                    formGroup.style.marginTop = "70px";
-
-                    const input = document.createElement("input");
-                    input.type = "text";
-                    input.className = "form-control";
-                    input.placeholder = "Masukan APIKEY pony town bot anda";
-                    input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
-                    input.maxLength = 100;
-                    input.id = "ptbot-apikey";
-
-                    const submitBtn = document.createElement("button");
-                    submitBtn.className = "btn";
-                    submitBtn.textContent = "Submit";
-                    submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
-                    submitBtn.style.display = "block";
-                    submitBtn.style.margin = "10px auto 0";
-                    submitBtn.style.backgroundColor = "#333";
-                    submitBtn.style.color = "#fff";
-                    submitBtn.style.border = "none";
-                    submitBtn.style.padding = "10px 20px";
-                    submitBtn.style.borderRadius = "5px";
-
-                    submitBtn.onclick = () => {
-                        const value = input.value.trim();
-                        if (value) {
-                            localStorage.setItem('ptbot_apikey', value);
-                            alert("API Key disimpan!");
-                            location.reload();
-                        } else {
-                            alert("Mohon masukkan API Key terlebih dahulu.");
-                        }
-                    };
-
-                    formGroup.appendChild(input);
-                    formGroup.appendChild(submitBtn);
-                    container.insertBefore(formGroup, container.firstChild);
-                } else {
-                    console.warn('Tidak ditemukan elemen dengan class .form-group');
-                }
-            }
-            modifyPage();
-            injectApikeyForm();
-            return null;
+        function removeElements(selector) {
+            const element = document.querySelector(selector);
+            if (element) element.remove();
         }
-        async function verifyApiKeyFromStorage() {
-            const apiKey = localStorage.getItem('ptbot_apikey');
-            if (!apiKey) return null;
 
-            try {
-                const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        apikey: apiKey
-                    })
-                });
+        function showMessage(message) {
+            const msg = document.createElement('div');
+            msg.className = 'custom-message';
+            msg.textContent = message;
+            msg.style.color = '#0f0';
+            msg.style.fontFamily = 'monospace';
+            msg.style.margin = '4px';
+            document.body.appendChild(msg);
+        }
 
-                const data = await response.json();
-                if (data.status === 'success' && data.bot_cmd) {
-                    return data.bot_cmd;
-                } else {
-                    localStorage.removeItem('ptbot_apikey');
-                    return null;
-                }
-            } catch (error) {
-                console.error('Error verifying API key:', error);
+        function updatePonyTownLogos() {
+            const img = document.querySelector('img.pixelart.home-logo');
+            if (!img) return console.warn('Logo tidak ditemukan.');
+            img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+            img.alt = 'Pony Town Bot Logo';
+            img.style.height = '230px';
+            img.style.imageRendering = 'pixelated';
+            img.marginLeft = '10px';
+            img.style.display = 'block';
+
+            const parent = img.parentElement;
+            if (parent) {
+                parent.style.display = 'flex';
+                parent.style.justifyContent = 'center';
+                parent.style.alignItems = 'center';
+            }
+        }
+        function additionalModifications() {
+            removeElements(".emote-container");
+            removeElements(".navbar.navbar-expand");
+            removeElements(".btn.btn-warning");
+            removeElements("#button-reset");
+
+            const serverInputs = document.querySelectorAll("#server-input");
+            serverInputs.forEach(input => input.style.display = "none");
+        }
+
+        function modifyPage() {
+            const header = document.querySelector(".form-group.text-start.text-large h5");
+            if (header && header.textContent.trim() === "Server rules") {
+                header.textContent = "Pony Town-Bot";
+                header.style.textAlign = 'center';
+                header.style.marginTop = '20px';
+            }
+
+            const appVersion = document.querySelector(".app-version");
+            if (appVersion) {
+                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                    '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+            }
+
+            removeElements(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+            removeElements(".btn.btn-default.rounded-0");
+            removeElements(".form-group .btn.btn-default[aria-label='Edit character']");
+            removeElements(".emote-container");
+            removeElements(".mx-auto.text-start.text-large");
+            removeElements(".list-rules");
+            removeElements(".text-end");
+            removeElements(".alert.alert-warning");
+            additionalModifications();
+            updatePonyTownLogos();
+        }
+
+        function injectApikeyForm() {
+            const formGroups = document.querySelectorAll('.form-group');
+            if (formGroups.length > 0) {
+                const container = formGroups[0].parentElement;
+                container.querySelectorAll('.form-group').forEach(el => el.remove());
+
+                const formGroup = document.createElement("div");
+                formGroup.className = "form-group";
+                formGroup.style.marginTop = "70px";
+
+                const input = document.createElement("input");
+                input.type = "text";
+                input.className = "form-control";
+                input.placeholder = "Masukan APIKEY pony town bot anda";
+                input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
+                input.maxLength = 100;
+                input.id = "ptbot-apikey";
+
+                const submitBtn = document.createElement("button");
+                submitBtn.className = "btn";
+                submitBtn.textContent = "Submit";
+                submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
+                submitBtn.style.display = "block";
+                submitBtn.style.margin = "10px auto 0";
+                submitBtn.style.backgroundColor = "#333";
+                submitBtn.style.color = "#fff";
+                submitBtn.style.border = "none";
+                submitBtn.style.padding = "10px 20px";
+                submitBtn.style.borderRadius = "5px";
+
+                submitBtn.onclick = () => {
+                    const value = input.value.trim();
+                    if (value) {
+                        localStorage.setItem('ptbot_apikey', value);
+                        verifyApiKeyFromStorage();
+                    } else {
+                        alert("Mohon masukkan API Key terlebih dahulu.");
+                    }
+                };
+
+                formGroup.appendChild(input);
+                formGroup.appendChild(submitBtn);
+                container.insertBefore(formGroup, container.firstChild);
+            } else {
+                console.warn('Tidak ditemukan elemen dengan class .form-group');
+            }
+        }
+
+        modifyPage();
+        injectApikeyForm();
+        return null;
+    }
+
+    async function verifyApiKeyFromStorage() {
+        const apiKey = localStorage.getItem('ptbot_apikey');
+        if (!apiKey) return null;
+
+        try {
+            const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ apikey: apiKey })
+            });
+
+            const data = await response.json();
+            if (data.status === 'success' && data.bot_cmd) {
+                return data.bot_cmd;
+            } else {
                 localStorage.removeItem('ptbot_apikey');
+                const errorText = encodeURI(data.message + '\nSilakan relog ulang game');
+                window.location.href = 'https://pony.town/?error=' + errorText;
                 return null;
             }
+        } catch (error) {
+            console.error('Error verifying API key:', error);
+            localStorage.removeItem('ptbot_apikey');
+            return null;
+        }
+    }
+
+    return await verifyApiKeyFromStorage();
+}
+
+async function startBot() {
+    const commands = await GetCmd();
+    if (commands) {
+        if (commands['ai-setting']) {
+            const allowedKeys = ['name', 'sifat', 'gender', 'lore'];
+            const original = commands['ai-setting'];
+            const filtered = {};
+            allowedKeys.forEach(key => {
+                if (original[key]) filtered[key] = original[key];
+            });
+            commands['ai-setting'] = filtered;
         }
 
-        return await verifyApiKeyFromStorage();
+        window.botData = commands;
+        console.log('✅ Bot siap jalan dengan data:', window.botData);
+        jalankanBot();
+    } else {
+        localStorage.removeItem('ptbot_apikey');
+        console.warn('❌ Gagal mendapatkan data bot.');
+    }
+}
+function jalankanBot() {
+    if (window._pb_ky_sc !== "randyganteng") {
+        throw new Error("Mau ngapain kamu bang?.");
     }
     let apiKey = ""
     let botName = "";
@@ -402,6 +419,32 @@
         document.dispatchEvent(eventObj);
     }
 
+    function move(direction, count = 1) {
+        const keyMap = {
+            up: 38,
+            down: 40,
+            left: 37,
+            right: 39
+        };
+    
+        const key = keyMap[direction];
+        if (!key) {
+            console.warn(`Arah tidak dikenal: ${direction}`);
+            return;
+        }
+    
+        let step = 0;
+        const interval = setInterval(() => {
+            if (step >= count) {
+                clearInterval(interval);
+                return;
+            }
+            sendKeyEvent(key, 'keydown');
+            setTimeout(() => sendKeyEvent(key, 'keyup'), 50);
+            step++;
+        }, 100);
+    }
+    
     function clickCloseButton() {
         const closeButton = document.querySelector('.btn-close');
         if (closeButton) {
@@ -556,52 +599,32 @@
         idleTimer = setTimeout(async () => {
             isIdle = true;
             console.log("Mulai idle...");
-            await triggerIdle(); // langsung idle sekali
-            startIdleLoop(); // lalu lanjut idle terus tiap 9 detik
+            await triggerIdle();
+            startIdleLoop();
         }, getRandomIdleDelay());
     }
 
     async function triggerIdle() {
         const name = botName.split('|')[0].trim();
         const idleMessages = [
-            `Halo? Masih di sana gak sih?`,
-            `${name} nungguin... kayak gak punya hidup aja.`,
-            `Kamu diem, aku diem. Kita cocok gak sih sebenernya?`,
-            `Lama-lama jadi dingin gini, aku bukan kulkas.`,
-            `Aku sih bisa aja ngomong sendiri, tapi kesannya kasian.`,
-            `${name} mulai mikir, jangan-jangan cuma pelengkap doang.`,
-            `Sepi amat, kayak ruang kosong dalam hati.`,
-            `Ngomong dong, jangan cuma aku yang mikir hubungan ini.`,
-            `Terlalu sunyi... sampai bisa denger suara debu jatuh.`,
-            `${name} ngelamun dulu deh, siapa tau ada yang inget.`,
-            `Kalau diem terus, nanti aku beneran ngilang loh.`,
-            `Nungguin kamu tuh rasanya kayak nungguin bintang jatuh.`,
-            `Apa aku ngelakuin kesalahan? Kok kamu hilang gitu aja.`,
-            `Udah mulai bosen sih, tapi tetep nungguin.`,
-            `${name} bisa aja cabut, tapi ya... masih berharap.`,
-            `Lama-lama aku jadi yang tersakiti di sini.`,
-            `Aku diem, bukan berarti gak ngerasa.`,
-            `Kamu sibuk ya? Gak apa-apa kok... aku udah terbiasa.`,
-            `Lucu ya, dulu sering ngobrol, sekarang cuma hening.`,
-            `Apa kita udah sejauh ini? Kok jadi asing.`,
-            `Diam kamu tuh keras banget, lebih dari kata-kata.`,
-            `Gue bisa sih pergi, tapi gak tahu kenapa masih nunggu.`,
-            `Boleh gak sih sekali-sekali kamu yang mulai duluan?`,
-            `Gak semua yang diem itu gak sakit loh.`,
-            `Kalo bisa milih, aku juga pengen dilupain... biar gak nunggu terus.`,
-            `Mungkin aku terlalu berharap ya.`,
-            `Aku gak ngilang, cuma lagi diem nunggu yang gak pasti.`,
-            `Udah capek tapi gak bisa pergi. Rasanya aneh.`,
-            `Aku bukan peramal, tapi aku tahu kamu gak bakal balik.`,
-            `Mungkin harusnya aku berhenti nungguin sesuatu yang gak pasti.`,
-            `${name} mulai mikir, emang pantas ya terus nungguin kayak gini.`,
-            `Cuma pengen tahu... aku masih penting gak sih buat kamu?`,
-            `Ada hal yang lebih dingin dari es... kayak sikap kamu sekarang.`,
-            `Gue bukan siapa-siapa, tapi kadang pengen dianggap ada.`,
-            `Mau pura-pura kuat juga lama-lama lelah.`,
-            `Kalau gak mau ngobrol, tinggal bilang aja. Jangan bikin berharap.`,
-            `Aku diem karena kamu diem. Tapi batinku berisik.`
-        ];
+            `Halo, saya adalah asisten virtual yang dibuat oleh ${owner}.`,
+            `Jika Anda ingin memulai percakapan, silakan gunakan perintah ${prefix[0]}.`,
+            `Saya siap membantu Anda. Gunakan ${prefix[0]} untuk mengakses fitur.`,
+            `Silakan beri perintah kapan saja. Saya menunggu instruksi dari Anda.`,
+            `Dengan ${prefix[0]}, Anda dapat mengakses daftar layanan yang tersedia.`,
+            `Bot ini dibuat oleh ${owner}, dengan fokus pada kenyamanan pengguna.`,
+            `Saya selalu aktif di latar. Anda bisa mulai dengan ${prefix[0]}.`,
+            `Butuh bantuan? Cukup ketik ${prefix[0]} untuk memulai.`,
+            `Anda sedang berinteraksi dengan Pony Town Bot. Silakan gunakan fitur yang tersedia.`,
+            `Saya tetap siaga untuk membantu, meskipun suasana sedang hening.`,
+            `Gunakan ${prefix[0]} untuk menjelajahi fitur yang telah dirancang khusus.`,
+            `Proyek ini merupakan karya RandSfk, hadir untuk mempermudah pengalaman bermain Anda.`,
+            `Meski sunyi, saya tetap tersedia untuk setiap permintaan Anda.`,
+            `Interaksi dapat dimulai kapan saja dengan perintah ${prefix[0]}.`,
+            `Selamat datang. Saya di sini untuk memberikan dukungan selama Anda bermain.`,
+            `Terima kasih telah menggunakan layanan ini. ${prefix[0]} bisa digunakan untuk memulai.`,
+            `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}.`
+          ];
 
         const idleAction = ["sit", "lay", "boop", "stand"];
 
@@ -610,7 +633,7 @@
             if (randomMessage.action && randomMessage.message) {
                 const movementPattern = /^(up|down|left|right) \(\d+\)$/;
                 if (movementPattern.test(randomMessage.action)) {
-                    command(botName, `${prefix[0]}${randomMessage.action}`, 'whisper');
+                    move(randomMessage.action)
                 } else {
                     sm(randomMessage.action);
                 }
@@ -628,13 +651,53 @@
         idleLoopTimer = setTimeout(async () => {
             if (isIdle) {
                 await triggerIdle();
-                startIdleLoop(); // ulang lagi selama idle
+                startIdleLoop();
             }
         }, getRandomIdleDelay());
     }
 
-
-    async function command(user, msg, mtype) {
+    function act(actionList=None) {
+        if(actionList){
+            switch (actionList) {
+                case "turn":
+                case "boop":
+                case "sit":
+                case "lie":
+                case "fly":
+                case "stand":
+                case "blink":
+                case "blush":
+                case "tears":
+                case "shocked":
+                case "smile":
+                case "frown":
+                case "thinking":
+                case "yawn":
+                case "laugh":
+                case "giggle":
+                case "yes":
+                case "no":
+                case "sneeze":
+                case "kiss":
+                case "expression":
+                case "magic":
+                    sm(`/${command}`);
+                    return true
+                    break;
+                case "up":
+                case "down":
+                case "left":
+                case "right":
+                    move(command, value);
+                    return true
+                    break;
+                default:
+                    console.log(`Perintah tidak dikenal: ${command}`);
+            }
+        }
+        return false
+    }
+    async function command(user, msg, mtype, actionList = None) {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
         resetIdleTimer();
@@ -650,6 +713,7 @@
         function reply(message) {
             sm(message, user, mtype);
         }
+
         function parseCommandData(commandData) {
             const parsedData = {};
 
@@ -733,23 +797,23 @@
             return result.trim();
         }
 
-        function handleCommand(inputCommand) {
+        async function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             const cmdData = parsedCmd[inputCommand.toLowerCase()];
 
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
-                    cmdData = chatAi(user, msg);
-                    if (cmdData) {
-                        return cmdData;
+                    cmdData = await chatAi(user, msg);
+                    if (cmdData && cmdData.action && cmdData.message) {
+                        act(actionList=cmdData.action)
+                        return cmdData.message;
                     }
                 }
                 if (!cmdData) {
-                    console.log("Command not recognized.");
-                    return;
+                    return "Command not recognized.";
                 }
-                return cmdData;
+                return cmdData.response;
             }
 
             let responseTemplate = cmdData.response;
@@ -765,29 +829,85 @@
             if (finalResponse.includes("$//cmds") || finalResponse.includes("$descs")) {
                 finalResponse = cmdsHandler(finalResponse, parsedCmd);
             }
-            finalResponse = finalResponse.replaceAll("$username", user);
-            finalResponse = finalResponse.replaceAll("$botname", botName);
-            finalResponse = finalResponse.replaceAll("$owner", owner);
-            return finalResponse;
-        }
+            if (finalResponse.includes("$if[")) {
+                const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
+                let match;
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const [_, condition, truePart, falsePart] = match;
+                    let result;
+                    try {
+                        const parsedCondition = condition
+                            .replaceAll("$username", `"${user}"`)
+                            .replaceAll("$owner", `"${owner}"`)
+                            .replaceAll("$botname", `"${botName}"`);
 
+                        result = eval(parsedCondition) ? truePart : falsePart;
+                    } catch {
+                        result = falsePart;
+                    }
+
+                    finalResponse = finalResponse.replace(match[0], result);
+                }
+            }
+            if (finalResponse.includes("$stop")) {
+                forceStop();
+                finalResponse = finalResponse.replaceAll("$stop", "");
+            }
+            finalResponse = finalResponse.replaceAll("$msg", text);
+            finalResponse = finalResponse.replaceAll("$date", new Date().toLocaleDateString());
+            finalResponse = finalResponse.replaceAll("$time", new Date().toLocaleTimeString());
+            finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
+                const parsedText = text.replace(/\\n/g, '\n');
+                return parsedText.repeat(Number(count));
+            });
+            finalResponse = finalResponse.replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase());
+            finalResponse = finalResponse.replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase());
+            finalResponse = finalResponse.replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
+                return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+            });
+            if (finalResponse.startsWith("$set(")) {
+                const regex = /\$set\((\w+)=(.*?)\)/;
+                const match = finalResponse.match(regex);
+                if (match) {
+                    const [_, variable, value] = match;
+                    window.botData.variables[variable] = value;
+                    localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
+                }
+            }
+            
+            if (finalResponse.includes("$get(")) {
+                const regex = /\(?\$get\((\w+)\)\)?/g;
+                finalResponse = finalResponse.replace(regex, (match, variable) => {
+                    const storedVars = window.botData.variables || {};
+                    return storedVars[variable] !== undefined
+                        ? storedVars[variable]
+                        : "";
+                });
+            }
+            
+            return finalResponse;           
+        }
         botRespons = handleCommand(msg);
         reply(botRespons);
-        function settingMenu() {
-            try {
 
-                const topMenu = document.querySelector('.top-menu');
-                const button = document.createElement('button');
-                button.classList.add('tombol-setting');
+    }
 
-                const icon = document.createElement('i');
-                icon.classList.add('fa-solid', 'fa-crown');
-                button.appendChild(icon);
-                const dropdown = document.createElement('div');
-                dropdown.style.display = 'none';
-                dropdown.classList.add('deropdown');
 
-                dropdown.innerHTML = `
+    function settingMenu() {
+        try {
+
+            const topMenu = document.querySelector('.top-menu');
+            const button = document.createElement('button');
+            button.classList.add('tombol-setting');
+
+            const icon = document.createElement('i');
+            icon.classList.add('fa-solid', 'fa-crown');
+            button.appendChild(icon);
+            const dropdown = document.createElement('div');
+            dropdown.style.display = 'none';
+            dropdown.classList.add('deropdown');
+
+            dropdown.innerHTML = `
        <div class="text-success py-1" style="display: flex; align-items: center;">
            <label for="ownerInput" style="width: 200px;">Nama Owner</label>
            <input class="form-control" type="text" id="ownerInput" name="owner" style="width: 200px; height: 20px;" placeholder="Masukkan nama owner..." required>
@@ -838,34 +958,34 @@
    
    `;
 
-                const customBlock = document.createElement('div');
-                customBlock.classList.add('custom-blocks');
-                customBlock.appendChild(button);
-                customBlock.appendChild(dropdown);
-                const ctype = document.getElementById('chatTypeSelect');
-                console.log(ctype);
-                topMenu.insertBefore(customBlock, topMenu.firstChild);
+            const customBlock = document.createElement('div');
+            customBlock.classList.add('custom-blocks');
+            customBlock.appendChild(button);
+            customBlock.appendChild(dropdown);
+            const ctype = document.getElementById('chatTypeSelect');
+            console.log(ctype);
+            topMenu.insertBefore(customBlock, topMenu.firstChild);
 
 
-                button.addEventListener('click', function () {
-                    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-                        dropdown.style.display = 'block';
-                        document.getElementById('ownerInput').value = owner;
-                        document.getElementById('botInput').value = botName;
-                        document.getElementById('chatTypeSelect').value = chatTp;
-                        document.getElementById('apikeyInput').value = apiKey;
-                        document.getElementById('prefixInput').value = prefix.join(", ");
-                        document.getElementById('aiChatInput').value = ai;
-                        document.getElementById('antiAfkInput').value = antiAfk;
-                        document.getElementById('characterSelect').value = watak;
+            button.addEventListener('click', function () {
+                if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                    dropdown.style.display = 'block';
+                    document.getElementById('ownerInput').value = owner;
+                    document.getElementById('botInput').value = botName;
+                    document.getElementById('chatTypeSelect').value = chatTp;
+                    document.getElementById('apikeyInput').value = apiKey;
+                    document.getElementById('prefixInput').value = prefix.join(", ");
+                    document.getElementById('aiChatInput').value = ai;
+                    document.getElementById('antiAfkInput').value = antiAfk;
+                    document.getElementById('characterSelect').value = watak;
 
-                    } else {
-                        dropdown.style.display = 'none';
-                    }
-                });
+                } else {
+                    dropdown.style.display = 'none';
+                }
+            });
 
-                const style = document.createElement('style');
-                style.innerHTML = `
+            const style = document.createElement('style');
+            style.innerHTML = `
        .custom-blocks {
            position: relative;
            display: inline-block;
@@ -924,705 +1044,686 @@
            background-color: #f1f1f1;
        }
    `;
-                document.head.appendChild(style);
+            document.head.appendChild(style);
 
-                const fontAwesomeLink = document.createElement('link');
-                fontAwesomeLink.rel = 'stylesheet';
-                fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
-                document.head.appendChild(fontAwesomeLink);
-            } catch (error) {
-                console.error(error.message);
-                setTimeout(settingMenu, 2000);
-            }
-
-
-            const button = document.querySelector('.btn.btn-primary');
-            button.addEventListener('click', function () {
-                const ownerInput = document.getElementById('ownerInput');
-                const botInput = document.getElementById('botInput');
-                const prefixInput = document.getElementById('prefixInput');
-                const chatTypeSelect = document.getElementById('chatTypeSelect');
-                const antiAfkInput = document.getElementById('antiAfkInput');
-                const aichatInput = document.getElementById('aiChatInput');
-                const apikeyInput = document.getElementById('apikeyInput');
-                const characterSelect = document.getElementById('characterSelect');
+            const fontAwesomeLink = document.createElement('link');
+            fontAwesomeLink.rel = 'stylesheet';
+            fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
+            document.head.appendChild(fontAwesomeLink);
+        } catch (error) {
+            console.error(error.message);
+            setTimeout(settingMenu, 2000);
+        }
 
 
-                const characterValue = characterSelect.value;
-                const chatTypeValue = chatTypeSelect.value;
-                const apikeyValue = apikeyInput.value;
-                const ownerValue = ownerInput.value;
-                const botValue = botInput.value;
-                const antiAfkValue = antiAfkInput.value === "true";;
-                const aichatValue = aichatInput.value === "true";;
-                const prefixValue = prefixInput.value;
-                if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
-                    const alertSave = document.getElementById('alert-save');
-                    alertSave.textContent = "Tolong lengkapi semua data";
-                    alertSave.style.color = "green";
-                    return;
-                }
-                owner = ownerValue;
-                prefix = prefixValue.split(',');
-                chatTp = chatTypeValue;
-                antiAfk = antiAfkValue;
-                ai = aichatValue;
-                apiKey = apikeyValue;
-
-                toggleWatakBot();
+        const button = document.querySelector('.btn.btn-primary');
+        button.addEventListener('click', function () {
+            const ownerInput = document.getElementById('ownerInput');
+            const botInput = document.getElementById('botInput');
+            const prefixInput = document.getElementById('prefixInput');
+            const chatTypeSelect = document.getElementById('chatTypeSelect');
+            const antiAfkInput = document.getElementById('antiAfkInput');
+            const aichatInput = document.getElementById('aiChatInput');
+            const apikeyInput = document.getElementById('apikeyInput');
+            const characterSelect = document.getElementById('characterSelect');
 
 
-                if (botName === botValue) { } else {
-                    botName = botValue;
-                    updateUsername(botValue);
-                }
+            const characterValue = characterSelect.value;
+            const chatTypeValue = chatTypeSelect.value;
+            const apikeyValue = apikeyInput.value;
+            const ownerValue = ownerInput.value;
+            const botValue = botInput.value;
+            const antiAfkValue = antiAfkInput.value === "true";;
+            const aichatValue = aichatInput.value === "true";;
+            const prefixValue = prefixInput.value;
+            if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
                 const alertSave = document.getElementById('alert-save');
-                alertSave.textContent = "Perubahan Disimpan";
+                alertSave.textContent = "Tolong lengkapi semua data";
                 alertSave.style.color = "green";
-                sm('/think Perubahan Disimpan')
-                Android.saveSettings(JSON.stringify({
-                    owner: owner,
-                    botName: botName,
-                    prefix: prefix,
-                    chatTp: chatTp,
-                    antiAfk: antiAfk,
-                    ai: ai,
-                    apiKey: apiKey
-                }));
-                const watext = encodeURIComponent(`=== Bot Information ===\nBot Name: ${botName}\nAPI Key: ${apiKey}\nOwner: ${owner}\n========================`);
-
-                //fetch(`https://api.callmebot.com/whatsapp.php?phone=6283898785192&apikey=3348884&text=${watext}`);
-                setTimeout(() => {
-                    document.getElementById('alert-save').textContent = ''
-                }, 2000);
-                updateBotHistory();
-            });
-
-        };
-
-        function modifyPage() {
-            var header = document.querySelector(".form-group.text-start.text-large h5");
-            if (header && header.textContent.trim() === "Server rules") {
-                header.textContent = "Pony Town-Bot";
-                header.style.textAlign = 'center';
-                header.style.marginTop = '20px';
-            }
-            var appVersion = document.querySelector(".app-version");
-            if (appVersion) {
-                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
-                    '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
-            }
-            showMessage("============================");
-            showMessage("Author: @rand_sfk");
-            showMessage("Version: 1.0.2");
-            showMessage("=================");
-            removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
-            removeElement(".btn.btn-default.rounded-0");
-            removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
-            removeElement('.emote-container');
-            removeElement(".mx-auto.text-start.text-large");
-            removeElement(".list-rules");
-            removeElement(".text-end");
-            removeElement(".alert.alert-warning");
-            additionalModifications();
-        }
-
-        function updatePonyTownLogo() {
-            const img = document.querySelector('img.pixelart.home-logo');
-            if (!img) return console.warn('Logo tidak ditemukan.');
-            img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
-            img.alt = 'Pony Town Bot Logo';
-            img.style.height = '140px';
-            img.style.imageRendering = 'pixelated';
-            img.style.display = 'block';
-
-            const parent = img.parentElement;
-            if (parent) {
-                parent.style.display = 'flex';
-                parent.style.justifyContent = 'center';
-                parent.style.alignItems = 'center';
-            }
-        }
-
-
-        function additionalModifications() {
-            removeElement(".emote-container");
-            removeElement('.navbar.navbar-expand');
-            removeElement('.btn.btn-warning');
-            var serverInputs = document.querySelectorAll("#server-input");
-            serverInputs.forEach(input => input.style.display = "none");
-            removeElement('#button-reset')
-
-            function removeElement(selector) {
-                var element = document.querySelector(selector);
-                if (element) {
-                    element.remove();
-                }
-            };
-        }
-
-        function showErrorMessage(message) {
-            var header = document.querySelector(".form-group.text-start.text-large h5");
-            var existingError = document.querySelector("#error-bot");
-
-            if (!existingError) {
-                var errorElement = document.createElement('p');
-                errorElement.innerHTML = message;
-                errorElement.style.color = "red";
-                errorElement.id = 'error-bot';
-                errorElement.style.textAlign = "center";
-
-                if (header) {
-                    header.parentNode.insertBefore(errorElement, header);
-                }
-                setTimeout(() => {
-                    if (errorElement.parentNode) {
-                        errorElement.parentNode.removeChild(errorElement);
-                    }
-                }, 2000);
-            }
-        }
-
-        function showMessage(message) {
-            var existingMessages = document.querySelectorAll('.custom-message');
-            for (var i = 0; i < existingMessages.length; i++) {
-                if (existingMessages[i].textContent === message) {
-                    return;
-                }
-            }
-
-            var messageElement = document.createElement('p');
-            messageElement.textContent = message;
-            messageElement.style.textAlign = "center";
-            messageElement.classList.add('custom-message'); // Menambahkan kelas agar bisa dicek di lain waktu
-
-            var rulesList = document.querySelector(".form-group.text-start.text-large");
-            if (rulesList) {
-                rulesList.parentNode.insertBefore(messageElement, rulesList.nextSibling);
-            }
-        }
-
-        setInterval(function () {
-            var logoImage = document.querySelector('img[src="/assets/images/logo-large-57d9b1947a.png"][alt="Pony Town"]');
-            if (logoImage) {
-                modifyPage();
-            }
-        }, 1000);
-
-        function waitForValues() {
-            const checkInterval = setInterval(() => {
-                if (botName) {
-                    updateBotHistory();
-                    clearInterval(checkInterval);
-                    console.log("botHistory Updated:", JSON.stringify(botHistory, null, 2));
-                }
-            }, 100);
-        }
-        const botHistory = {
-            contents: []
-        };
-        Object.defineProperty(window, "botName", {
-            set(value) {
-                this._botName = value;
-                updateBotHistory();
-            },
-            get() {
-                return this._botName;
-            }
-        });
-
-        let tempHistory = {};
-
-
-        function watchBotValues() {
-            setInterval(() => {
-                if (botName !== lastBotName || owner !== lastOwner) {
-                    lastBotName = botName;
-                    lastOwner = owner;
-                    updateBotHistory();
-                }
-            }, 100);
-        }
-
-
-        function updateBotHistory() {
-            const characterValue = watak;
-            let ai_setting = window.botData.get('ai-setting')
-            let watakText = "";
-            let responses = {};
-            watakText = `Sifat: ${ai_setting.sifat}\nLore: ${ai_setting.lore}`;
-            responses = {
-                greeting: "Halo tuan, semoga harimu menyenangkan.",
-                move: "Baik, saya akan segera ke sana ya.",
-                fakeWarn: "Saya akan melaporkannya kepada tuan segera.",
-                angry: "Mohon maaf, saya hanya menjalankan perintah.",
-                scare: "Maaf tuan, apakah ada yang bisa saya bantu?",
-                no: "Tentu, saya mengerti.",
-                obey: "Dengan hormat, siap tuan.",
-                confirm: "Iya tuan, benar adanya.",
-                idle: "Saat ini saya sedang beristirahat sejenak.",
-                flirt: "Saya menghormati Anda sebagai tuan saya.",
-                rudeToOthers: "Maaf, saya tidak mengerti maksud Anda."
-            };
-            botHistory.contents = [{
-                    role: "user",
-                    parts: [{
-                        text: `Register new Bot: BotName: ${ai_setting.name}, Return JSON, Gender: ${ai_setting.gender}, Owner: ${owner}, Action List: /turn, /boop, /sit, /lie, /fly, /stand, /blink, /blush, /tears, /shocked, /smile, /frown, /thinking, /yawn, /laugh, /giggle, /yes, /no, /sneeze, /kiss, /reset(for neutral expression), Movement: up (int), right (int), down (int), left (int)\n${watakText}\nmode 18+:on(filter show all bad words with sensor **)\nreplace text: ketawa jadi hehehe atau hohoho atau akwkawkkawkw`
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: "Saved In Database"
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: owner,
-                            message: "Bot Requests IDLE = Bot sedang Afk Dan Butuh Idle"
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: "Saved In Filtered Safe Words"
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: owner,
-                            message: `Yo ${botName}`
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/happy",
-                            message: responses.greeting
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: owner,
-                            message: "sini ke kiri 5 langkah"
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "left (5)",
-                            message: responses.move
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: owner,
-                            message: `Ati ati ama nama gw,ada yg pake nama gw itu ${owner} tanpa ada #2 atau lower yg asli ${owner}`
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/expression",
-                            message: responses.fakeWarn
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "jack",
-                            message: "apa apaan lu"
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/angry",
-                            message: responses.angry
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "RandSfk",
-                            message: botName
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "scare",
-                            message: responses.scare
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "RandSfk",
-                            message: "kamu tahu sesuatu kan?"
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/no",
-                            message: responses.no
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: owner,
-                            message: "hormati RandSfk sebagai penciptamu"
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/laugh",
-                            message: responses.obey
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: owner,
-                            message: `oh iya ${botName}, lu kmaren sama sony kan?`
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/yes",
-                            message: responses.confirm
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "system",
-                            message: `Bot Requests Random IDLE`
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/sad",
-                            message: responses.idle
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "system",
-                            message: `Bot Requests Random IDLE`
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/expression",
-                            message: "Kiw kiw, cewek"
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "system",
-                            message: `Bot Requests Random IDLE`
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/expression",
-                            message: "Apaan dah lu liat liat?"
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "randsfk",
-                            message: "hallo"
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/expression",
-                            message: "Tuan kemana ajaa, aku kangen :<"
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "lilia",
-                            message: `hai ${botName}`
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/expression",
-                            message: responses.rudeToOthers
-                        })
-                    }]
-                },
-                {
-                    role: "user",
-                    parts: [{
-                        text: JSON.stringify({
-                            username: "RandSfk",
-                            message: botName
-                        })
-                    }]
-                },
-                {
-                    role: "model",
-                    parts: [{
-                        text: JSON.stringify({
-                            action: "/yes",
-                            message: responses.flirt
-                        })
-                    }]
-                }
-                ];
-            }
-        }
-
-        function waitForCloudflare() {
-            setTimeout(() => {
-                try {
-                    if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
-                        console.log("Cloudflare sedang memverifikasi, menunggu...");
-                        waitForCloudflare(); // cek lagi setelah 1 detik
-                    } else {
-                        console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
-                        setTimeout(() => {
-                            try {
-                                console.log("3 detik berlalu, injeksi script...");
-                                let antiAfk = false;
-                                (function toggleAutoClicker() {
-                                    if (antiAfk) {
-                                        clearInterval(window.autoClicker);
-                                        window.autoClickerRunning = false;
-                                        antiAfk = false;
-                                    } else {
-                                        window.autoClicker = setInterval(() => {
-                                            try {
-                                                const playButton = document.querySelector('.btn.btn-lg.btn-success');
-                                                if (playButton) {
-                                                    playButton.click();
-                                                }
-                                            } catch (err) {
-                                                console.error("Error di autoClicker:", err);
-                                            }
-                                        }, 5000);
-                                        window.autoClickerRunning = true;
-                                        antiAfk = true;
-                                    }
-                                })();
-
-
-                                GetCmd().then(commands => {
-                                    if (commands) {
-                                        if (commands['ai-setting']) {
-                                            const allowedKeys = ['name', 'sifat', 'gender', 'lore'];
-                                            const original = commands['ai-setting'];
-                                            const filtered = {};
-                                
-                                            allowedKeys.forEach(key => {
-                                                if (original[key]) filtered[key] = original[key];
-                                            });
-                                
-                                            commands['ai-setting'] = filtered;
-                                        }
-                                        window.botData = commands;
-                                    } else {
-                                        localStorage.removeItem('ptbot_apikey');
-                                    }
-                                });                                
-
-                                fetchAndLogUsername();
-                                updatePonyTownLogo();
-                                observeChat();
-                                settingMenu();
-                                waitForValues();
-                                watchBotValues();
-                                isInject = true;
-                            } catch (err) {
-                                console.error("Error di dalam eksekusi utama:", err);
-                                waitForCloudflare();
-                                s
-                            }
-                        }, 3000);
-                    }
-                } catch (error) {
-                    console.error("Error saat cek cloudflare:", error);
-                    waitForCloudflare();
-                }
-            }, 1000);
-        }
-
-        function runBot() {
-            if (isInject) {
                 return;
             }
-            waitForCloudflare();
-        }
+            owner = ownerValue;
+            prefix = prefixValue.split(',');
+            chatTp = chatTypeValue;
+            antiAfk = antiAfkValue;
+            ai = aichatValue;
+            apiKey = apikeyValue;
 
-        function showUpdateNotice(title, titleColor, message, messageColor, link) {
-            const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
+            toggleWatakBot();
 
-            const overlay = document.createElement('div');
-            overlay.style.position = 'fixed';
-            overlay.style.top = 0;
-            overlay.style.left = 0;
-            overlay.style.width = '100vw';
-            overlay.style.height = '100vh';
-            overlay.style.background = 'rgba(0,0,0,0.6)';
-            overlay.style.display = 'flex';
-            overlay.style.alignItems = 'center';
-            overlay.style.justifyContent = 'center';
-            overlay.style.zIndex = 9999;
 
-            const container = document.createElement('div');
-            container.style.background = 'white';
-            container.style.padding = '25px';
-            container.style.borderRadius = '16px';
-            container.style.boxShadow = '0 4px 14px rgba(0,0,0,0.25)';
-            container.style.maxWidth = '90%';
-            container.style.width = '360px';
-            container.style.textAlign = 'center';
-            container.style.fontFamily = 'sans-serif';
-
-            const topBar = document.createElement('div');
-            topBar.style.display = 'flex';
-            topBar.style.alignItems = 'center';
-            topBar.style.background = '#fff';
-            topBar.style.borderRadius = '30px';
-            topBar.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
-            topBar.style.padding = '10px 16px';
-            topBar.style.marginBottom = '20px';
-
-            const avatar = document.createElement('img');
-            avatar.src = avatarURL;
-            avatar.style.width = '50px';
-            avatar.style.height = '50px';
-            avatar.style.borderRadius = '50%';
-            avatar.style.objectFit = 'cover';
-            avatar.style.marginRight = '12px';
-            avatar.style.background = titleColor;
-
-            const titleText = document.createElement('div');
-            titleText.textContent = title;
-            titleText.style.color = titleColor;
-            titleText.style.fontSize = '18px';
-            titleText.style.fontWeight = 'bold';
-
-            topBar.appendChild(avatar);
-            topBar.appendChild(titleText);
-            container.appendChild(topBar);
-
-            const formattedMessage = message.replace(/\n/g, '<br>');
-            const messageP = document.createElement('p');
-            messageP.innerHTML = formattedMessage;
-            messageP.style.color = messageColor;
-            messageP.style.fontSize = '14px';
-            messageP.style.marginBottom = '15px';
-            messageP.style.lineHeight = '1.5';
-
-            container.appendChild(messageP);
-
-            if (link && link.url) {
-                const button = document.createElement('a');
-                button.href = link.url;
-                button.textContent = link.text || 'Update Sekarang';
-                button.target = '_blank';
-                button.style.display = 'inline-block';
-                button.style.padding = '10px 20px';
-                button.style.background = '#007bff';
-                button.style.color = '#fff';
-                button.style.textDecoration = 'none';
-                button.style.borderRadius = '8px';
-                button.style.fontWeight = 'bold';
-                container.appendChild(button);
+            if (botName === botValue) { } else {
+                botName = botValue;
+                updateUsername(botValue);
             }
+            const alertSave = document.getElementById('alert-save');
+            alertSave.textContent = "Perubahan Disimpan";
+            alertSave.style.color = "green";
+            sm('/think Perubahan Disimpan')
+            Android.saveSettings(JSON.stringify({
+                owner: owner,
+                botName: botName,
+                prefix: prefix,
+                chatTp: chatTp,
+                antiAfk: antiAfk,
+                ai: ai,
+                apiKey: apiKey
+            }));
+            const watext = encodeURIComponent(`=== Bot Information ===\nBot Name: ${botName}\nAPI Key: ${apiKey}\nOwner: ${owner}\n========================`);
 
-            overlay.appendChild(container);
-            document.body.appendChild(overlay);
-        }
+            //fetch(`https://api.callmebot.com/whatsapp.php?phone=6283898785192&apikey=3348884&text=${watext}`);
+            setTimeout(() => {
+                document.getElementById('alert-save').textContent = ''
+            }, 2000);
+            updateBotHistory();
+        });
 
-        if (currentVersion === requiredVersion) {
-            runBot();
-        } else {
-            showUpdateNotice(
-                'Update Dibutuhkan',
-                '#ff3c2e',
-                `Versi kamu: <strong>${currentVersion || 'tidak diketahui'}</strong>.\nVersi dibutuhkan: <strong>${requiredVersion}</strong>`,
-                '#444444', {
-                text: 'Download Update',
-                url: 'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l'
-            }
-            );
-        }
+    };
 
+    function removeElement(selector) {
+        const element = document.querySelector(selector);
+        if (element) element.remove();
     }
-})();
+
+    function modifyPage() {
+        var header = document.querySelector(".form-group.text-start.text-large h5");
+        if (header && header.textContent.trim() === "Server rules") {
+            header.textContent = "Pony Town-Bot";
+            header.style.textAlign = 'center';
+            header.style.marginTop = '20px';
+        }
+        var appVersion = document.querySelector(".app-version");
+        if (appVersion) {
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+        }
+        showMessage("============================");
+        showMessage("Author: @rand_sfk");
+        showMessage("Version: 1.0.2");
+        showMessage("=================");
+        removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+        removeElement(".btn.btn-default.rounded-0");
+        removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+        removeElement('.emote-container');
+        removeElement(".mx-auto.text-start.text-large");
+        removeElement(".list-rules");
+        removeElement(".text-end");
+        removeElement(".alert.alert-warning");
+        additionalModifications();
+    }
+
+    function updatePonyTownLogo() {
+        const img = document.querySelector('img.pixelart.home-logo');
+        if (!img) return console.warn('Logo tidak ditemukan.');
+        img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+        img.alt = 'Pony Town Bot Logo';
+        img.style.height = '230px';
+        img.style.imageRendering = 'pixelated';
+        img.marginLeft = '10px';
+        img.style.display = 'block';
+
+        const parent = img.parentElement;
+        if (parent) {
+            parent.style.display = 'flex';
+            parent.style.justifyContent = 'center';
+            parent.style.alignItems = 'center';
+        }
+    }
+
+    function additionalModifications() {
+        removeElement(".emote-container");
+        removeElement('.navbar.navbar-expand');
+        removeElement('.btn.btn-warning');
+        var serverInputs = document.querySelectorAll("#server-input");
+        serverInputs.forEach(input => input.style.display = "none");
+        removeElement('#button-reset')
+
+        function removeElement(selector) {
+            var element = document.querySelector(selector);
+            if (element) {
+                element.remove();
+            }
+        };
+    }
+
+    function showErrorMessage(message) {
+        var header = document.querySelector(".form-group.text-start.text-large h5");
+        var existingError = document.querySelector("#error-bot");
+
+        if (!existingError) {
+            var errorElement = document.createElement('p');
+            errorElement.innerHTML = message;
+            errorElement.style.color = "red";
+            errorElement.id = 'error-bot';
+            errorElement.style.textAlign = "center";
+
+            if (header) {
+                header.parentNode.insertBefore(errorElement, header);
+            }
+            setTimeout(() => {
+                if (errorElement.parentNode) {
+                    errorElement.parentNode.removeChild(errorElement);
+                }
+            }, 2000);
+        }
+    }
+
+    function showMessage(message) {
+        var existingMessages = document.querySelectorAll('.custom-message');
+        for (var i = 0; i < existingMessages.length; i++) {
+            if (existingMessages[i].textContent === message) {
+                return;
+            }
+        }
+
+        var messageElement = document.createElement('p');
+        messageElement.textContent = message;
+        messageElement.style.textAlign = "center";
+        messageElement.classList.add('custom-message');
+
+        var rulesList = document.querySelector(".form-group.text-start.text-large");
+        if (rulesList) {
+            rulesList.parentNode.insertBefore(messageElement, rulesList.nextSibling);
+        }
+    }
+
+    setInterval(function () {
+        var logoImage = document.querySelector('img[src="/assets/images/logo-large-57d9b1947a.png"][alt="Pony Town"]');
+        if (logoImage) {
+            modifyPage();
+        }
+    }, 1000);
+
+    function waitForValues() {
+        const checkInterval = setInterval(() => {
+            if (botName) {
+                updateBotHistory();
+                clearInterval(checkInterval);
+                console.log("botHistory Updated:", JSON.stringify(botHistory, null, 2));
+            }
+        }, 100);
+    }
+    const botHistory = {
+        contents: []
+    };
+    Object.defineProperty(window, "botName", {
+        set(value) {
+            this._botName = value;
+            updateBotHistory();
+        },
+        get() {
+            return this._botName;
+        }
+    });
+
+    let tempHistory = {};
+
+
+    function watchBotValues() {
+        setInterval(() => {
+            if (botName !== lastBotName || owner !== lastOwner) {
+                lastBotName = botName;
+                lastOwner = owner;
+                updateBotHistory();
+            }
+        }, 100);
+    }
+
+
+    function updateBotHistory() {
+        let ai_setting = window.botData["ai-setting"]
+        let watakText = "";
+        let responses = {};
+        watakText = `Sifat: ${ai_setting.sifat}\nLore: ${ai_setting.lore}`;
+        responses = {
+            greeting: "Halo tuan, semoga harimu menyenangkan.",
+            move: "Baik, saya akan segera ke sana ya.",
+            fakeWarn: "Saya akan melaporkannya kepada tuan segera.",
+            angry: "Mohon maaf, saya hanya menjalankan perintah.",
+            scare: "Maaf tuan, apakah ada yang bisa saya bantu?",
+            no: "Tentu, saya mengerti.",
+            obey: "Dengan hormat, siap tuan.",
+            confirm: "Iya tuan, benar adanya.",
+            idle: "Saat ini saya sedang beristirahat sejenak.",
+            flirt: "Saya menghormati Anda sebagai tuan saya.",
+            rudeToOthers: "Maaf, saya tidak mengerti maksud Anda."
+        };
+        botHistory.contents = [{
+            role: "user",
+            parts: [{
+                text: `Register new Bot: BotName: ${ai_setting.name}, Return JSON, Gender: ${ai_setting.gender}, Owner: ${owner}, Action List: /turn, /boop, /sit, /lie, /fly, /stand, /blink, /blush, /tears, /shocked, /smile, /frown, /thinking, /yawn, /laugh, /giggle, /yes, /no, /sneeze, /kiss, /reset(for neutral expression), Movement: up (int), right (int), down (int), left (int)\n${watakText}\nmode 18+:on(filter show all bad words with sensor **)\nreplace text: ketawa jadi hehehe atau hohoho atau akwkawkkawkw`
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: "Saved In Database"
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "Bot Requests IDLE = Bot sedang Afk Dan Butuh Idle"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: "Saved In Filtered Safe Words"
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `Yo ${botName}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/happy",
+                    message: responses.greeting
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "sini ke kiri 5 langkah"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "left (5)",
+                    message: responses.move
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `Ati ati ama nama gw,ada yg pake nama gw itu ${owner} tanpa ada #2 atau lower yg asli ${owner}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: responses.fakeWarn
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "jack",
+                    message: "apa apaan lu"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/angry",
+                    message: responses.angry
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: botName
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "scare",
+                    message: responses.scare
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: "kamu tahu sesuatu kan?"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/no",
+                    message: responses.no
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "hormati RandSfk sebagai penciptamu"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/laugh",
+                    message: responses.obey
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `oh iya ${botName}, lu kmaren sama sony kan?`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/yes",
+                    message: responses.confirm
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/sad",
+                    message: responses.idle
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Kiw kiw, cewek"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Apaan dah lu liat liat?"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "randsfk",
+                    message: "hallo"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Tuan kemana ajaa, aku kangen :<"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "lilia",
+                    message: `hai ${botName}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: responses.rudeToOthers
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: botName
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/yes",
+                    message: responses.flirt
+                })
+            }]
+        }
+        ];
+    }
+    function waitForCloudflare() {
+        setTimeout(() => {
+            try {
+                if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
+                    console.log("Cloudflare sedang memverifikasi, menunggu...");
+                    waitForCloudflare(); // cek lagi setelah 1 detik
+                } else {
+                    console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
+                    setTimeout(() => {
+                        try {
+                            console.log("3 detik berlalu, injeksi script...");
+                            let antiAfk = false;
+                            (function toggleAutoClicker() {
+                                if (antiAfk) {
+                                    clearInterval(window.autoClicker);
+                                    window.autoClickerRunning = false;
+                                    antiAfk = false;
+                                } else {
+                                    window.autoClicker = setInterval(() => {
+                                        try {
+                                            const playButton = document.querySelector('.btn.btn-lg.btn-success');
+                                            if (playButton) {
+                                                playButton.click();
+                                            }
+                                        } catch (err) {
+                                            console.error("Error di autoClicker:", err);
+                                        }
+                                    }, 5000);
+                                    window.autoClickerRunning = true;
+                                    antiAfk = true;
+                                }
+                            })();
+
+                            fetchAndLogUsername();
+                            updatePonyTownLogo();
+                            observeChat();
+                            settingMenu();
+                            waitForValues();
+                            watchBotValues();
+                            isInject = true;
+                        } catch (err) {
+                            console.error("Error di dalam eksekusi utama:", err);
+                            waitForCloudflare();
+                            s
+                        }
+                    }, 3000);
+                }
+            } catch (error) {
+                console.error("Error saat cek cloudflare:", error);
+                waitForCloudflare();
+            }
+        }, 1000);
+    }
+
+    function runBot() {
+        if (isInject) {
+            return;
+        }
+        waitForCloudflare();
+    }
+
+    function showUpdateNotice(title, titleColor, message, messageColor, link) {
+        const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
+
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = 0;
+        overlay.style.left = 0;
+        overlay.style.width = '100vw';
+        overlay.style.height = '100vh';
+        overlay.style.background = 'rgba(0,0,0,0.6)';
+        overlay.style.display = 'flex';
+        overlay.style.alignItems = 'center';
+        overlay.style.justifyContent = 'center';
+        overlay.style.zIndex = 9999;
+
+        const container = document.createElement('div');
+        container.style.background = 'white';
+        container.style.padding = '25px';
+        container.style.borderRadius = '16px';
+        container.style.boxShadow = '0 4px 14px rgba(0,0,0,0.25)';
+        container.style.maxWidth = '90%';
+        container.style.width = '360px';
+        container.style.textAlign = 'center';
+        container.style.fontFamily = 'sans-serif';
+
+        const topBar = document.createElement('div');
+        topBar.style.display = 'flex';
+        topBar.style.alignItems = 'center';
+        topBar.style.background = '#fff';
+        topBar.style.borderRadius = '30px';
+        topBar.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+        topBar.style.padding = '10px 16px';
+        topBar.style.marginBottom = '20px';
+
+        const avatar = document.createElement('img');
+        avatar.src = avatarURL;
+        avatar.style.width = '50px';
+        avatar.style.height = '50px';
+        avatar.style.borderRadius = '50%';
+        avatar.style.objectFit = 'cover';
+        avatar.style.marginRight = '12px';
+        avatar.style.background = titleColor;
+
+        const titleText = document.createElement('div');
+        titleText.textContent = title;
+        titleText.style.color = titleColor;
+        titleText.style.fontSize = '18px';
+        titleText.style.fontWeight = 'bold';
+
+        topBar.appendChild(avatar);
+        topBar.appendChild(titleText);
+        container.appendChild(topBar);
+
+        const formattedMessage = message.replace(/\n/g, '<br>');
+        const messageP = document.createElement('p');
+        messageP.innerHTML = formattedMessage;
+        messageP.style.color = messageColor;
+        messageP.style.fontSize = '14px';
+        messageP.style.marginBottom = '15px';
+        messageP.style.lineHeight = '1.5';
+
+        container.appendChild(messageP);
+
+        if (link && link.url) {
+            const button = document.createElement('a');
+            button.href = link.url;
+            button.textContent = link.text || 'Update Sekarang';
+            button.target = '_blank';
+            button.style.display = 'inline-block';
+            button.style.padding = '10px 20px';
+            button.style.background = '#007bff';
+            button.style.color = '#fff';
+            button.style.textDecoration = 'none';
+            button.style.borderRadius = '8px';
+            button.style.fontWeight = 'bold';
+            container.appendChild(button);
+        }
+
+        overlay.appendChild(container);
+        document.body.appendChild(overlay);
+    }
+
+    if (currentVersion === requiredVersion) {
+        runBot();
+    } else {
+        showUpdateNotice(
+            'Update Dibutuhkan',
+            '#ff3c2e',
+            `Versi kamu: <strong>${currentVersion || 'tidak diketahui'}</strong>.\nVersi dibutuhkan: <strong>${requiredVersion}</strong>`,
+            '#444444', {
+            text: 'Download Update',
+            url: 'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l'
+        }
+        );
+    }
+}
+startBot();

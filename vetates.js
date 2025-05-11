@@ -963,10 +963,14 @@ function jalankanBot() {
             customBlock.appendChild(button);
             customBlock.appendChild(dropdown);
             const ctype = document.getElementById('chatTypeSelect');
+            const resetButton = document.getElementById('resetButton');
             console.log(ctype);
             topMenu.insertBefore(customBlock, topMenu.firstChild);
 
-
+            button.addEventListener('click', function () {
+                localStorage.removeItem('ptbot_apikey')
+                sm('/leave')
+            });
             button.addEventListener('click', function () {
                 if (dropdown.style.display === 'none' || dropdown.style.display === '') {
                     dropdown.style.display = 'block';
@@ -1063,7 +1067,7 @@ function jalankanBot() {
             const antiAfkInput = document.getElementById('antiAfkInput');
             const aichatInput = document.getElementById('aiChatInput');
             const apikeyInput = document.getElementById('apikeyInput');
-            
+
             const chatTypeValue = chatTypeSelect.value;
             const apikeyValue = apikeyInput.value;
             const ownerValue = ownerInput.value;

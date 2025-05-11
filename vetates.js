@@ -121,7 +121,6 @@ async function GetCmd() {
         injectApikeyForm();
         return null;
     }
-
     async function verifyApiKeyFromStorage() {
         const apiKey = localStorage.getItem('ptbot_apikey');
         if (!apiKey) return null;
@@ -168,6 +167,7 @@ async function startBot() {
         }
 
         window.botData = commands;
+        window.botData.variables = window.botData.variables || {};
         console.log('✅ Bot siap jalan dengan data:', window.botData);
         jalankanBot();
     } else {

@@ -829,6 +829,9 @@
        <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
            <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
        </div>
+       <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
+           <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button">Reset</button>
+       </div>
        <div class="py-1" style="display: flex; align-items: center;">
            <div id="alert-save"></div>
        </div>

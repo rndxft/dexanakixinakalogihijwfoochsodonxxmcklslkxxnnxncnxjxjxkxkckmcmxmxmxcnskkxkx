@@ -705,7 +705,7 @@ function jalankanBot() {
         let lastReplyTime = 0;
     
         function reply(message) {
-            console.log(`/${mtype} ${user}: ${message}`)
+            sm(message, mtype, user);
         }
         function parseCommandData(commandData) {
             const parsedData = {};

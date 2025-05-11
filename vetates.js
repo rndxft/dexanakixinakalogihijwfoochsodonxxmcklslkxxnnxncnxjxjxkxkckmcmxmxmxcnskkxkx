@@ -692,7 +692,7 @@ function jalankanBot() {
         }
         return false
     }
-    async function command(user, msg, mtype, actionList = None) {
+    async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
         reply(message)
         sm(`/say hah ini dari sm ${msg}`)

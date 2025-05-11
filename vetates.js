@@ -193,7 +193,7 @@ function jalankanBot() {
     let isInject = false;
     let isBreaking = false
 
-    const requiredVersion = '1.0.1';
+    const requiredVersion = '1.0.2';
     const currentVersion = window.ponytownbotversion;
 
     const idleDelay = [60000, 90000, 120000][Math.floor(Math.random() * 3)];

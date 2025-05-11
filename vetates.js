@@ -21,7 +21,7 @@ async function GetCmd() {
             if (!img) return console.warn('Logo tidak ditemukan.');
             img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
             img.alt = 'Pony Town Bot Logo';
-            img.style.height = '230px';
+            img.style.height = '170px';
             img.style.imageRendering = 'pixelated';
             img.marginLeft = '10px';
             img.style.display = 'block';
@@ -1157,7 +1157,7 @@ function jalankanBot() {
         if (!img) return console.warn('Logo tidak ditemukan.');
         img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
         img.alt = 'Pony Town Bot Logo';
-        img.style.height = '230px';
+        img.style.height = '170px';
         img.style.imageRendering = 'pixelated';
         img.marginLeft = '10px';
         img.style.display = 'block';

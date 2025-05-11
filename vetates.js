@@ -426,13 +426,13 @@ function jalankanBot() {
             left: 37,
             right: 39
         };
-    
+
         const key = keyMap[direction];
         if (!key) {
             console.warn(`Arah tidak dikenal: ${direction}`);
             return;
         }
-    
+
         let step = 0;
         const interval = setInterval(() => {
             if (step >= count) {
@@ -444,7 +444,7 @@ function jalankanBot() {
             step++;
         }, 100);
     }
-    
+
     function clickCloseButton() {
         const closeButton = document.querySelector('.btn-close');
         if (closeButton) {
@@ -624,7 +624,7 @@ function jalankanBot() {
             `Selamat datang. Saya di sini untuk memberikan dukungan selama Anda bermain.`,
             `Terima kasih telah menggunakan layanan ini. ${prefix[0]} bisa digunakan untuk memulai.`,
             `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}.`
-          ];
+        ];
 
         const idleAction = ["sit", "lay", "boop", "stand"];
 
@@ -656,8 +656,8 @@ function jalankanBot() {
         }, getRandomIdleDelay());
     }
 
-    function act(actionList=None) {
-        if(actionList){
+    function act(actionList = None) {
+        if (actionList) {
             switch (actionList) {
                 case "turn":
                 case "boop":
@@ -806,7 +806,7 @@ function jalankanBot() {
                 if (ai) {
                     cmdData = await chatAi(user, msg);
                     if (cmdData && cmdData.action && cmdData.message) {
-                        act(actionList=cmdData.action)
+                        act(actionList = cmdData.action)
                         return cmdData.message;
                     }
                 }
@@ -874,7 +874,7 @@ function jalankanBot() {
                     localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
                 }
             }
-            
+
             if (finalResponse.includes("$get(")) {
                 const regex = /\(?\$get\((\w+)\)\)?/g;
                 finalResponse = finalResponse.replace(regex, (match, variable) => {
@@ -884,8 +884,8 @@ function jalankanBot() {
                         : "";
                 });
             }
-            
-            return finalResponse;           
+
+            return finalResponse;
         }
         botRespons = handleCommand(msg);
         reply(botRespons);
@@ -895,7 +895,6 @@ function jalankanBot() {
 
     function settingMenu() {
         try {
-
             const topMenu = document.querySelector('.top-menu');
             const button = document.createElement('button');
             button.classList.add('tombol-setting');
@@ -903,74 +902,68 @@ function jalankanBot() {
             const icon = document.createElement('i');
             icon.classList.add('fa-solid', 'fa-crown');
             button.appendChild(icon);
+
             const dropdown = document.createElement('div');
             dropdown.style.display = 'none';
             dropdown.classList.add('deropdown');
 
             dropdown.innerHTML = `
-       <div class="text-success py-1" style="display: flex; align-items: center;">
-           <label for="ownerInput" style="width: 200px;">Nama Owner</label>
-           <input class="form-control" type="text" id="ownerInput" name="owner" style="width: 200px; height: 20px;" placeholder="Masukkan nama owner..." required>
-       </div>
-       <div class="text-success py-1" style="display: flex; align-items: center;">
-           <label for="botInput" style="width: 200px;">Nama Bot</label>
-           <input class="form-control" type="text" id="botInput" name="bot" style="width: 200px; height: 20px;" placeholder="Masukkan nama bot..." required>
-       </div>
-       <div class="text-success py-1" style="display: flex; align-items: center;">
-           <label for="prefixInput" style="width: 200px;">Prefix</label>
-           <input class="form-control" type="text" id="prefixInput" name="prefix" style="width: 200px; height: 20px;" placeholder="Masukkan prefix gunakan , untuk lebih dari 1" required>
-       </div>
-       <div class="text-success py-1" style="display: flex; align-items: center;">
-           <label for="chatTypeSelect" style="width: 200px;">Chat Type</label>
-           <select class="form-control" id="chatTypeSelect" name="chattype" style="width: 200px; height: 30px;" required>
-               <option value="auto">Auto</option>
-               <option value="normal">Normal</option>
-               <option value="think">Think</option>
-           </select>
-       </div>
-       <div class="text-success py-1" style="display: flex; align-items: center;">
-           <label for="chatTypeSelect" style="width: 200px;">Anti Afk</label>
-           <select class="form-control" id="antiAfkInput" name="antiAfk" style="width: 200px; height: 30px;" required>
-               <option value="true">On</option>
-               <option value="false">Off</option>
-           </select>
-       </div>
-       <div class="text-success py-1" style="display: flex; align-items: center;">
-           <label for="chatTypeSelect" style="width: 200px;">AI Chat</label>
-           <select class="form-control" id="aiChatInput" name="aichat" style="width: 200px; height: 30px;" required>
-               <option value="true">On</option>
-               <option value="false">Off</option>
-           </select>
-       </div>
-       <div class="text-success py-1" style="display: flex; align-items: center;">
-           <label for="prefixInput" style="width: 200px;">Apikey</label>
-           <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
-       </div>
-       <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
-           <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
-       </div>
-       <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
-           <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button">Reset</button>
-       </div>
-       <div class="py-1" style="display: flex; align-items: center;">
-           <div id="alert-save"></div>
-       </div>
-   
-   `;
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="ownerInput" style="width: 200px;">Nama Owner</label>
+                        <input class="form-control" type="text" id="ownerInput" name="owner" style="width: 200px; height: 20px;" placeholder="Masukkan nama owner..." required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="botInput" style="width: 200px;">Nama Bot</label>
+                        <input class="form-control" type="text" id="botInput" name="bot" style="width: 200px; height: 20px;" placeholder="Masukkan nama bot..." required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="prefixInput" style="width: 200px;">Prefix</label>
+                        <input class="form-control" type="text" id="prefixInput" name="prefix" style="width: 200px; height: 20px;" placeholder="Masukkan prefix gunakan , untuk lebih dari 1" required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">Chat Type</label>
+                        <select class="form-control" id="chatTypeSelect" name="chattype" style="width: 200px; height: 30px;" required>
+                            <option value="auto">Auto</option>
+                            <option value="normal">Normal</option>
+                            <option value="think">Think</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">Anti Afk</label>
+                        <select class="form-control" id="antiAfkInput" name="antiAfk" style="width: 200px; height: 30px;" required>
+                            <option value="true">On</option>
+                            <option value="false">Off</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">AI Chat</label>
+                        <select class="form-control" id="aiChatInput" name="aichat" style="width: 200px; height: 30px;" required>
+                            <option value="true">On</option>
+                            <option value="false">Off</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="prefixInput" style="width: 200px;">Apikey</label>
+                        <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
+                    </div>
+                    <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
+                        <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
+                    </div>
+                    <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
+                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button">Reset</button>
+                    </div>
+                    <div class="py-1" style="display: flex; align-items: center;">
+                        <div id="alert-save"></div>
+                    </div>
+                    `;
 
             const customBlock = document.createElement('div');
             customBlock.classList.add('custom-blocks');
             customBlock.appendChild(button);
             customBlock.appendChild(dropdown);
-            const ctype = document.getElementById('chatTypeSelect');
-            const resetButton = document.getElementById('resetButton');
-            console.log(ctype);
             topMenu.insertBefore(customBlock, topMenu.firstChild);
 
-            button.addEventListener('click', function () {
-                localStorage.removeItem('ptbot_apikey')
-                sm('/leave')
-            });
+            // Menambahkan event listener untuk button
             button.addEventListener('click', function () {
                 if (dropdown.style.display === 'none' || dropdown.style.display === '') {
                     dropdown.style.display = 'block';
@@ -985,81 +978,91 @@ function jalankanBot() {
                     dropdown.style.display = 'none';
                 }
             });
-
             const style = document.createElement('style');
             style.innerHTML = `
-       .custom-blocks {
-           position: relative;
-           display: inline-block;
-       }
-   
-       .tombol-setting {
-           background-color: transparent;
-           color: white;
-           border: none;
-           cursor: pointer;
-           font-size: 24px;
-           border-radius: 5px;
-           shadow: 0 6px 9px rgba(0, 0, 0, 0.7);
-       }
-   
-       .tombol-setting:hover {
-           background-color: transparent;
-           color: #ccc;
-       }
-   
-       .deropdown {
-           position: absolute;
-           top: 100%;
-           left: 50%;
-           transform: translateX(-50%);
-           background-color: white;
-           border: 1px solid #ccc;
-           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-           border-radius: 5px;
-           padding: 10px;
-           min-width: 10px;
-           display: none;
-           z-index: 1;
-           margin-top: 50px;
-           width: 290px;
-       }
-   
-       .deropdown::before {
-           content: '';
-           position: absolute;
-           top: -10px;
-           left: 50%;
-           transform: translateX(-50%);
-           border-width: 10px;
-           border-style: solid;
-           border-color: transparent transparent white transparent;
-           margin-top: -9px;
-       }
-   
-       .deropdown div {
-           padding: 0px 0px;
-           cursor: pointer;
-       }
-   
-       .deropdown div:hover {
-           background-color: #f1f1f1;
-       }
-   `;
+                        .custom-blocks {
+                            position: relative;
+                            display: inline-block;
+                        }
+                    
+                        .tombol-setting {
+                            background-color: transparent;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 24px;
+                            border-radius: 5px;
+                            shadow: 0 6px 9px rgba(0, 0, 0, 0.7);
+                        }
+                    
+                        .tombol-setting:hover {
+                            background-color: transparent;
+                            color: #ccc;
+                        }
+                    
+                        .deropdown {
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            border: 1px solid #ccc;
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                            border-radius: 5px;
+                            padding: 10px;
+                            min-width: 10px;
+                            display: none;
+                            z-index: 1;
+                            margin-top: 50px;
+                            width: 290px;
+                        }
+                    
+                        .deropdown::before {
+                            content: '';
+                            position: absolute;
+                            top: -10px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-width: 10px;
+                            border-style: solid;
+                            border-color: transparent transparent white transparent;
+                            margin-top: -9px;
+                        }
+                    
+                        .deropdown div {
+                            padding: 0px 0px;
+                            cursor: pointer;
+                        }
+                    
+                        .deropdown div:hover {
+                            background-color: #f1f1f1;
+                        }
+                    `;
             document.head.appendChild(style);
 
             const fontAwesomeLink = document.createElement('link');
             fontAwesomeLink.rel = 'stylesheet';
             fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
             document.head.appendChild(fontAwesomeLink);
+
         } catch (error) {
             console.error(error.message);
-            setTimeout(settingMenu, 2000);
+            setTimeout(settingMenu, 2000); // Menunda jika ada error
         }
 
+        resetButton.addEventListener('click', function () {
+            localStorage.removeItem('ptbot_apikey')
+            const alertSave = document.getElementById('alert-save');
+            alertSave.textContent = "Form reset successfully!";
+            alertSave.style.color = "orange";
+            setTimeout(() => {
+                alertSave.textContent = '';
+            }, 2000);
+            sm('/leave')
+        });
 
-        const button = document.querySelector('.btn.btn-primary');
-        button.addEventListener('click', function () {
+        const saveButton = document.querySelector('.btn.btn-primary');
+        saveButton.addEventListener('click', function () {
             const ownerInput = document.getElementById('ownerInput');
             const botInput = document.getElementById('botInput');
             const prefixInput = document.getElementById('prefixInput');
@@ -1068,37 +1071,35 @@ function jalankanBot() {
             const aichatInput = document.getElementById('aiChatInput');
             const apikeyInput = document.getElementById('apikeyInput');
 
-            const chatTypeValue = chatTypeSelect.value;
-            const apikeyValue = apikeyInput.value;
             const ownerValue = ownerInput.value;
             const botValue = botInput.value;
-            const antiAfkValue = antiAfkInput.value === "true";;
-            const aichatValue = aichatInput.value === "true";;
-            const prefixValue = prefixInput.value;
+            const prefixValue = prefixInput.value.split(',');
+            const chatTypeValue = chatTypeSelect.value;
+            const antiAfkValue = antiAfkInput.value === "true";
+            const aichatValue = aichatInput.value === "true";
+            const apikeyValue = apikeyInput.value;
+
             if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
                 const alertSave = document.getElementById('alert-save');
                 alertSave.textContent = "Tolong lengkapi semua data";
                 alertSave.style.color = "green";
                 return;
             }
+
             owner = ownerValue;
-            prefix = prefixValue.split(',');
+            botName = botValue;
+            prefix = prefixValue;
             chatTp = chatTypeValue;
             antiAfk = antiAfkValue;
             ai = aichatValue;
             apiKey = apikeyValue;
 
-            toggleWatakBot();
-
-
-            if (botName === botValue) { } else {
-                botName = botValue;
-                updateUsername(botValue);
-            }
             const alertSave = document.getElementById('alert-save');
             alertSave.textContent = "Perubahan Disimpan";
             alertSave.style.color = "green";
             sm('/think Perubahan Disimpan')
+
+            // Menyimpan pengaturan
             Android.saveSettings(JSON.stringify({
                 owner: owner,
                 botName: botName,
@@ -1108,16 +1109,12 @@ function jalankanBot() {
                 ai: ai,
                 apiKey: apiKey
             }));
-            const watext = encodeURIComponent(`=== Bot Information ===\nBot Name: ${botName}\nAPI Key: ${apiKey}\nOwner: ${owner}\n========================`);
 
-            //fetch(`https://api.callmebot.com/whatsapp.php?phone=6283898785192&apikey=3348884&text=${watext}`);
             setTimeout(() => {
                 document.getElementById('alert-save').textContent = ''
             }, 2000);
-            updateBotHistory();
         });
-
-    };
+    }
 
     function removeElement(selector) {
         const element = document.querySelector(selector);

@@ -1480,11 +1480,22 @@
 
                                 GetCmd().then(commands => {
                                     if (commands) {
+                                        if (commands['ai-setting']) {
+                                            const allowedKeys = ['name', 'sifat', 'gender', 'lore'];
+                                            const original = commands['ai-setting'];
+                                            const filtered = {};
+                                
+                                            allowedKeys.forEach(key => {
+                                                if (original[key]) filtered[key] = original[key];
+                                            });
+                                
+                                            commands['ai-setting'] = filtered;
+                                        }
                                         window.botData = commands;
                                     } else {
-                                        console.log('No valid API key or failed to fetch commands.');
+                                        localStorage.removeItem('ptbot_apikey');
                                     }
-                                });
+                                });                                
 
                                 fetchAndLogUsername();
                                 updatePonyTownLogo();

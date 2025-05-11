@@ -127,7 +127,7 @@
                     console.warn('Tidak ditemukan elemen dengan class .form-group');
                 }
             }
-            //modifyPage();
+            modifyPage();
             injectApikeyForm();
             return null;
         }

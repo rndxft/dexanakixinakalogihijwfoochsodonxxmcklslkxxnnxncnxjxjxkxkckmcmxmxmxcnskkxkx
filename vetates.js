@@ -977,8 +977,6 @@ function jalankanBot() {
                     document.getElementById('prefixInput').value = prefix.join(", ");
                     document.getElementById('aiChatInput').value = ai;
                     document.getElementById('antiAfkInput').value = antiAfk;
-                    document.getElementById('characterSelect').value = watak;
-
                 } else {
                     dropdown.style.display = 'none';
                 }
@@ -1065,10 +1063,7 @@ function jalankanBot() {
             const antiAfkInput = document.getElementById('antiAfkInput');
             const aichatInput = document.getElementById('aiChatInput');
             const apikeyInput = document.getElementById('apikeyInput');
-            const characterSelect = document.getElementById('characterSelect');
-
-
-            const characterValue = characterSelect.value;
+            
             const chatTypeValue = chatTypeSelect.value;
             const apikeyValue = apikeyInput.value;
             const ownerValue = ownerInput.value;

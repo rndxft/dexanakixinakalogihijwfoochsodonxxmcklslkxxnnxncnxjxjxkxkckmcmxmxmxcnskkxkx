@@ -696,20 +696,50 @@ function jalankanBot() {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
         //if (user === botName) return;
-        console.log(`${user}: ${msg}`);
-    
         if (isTyping) return;
         let args = msg.split(' ');
         let cmd = args.shift().substring(1);
         let text = args.join(' ');
         let lastReplyTime = 0;
-    
+
         function reply(message) {
-            sm(message, mtype, user);
+            isTyping = true;
+            const now = Date.now();
+            const timeDifference = now - lastReplyTime;
+            const minInterval = 1500;
+            if (timeDifference < minInterval) {
+                setTimeout(() => {
+                    smReply(message);
+                    lastReplyTime = Date.now();
+                }, minInterval - timeDifference);
+            } else {
+                smReply(message);
+                lastReplyTime = Date.now();
+            }
+
+            function smReply(message) {
+                const messages = message.split(/\/n|\n/).map(msg => msg.trim()).filter(msg => msg.length > 0);
+                let delay = 0;
+                messages.forEach((msg) => {
+                    setTimeout(() => {
+                        let type = mtype;
+                        if (chatTp === 'think') type = 'think';
+                        else if (chatTp === 'normal') type = 'say';
+                        else if (chatTp === 'auto') type = mtype;
+                        sm(msg, type, user);
+                    }, delay);
+                    delay += 4000;
+                });
+                setTimeout(() => {
+                    sm('/clearchat');
+                    isTyping = false;
+                }, delay);
+            }
         }
+
         function parseCommandData(commandData) {
             const parsedData = {};
-    
+
             Object.keys(commandData).forEach((command) => {
                 const [commandName, description] = command.split('-');
                 const commands = commandName.split('|');
@@ -720,10 +750,10 @@ function jalankanBot() {
                     };
                 });
             });
-    
+
             return parsedData;
         }
-    
+
         function cmdHandler(response, parsedCmd) {
             let result = response;
             if (response.includes("$cmd[")) {
@@ -741,7 +771,7 @@ function jalankanBot() {
             }
             return result;
         }
-    
+
         function descHandler(response, parsedCmd) {
             let result = response;
             const regex = /\$desc\[(\d+)\]/g;
@@ -757,14 +787,14 @@ function jalankanBot() {
             }
             return result;
         }
-    
+
         function cmdsHandler(responseTemplate, parsedCmd) {
             const lines = responseTemplate.split('\n');
             let header = '';
             let itemTemplate = '';
             let footer = '';
             let passedTemplate = false;
-    
+
             for (let line of lines) {
                 if (line.includes('$//cmds') || line.includes('$descs')) {
                     itemTemplate = line;
@@ -775,25 +805,25 @@ function jalankanBot() {
                     footer += line + '\n';
                 }
             }
-    
+
             let result = header;
             if (!header.endsWith('\n')) result += '\n';
-    
+
             Object.entries(parsedCmd).forEach(([cmd, data]) => {
                 const line = itemTemplate
                     .replaceAll("$//cmds", cmd)
                     .replaceAll("$descs", data.description);
                 result += line + '\n';
             });
-    
+
             result += footer;
             return result.trim();
         }
-    
+
         function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
-    
+
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 console.log(cmdData);
@@ -802,17 +832,17 @@ function jalankanBot() {
                 }
                 return cmdData.response;
             }
-    
+
             let responseTemplate = cmdData.response;
             let finalResponse = responseTemplate;
             if (finalResponse.includes("$cmd[")) {
                 finalResponse = cmdHandler(finalResponse, parsedCmd);
             }
-    
+
             if (finalResponse.includes("$desc[")) {
                 finalResponse = descHandler(finalResponse, parsedCmd);
             }
-    
+
             if (finalResponse.includes("$//cmds") || finalResponse.includes("$descs")) {
                 finalResponse = cmdsHandler(finalResponse, parsedCmd);
             }
@@ -827,12 +857,12 @@ function jalankanBot() {
                             .replaceAll("$username", `"${user}"`)
                             .replaceAll("$owner", `"${owner}"`)
                             .replaceAll("$botname", `"${botName}"`);
-    
+
                         result = eval(parsedCondition) ? truePart : falsePart;
                     } catch {
                         result = falsePart;
                     }
-    
+
                     finalResponse = finalResponse.replace(match[0], result);
                 }
             }
@@ -861,7 +891,7 @@ function jalankanBot() {
                     localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
                 }
             }
-    
+
             if (finalResponse.includes("$get(")) {
                 const regex = /\(?\$get\((\w+)\)\)?/g;
                 finalResponse = finalResponse.replace(regex, (match, variable) => {
@@ -871,7 +901,7 @@ function jalankanBot() {
                         : "";
                 });
             }
-    
+
             return finalResponse;
         }
         botRespons = handleCommand(cmd);

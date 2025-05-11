@@ -181,7 +181,7 @@ function jalankanBot() {
     }
     let apiKey = ""
     let botName = "";
-    let prefix = ['.', '!'];
+    let prefix = ['.'];
     let chatTp = "auto";
     let owner = "";
     let antiAfk = false;
@@ -694,24 +694,22 @@ function jalankanBot() {
     }
     async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
-        reply(message)
-        sm(`/say hah ini dari sm ${msg}`)
         if (!prefix.some(p => msg.startsWith(p))) return;
-        resetIdleTimer();
         //if (user === botName) return;
-        //if (isTyping) return;
+        console.log(`${user}: ${msg}`);
+    
+        if (isTyping) return;
         let args = msg.split(' ');
         let cmd = args.shift().substring(1);
         let text = args.join(' ');
         let lastReplyTime = 0;
-
+    
         function reply(message) {
-            sm(message, user, mtype);
+            console.log(`/${mtype} ${user}: ${message}`)
         }
-        
         function parseCommandData(commandData) {
             const parsedData = {};
-
+    
             Object.keys(commandData).forEach((command) => {
                 const [commandName, description] = command.split('-');
                 const commands = commandName.split('|');
@@ -722,10 +720,10 @@ function jalankanBot() {
                     };
                 });
             });
-
+    
             return parsedData;
         }
-
+    
         function cmdHandler(response, parsedCmd) {
             let result = response;
             if (response.includes("$cmd[")) {
@@ -743,7 +741,7 @@ function jalankanBot() {
             }
             return result;
         }
-
+    
         function descHandler(response, parsedCmd) {
             let result = response;
             const regex = /\$desc\[(\d+)\]/g;
@@ -759,14 +757,14 @@ function jalankanBot() {
             }
             return result;
         }
-
+    
         function cmdsHandler(responseTemplate, parsedCmd) {
             const lines = responseTemplate.split('\n');
             let header = '';
             let itemTemplate = '';
             let footer = '';
             let passedTemplate = false;
-
+    
             for (let line of lines) {
                 if (line.includes('$//cmds') || line.includes('$descs')) {
                     itemTemplate = line;
@@ -777,54 +775,48 @@ function jalankanBot() {
                     footer += line + '\n';
                 }
             }
-
+    
             let result = header;
             if (!header.endsWith('\n')) result += '\n';
-
+    
             Object.entries(parsedCmd).forEach(([cmd, data]) => {
                 const line = itemTemplate
                     .replaceAll("$//cmds", cmd)
                     .replaceAll("$descs", data.description);
                 result += line + '\n';
             });
-
+    
             result += footer;
             return result.trim();
         }
-
-        async function handleCommand(inputCommand) {
+    
+        function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
-            const cmdData = parsedCmd[inputCommand.toLowerCase()];
-
+            let cmdData = parsedCmd[inputCommand.toLowerCase()];
+    
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
-                if (ai) {
-                    cmdData = await chatAi(user, msg);
-                    if (cmdData && cmdData.action && cmdData.message) {
-                        act(actionList = cmdData.action)
-                        return cmdData.message;
-                    }
-                }
+                console.log(cmdData);
                 if (!cmdData) {
                     return "Command not recognized.";
                 }
                 return cmdData.response;
             }
-
+    
             let responseTemplate = cmdData.response;
             let finalResponse = responseTemplate;
             if (finalResponse.includes("$cmd[")) {
                 finalResponse = cmdHandler(finalResponse, parsedCmd);
             }
-
+    
             if (finalResponse.includes("$desc[")) {
                 finalResponse = descHandler(finalResponse, parsedCmd);
             }
-
+    
             if (finalResponse.includes("$//cmds") || finalResponse.includes("$descs")) {
                 finalResponse = cmdsHandler(finalResponse, parsedCmd);
             }
-            if (finalResponse.includes("$if[")) {
+            if (finalResponse.includes("$if(")) {
                 const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
                 let match;
                 while ((match = regex.exec(finalResponse)) !== null) {
@@ -835,12 +827,12 @@ function jalankanBot() {
                             .replaceAll("$username", `"${user}"`)
                             .replaceAll("$owner", `"${owner}"`)
                             .replaceAll("$botname", `"${botName}"`);
-
+    
                         result = eval(parsedCondition) ? truePart : falsePart;
                     } catch {
                         result = falsePart;
                     }
-
+    
                     finalResponse = finalResponse.replace(match[0], result);
                 }
             }
@@ -848,8 +840,8 @@ function jalankanBot() {
                 forceStop();
                 finalResponse = finalResponse.replaceAll("$stop", "");
             }
-            finalResponse = finalResponse.replaceAll("$msg", text);
             finalResponse = finalResponse.replaceAll("$date", new Date().toLocaleDateString());
+            finalResponse = finalResponse.replaceAll("$msg", text);
             finalResponse = finalResponse.replaceAll("$time", new Date().toLocaleTimeString());
             finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
                 const parsedText = text.replace(/\\n/g, '\n');
@@ -869,7 +861,7 @@ function jalankanBot() {
                     localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
                 }
             }
-
+    
             if (finalResponse.includes("$get(")) {
                 const regex = /\(?\$get\((\w+)\)\)?/g;
                 finalResponse = finalResponse.replace(regex, (match, variable) => {
@@ -879,7 +871,7 @@ function jalankanBot() {
                         : "";
                 });
             }
-
+    
             return finalResponse;
         }
         botRespons = handleCommand(cmd);

@@ -121,6 +121,7 @@ async function GetCmd() {
         injectApikeyForm();
         return null;
     }
+
     async function verifyApiKeyFromStorage() {
         const apiKey = localStorage.getItem('ptbot_apikey');
         if (!apiKey) return null;
@@ -167,7 +168,6 @@ async function startBot() {
         }
 
         window.botData = commands;
-        window.botData.variables = window.botData.variables || {};
         console.log('✅ Bot siap jalan dengan data:', window.botData);
         jalankanBot();
     } else {
@@ -694,6 +694,8 @@ function jalankanBot() {
     }
     async function command(user, msg, mtype, actionList = None) {
         if (!user || !msg || !mtype) return;
+        reply(message)
+        sm(`/say hah ini dari sm ${msg}`)
         if (!prefix.some(p => msg.startsWith(p))) return;
         resetIdleTimer();
         //if (user === botName) return;
@@ -706,7 +708,7 @@ function jalankanBot() {
         function reply(message) {
             sm(message, user, mtype);
         }
-        reply(message)
+        
         function parseCommandData(commandData) {
             const parsedData = {};
 

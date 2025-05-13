@@ -1,21 +1,24 @@
 async function GetCmd() {
     if (!localStorage.getItem('ptbot_apikey')) {
-
         function removeElements(selector) {
             const element = document.querySelector(selector);
             if (element) element.remove();
         }
 
-        function showMessage(message) {
+        function showMessage(message, status = 'success') {
+            const header = document.querySelector(".form-group.custom");
+            if (!header) return;
             const msg = document.createElement('div');
-            msg.className = 'custom-message';
+            msg.className = 'alerts';
             msg.textContent = message;
-            msg.style.color = '#0f0';
+            msg.style.color = status === 'error' ? 'red' : '#0f0';
             msg.style.fontFamily = 'monospace';
             msg.style.margin = '4px';
-            document.body.appendChild(msg);
+            header.appendChild(msg);
+            setTimeout(() => {
+                msg.remove();
+            }, 3000);
         }
-
         function updatePonyTownLogos() {
             const img = document.querySelector('img.pixelart.home-logo');
             if (!img) return console.warn('Logo tidak ditemukan.');
@@ -76,7 +79,7 @@ async function GetCmd() {
                 container.querySelectorAll('.form-group').forEach(el => el.remove());
 
                 const formGroup = document.createElement("div");
-                formGroup.className = "form-group";
+                formGroup.className = "form-group custom";
                 formGroup.style.marginTop = "70px";
 
                 const input = document.createElement("input");
@@ -95,21 +98,36 @@ async function GetCmd() {
                 submitBtn.style.margin = "10px auto 0";
                 submitBtn.style.backgroundColor = "#333";
                 submitBtn.style.color = "#fff";
-                submitBtn.style.border = "none";
+                submitBtn.style.border = "1px solid #fff";
                 submitBtn.style.padding = "10px 20px";
                 submitBtn.style.borderRadius = "5px";
 
                 submitBtn.onclick = () => {
                     const value = input.value.trim();
                     if (value) {
+                        showMessage("Berhasil menyimpan APIKEY", "error");
                         localStorage.setItem('ptbot_apikey', value);
                         window.location.reload()
                     } else {
-                        alert("Mohon masukkan API Key terlebih dahulu.");
+                        showMessage("Mohon masukkan API Key terlebih dahulu.", "error");
                     }
                 };
+                const msg = document.createElement('div');
+                msg.className = 'custom-message';
+                msg.style.color = '#fff';
+                msg.style.fontFamily = 'monospace';
+                msg.style.margin = '4px';
+                msg.textContent = "Belum punya APIKEY? buat disini: ";
+                const link = document.createElement('a');
+                link.href = "https://randsfk.vercel.app/login";
+                link.textContent = "Dashboard";
+                link.style.color = '#cc6600';
+                link.style.marginLeft = '4px';
+                link.style.textDecoration = 'underline';
+                msg.appendChild(link);
 
                 formGroup.appendChild(input);
+                formGroup.appendChild(msg);
                 formGroup.appendChild(submitBtn);
                 container.insertBefore(formGroup, container.firstChild);
             } else {
@@ -145,7 +163,7 @@ async function GetCmd() {
                 return null;
             }
         } catch (error) {
-            console.error('Error verifying API key:', error);
+            showMessage("APIKEY error, mohon dapatkan apikey valid di Pony Town Dashboard", "error");
             localStorage.removeItem('ptbot_apikey');
             return null;
         }
@@ -176,6 +194,7 @@ async function startBot() {
     }
 }
 function jalankanBot() {
+
     if (window._pb_ky_sc !== "randyganteng") {
         throw new Error("Mau ngapain kamu bang?.");
     }
@@ -192,9 +211,6 @@ function jalankanBot() {
     let isIdle = false;
     let isInject = false;
     let isBreaking = false
-
-    const requiredVersion = '1.0.2';
-    const currentVersion = window.ponytownbotversion;
 
     const idleDelay = [60000, 90000, 120000][Math.floor(Math.random() * 3)];
 
@@ -316,7 +332,7 @@ function jalankanBot() {
                 console.error("Request failed with status:", response.status);
             }
         } catch (error) {
-            console.error("Error in chatAi:", error);
+            console.error("Error in chatAi:", "error");
         }
 
         return {
@@ -736,7 +752,6 @@ function jalankanBot() {
                 }, delay);
             }
         }
-
         function parseCommandData(commandData) {
             const parsedData = {};
 
@@ -796,7 +811,7 @@ function jalankanBot() {
             let passedTemplate = false;
 
             for (let line of lines) {
-                if (line.includes('$//cmds') || line.includes('$descs')) {
+                if (line.includes('$//cmds') || line.includes('$//descs')) {
                     itemTemplate = line;
                     passedTemplate = true;
                 } else if (!passedTemplate) {
@@ -812,7 +827,7 @@ function jalankanBot() {
             Object.entries(parsedCmd).forEach(([cmd, data]) => {
                 const line = itemTemplate
                     .replaceAll("$//cmds", cmd)
-                    .replaceAll("$descs", data.description);
+                    .replaceAll("$//descs", data.description);
                 result += line + '\n';
             });
 
@@ -823,75 +838,28 @@ function jalankanBot() {
         function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
-
+        
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
-                console.log(cmdData);
+                if (ai) {
+                    chatAi(user, msg).then(result => {
+                        cmdData = result;
+                        if (cmdData.action && cmdData.message) {
+                            sm(cmdData.action);
+                            return cmdData.message;
+                        }
+                    });
+                }
                 if (!cmdData) {
                     return "Command not recognized.";
                 }
                 return cmdData.response;
             }
-
+        
             let responseTemplate = cmdData.response;
             let finalResponse = responseTemplate;
-            if (finalResponse.includes("$cmd[")) {
-                finalResponse = cmdHandler(finalResponse, parsedCmd);
-            }
-
-            if (finalResponse.includes("$desc[")) {
-                finalResponse = descHandler(finalResponse, parsedCmd);
-            }
-
-            if (finalResponse.includes("$//cmds") || finalResponse.includes("$descs")) {
-                finalResponse = cmdsHandler(finalResponse, parsedCmd);
-            }
-            if (finalResponse.includes("$if(")) {
-                const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
-                let match;
-                while ((match = regex.exec(finalResponse)) !== null) {
-                    const [_, condition, truePart, falsePart] = match;
-                    let result;
-                    try {
-                        const parsedCondition = condition
-                            .replaceAll("$username", `"${user}"`)
-                            .replaceAll("$owner", `"${owner}"`)
-                            .replaceAll("$botname", `"${botName}"`);
-
-                        result = eval(parsedCondition) ? truePart : falsePart;
-                    } catch {
-                        result = falsePart;
-                    }
-
-                    finalResponse = finalResponse.replace(match[0], result);
-                }
-            }
-            if (finalResponse.includes("$stop")) {
-                forceStop();
-                finalResponse = finalResponse.replaceAll("$stop", "");
-            }
-            finalResponse = finalResponse.replaceAll("$date", new Date().toLocaleDateString());
-            finalResponse = finalResponse.replaceAll("$msg", text);
-            finalResponse = finalResponse.replaceAll("$time", new Date().toLocaleTimeString());
-            finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
-                const parsedText = text.replace(/\\n/g, '\n');
-                return parsedText.repeat(Number(count));
-            });
-            finalResponse = finalResponse.replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase());
-            finalResponse = finalResponse.replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase());
-            finalResponse = finalResponse.replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
-                return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
-            });
-            if (finalResponse.startsWith("$set(")) {
-                const regex = /\$set\((\w+)=(.*?)\)/;
-                const match = finalResponse.match(regex);
-                if (match) {
-                    const [_, variable, value] = match;
-                    window.botData.variables[variable] = value;
-                    localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
-                }
-            }
-
+        
+            // 1. $get(variable)
             if (finalResponse.includes("$get(")) {
                 const regex = /\(?\$get\((\w+)\)\)?/g;
                 finalResponse = finalResponse.replace(regex, (match, variable) => {
@@ -901,9 +869,87 @@ function jalankanBot() {
                         : "";
                 });
             }
-
+        
+            // 2. $set(variable=value)
+            if (finalResponse.startsWith("$set(")) {
+                const regex = /\$set\((\w+)=(.*?)\)/;
+                const match = finalResponse.match(regex);
+                if (match) {
+                    const [_, variable, value] = match;
+                    window.botData.variables[variable] = value;
+                    localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
+                }
+            }
+        
+            // 3. Token replacement
+            finalResponse = finalResponse
+                .replaceAll("$msg", text)
+                .replaceAll("$username", `"${user}"`)
+                .replaceAll("$owner", `"${owner}"`)
+                .replaceAll("$botname", `"${botName}"`)
+                .replaceAll("$date", new Date().toLocaleDateString())
+                .replaceAll("$time", new Date().toLocaleTimeString());
+        
+            // 4. $contains(text|word)
+            finalResponse = finalResponse.replace(/\$contains\((.*?[^\\])\|(.*?)\)/g, (_, teks, kata) => {
+                return teks.includes(kata).toString();
+            });
+        
+            // 5. $if(condition)(true)(false)
+            if (finalResponse.includes("$if(")) {
+                const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
+                let match;
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const [_, condition, truePart, falsePart] = match;
+                    let result;
+                    try {
+                        const parsedCondition = condition
+                            .replaceAll("$msg", text)
+                            .replaceAll("$username", `"${user}"`)
+                            .replaceAll("$owner", `"${owner}"`)
+                            .replaceAll("$botname", `"${botName}"`);
+                        result = eval(parsedCondition) ? truePart : falsePart;
+                    } catch {
+                        result = falsePart;
+                    }
+                    finalResponse = finalResponse.replace(match[0], result);
+                }
+            }
+        
+            // 6. $stop
+            if (finalResponse.includes("$stop")) {
+                forceStop();
+                finalResponse = finalResponse.replaceAll("$stop", "");
+            }
+        
+            // 7. Utility transforms
+            finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
+                const parsedText = text.replace(/\\n/g, '\n');
+                return parsedText.repeat(Number(count));
+            });
+            finalResponse = finalResponse.replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase());
+            finalResponse = finalResponse.replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase());
+            finalResponse = finalResponse.replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
+                return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+            });
+            finalResponse = finalResponse.replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
+                return text.split(from).join(to);
+            });
+        
+            // 8. Custom handlers
+            if (finalResponse.includes("$cmd[")) {
+                finalResponse = cmdHandler(finalResponse, parsedCmd);
+            }
+            if (finalResponse.includes("$desc[")) {
+                finalResponse = descHandler(finalResponse, parsedCmd);
+            }
+            if (finalResponse.includes("$//cmds") || finalResponse.includes("$//descs")) {
+                finalResponse = cmdsHandler(finalResponse, parsedCmd);
+            }
+        
             return finalResponse;
         }
+        
         botRespons = handleCommand(cmd);
         if (botRespons) {
             reply(botRespons);
@@ -967,9 +1013,8 @@ function jalankanBot() {
                     </div>
                     <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
                         <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
-                    </div>
-                    <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
-                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button">Reset</button>
+                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; background-color: red;" type="button">Reset</button>
+                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px; " type="button">Dashboard</button>
                     </div>
                     <div class="py-1" style="display: flex; align-items: center;">
                         <div id="alert-save"></div>
@@ -981,8 +1026,8 @@ function jalankanBot() {
             customBlock.appendChild(button);
             customBlock.appendChild(dropdown);
             topMenu.insertBefore(customBlock, topMenu.firstChild);
+            const Dashboard = getElementById('web');
 
-            // Menambahkan event listener untuk button
             button.addEventListener('click', function () {
                 if (dropdown.style.display === 'none' || dropdown.style.display === '') {
                     dropdown.style.display = 'block';
@@ -997,6 +1042,11 @@ function jalankanBot() {
                     dropdown.style.display = 'none';
                 }
             });
+
+            Dashboard.addEventListener('click', function () {
+                window.location.href = "https://randsfk.vercel.app/login"
+            });
+
             const style = document.createElement('style');
             style.innerHTML = `
                         .custom-blocks {
@@ -1588,7 +1638,7 @@ function jalankanBot() {
             try {
                 if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
                     console.log("Cloudflare sedang memverifikasi, menunggu...");
-                    waitForCloudflare(); // cek lagi setelah 1 detik
+                    waitForCloudflare();
                 } else {
                     console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
                     setTimeout(() => {
@@ -1631,113 +1681,155 @@ function jalankanBot() {
                     }, 3000);
                 }
             } catch (error) {
-                console.error("Error saat cek cloudflare:", error);
+                console.error("Error saat cek cloudflare:", "error");
                 waitForCloudflare();
             }
         }, 1000);
     }
-
-    function runBot() {
-        if (isInject) {
-            return;
-        }
-        waitForCloudflare();
+    if (isInject) {
+        return;
     }
-
-    function showUpdateNotice(title, titleColor, message, messageColor, link) {
-        const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
-
-        const overlay = document.createElement('div');
-        overlay.style.position = 'fixed';
-        overlay.style.top = 0;
-        overlay.style.left = 0;
-        overlay.style.width = '100vw';
-        overlay.style.height = '100vh';
-        overlay.style.background = 'rgba(0,0,0,0.6)';
-        overlay.style.display = 'flex';
-        overlay.style.alignItems = 'center';
-        overlay.style.justifyContent = 'center';
-        overlay.style.zIndex = 9999;
-
-        const container = document.createElement('div');
-        container.style.background = 'white';
-        container.style.padding = '25px';
-        container.style.borderRadius = '16px';
-        container.style.boxShadow = '0 4px 14px rgba(0,0,0,0.25)';
-        container.style.maxWidth = '90%';
-        container.style.width = '360px';
-        container.style.textAlign = 'center';
-        container.style.fontFamily = 'sans-serif';
-
-        const topBar = document.createElement('div');
-        topBar.style.display = 'flex';
-        topBar.style.alignItems = 'center';
-        topBar.style.background = '#fff';
-        topBar.style.borderRadius = '30px';
-        topBar.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
-        topBar.style.padding = '10px 16px';
-        topBar.style.marginBottom = '20px';
-
-        const avatar = document.createElement('img');
-        avatar.src = avatarURL;
-        avatar.style.width = '50px';
-        avatar.style.height = '50px';
-        avatar.style.borderRadius = '50%';
-        avatar.style.objectFit = 'cover';
-        avatar.style.marginRight = '12px';
-        avatar.style.background = titleColor;
-
-        const titleText = document.createElement('div');
-        titleText.textContent = title;
-        titleText.style.color = titleColor;
-        titleText.style.fontSize = '18px';
-        titleText.style.fontWeight = 'bold';
-
-        topBar.appendChild(avatar);
-        topBar.appendChild(titleText);
-        container.appendChild(topBar);
-
-        const formattedMessage = message.replace(/\n/g, '<br>');
-        const messageP = document.createElement('p');
-        messageP.innerHTML = formattedMessage;
-        messageP.style.color = messageColor;
-        messageP.style.fontSize = '14px';
-        messageP.style.marginBottom = '15px';
-        messageP.style.lineHeight = '1.5';
-
-        container.appendChild(messageP);
-
-        if (link && link.url) {
-            const button = document.createElement('a');
-            button.href = link.url;
-            button.textContent = link.text || 'Update Sekarang';
-            button.target = '_blank';
-            button.style.display = 'inline-block';
-            button.style.padding = '10px 20px';
-            button.style.background = '#007bff';
-            button.style.color = '#fff';
-            button.style.textDecoration = 'none';
-            button.style.borderRadius = '8px';
-            button.style.fontWeight = 'bold';
-            container.appendChild(button);
-        }
-
-        overlay.appendChild(container);
-        document.body.appendChild(overlay);
-    }
-
-    if (currentVersion === requiredVersion) {
-        runBot();
-    } else {
-        showUpdateNotice(
-            'Update Dibutuhkan',
-            '#ff3c2e',
-            `Versi kamu: <strong>${currentVersion || 'tidak diketahui'}</strong>.\nVersi dibutuhkan: <strong>${requiredVersion}</strong>`,
-            '#444444', {
-            text: 'Download Update',
-            url: 'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l'
-        }
-        );
-    }
+    waitForCloudflare();
 }
-startBot();
+
+function showUpdateNotice(title, titleColor, message, messageColor, link) {
+    const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
+
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100vw';
+    overlay.style.height = '100vh';
+    overlay.style.background = 'rgba(0,0,0,0.6)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = 9999;
+
+    const container = document.createElement('div');
+    container.style.background = 'white';
+    container.style.padding = '25px';
+    container.style.borderRadius = '16px';
+    container.style.boxShadow = '0 4px 14px rgba(0,0,0,0.25)';
+    container.style.maxWidth = '90%';
+    container.style.width = '360px';
+    container.style.textAlign = 'center';
+    container.style.fontFamily = 'sans-serif';
+
+    const topBar = document.createElement('div');
+    topBar.style.display = 'flex';
+    topBar.style.alignItems = 'center';
+    topBar.style.background = '#fff';
+    topBar.style.borderRadius = '30px';
+    topBar.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+    topBar.style.padding = '10px 16px';
+    topBar.style.marginBottom = '20px';
+
+    const avatar = document.createElement('img');
+    avatar.src = avatarURL;
+    avatar.style.width = '50px';
+    avatar.style.height = '50px';
+    avatar.style.borderRadius = '50%';
+    avatar.style.objectFit = 'cover';
+    avatar.style.marginRight = '12px';
+    avatar.style.background = titleColor;
+
+    const titleText = document.createElement('div');
+    titleText.textContent = title;
+    titleText.style.color = titleColor;
+    titleText.style.fontSize = '18px';
+    titleText.style.fontWeight = 'bold';
+
+    topBar.appendChild(avatar);
+    topBar.appendChild(titleText);
+    container.appendChild(topBar);
+
+    const formattedMessage = message.replace(/\n/g, '<br>');
+    const messageP = document.createElement('p');
+    messageP.innerHTML = formattedMessage;
+    messageP.style.color = messageColor;
+    messageP.style.fontSize = '14px';
+    messageP.style.marginBottom = '15px';
+    messageP.style.lineHeight = '1.5';
+
+    container.appendChild(messageP);
+
+    if (link && link.url) {
+        const button = document.createElement('a');
+        button.href = link.url;
+        button.textContent = link.text || 'Update Sekarang';
+        button.target = '_blank';
+        button.style.display = 'inline-block';
+        button.style.padding = '10px 20px';
+        button.style.background = '#007bff';
+        button.style.color = '#fff';
+        button.style.textDecoration = 'none';
+        button.style.borderRadius = '8px';
+        button.style.fontWeight = 'bold';
+        container.appendChild(button);
+    }
+
+    overlay.appendChild(container);
+    document.body.appendChild(overlay);
+}
+if (localStorage.getItem('pt_version')) {
+    window.ponytownbotversion = localStorage.getItem('pt_version')
+}
+const requiredVersion = '1.0.2';
+const currentVersion = window.ponytownbotversion;
+if (currentVersion){
+    localStorage.setItem('pt_version') = currentVersion;
+}
+if (currentVersion === requiredVersion) {
+    startBot();
+} else {
+    setTimeout(() => {
+        showUpdateNotice(
+            'Pembaruan Dibutuhkan',
+            '#ff3c2e',
+            `
+            <strong>Versi Kamu:</strong> <strong>${currentVersion || 'Tidak Diketahui'}</strong><br>
+            <strong>Versi yang Dibutuhkan:</strong> <strong>${requiredVersion}</strong><br><br>
+    
+            <u><strong>Changelog:</strong></u><br>
+            <div style="max-height: 200px; overflow-y: auto;">
+                <ul style="font-size: 14px;">
+                    <li><strong>Peningkatan Fitur:</strong>
+                        <ul>
+                            <li><strong>$repeat()</strong>: Menambahkan kemampuan untuk mengulang teks sejumlah kali yang ditentukan. Contoh: <code>$repeat('Halo!', 3)</code> akan menghasilkan "Halo!Halo!Halo!"</li>
+                            <li><strong>$uppercase() & $lowercase()</strong>: Menambah fungsi untuk mengubah teks menjadi huruf besar atau kecil. Contoh: <code>$uppercase('hello')</code> menjadi "HELLO".</li>
+                            <li><strong>$random(min|max)</strong>: Menambahkan kemampuan untuk menghasilkan angka acak dalam rentang yang ditentukan. Contoh: <code>$random(1|100)</code> akan menghasilkan angka acak antara 1 dan 100.</li>
+                            <li><strong>$get() & $set()</strong>: Menambahkan kemampuan untuk menyimpan dan mengambil variabel. Dengan <code>$set(variable=nilai)</code>, variabel disimpan, dan <code>$get(variable)</code> digunakan untuk mengambil nilai variabel yang telah disimpan.</li>
+                            <li><strong>$cmd[] & $desc[]</strong>: Memperkenalkan sistem baru untuk menangani perintah dan deskripsi yang lebih fleksibel di dalam respon. Ini memudahkan pengaturan perintah dan deskripsinya.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Perbaikan:</strong>
+                        <ul>
+                            <li><strong>$if()</strong>: Logika <code>$if()</code> sekarang lebih stabil dan dapat menangani lebih banyak jenis kondisi dengan lebih baik. Ini akan mengevaluasi kondisi yang melibatkan pengguna, pemilik, dan bot dengan lebih efisien.</li>
+                            <li><strong>Pengolahan Perintah</strong>: Pengolahan perintah telah dioptimalkan, terutama dalam hal <code>$cmd[]</code> dan <code>$desc[]</code>, untuk menangani input yang lebih kompleks dan mengurangi kemungkinan kesalahan dalam pemrosesan perintah.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bug Fixes:</strong>
+                        <ul>
+                            <li><strong>$stop</strong>: Perbaikan pada fungsi <code>$stop</code> yang menghentikan bot, memastikan bahwa bot dapat menghentikan tugas dengan benar tanpa meninggalkan proses yang berjalan.</li>
+                            <li><strong>Perbaikan Respons</strong>: Beberapa masalah dengan pengenalan perintah yang tidak dikenali telah diperbaiki, memastikan bahwa bot memberikan respons yang sesuai saat perintah tidak terdaftar.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pengoptimalan Kode:</strong>
+                        <ul>
+                            <li>Peningkatan performa dalam pengolahan perintah dan pengaturan variabel yang lebih efisien, mengurangi waktu pemrosesan dan mempercepat eksekusi perintah.</li>
+                            <li>Refactor beberapa bagian kode untuk meningkatkan pemeliharaan dan memperbaiki bug yang tidak terdeteksi sebelumnya.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        `,
+            '#444444',
+            {
+                text: 'Unduh Pembaruan',
+                url: 'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l'
+            }
+        );
+    }, 3000);
+}

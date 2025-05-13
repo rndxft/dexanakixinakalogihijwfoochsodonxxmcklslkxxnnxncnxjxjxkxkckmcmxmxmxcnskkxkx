@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 async function GetCmd() {
     if (!localStorage.getItem('ptbot_apikey')) {
         function removeElements(selector) {

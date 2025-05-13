@@ -1020,6 +1020,7 @@ function jalankanBot() {
                         <div id="alert-save"></div>
                     </div>
                     `;
+                    
             function showAlert(message, type = 'success') {
                 const alertBox = document.getElementById('alert-save');
                 alertBox.textContent = message;
@@ -1027,18 +1028,20 @@ function jalankanBot() {
                 alertBox.style.margin = '10px 0';
                 alertBox.style.borderRadius = '5px';
                 alertBox.style.fontWeight = 'bold';
+                alertBox.style.backgroundColor = 'transparent';
 
                 if (type === 'success') {
                     alertBox.style.color = '#4CAF50';
                 } else if (type === 'error') {
                     alertBox.style.color = '#f44336';
                 }
+
                 setTimeout(() => {
                     alertBox.textContent = '';
-                    alertBox.style.padding = '';
-                    alertBox.style.backgroundColor = '';
+                    alertBox.style = '';
                 }, 3000);
             }
+
 
             const customBlock = document.createElement('div');
             customBlock.classList.add('custom-blocks');

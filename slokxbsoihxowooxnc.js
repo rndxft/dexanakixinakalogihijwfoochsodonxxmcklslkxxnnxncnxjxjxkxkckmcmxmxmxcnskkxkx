@@ -514,8 +514,8 @@ function jalankanBot() {
             owner = botset.owner
             prefix = botset.prefix
             chatTp = botset.chatTp
-            antiAfk = String(botset.antiAfk);
-            ai = String(botset.ai);
+            antiAfk = botset.antiAfk
+            ai = botset.ai
             if (botset.apiKey) {
                 apiKey = botset.apiKey
             }

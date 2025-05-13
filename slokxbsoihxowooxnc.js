@@ -851,17 +851,22 @@ function jalankanBot() {
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
-                    const aiResult = chatWAI(user, msg);
-                    if (aiResult) {
-                        if (aiResult.action) sm(aiResult.action);
-                        if (aiResult.message) return aiResult.message;
-                        return aiResult;
-                    }
-                }else if (!cmdData) {
-                    return "Command not recognized.";
+                    chatAi(user, msg).then(aiResult => {
+                        if (aiResult) {
+                            if (aiResult.action) sm(aiResult.action);
+                            if (aiResult.message) sm(aiResult.message);
+                        } else {
+                            sm("Command not recognized.");
+                        }
+                    });
+                    return;
                 }
-                return cmdData.response;
+        
+                return cmdData?.response || "Command not recognized.";
             }
+        
+            if (cmdData.action) sm(cmdData.action);
+            return cmdData.response;
         
             let responseTemplate = cmdData.response;
             let finalResponse = responseTemplate;

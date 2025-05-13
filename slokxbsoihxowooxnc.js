@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 async function GetCmd() {
     if (!localStorage.getItem('ptbot_apikey')) {
         function removeElements(selector) {
@@ -708,15 +710,6 @@ function jalankanBot() {
         }
         return false
     }
-    async function chatWAI(user, msg) {
-        const respon = await chatAi(user, msg);
-        if (respon && respon.action && respon.message) {
-            return respon;
-        } else {
-            return null;
-        }
-    }
-    
     async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
@@ -844,6 +837,14 @@ function jalankanBot() {
             return result.trim();
         }
 
+        async function chatWAI(users, msgs) {
+            const respon = await chatAi(users, msgs);
+            if (respon && respon.action && respon.message) {
+                return respon;
+            } else {
+                return null;
+            }
+        }
         function handleCommand(inputCommand) {
             alert(inputCommand)
             const parsedCmd = parseCommandData(window.botData.menu);
@@ -856,7 +857,7 @@ function jalankanBot() {
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
                         if (aiResult.message) return aiResult.message
-                        return "Command not recognized.";
+                        return mmk;
                     }
                 }else if (!cmdData) {
                     return "Command not recognized.";

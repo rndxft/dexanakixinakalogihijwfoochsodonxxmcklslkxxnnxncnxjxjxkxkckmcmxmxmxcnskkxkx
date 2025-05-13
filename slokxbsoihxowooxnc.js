@@ -1,3 +1,5 @@
+const { response } = require("express");
+
 async function GetCmd() {
     if (!localStorage.getItem('ptbot_apikey')) {
         function removeElements(selector) {
@@ -854,7 +856,6 @@ function jalankanBot() {
                     const aiResult = chatWAI(user, msg);
                     alert(aiResult)
                     if (aiResult) {
-                        alert(aiResult.message, aiResult.action)
                         if (aiResult.action) sm(aiResult.action);
                         if (aiResult.message) return aiResult.message;
                         return "Command";

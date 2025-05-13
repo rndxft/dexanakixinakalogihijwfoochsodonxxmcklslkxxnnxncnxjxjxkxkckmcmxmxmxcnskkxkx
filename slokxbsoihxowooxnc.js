@@ -1774,12 +1774,14 @@ function showUpdateNotice(title, titleColor, message, messageColor, link) {
     document.body.appendChild(overlay);
 }
 if (localStorage.getItem('pt_version')) {
-    window.ponytownbotversion = localStorage.getItem('pt_version')
+    window.ponytownbotversion = localStorage.getItem('pt_version');
 }
+
 const requiredVersion = '1.0.2';
 const currentVersion = window.ponytownbotversion;
-if (currentVersion){
-    localStorage.setItem('pt_version') = currentVersion;
+
+if (currentVersion) {
+    localStorage.setItem('pt_version', currentVersion);
 }
 if (currentVersion === requiredVersion) {
     startBot();

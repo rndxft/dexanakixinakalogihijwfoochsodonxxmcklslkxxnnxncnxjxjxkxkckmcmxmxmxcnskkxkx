@@ -835,24 +835,19 @@ function jalankanBot() {
             return result.trim();
         }
 
-        async function handleCommand(inputCommand) {
+        function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
         
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
-        
-                // Jalankan AI hanya jika aktif
                 if (ai) {
-                    const aiResult = await chatAi(user, msg); // gunakan raw `msg`
-        
+                    const aiResult = chatAi(user, msg);
                     if (aiResult) {
-                        if (aiResult.action) sm(aiResult.action); // kirim aksi jika ada
+                        if (aiResult.action) sm(aiResult.action);
                         return aiResult.message;
                     }
                 }
-        
-                // Jika tidak ada AI response atau default tidak tersedia
                 if (!cmdData) {
                     return "Command not recognized.";
                 }

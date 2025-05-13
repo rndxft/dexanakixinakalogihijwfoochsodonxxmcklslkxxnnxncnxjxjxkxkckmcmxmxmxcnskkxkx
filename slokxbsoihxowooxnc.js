@@ -855,6 +855,7 @@ function jalankanBot() {
                 if (ai) {
                     const aiResult = chatWAI(user, msg);
                     if (aiResult) {
+                        alert(aiResult.action + aiResult.message)
                         if (aiResult.action) sm(aiResult.action);
                         if (aiResult.message) return aiResult.message
                         return mmk;

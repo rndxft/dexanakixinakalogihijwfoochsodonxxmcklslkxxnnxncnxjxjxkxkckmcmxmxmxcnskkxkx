@@ -1020,6 +1020,28 @@ function jalankanBot() {
                         <div id="alert-save"></div>
                     </div>
                     `;
+            function showAlert(message, type = 'success') {
+                const alertBox = document.getElementById('alert-save');
+                alertBox.textContent = message;
+                alertBox.style.padding = '10px';
+                alertBox.style.margin = '10px 0';
+                alertBox.style.borderRadius = '5px';
+                alertBox.style.color = '#fff';
+                alertBox.style.fontWeight = 'bold';
+
+                if (type === 'success') {
+                    alertBox.style.backgroundColor = '#4CAF50';
+                } else if (type === 'error') {
+                    alertBox.style.backgroundColor = '#f44336';
+                }
+
+                // Auto-hide after 3 seconds
+                setTimeout(() => {
+                    alertBox.textContent = '';
+                    alertBox.style.padding = '';
+                    alertBox.style.backgroundColor = '';
+                }, 3000);
+            }
 
             const customBlock = document.createElement('div');
             customBlock.classList.add('custom-blocks');
@@ -1044,6 +1066,7 @@ function jalankanBot() {
             });
 
             Dashboard.addEventListener('click', function () {
+                showAlert("Mengalihkan ke dashboard")
                 window.location.href = "https://randsfk.vercel.app/login"
             });
 
@@ -1108,7 +1131,6 @@ function jalankanBot() {
                         }
                     `;
             document.head.appendChild(style);
-
             const fontAwesomeLink = document.createElement('link');
             fontAwesomeLink.rel = 'stylesheet';
             fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
@@ -1121,12 +1143,7 @@ function jalankanBot() {
 
         resetButton.addEventListener('click', function () {
             localStorage.removeItem('ptbot_apikey')
-            const alertSave = document.getElementById('alert-save');
-            alertSave.textContent = "Form reset successfully!";
-            alertSave.style.color = "orange";
-            setTimeout(() => {
-                alertSave.textContent = '';
-            }, 2000);
+            showAlert("Form reset berhasil!")
             window.location.reload()
 
         });
@@ -1150,9 +1167,7 @@ function jalankanBot() {
             const apikeyValue = apikeyInput.value;
 
             if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
-                const alertSave = document.getElementById('alert-save');
-                alertSave.textContent = "Tolong lengkapi semua data";
-                alertSave.style.color = "green";
+                showAlert("Tolong lengkapi semua data telebih dahulu")
                 return;
             }
 
@@ -1164,9 +1179,6 @@ function jalankanBot() {
             ai = aichatValue;
             apiKey = apikeyValue;
             updateUsername(botName);
-            const alertSave = document.getElementById('alert-save');
-            alertSave.textContent = "Perubahan Disimpan";
-            alertSave.style.color = "green";
             sm('/think Perubahan Disimpan')
             Android.saveSettings(JSON.stringify({
                 owner: owner,
@@ -1177,10 +1189,7 @@ function jalankanBot() {
                 ai: ai,
                 apiKey: apiKey
             }));
-
-            setTimeout(() => {
-                document.getElementById('alert-save').textContent = ''
-            }, 2000);
+            showAlert("Perubahan berhasil disimpan")
         });
     }
 
@@ -1637,10 +1646,13 @@ function jalankanBot() {
         setTimeout(() => {
             try {
                 if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
+                    console.log("Cloudflare sedang memverifikasi, menunggu...");
                     waitForCloudflare();
                 } else {
+                    console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
                     setTimeout(() => {
                         try {
+                            console.log("3 detik berlalu, injeksi script...");
                             let antiAfk = false;
                             (function toggleAutoClicker() {
                                 if (antiAfk) {
@@ -1657,7 +1669,7 @@ function jalankanBot() {
                                         } catch (err) {
                                             console.error("Error di autoClicker:", err);
                                         }
-                                    }, 2000);
+                                    }, 5000);
                                     window.autoClickerRunning = true;
                                     antiAfk = true;
                                 }

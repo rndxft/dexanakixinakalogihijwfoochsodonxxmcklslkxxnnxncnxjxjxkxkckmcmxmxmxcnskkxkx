@@ -845,9 +845,11 @@ function jalankanBot() {
                     const aiResult = chatAi(user, msg);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
+                        alert(aiResult)
                         return aiResult.message;
                     }
                 }
+                alert(ai)
                 if (!cmdData) {
                     return "Command not recognized.";
                 }

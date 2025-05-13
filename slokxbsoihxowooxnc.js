@@ -1026,7 +1026,7 @@ function jalankanBot() {
             customBlock.appendChild(button);
             customBlock.appendChild(dropdown);
             topMenu.insertBefore(customBlock, topMenu.firstChild);
-            const Dashboard = getElementById('web');
+            const Dashboard = document.getElementById('web');
 
             button.addEventListener('click', function () {
                 if (dropdown.style.display === 'none' || dropdown.style.display === '') {

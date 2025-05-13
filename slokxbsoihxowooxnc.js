@@ -856,9 +856,10 @@ function jalankanBot() {
                     const aiResult = chatWAI(user, msg);
                     alert(aiResult)
                     if (aiResult) {
-                        alert(aiResult.action + aiResult.message);
+                        alert(aiResult.action + aiResult.message)
                         if (aiResult.action) sm(aiResult.action);
-                        if (aiResult.message) return aiResult.message;
+                        if (aiResult.message) return aiResult.message
+                        return "meme";
                     }
                 }else if (!cmdData) {
                     return "Command not recognized.";

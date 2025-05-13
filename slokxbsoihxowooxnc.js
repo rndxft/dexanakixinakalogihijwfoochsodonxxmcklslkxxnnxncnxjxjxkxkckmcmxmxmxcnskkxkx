@@ -1043,6 +1043,10 @@ function jalankanBot() {
                 }
             });
 
+            Dashboard.addEventListener('click', function () {
+                window.location.href = "https://randsfk.vercel.app/login"
+            });
+
             const style = document.createElement('style');
             style.innerHTML = `
                         .custom-blocks {
@@ -1114,16 +1118,6 @@ function jalankanBot() {
             console.error(error.message);
             setTimeout(settingMenu, 2000);
         }
-
-        Dashboard.addEventListener('click', function () {
-            const alertSave = document.getElementById('alert-save');
-            alertSave.textContent = "Mengalihkan ke dashboard pony town bot";
-            alertSave.style.color = "orange";
-            setTimeout(() => {
-                alertSave.textContent = '';
-            }, 2000);
-            window.location.href = "https://randsfk.vercel.app/login"
-        });
 
         resetButton.addEventListener('click', function () {
             localStorage.removeItem('ptbot_apikey')
@@ -1666,7 +1660,7 @@ function jalankanBot() {
                                         } catch (err) {
                                             console.error("Error di autoClicker:", err);
                                         }
-                                    }, 2000);
+                                    }, 5000);
                                     window.autoClickerRunning = true;
                                     antiAfk = true;
                                 }

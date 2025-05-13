@@ -1637,13 +1637,10 @@ function jalankanBot() {
         setTimeout(() => {
             try {
                 if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
-                    console.log("Cloudflare sedang memverifikasi, menunggu...");
                     waitForCloudflare();
                 } else {
-                    console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
                     setTimeout(() => {
                         try {
-                            console.log("3 detik berlalu, injeksi script...");
                             let antiAfk = false;
                             (function toggleAutoClicker() {
                                 if (antiAfk) {
@@ -1660,7 +1657,7 @@ function jalankanBot() {
                                         } catch (err) {
                                             console.error("Error di autoClicker:", err);
                                         }
-                                    }, 5000);
+                                    }, 2000);
                                     window.autoClickerRunning = true;
                                     antiAfk = true;
                                 }

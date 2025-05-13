@@ -1008,7 +1008,7 @@ function jalankanBot() {
                         </select>
                     </div>
                     <div class="text-success py-1" style="display: flex; align-items: center;">
-                        <label for="prefixInput" style="width: 200px;">Apikey</label>
+                        <label for="prefixInput" style="width: 200px;">Gemini Apikey</label>
                         <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
                     </div>
                     <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
@@ -1020,7 +1020,7 @@ function jalankanBot() {
                         <div id="alert-save"></div>
                     </div>
                     `;
-                    
+
             function showAlert(message, type = 'success') {
                 const alertBox = document.getElementById('alert-save');
                 alertBox.textContent = message;

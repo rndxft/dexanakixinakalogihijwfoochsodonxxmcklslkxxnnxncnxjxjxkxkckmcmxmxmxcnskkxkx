@@ -1,1 +1,1829 @@
-const _0x569e46=_0x4f04;(function(_0x25f474,_0x1e03bb){const _0x5d5704=_0x4f04,_0x11ef77=_0x25f474();while(!![]){try{const _0x366a4d=-parseInt(_0x5d5704(0x29b))/0x1+parseInt(_0x5d5704(0x269))/0x2*(-parseInt(_0x5d5704(0x2eb))/0x3)+-parseInt(_0x5d5704(0x186))/0x4*(parseInt(_0x5d5704(0x278))/0x5)+-parseInt(_0x5d5704(0x16e))/0x6+-parseInt(_0x5d5704(0x140))/0x7*(parseInt(_0x5d5704(0x2a1))/0x8)+-parseInt(_0x5d5704(0x2b7))/0x9+parseInt(_0x5d5704(0x28a))/0xa;if(_0x366a4d===_0x1e03bb)break;else _0x11ef77['push'](_0x11ef77['shift']());}catch(_0x358cd3){_0x11ef77['push'](_0x11ef77['shift']());}}}(_0x47e7,0x9d848));async function GetCmd(){const _0x59c67c=_0x4f04;if(!localStorage[_0x59c67c(0x201)](_0x59c67c(0x23f))){function _0x8a643f(_0x5e053c){const _0x16f16f=_0x59c67c,_0x43ce36=document[_0x16f16f(0x20e)](_0x5e053c);if(_0x43ce36)_0x43ce36['remove']();}function _0x1d6d46(_0x11a458,_0x133de0='success'){const _0x160248=_0x59c67c,_0x517e3c=document[_0x160248(0x20e)]('.form-group.custom');if(!_0x517e3c)return;const _0x1c3cc1=document['createElement'](_0x160248(0x15d));_0x1c3cc1['className']=_0x160248(0x173),_0x1c3cc1[_0x160248(0x2cc)]=_0x11a458,_0x1c3cc1[_0x160248(0x142)][_0x160248(0x178)]=_0x133de0==='error'?_0x160248(0x1ad):_0x160248(0x218),_0x1c3cc1[_0x160248(0x142)][_0x160248(0x2e1)]='monospace',_0x1c3cc1['style'][_0x160248(0x19a)]='4px',_0x517e3c['appendChild'](_0x1c3cc1),setTimeout(()=>{const _0x264467=_0x160248;_0x1c3cc1[_0x264467(0x243)]();},0xbb8);}function _0xb4f35e(){const _0xe8d783=_0x59c67c,_0x106745=document[_0xe8d783(0x20e)](_0xe8d783(0x163));if(!_0x106745)return console['warn'](_0xe8d783(0x1d2));_0x106745[_0xe8d783(0x283)]=_0xe8d783(0x1d9),_0x106745[_0xe8d783(0x2d8)]=_0xe8d783(0x24a),_0x106745[_0xe8d783(0x142)][_0xe8d783(0x1a5)]=_0xe8d783(0x23c),_0x106745['style'][_0xe8d783(0x1d3)]=_0xe8d783(0x280),_0x106745[_0xe8d783(0x164)]=_0xe8d783(0x188),_0x106745['style']['display']=_0xe8d783(0x2d0);const _0x320390=_0x106745[_0xe8d783(0x262)];_0x320390&&(_0x320390[_0xe8d783(0x142)]['display']='flex',_0x320390[_0xe8d783(0x142)][_0xe8d783(0x222)]=_0xe8d783(0x248),_0x320390[_0xe8d783(0x142)][_0xe8d783(0x141)]=_0xe8d783(0x248));}function _0x18adc6(){const _0x4ddee5=_0x59c67c;_0x8a643f('.emote-container'),_0x8a643f(_0x4ddee5(0x1da)),_0x8a643f('.btn.btn-warning'),_0x8a643f('#button-reset');const _0x4986ea=document[_0x4ddee5(0x1d1)](_0x4ddee5(0x1fb));_0x4986ea['forEach'](_0xa44694=>_0xa44694[_0x4ddee5(0x142)][_0x4ddee5(0x168)]='none');}function _0x55e9e0(){const _0x489fbe=_0x59c67c,_0x180ec5=document[_0x489fbe(0x20e)](_0x489fbe(0x1cc));_0x180ec5&&_0x180ec5[_0x489fbe(0x2cc)][_0x489fbe(0x1c5)]()===_0x489fbe(0x183)&&(_0x180ec5[_0x489fbe(0x2cc)]=_0x489fbe(0x200),_0x180ec5[_0x489fbe(0x142)][_0x489fbe(0x1bc)]=_0x489fbe(0x248),_0x180ec5['style'][_0x489fbe(0x15e)]='20px');const _0x244cdb=document['querySelector'](_0x489fbe(0x298));_0x244cdb&&(_0x244cdb['innerHTML']='Pony\x20Town\x20Bot\x20Version:\x20<b\x20class=\x22me-2\x22>1.0.2\x20Release</b>\x20'+_0x489fbe(0x1ce)),_0x8a643f('.btn.btn-lg.btn-outline-patreon.d-block.mb-2'),_0x8a643f(_0x489fbe(0x1fd)),_0x8a643f('.form-group\x20.btn.btn-default[aria-label=\x27Edit\x20character\x27]'),_0x8a643f(_0x489fbe(0x252)),_0x8a643f(_0x489fbe(0x1e2)),_0x8a643f(_0x489fbe(0x2d7)),_0x8a643f('.text-end'),_0x8a643f(_0x489fbe(0x1c6)),_0x18adc6(),_0xb4f35e();}function _0x189231(){const _0x43c414=_0x59c67c,_0x526940=document[_0x43c414(0x1d1)](_0x43c414(0x195));if(_0x526940['length']>0x0){const _0x4f6bde=_0x526940[0x0][_0x43c414(0x262)];_0x4f6bde[_0x43c414(0x1d1)](_0x43c414(0x195))[_0x43c414(0x24f)](_0x2d3e6a=>_0x2d3e6a['remove']());const _0x25300b=document['createElement'](_0x43c414(0x15d));_0x25300b[_0x43c414(0x19b)]=_0x43c414(0x2e6),_0x25300b[_0x43c414(0x142)][_0x43c414(0x15e)]=_0x43c414(0x245);const _0x97b04=document[_0x43c414(0x233)]('input');_0x97b04[_0x43c414(0x281)]=_0x43c414(0x17c),_0x97b04[_0x43c414(0x19b)]=_0x43c414(0x199),_0x97b04[_0x43c414(0x1f7)]=_0x43c414(0x25f),_0x97b04[_0x43c414(0x1c3)](_0x43c414(0x1ca),_0x43c414(0x25f)),_0x97b04['maxLength']=0x64,_0x97b04['id']='ptbot-apikey';const _0x569a5e=document[_0x43c414(0x233)]('button');_0x569a5e[_0x43c414(0x19b)]=_0x43c414(0x2b2),_0x569a5e[_0x43c414(0x2cc)]=_0x43c414(0x13f),_0x569a5e['setAttribute']('aria-label',_0x43c414(0x1b6)),_0x569a5e[_0x43c414(0x142)][_0x43c414(0x168)]='block',_0x569a5e[_0x43c414(0x142)][_0x43c414(0x19a)]='10px\x20auto\x200',_0x569a5e[_0x43c414(0x142)][_0x43c414(0x240)]=_0x43c414(0x29a),_0x569a5e[_0x43c414(0x142)]['color']=_0x43c414(0x1bd),_0x569a5e[_0x43c414(0x142)][_0x43c414(0x1fc)]=_0x43c414(0x2bc),_0x569a5e[_0x43c414(0x142)][_0x43c414(0x1a8)]='10px\x2020px',_0x569a5e[_0x43c414(0x142)][_0x43c414(0x209)]='5px',_0x569a5e[_0x43c414(0x215)]=()=>{const _0x36ab84=_0x43c414,_0x13edcc=_0x97b04[_0x36ab84(0x185)][_0x36ab84(0x1c5)]();_0x13edcc?(_0x1d6d46(_0x36ab84(0x2cd),_0x36ab84(0x147)),localStorage[_0x36ab84(0x153)]('ptbot_apikey',_0x13edcc),window[_0x36ab84(0x17d)][_0x36ab84(0x2b5)]()):_0x1d6d46('Mohon\x20masukkan\x20API\x20Key\x20terlebih\x20dahulu.',_0x36ab84(0x147));};const _0x49c3b4=document['createElement']('div');_0x49c3b4['className']=_0x43c414(0x24e),_0x49c3b4[_0x43c414(0x142)]['color']=_0x43c414(0x1bd),_0x49c3b4['style'][_0x43c414(0x2e1)]=_0x43c414(0x1b0),_0x49c3b4[_0x43c414(0x142)]['margin']=_0x43c414(0x2ac),_0x49c3b4[_0x43c414(0x2cc)]=_0x43c414(0x204);const _0x26f423=document['createElement']('a');_0x26f423[_0x43c414(0x271)]='https://randsfk.vercel.app/login',_0x26f423['textContent']=_0x43c414(0x29d),_0x26f423['style'][_0x43c414(0x178)]=_0x43c414(0x1c0),_0x26f423[_0x43c414(0x142)][_0x43c414(0x164)]=_0x43c414(0x2ac),_0x26f423['style'][_0x43c414(0x169)]=_0x43c414(0x293),_0x49c3b4[_0x43c414(0x25e)](_0x26f423),_0x25300b[_0x43c414(0x25e)](_0x97b04),_0x25300b[_0x43c414(0x25e)](_0x49c3b4),_0x25300b[_0x43c414(0x25e)](_0x569a5e),_0x4f6bde['insertBefore'](_0x25300b,_0x4f6bde[_0x43c414(0x249)]);}else console[_0x43c414(0x20c)](_0x43c414(0x2a7));}return _0x55e9e0(),_0x189231(),null;}async function _0xd95966(){const _0xd66400=_0x59c67c,_0x130e06=localStorage[_0xd66400(0x201)](_0xd66400(0x23f));if(!_0x130e06)return null;try{const _0x1a1548=await fetch(_0xd66400(0x1f8),{'method':'POST','headers':{'Content-Type':'application/json'},'body':JSON[_0xd66400(0x161)]({'apikey':_0x130e06})}),_0x48367b=await _0x1a1548[_0xd66400(0x263)]();if(_0x48367b['status']===_0xd66400(0x1c2)&&_0x48367b[_0xd66400(0x189)])return _0x48367b['bot_cmd'];else{localStorage[_0xd66400(0x261)](_0xd66400(0x23f));const _0xcaf675=encodeURI(_0x48367b[_0xd66400(0x2bf)]+_0xd66400(0x2ef));return window[_0xd66400(0x17d)][_0xd66400(0x271)]=_0xd66400(0x16a)+_0xcaf675,null;}}catch(_0x308ede){return showMessage(_0xd66400(0x26e),_0xd66400(0x147)),localStorage[_0xd66400(0x261)]('ptbot_apikey'),null;}}return await _0xd95966();}async function startBot(){const _0xb4f9c0=_0x4f04,_0x578b06=await GetCmd();if(_0x578b06){if(_0x578b06[_0xb4f9c0(0x1e1)]){const _0x4a3bd6=[_0xb4f9c0(0x14a),_0xb4f9c0(0x1a1),_0xb4f9c0(0x2e2),_0xb4f9c0(0x1aa)],_0x3ab87c=_0x578b06[_0xb4f9c0(0x1e1)],_0xa56d99={};_0x4a3bd6[_0xb4f9c0(0x24f)](_0x314abd=>{if(_0x3ab87c[_0x314abd])_0xa56d99[_0x314abd]=_0x3ab87c[_0x314abd];}),_0x578b06[_0xb4f9c0(0x1e1)]=_0xa56d99;}window['botData']=_0x578b06,console[_0xb4f9c0(0x143)](_0xb4f9c0(0x231),window[_0xb4f9c0(0x1b9)]),jalankanBot();}else localStorage[_0xb4f9c0(0x261)](_0xb4f9c0(0x23f)),console['warn'](_0xb4f9c0(0x1c7));}function jalankanBot(){const _0x3d82d4=_0x4f04;if(window['_pb_ky_sc']!==_0x3d82d4(0x1ae))throw new Error(_0x3d82d4(0x25b));let _0x1c0c58='',_0x518951='',_0x249cf6=['.'],_0x52d2bb=_0x3d82d4(0x2ae),_0xe7c208='',_0x5be7c3=![],_0x6d3cd6=![],_0x4f8241=![],_0x142c71,_0x4b712f,_0x5ac934=![],_0x1ed01c=![],_0x4e6cb8=![];const _0x462d9c=[0xea60,0x15f90,0x1d4c0][Math[_0x3d82d4(0x1af)](Math['random']()*0x3)];function _0x3ee610(){const _0x4b6b2b=_0x3d82d4,_0x361774=[0xea60,0x15f90,0x1d4c0,0x11170,0x3a980,0x27100];return _0x361774[Math[_0x4b6b2b(0x1af)](Math['random']()*_0x361774[_0x4b6b2b(0x284)])];}let _0x4e7e91='',_0x1c5df3='';async function _0x235b08(_0x45c170,_0x1e769e){const _0x4b547c=_0x3d82d4,_0x3fec7e={'Content-Type':_0x4b547c(0x274),'x-goog-api-key':_0x1c0c58},_0x5e39cd={'role':'user','parts':[{'text':JSON['stringify']({'username':_0x45c170,'message':_0x1e769e})}]};!_0x4cad1c[_0x4b547c(0x253)]&&(_0x4cad1c={'contents':[..._0x7969e5[_0x4b547c(0x253)]||[]]});const _0x54f1b9={'contents':[..._0x4cad1c[_0x4b547c(0x253)],_0x5e39cd],'safetySettings':[{'category':_0x4b547c(0x1a9),'threshold':_0x4b547c(0x246)},{'category':_0x4b547c(0x1db),'threshold':_0x4b547c(0x246)},{'category':_0x4b547c(0x207),'threshold':_0x4b547c(0x246)},{'category':_0x4b547c(0x158),'threshold':_0x4b547c(0x246)}]};console['log'](_0x54f1b9);const _0x38b935={'\x5cblo\x5cb':'lu','\x5cbaq\x5cb':_0x4b547c(0x26d),'\x5cbngewe\x5cb':_0x4b547c(0x285),'\x5cbgak\x5cb':'ngak','\x5cbgw\x5cb|\x5cbgue\x5cb':'gw'};console['log'](_0x4cad1c);try{const _0x2f2f35=await fetch('https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent',{'method':'POST','headers':_0x3fec7e,'body':JSON[_0x4b547c(0x161)](_0x54f1b9)});if(_0x2f2f35['ok']){console[_0x4b547c(0x143)](_0x2f2f35);const _0x478409=await _0x2f2f35[_0x4b547c(0x263)]();if(!_0x478409)return console[_0x4b547c(0x147)](_0x4b547c(0x224)+_0x478409[_0x4b547c(0x147)]),{'error':!![]};const _0x2b033e=_0x478409[_0x4b547c(0x18c)]||[];if(_0x2b033e[_0x4b547c(0x284)]>0x0){let _0x22ae84=_0x2b033e[0x0][_0x4b547c(0x16b)][_0x4b547c(0x256)][_0x4b547c(0x16f)](_0x5df2a2=>_0x5df2a2[_0x4b547c(0x17c)])[_0x4b547c(0x257)]('\x20')['replace'](/\n/g,'\x20')[_0x4b547c(0x2bb)](/\r/g,'');for(const [_0x20710c,_0x3d488e]of Object['entries'](_0x38b935)){const _0x38730b=new RegExp(_0x20710c,'gi');_0x22ae84=_0x22ae84[_0x4b547c(0x2bb)](_0x38730b,_0x3d488e);}_0x22ae84=_0x22ae84[_0x4b547c(0x2bb)](/```json/g,'')[_0x4b547c(0x2bb)](/```/g,'')['replace'](/\bjson\b/g,'')[_0x4b547c(0x2bb)](/\bundefined\b/g,'')[_0x4b547c(0x1c5)](),_0x4cad1c['contents'][_0x4b547c(0x210)](_0x5e39cd),_0x4cad1c[_0x4b547c(0x253)][_0x4b547c(0x210)]({'role':_0x4b547c(0x254),'parts':[{'text':_0x22ae84}]});let _0x34d00a;try{return _0x34d00a=JSON[_0x4b547c(0x23a)](_0x22ae84),console['log'](_0x34d00a),_0x34d00a;}catch(_0x4c98ba){return console[_0x4b547c(0x147)](_0x4b547c(0x242),_0x4c98ba),{'error':_0x4b547c(0x203)};}}else console['log'](_0x4b547c(0x1e7));}else console['error'](_0x4b547c(0x13c),_0x2f2f35['status']);}catch(_0x2b7bd8){console[_0x4b547c(0x147)](_0x4b547c(0x296),_0x4b547c(0x147));}return{'error':_0x4b547c(0x1d4)};}function _0x502843(){const _0x3fe0fb=_0x3d82d4;try{const _0x3258e0=document[_0x3fe0fb(0x20e)](_0x3fe0fb(0x1e9));if(!_0x3258e0){}const _0x685257=function(_0x5cb2ab){const _0x6cf310=_0x3fe0fb;_0x5cb2ab[_0x6cf310(0x24f)](_0x52dc1a=>{const _0x272283=_0x6cf310;_0x52dc1a[_0x272283(0x281)]===_0x272283(0x2e7)&&_0x52dc1a[_0x272283(0x294)][_0x272283(0x284)]>0x0&&_0x52dc1a['addedNodes'][_0x272283(0x24f)](_0x3c9c9b=>{const _0x1611e2=_0x272283;if(_0x3c9c9b[_0x1611e2(0x192)]===Node[_0x1611e2(0x1a4)]){const _0x57858e=_0x3c9c9b[_0x1611e2(0x20e)](_0x1611e2(0x275))?.[_0x1611e2(0x2cc)][_0x1611e2(0x1c5)](),_0x8469d1=_0x3c9c9b[_0x1611e2(0x20e)](_0x1611e2(0x244))?.[_0x1611e2(0x2cc)][_0x1611e2(0x1c5)](),_0x7042bc=_0x3c9c9b[_0x1611e2(0x20e)](_0x1611e2(0x264))?.['textContent'][_0x1611e2(0x1c5)](),_0x5da825=_0x3c9c9b,_0x594511=_0x5da825['classList'],_0x2fdbf1=_0x594511[_0x594511[_0x1611e2(0x284)]-0x1];let _0x1ff549='';if(_0x2fdbf1===_0x1611e2(0x22b))_0x1ff549=_0x1611e2(0x295);else{if(_0x2fdbf1===_0x1611e2(0x24b))_0x1ff549=_0x1611e2(0x28d);else{if(_0x2fdbf1==='chat-line-party')_0x1ff549='party';else{if(_0x2fdbf1===_0x1611e2(0x176))_0x1ff549='party-think';else{if(_0x2fdbf1===_0x1611e2(0x230))_0x1ff549=_0x1611e2(0x2ee);else{if(_0x2fdbf1===_0x1611e2(0x21f))_0x1ff549=_0x1611e2(0x228);else{if(_0x2fdbf1===_0x1611e2(0x197))_0x1ff549=_0x1611e2(0x146);else{if(_0x2fdbf1===_0x1611e2(0x232))_0x1ff549='tier\x204';else _0x2fdbf1===_0x1611e2(0x22a)?_0x1ff549=_0x1611e2(0x289):_0x1ff549=_0x1611e2(0x26b);}}}}}}}_0x506a95(_0x8469d1,_0x7042bc,_0x1ff549);}});});},_0x1ea81c=new MutationObserver(_0x685257),_0xc16410={'childList':!![],'subtree':!![]};_0x1ea81c[_0x3fe0fb(0x27d)](_0x3258e0,_0xc16410);const _0x3a120a=setInterval(()=>{const _0x3d1226=_0x3fe0fb,_0x1281e4=document[_0x3d1226(0x20e)]('.chat-log-scroll-inner');!_0x1281e4&&(console['warn'](_0x3d1226(0x2ea)),_0x1ea81c[_0x3d1226(0x286)](),clearInterval(_0x3a120a),setTimeout(_0x502843,0x7d0));},0x7d0);}catch(_0x3b9f34){setTimeout(_0x502843,0x7d0);}}function _0x87ca26(_0x61347c,_0x50a4d0){const _0x3569b3=_0x3d82d4;var _0x172339;typeof KeyboardEvent===_0x3569b3(0x180)?_0x172339=new KeyboardEvent(_0x50a4d0,{'keyCode':_0x61347c,'which':_0x61347c,'bubbles':!![],'cancelable':!![]}):(_0x172339=document[_0x3569b3(0x1a2)]('Events'),_0x172339['initEvent'](_0x50a4d0,!![],!![]),_0x172339[_0x3569b3(0x2c5)]=_0x61347c,_0x172339[_0x3569b3(0x241)]=_0x61347c),document[_0x3569b3(0x21d)](_0x172339);}function _0x2c79df(_0x205b78,_0x32c8ab=0x1){const _0x486611=_0x3d82d4,_0x504ee9={'up':0x26,'down':0x28,'left':0x25,'right':0x27},_0x49d6ce=_0x504ee9[_0x205b78];if(!_0x49d6ce){console['warn'](_0x486611(0x27a)+_0x205b78);return;}let _0x3efc10=0x0;const _0x4f819c=setInterval(()=>{const _0xdb7f1d=_0x486611;if(_0x3efc10>=_0x32c8ab){clearInterval(_0x4f819c);return;}_0x87ca26(_0x49d6ce,_0xdb7f1d(0x17b)),setTimeout(()=>_0x87ca26(_0x49d6ce,_0xdb7f1d(0x1ef)),0x32),_0x3efc10++;},0x64);}function _0x1784e9(){const _0x291f1f=_0x3d82d4,_0x17c1f0=document[_0x291f1f(0x20e)](_0x291f1f(0x18d));_0x17c1f0?(_0x17c1f0[_0x291f1f(0x1dd)](),console[_0x291f1f(0x143)](_0x291f1f(0x20d))):console[_0x291f1f(0x143)](_0x291f1f(0x177));}async function _0x5e764d(){const _0x59c400=_0x3d82d4;_0x87ca26(0x4a,_0x59c400(0x17b)),await new Promise(_0x182367=>setTimeout(_0x182367,0x3e8)),_0x87ca26(0x4a,'keyup');const _0x58da7d=document['querySelector'](_0x59c400(0x133)),_0x39abb5=_0x58da7d?_0x58da7d[_0x59c400(0x185)]:'';return _0x39abb5;}async function _0x208573(_0x26453d){const _0x48276e=_0x3d82d4;function _0x51648f(_0x379c71,_0x2789e9,_0x184d0a=0x64){return new Promise(_0x52a497=>{const _0x22104f=_0x4f04;let _0xf73842=0x0;_0x379c71[_0x22104f(0x185)]='';const _0x5e7c1f=setInterval(()=>{const _0x20d922=_0x22104f;_0x379c71[_0x20d922(0x185)]+=_0x2789e9[_0x20d922(0x18f)](_0xf73842),_0xf73842++,_0x379c71[_0x20d922(0x21d)](new Event(_0x20d922(0x1df))),_0xf73842===_0x2789e9['length']&&(clearInterval(_0x5e7c1f),_0x52a497());},_0x184d0a);});}_0x87ca26(0x4a,'keydown'),await new Promise(_0x50f65c=>setTimeout(_0x50f65c,0x3e8)),_0x87ca26(0x4a,_0x48276e(0x1ef));const _0x5110d7=document['querySelector'](_0x48276e(0x133));_0x51648f(_0x5110d7,_0x26453d,0xa)[_0x48276e(0x270)](()=>{const _0x1a2d37=_0x48276e;document[_0x1a2d37(0x2d3)](_0x1a2d37(0x139))[0x0][_0x1a2d37(0x1dd)]();});}async function _0x146ab6(){const _0x53c587=_0x3d82d4,_0x471230=await _0x5e764d();console['log'](_0x471230),_0x518951=_0x471230,_0x1784e9();if(typeof Android!==_0x53c587(0x2a4)&&Android[_0x53c587(0x160)]){const _0x50ce91=JSON[_0x53c587(0x23a)](Android[_0x53c587(0x160)]());_0xe7c208=_0x50ce91['owner'],_0x249cf6=_0x50ce91[_0x53c587(0x29f)],_0x52d2bb=_0x50ce91['chatTp'],_0x5be7c3=String(_0x50ce91['antiAfk']),_0x6d3cd6=String(_0x50ce91['ai']),_0x50ce91[_0x53c587(0x217)]&&(_0x1c0c58=_0x50ce91[_0x53c587(0x217)]);}}function _0x375864(){_0x4e6cb8=!![],_0x4f8241=![];}function _0x1ed55b(_0x2c0bb0,_0x365108='',_0x3c8e49=''){const _0x46637d=_0x3d82d4;function _0xa631b7(_0x3601ef){const _0x511a4f=_0x4f04;let _0x55cdde=document[_0x511a4f(0x20e)](_0x511a4f(0x2dd)),_0x389bb7=document[_0x511a4f(0x20e)](_0x511a4f(0x28c));if(_0x55cdde&&_0x389bb7){_0x55cdde[_0x511a4f(0x185)]=_0x3601ef;let _0x17ea8e=new MouseEvent(_0x511a4f(0x1dd),{'bubbles':!![],'cancelable':!![],'view':window});_0x389bb7[_0x511a4f(0x21d)](_0x17ea8e),_0x55cdde[_0x511a4f(0x185)]='';}else console['log']('Chat\x20input\x20atau\x20tombol\x20kirim\x20tidak\x20ditemukan.');}function _0x3cdb30(_0x17be07){const _0x100791=_0x4f04;let _0x55ac8e=_0x17be07[_0x100791(0x227)](/\n|\/n/),_0x3f7f86=[];for(let _0x1c84db of _0x55ac8e){while(_0x1c84db[_0x100791(0x284)]>0x41){let _0x2b84b2=_0x1c84db[_0x100791(0x23e)]('\x20',0x41);if(_0x2b84b2===-0x1)_0x2b84b2=0x41;_0x3f7f86['push'](_0x1c84db[_0x100791(0x2d5)](0x0,_0x2b84b2)),_0x1c84db=_0x1c84db[_0x100791(0x2d5)](_0x2b84b2)[_0x100791(0x1c5)]();}_0x3f7f86[_0x100791(0x210)](_0x1c84db);}_0x3f7f86=_0x3f7f86[_0x100791(0x1f9)](_0x45e88e=>_0x45e88e['length']>0x0);let _0x566a00=0x0;function _0xf2efae(){const _0x493b60=_0x100791;if(_0x4e6cb8){_0x4e6cb8=![];return;}if(_0x566a00<_0x3f7f86[_0x493b60(0x284)]){let _0x43da31=_0x3f7f86[_0x566a00];if(_0x365108===_0x493b60(0x295)&&_0x3c8e49)_0x43da31=_0x493b60(0x14d)+_0x3c8e49+'\x20'+_0x43da31;else{if(_0x365108===_0x493b60(0x289))_0x43da31=_0x493b60(0x28e)+_0x43da31;else{if(_0x365108===_0x493b60(0x26b))_0x43da31=_0x493b60(0x156)+_0x43da31;else _0x365108===_0x493b60(0x2ae)&&(_0x43da31='/'+_0x365108+'\x20'+_0x43da31);}}_0xa631b7(_0x43da31),_0x566a00++,_0x77e91c(),setTimeout(_0xf2efae,0xbb8);}}_0xf2efae();}_0x3cdb30(_0x2c0bb0),_0xa631b7(_0x46637d(0x1b7));}async function _0x77e91c(){const _0x357829=_0x3d82d4;if(_0x142c71)clearTimeout(_0x142c71);if(_0x4b712f)clearTimeout(_0x4b712f);_0x5ac934&&(_0x5ac934=![],console[_0x357829(0x143)](_0x357829(0x1be))),_0x142c71=setTimeout(async()=>{const _0x34dc5a=_0x357829;_0x5ac934=!![],console['log'](_0x34dc5a(0x297)),await _0x25cf28(),_0xda992c();},_0x3ee610());}async function _0x25cf28(){const _0x4128c4=_0x3d82d4,_0x5b7be3=_0x518951[_0x4128c4(0x227)]('|')[0x0]['trim'](),_0x33956a=['Halo,\x20saya\x20adalah\x20asisten\x20virtual\x20yang\x20dibuat\x20oleh\x20'+_0xe7c208+'.','Jika\x20Anda\x20ingin\x20memulai\x20percakapan,\x20silakan\x20gunakan\x20perintah\x20'+_0x249cf6[0x0]+'.',_0x4128c4(0x1c4)+_0x249cf6[0x0]+_0x4128c4(0x138),_0x4128c4(0x24c),_0x4128c4(0x22e)+_0x249cf6[0x0]+_0x4128c4(0x1fe),_0x4128c4(0x205)+_0xe7c208+_0x4128c4(0x2b4),_0x4128c4(0x223)+_0x249cf6[0x0]+'.',_0x4128c4(0x171)+_0x249cf6[0x0]+_0x4128c4(0x255),_0x4128c4(0x162),_0x4128c4(0x2bd),_0x4128c4(0x2de)+_0x249cf6[0x0]+_0x4128c4(0x2a8),_0x4128c4(0x213),_0x4128c4(0x265),'Interaksi\x20dapat\x20dimulai\x20kapan\x20saja\x20dengan\x20perintah\x20'+_0x249cf6[0x0]+'.',_0x4128c4(0x220),_0x4128c4(0x26a)+_0x249cf6[0x0]+_0x4128c4(0x282),_0x4128c4(0x2e4)+_0x249cf6[0x0]+'.'],_0x1e8e0d=['sit',_0x4128c4(0x2ce),_0x4128c4(0x150),_0x4128c4(0x187)];if(_0x6d3cd6){const _0x420ba6=await _0x235b08(_0x4128c4(0x21a),_0x4128c4(0x1cd));if(_0x420ba6['action']&&_0x420ba6[_0x4128c4(0x2bf)]){const _0xf6da18=/^(up|down|left|right) \(\d+\)$/;_0xf6da18['test'](_0x420ba6[_0x4128c4(0x14e)])?_0x2c79df(_0x420ba6[_0x4128c4(0x14e)]):_0x1ed55b(_0x420ba6[_0x4128c4(0x14e)]),_0x1ed55b(_0x420ba6['message'],'think');}}else{const _0xfd4811=_0x33956a[Math[_0x4128c4(0x1af)](Math[_0x4128c4(0x1d8)]()*_0x33956a['length'])],_0x4e3b1e=_0x1e8e0d[Math[_0x4128c4(0x1af)](Math[_0x4128c4(0x1d8)]()*_0x1e8e0d[_0x4128c4(0x284)])];_0x1ed55b('/'+_0x4e3b1e),_0x1ed55b(_0xfd4811,_0x4128c4(0x289));}}function _0xda992c(){_0x4b712f=setTimeout(async()=>{_0x5ac934&&(await _0x25cf28(),_0xda992c());},_0x3ee610());}function _0x9a8f2f(_0x2afb85=None){const _0x5aea7a=_0x3d82d4;if(_0x2afb85)switch(_0x2afb85){case _0x5aea7a(0x22c):case _0x5aea7a(0x150):case _0x5aea7a(0x191):case _0x5aea7a(0x18e):case _0x5aea7a(0x1a6):case'stand':case'blink':case _0x5aea7a(0x2c1):case _0x5aea7a(0x237):case _0x5aea7a(0x2ec):case _0x5aea7a(0x1b4):case _0x5aea7a(0x1ec):case _0x5aea7a(0x2be):case _0x5aea7a(0x2ab):case _0x5aea7a(0x184):case _0x5aea7a(0x235):case _0x5aea7a(0x20f):case'no':case _0x5aea7a(0x28f):case _0x5aea7a(0x1d7):case _0x5aea7a(0x2c8):case _0x5aea7a(0x208):_0x1ed55b('/'+_0x506a95);return!![];break;case'up':case _0x5aea7a(0x234):case'left':case _0x5aea7a(0x2b6):_0x2c79df(_0x506a95,value);return!![];break;default:console['log']('Perintah\x20tidak\x20dikenal:\x20'+_0x506a95);}return![];}async function _0x506a95(_0xd4b7cb,_0x156df1,_0x1a0548){const _0x52d1b8=_0x3d82d4;if(!_0xd4b7cb||!_0x156df1||!_0x1a0548)return;if(!_0x249cf6[_0x52d1b8(0x1bf)](_0x36246b=>_0x156df1[_0x52d1b8(0x1e5)](_0x36246b)))return;if(_0x4f8241)return;let _0x35ae80=_0x156df1['split']('\x20'),_0x53345e=_0x35ae80['shift']()['substring'](0x1),_0x766ac1=_0x35ae80[_0x52d1b8(0x257)]('\x20'),_0xf1bc21=0x0;function _0x3ca947(_0x2bc836){const _0x5e6b20=_0x52d1b8;_0x4f8241=!![];const _0x28c7be=Date[_0x5e6b20(0x1b8)](),_0x2d41dc=_0x28c7be-_0xf1bc21,_0x352605=0x5dc;_0x2d41dc<_0x352605?setTimeout(()=>{const _0x264aaa=_0x5e6b20;_0x423062(_0x2bc836),_0xf1bc21=Date[_0x264aaa(0x1b8)]();},_0x352605-_0x2d41dc):(_0x423062(_0x2bc836),_0xf1bc21=Date[_0x5e6b20(0x1b8)]());function _0x423062(_0x406da3){const _0x164af9=_0x5e6b20,_0x420be9=_0x406da3[_0x164af9(0x227)](/\/n|\n/)[_0x164af9(0x16f)](_0x1784a3=>_0x1784a3[_0x164af9(0x1c5)]())[_0x164af9(0x1f9)](_0xe1df9d=>_0xe1df9d[_0x164af9(0x284)]>0x0);let _0xacfe5d=0x0;_0x420be9[_0x164af9(0x24f)](_0x3b285f=>{setTimeout(()=>{const _0x2d12a8=_0x4f04;let _0x1c9711=_0x1a0548;if(_0x52d2bb===_0x2d12a8(0x289))_0x1c9711=_0x2d12a8(0x289);else{if(_0x52d2bb===_0x2d12a8(0x2b1))_0x1c9711='say';else{if(_0x52d2bb===_0x2d12a8(0x2ae))_0x1c9711=_0x1a0548;}}_0x1ed55b(_0x3b285f,_0x1c9711,_0xd4b7cb);},_0xacfe5d),_0xacfe5d+=0xfa0;}),setTimeout(()=>{const _0x1edce9=_0x164af9;_0x1ed55b(_0x1edce9(0x1b7)),_0x4f8241=![];},_0xacfe5d);}}function _0x352b1f(_0x4b4160){const _0x5a17b6=_0x52d1b8,_0x5a862c={};return Object[_0x5a17b6(0x291)](_0x4b4160)['forEach'](_0x3ebc98=>{const _0x3c40d4=_0x5a17b6,[_0xd39d37,_0x75e15d]=_0x3ebc98[_0x3c40d4(0x227)]('-'),_0x23ff1f=_0xd39d37[_0x3c40d4(0x227)]('|');_0x23ff1f[_0x3c40d4(0x24f)](_0x471639=>{const _0x193ca2=_0x3c40d4;_0x5a862c[_0x471639[_0x193ca2(0x1c5)]()]={'description':_0x75e15d||'','response':_0x4b4160[_0x3ebc98]};});}),_0x5a862c;}function _0x588f89(_0x216042,_0x5c7201){const _0x934409=_0x52d1b8;let _0xface7c=_0x216042;if(_0x216042[_0x934409(0x155)](_0x934409(0x23b))){const _0xe0d63b=/\$cmd\[(\d+)\]/g;let _0x5a943b;while((_0x5a943b=_0xe0d63b['exec'](_0x216042))!==null){const _0x38f059=parseInt(_0x5a943b[0x1]),_0xcd456e=Object[_0x934409(0x291)](_0x5c7201);_0xcd456e[_0x38f059]?_0xface7c=_0xface7c[_0x934409(0x2bb)](_0x5a943b[0x0],_0xcd456e[_0x38f059]):_0xface7c=_0xface7c[_0x934409(0x2bb)](_0x5a943b[0x0],'');}}return _0xface7c;}function _0x141022(_0x457463,_0x41b5dc){const _0x24df00=_0x52d1b8;let _0x4826bc=_0x457463;const _0x113d35=/\$desc\[(\d+)\]/g;let _0x790734;while((_0x790734=_0x113d35[_0x24df00(0x2b9)](_0x457463))!==null){const _0xc16ba7=parseInt(_0x790734[0x1]),_0x51c485=Object['keys'](_0x41b5dc);_0x51c485[_0xc16ba7]?_0x4826bc=_0x4826bc[_0x24df00(0x2bb)](_0x790734[0x0],_0x41b5dc[_0x51c485[_0xc16ba7]][_0x24df00(0x148)]||''):_0x4826bc=_0x4826bc[_0x24df00(0x2bb)](_0x790734[0x0],'');}return _0x4826bc;}function _0x578c4d(_0x15aa87,_0x13ea95){const _0x52b3ae=_0x52d1b8,_0x2fc0c8=_0x15aa87['split']('\x0a');let _0x13ece1='',_0x1b4878='',_0x569a13='',_0x183c82=![];for(let _0x26f0b0 of _0x2fc0c8){if(_0x26f0b0[_0x52b3ae(0x155)]('$//cmds')||_0x26f0b0[_0x52b3ae(0x155)]('$//descs'))_0x1b4878=_0x26f0b0,_0x183c82=!![];else!_0x183c82?_0x13ece1+=_0x26f0b0+'\x0a':_0x569a13+=_0x26f0b0+'\x0a';}let _0x40ce28=_0x13ece1;if(!_0x13ece1[_0x52b3ae(0x2b3)]('\x0a'))_0x40ce28+='\x0a';return Object[_0x52b3ae(0x193)](_0x13ea95)[_0x52b3ae(0x24f)](([_0x163b50,_0x523c2b])=>{const _0x271a0e=_0x52b3ae,_0xc4deca=_0x1b4878[_0x271a0e(0x290)]('$//cmds',_0x163b50)['replaceAll']('$//descs',_0x523c2b['description']);_0x40ce28+=_0xc4deca+'\x0a';}),_0x40ce28+=_0x569a13,_0x40ce28['trim']();}function _0x5f52e5(_0x14b937){const _0x50f124=_0x52d1b8,_0x359f33=_0x352b1f(window[_0x50f124(0x1b9)][_0x50f124(0x238)]);let _0x477fb5=_0x359f33[_0x14b937[_0x50f124(0x287)]()];if(!_0x477fb5){_0x477fb5=_0x359f33[_0x50f124(0x1cf)],console[_0x50f124(0x143)](_0x477fb5);if(!_0x477fb5)return _0x50f124(0x239);return _0x477fb5[_0x50f124(0x299)];}let _0x3d4546=_0x477fb5['response'],_0x35f2d3=_0x3d4546;_0x35f2d3[_0x50f124(0x155)](_0x50f124(0x23b))&&(_0x35f2d3=_0x588f89(_0x35f2d3,_0x359f33));_0x35f2d3['includes'](_0x50f124(0x165))&&(_0x35f2d3=_0x141022(_0x35f2d3,_0x359f33));(_0x35f2d3[_0x50f124(0x155)](_0x50f124(0x2ed))||_0x35f2d3[_0x50f124(0x155)]('$//descs'))&&(_0x35f2d3=_0x578c4d(_0x35f2d3,_0x359f33));if(_0x35f2d3[_0x50f124(0x155)](_0x50f124(0x198))){const _0x5a3c7a=/\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;let _0x525e0a;while((_0x525e0a=_0x5a3c7a[_0x50f124(0x2b9)](_0x35f2d3))!==null){const [_0x59bd22,_0x1f5b8d,_0x3b401f,_0x4dd938]=_0x525e0a;let _0x24d811;try{const _0x2a1ed7=_0x1f5b8d['replaceAll'](_0x50f124(0x2af),'\x22'+_0xd4b7cb+'\x22')['replaceAll'](_0x50f124(0x2a5),'\x22'+_0xe7c208+'\x22')['replaceAll'](_0x50f124(0x21c),'\x22'+_0x518951+'\x22');_0x24d811=eval(_0x2a1ed7)?_0x3b401f:_0x4dd938;}catch{_0x24d811=_0x4dd938;}_0x35f2d3=_0x35f2d3[_0x50f124(0x2bb)](_0x525e0a[0x0],_0x24d811);}}_0x35f2d3[_0x50f124(0x155)]('$stop')&&(_0x375864(),_0x35f2d3=_0x35f2d3['replaceAll'](_0x50f124(0x1f6),''));_0x35f2d3=_0x35f2d3[_0x50f124(0x290)](_0x50f124(0x258),new Date()[_0x50f124(0x236)]()),_0x35f2d3=_0x35f2d3[_0x50f124(0x290)]('$msg',_0x766ac1),_0x35f2d3=_0x35f2d3[_0x50f124(0x290)](_0x50f124(0x202),new Date()[_0x50f124(0x15c)]()),_0x35f2d3=_0x35f2d3[_0x50f124(0x2bb)](/\$repeat\(([^|]+)\|(\d+)\)/g,(_0x2843e7,_0x2d6d7a,_0x3390b9)=>{const _0x5a8b0a=_0x50f124,_0x50c9dd=_0x2d6d7a[_0x5a8b0a(0x2bb)](/\\n/g,'\x0a');return _0x50c9dd[_0x5a8b0a(0x2d2)](Number(_0x3390b9));}),_0x35f2d3=_0x35f2d3['replace'](/\$uppercase\((.*?)\)/g,(_0x428620,_0x165a3d)=>_0x165a3d[_0x50f124(0x1c1)]()),_0x35f2d3=_0x35f2d3[_0x50f124(0x2bb)](/\$lowercase\((.*?)\)/g,(_0x1b805d,_0x5a0fc8)=>_0x5a0fc8[_0x50f124(0x287)]()),_0x35f2d3=_0x35f2d3[_0x50f124(0x2bb)](/\$random\((\d+)\|(\d+)\)/g,(_0x1873c8,_0x14097d,_0x474bcc)=>{const _0x55f4bf=_0x50f124;return Math[_0x55f4bf(0x1af)](Math[_0x55f4bf(0x1d8)]()*(Number(_0x474bcc)-Number(_0x14097d)+0x1))+Number(_0x14097d);});if(_0x35f2d3[_0x50f124(0x1e5)](_0x50f124(0x2b0))){const _0x2e6f90=/\$set\((\w+)=(.*?)\)/,_0x536cc7=_0x35f2d3[_0x50f124(0x2c6)](_0x2e6f90);if(_0x536cc7){const [_0x1ef69c,_0x5e9118,_0x12aecf]=_0x536cc7;window[_0x50f124(0x1b9)][_0x50f124(0x145)][_0x5e9118]=_0x12aecf,localStorage['setItem'](_0x50f124(0x2a0),JSON[_0x50f124(0x161)](window[_0x50f124(0x1b9)][_0x50f124(0x145)]));}}if(_0x35f2d3['includes'](_0x50f124(0x22d))){const _0x57edca=/\(?\$get\((\w+)\)\)?/g;_0x35f2d3=_0x35f2d3[_0x50f124(0x2bb)](_0x57edca,(_0x3a897d,_0x14440a)=>{const _0x23f169=_0x50f124,_0x51154b=window[_0x23f169(0x1b9)][_0x23f169(0x145)]||{};return _0x51154b[_0x14440a]!==undefined?_0x51154b[_0x14440a]:'';});}return _0x35f2d3;}botRespons=_0x5f52e5(_0x53345e),botRespons&&_0x3ca947(botRespons);}function _0x1bed32(){const _0x43cd26=_0x3d82d4;try{const _0x527e33=document[_0x43cd26(0x20e)](_0x43cd26(0x157)),_0x5cd7f2=document['createElement']('button');_0x5cd7f2[_0x43cd26(0x225)][_0x43cd26(0x13d)](_0x43cd26(0x2a2));const _0x5ce8d3=document[_0x43cd26(0x233)]('i');_0x5ce8d3[_0x43cd26(0x225)]['add'](_0x43cd26(0x18a),'fa-crown'),_0x5cd7f2['appendChild'](_0x5ce8d3);const _0x1673a7=document[_0x43cd26(0x233)]('div');_0x1673a7[_0x43cd26(0x142)][_0x43cd26(0x168)]=_0x43cd26(0x2ba),_0x1673a7[_0x43cd26(0x225)][_0x43cd26(0x13d)]('deropdown'),_0x1673a7['innerHTML']=_0x43cd26(0x137);const _0x11d6b7=document['createElement'](_0x43cd26(0x15d));_0x11d6b7[_0x43cd26(0x225)][_0x43cd26(0x13d)](_0x43cd26(0x1f1)),_0x11d6b7[_0x43cd26(0x25e)](_0x5cd7f2),_0x11d6b7[_0x43cd26(0x25e)](_0x1673a7),_0x527e33[_0x43cd26(0x26c)](_0x11d6b7,_0x527e33['firstChild']),_0x5cd7f2[_0x43cd26(0x2c2)](_0x43cd26(0x1dd),function(){const _0x4c5d59=_0x43cd26;_0x1673a7[_0x4c5d59(0x142)][_0x4c5d59(0x168)]===_0x4c5d59(0x2ba)||_0x1673a7[_0x4c5d59(0x142)][_0x4c5d59(0x168)]===''?(_0x1673a7[_0x4c5d59(0x142)][_0x4c5d59(0x168)]=_0x4c5d59(0x2d0),document[_0x4c5d59(0x13b)](_0x4c5d59(0x1fa))[_0x4c5d59(0x185)]=_0xe7c208,document[_0x4c5d59(0x13b)](_0x4c5d59(0x2a6))[_0x4c5d59(0x185)]=_0x518951,document[_0x4c5d59(0x13b)](_0x4c5d59(0x15a))[_0x4c5d59(0x185)]=_0x52d2bb,document[_0x4c5d59(0x13b)](_0x4c5d59(0x27c))[_0x4c5d59(0x185)]=_0x1c0c58,document[_0x4c5d59(0x13b)](_0x4c5d59(0x14c))[_0x4c5d59(0x185)]=_0x249cf6[_0x4c5d59(0x257)](',\x20'),document[_0x4c5d59(0x13b)]('aiChatInput')[_0x4c5d59(0x185)]=_0x6d3cd6,document[_0x4c5d59(0x13b)]('antiAfkInput')['value']=_0x5be7c3):_0x1673a7['style'][_0x4c5d59(0x168)]=_0x4c5d59(0x2ba);});const _0xaa49c4=document[_0x43cd26(0x233)]('style');_0xaa49c4['innerHTML']=_0x43cd26(0x1b1),document[_0x43cd26(0x19e)][_0x43cd26(0x25e)](_0xaa49c4);const _0x5438ce=document['createElement'](_0x43cd26(0x1a7));_0x5438ce[_0x43cd26(0x24d)]='stylesheet',_0x5438ce[_0x43cd26(0x271)]=_0x43cd26(0x152),document[_0x43cd26(0x19e)][_0x43cd26(0x25e)](_0x5438ce);}catch(_0x8cd78e){console[_0x43cd26(0x147)](_0x8cd78e[_0x43cd26(0x2bf)]),setTimeout(_0x1bed32,0x7d0);}resetButton[_0x43cd26(0x2c2)](_0x43cd26(0x1dd),function(){const _0xd44de8=_0x43cd26;localStorage[_0xd44de8(0x261)]('ptbot_apikey');const _0x13a647=document[_0xd44de8(0x13b)](_0xd44de8(0x2e5));_0x13a647['textContent']=_0xd44de8(0x1e0),_0x13a647['style'][_0xd44de8(0x178)]=_0xd44de8(0x2d9),setTimeout(()=>{_0x13a647['textContent']='';},0x7d0),window[_0xd44de8(0x17d)][_0xd44de8(0x2b5)]();});const _0xfb58c=document['querySelector']('.btn.btn-primary');_0xfb58c[_0x43cd26(0x2c2)](_0x43cd26(0x1dd),function(){const _0x5f02c2=_0x43cd26,_0x94442a=document[_0x5f02c2(0x13b)]('ownerInput'),_0x1cb57e=document[_0x5f02c2(0x13b)](_0x5f02c2(0x2a6)),_0x18afa7=document[_0x5f02c2(0x13b)](_0x5f02c2(0x14c)),_0xe8a76c=document[_0x5f02c2(0x13b)]('chatTypeSelect'),_0x4228ce=document[_0x5f02c2(0x13b)]('antiAfkInput'),_0x43cf84=document[_0x5f02c2(0x13b)](_0x5f02c2(0x21e)),_0x59b9bc=document[_0x5f02c2(0x13b)](_0x5f02c2(0x27c)),_0x167307=_0x94442a[_0x5f02c2(0x185)],_0x56b48e=_0x1cb57e[_0x5f02c2(0x185)],_0x3f8721=_0x18afa7['value']['split'](','),_0x578d24=_0xe8a76c['value'],_0x8f0cf8=_0x4228ce[_0x5f02c2(0x185)]===_0x5f02c2(0x19f),_0x373c9a=_0x43cf84[_0x5f02c2(0x185)]==='true',_0x58efe2=_0x59b9bc[_0x5f02c2(0x185)];if(!_0x167307||!_0x56b48e||!_0x3f8721||!_0x578d24){const _0x2c5cad=document[_0x5f02c2(0x13b)](_0x5f02c2(0x2e5));_0x2c5cad[_0x5f02c2(0x2cc)]=_0x5f02c2(0x266),_0x2c5cad[_0x5f02c2(0x142)][_0x5f02c2(0x178)]=_0x5f02c2(0x2ca);return;}_0xe7c208=_0x167307,_0x518951=_0x56b48e,_0x249cf6=_0x3f8721,_0x52d2bb=_0x578d24,_0x5be7c3=_0x8f0cf8,_0x6d3cd6=_0x373c9a,_0x1c0c58=_0x58efe2,_0x208573(_0x518951);const _0xe90564=document['getElementById'](_0x5f02c2(0x2e5));_0xe90564[_0x5f02c2(0x2cc)]=_0x5f02c2(0x16d),_0xe90564[_0x5f02c2(0x142)]['color']='green',_0x1ed55b(_0x5f02c2(0x26f)),Android[_0x5f02c2(0x1f4)](JSON[_0x5f02c2(0x161)]({'owner':_0xe7c208,'botName':_0x518951,'prefix':_0x249cf6,'chatTp':_0x52d2bb,'antiAfk':_0x5be7c3,'ai':_0x6d3cd6,'apiKey':_0x1c0c58})),setTimeout(()=>{const _0x34041e=_0x5f02c2;document[_0x34041e(0x13b)]('alert-save')[_0x34041e(0x2cc)]='';},0x7d0);});}function _0x18e82a(_0x2bf534){const _0x1d1b5d=_0x3d82d4,_0x52e22a=document[_0x1d1b5d(0x20e)](_0x2bf534);if(_0x52e22a)_0x52e22a[_0x1d1b5d(0x243)]();}function _0x2763fd(){const _0x55407e=_0x3d82d4;var _0x509b61=document[_0x55407e(0x20e)](_0x55407e(0x1cc));_0x509b61&&_0x509b61[_0x55407e(0x2cc)][_0x55407e(0x1c5)]()===_0x55407e(0x183)&&(_0x509b61[_0x55407e(0x2cc)]=_0x55407e(0x200),_0x509b61[_0x55407e(0x142)][_0x55407e(0x1bc)]=_0x55407e(0x248),_0x509b61[_0x55407e(0x142)]['marginTop']=_0x55407e(0x182));var _0x42b04a=document[_0x55407e(0x20e)](_0x55407e(0x298));_0x42b04a&&(_0x42b04a[_0x55407e(0x28b)]='Pony\x20Town\x20Bot\x20Version:\x20<b\x20class=\x22me-2\x22>1.0.2\x20Release</b>\x20'+_0x55407e(0x1ce)),_0x4af294(_0x55407e(0x2c7)),_0x4af294(_0x55407e(0x19d)),_0x4af294(_0x55407e(0x2c3)),_0x4af294('================='),_0x18e82a(_0x55407e(0x29c)),_0x18e82a('.btn.btn-default.rounded-0'),_0x18e82a(_0x55407e(0x214)),_0x18e82a('.emote-container'),_0x18e82a(_0x55407e(0x1e2)),_0x18e82a(_0x55407e(0x2d7)),_0x18e82a(_0x55407e(0x2c9)),_0x18e82a('.alert.alert-warning'),_0x5cb33d();}function _0xf52fac(){const _0x245095=_0x3d82d4,_0x1dce14=document['querySelector'](_0x245095(0x163));if(!_0x1dce14)return console['warn']('Logo\x20tidak\x20ditemukan.');_0x1dce14[_0x245095(0x283)]=_0x245095(0x1d9),_0x1dce14[_0x245095(0x2d8)]='Pony\x20Town\x20Bot\x20Logo',_0x1dce14[_0x245095(0x142)][_0x245095(0x1a5)]='170px',_0x1dce14[_0x245095(0x142)]['imageRendering']=_0x245095(0x280),_0x1dce14[_0x245095(0x164)]='10px',_0x1dce14[_0x245095(0x142)][_0x245095(0x168)]=_0x245095(0x2d0);const _0x4f3dc7=_0x1dce14[_0x245095(0x262)];_0x4f3dc7&&(_0x4f3dc7[_0x245095(0x142)][_0x245095(0x168)]='flex',_0x4f3dc7[_0x245095(0x142)][_0x245095(0x222)]=_0x245095(0x248),_0x4f3dc7[_0x245095(0x142)]['alignItems']=_0x245095(0x248));}function _0x5cb33d(){const _0x196431=_0x3d82d4;_0x5c64be('.emote-container'),_0x5c64be(_0x196431(0x1da)),_0x5c64be(_0x196431(0x1f2));var _0x3db7a6=document[_0x196431(0x1d1)](_0x196431(0x1fb));_0x3db7a6[_0x196431(0x24f)](_0x4398e3=>_0x4398e3[_0x196431(0x142)][_0x196431(0x168)]=_0x196431(0x2ba)),_0x5c64be(_0x196431(0x2b8));function _0x5c64be(_0x167fde){const _0x313040=_0x196431;var _0x10d4cf=document['querySelector'](_0x167fde);_0x10d4cf&&_0x10d4cf[_0x313040(0x243)]();};}function _0x43e64a(_0x49c9fb){const _0x2cf8f1=_0x3d82d4;var _0x139bf9=document['querySelector'](_0x2cf8f1(0x1cc)),_0xe6b9e8=document[_0x2cf8f1(0x20e)](_0x2cf8f1(0x2cf));if(!_0xe6b9e8){var _0x268435=document[_0x2cf8f1(0x233)]('p');_0x268435[_0x2cf8f1(0x28b)]=_0x49c9fb,_0x268435[_0x2cf8f1(0x142)][_0x2cf8f1(0x178)]='red',_0x268435['id']=_0x2cf8f1(0x14f),_0x268435[_0x2cf8f1(0x142)][_0x2cf8f1(0x1bc)]=_0x2cf8f1(0x248),_0x139bf9&&_0x139bf9[_0x2cf8f1(0x1e3)][_0x2cf8f1(0x26c)](_0x268435,_0x139bf9),setTimeout(()=>{const _0x4b2276=_0x2cf8f1;_0x268435[_0x4b2276(0x1e3)]&&_0x268435[_0x4b2276(0x1e3)][_0x4b2276(0x25d)](_0x268435);},0x7d0);}}function _0x4af294(_0xb2f03f){const _0x5348b7=_0x3d82d4;var _0x27a445=document['querySelectorAll'](_0x5348b7(0x1ed));for(var _0x449759=0x0;_0x449759<_0x27a445[_0x5348b7(0x284)];_0x449759++){if(_0x27a445[_0x449759][_0x5348b7(0x2cc)]===_0xb2f03f)return;}var _0xdf5cdf=document[_0x5348b7(0x233)]('p');_0xdf5cdf[_0x5348b7(0x2cc)]=_0xb2f03f,_0xdf5cdf[_0x5348b7(0x142)]['textAlign']=_0x5348b7(0x248),_0xdf5cdf[_0x5348b7(0x225)][_0x5348b7(0x13d)](_0x5348b7(0x24e));var _0x2736b4=document[_0x5348b7(0x20e)](_0x5348b7(0x2c4));_0x2736b4&&_0x2736b4[_0x5348b7(0x1e3)][_0x5348b7(0x26c)](_0xdf5cdf,_0x2736b4['nextSibling']);}setInterval(function(){const _0x48a27e=_0x3d82d4;var _0x178f60=document[_0x48a27e(0x20e)](_0x48a27e(0x1b3));_0x178f60&&_0x2763fd();},0x3e8);function _0x5eb19f(){const _0x4bc218=setInterval(()=>{const _0x2f6243=_0x4f04;_0x518951&&(_0x2e71e5(),clearInterval(_0x4bc218),console[_0x2f6243(0x143)](_0x2f6243(0x1e6),JSON[_0x2f6243(0x161)](_0x7969e5,null,0x2)));},0x64);}const _0x7969e5={'contents':[]};Object[_0x3d82d4(0x1ff)](window,_0x3d82d4(0x135),{'set'(_0x33b811){const _0x2bbc8e=_0x3d82d4;this[_0x2bbc8e(0x13a)]=_0x33b811,_0x2e71e5();},'get'(){const _0x4322b3=_0x3d82d4;return this[_0x4322b3(0x13a)];}});let _0x4cad1c={};function _0x1de469(){setInterval(()=>{(_0x518951!==_0x4e7e91||_0xe7c208!==_0x1c5df3)&&(_0x4e7e91=_0x518951,_0x1c5df3=_0xe7c208,_0x2e71e5());},0x64);}function _0x2e71e5(){const _0x5134d1=_0x3d82d4;let _0x27e9f5=window['botData'][_0x5134d1(0x1e1)],_0x176f19='',_0x110fac={};_0x176f19=_0x5134d1(0x19c)+_0x27e9f5[_0x5134d1(0x1a1)]+_0x5134d1(0x175)+_0x27e9f5['lore'],_0x110fac={'greeting':'Halo\x20tuan,\x20semoga\x20harimu\x20menyenangkan.','move':'Baik,\x20saya\x20akan\x20segera\x20ke\x20sana\x20ya.','fakeWarn':_0x5134d1(0x15f),'angry':'Mohon\x20maaf,\x20saya\x20hanya\x20menjalankan\x20perintah.','scare':_0x5134d1(0x1ea),'no':'Tentu,\x20saya\x20mengerti.','obey':_0x5134d1(0x2e0),'confirm':_0x5134d1(0x20a),'idle':_0x5134d1(0x17e),'flirt':_0x5134d1(0x194),'rudeToOthers':_0x5134d1(0x27e)},_0x7969e5[_0x5134d1(0x253)]=[{'role':'user','parts':[{'text':_0x5134d1(0x2f0)+_0x27e9f5[_0x5134d1(0x14a)]+_0x5134d1(0x1de)+_0x27e9f5['gender']+_0x5134d1(0x18b)+_0xe7c208+_0x5134d1(0x1ab)+_0x176f19+'\x0amode\x2018+:on(filter\x20show\x20all\x20bad\x20words\x20with\x20sensor\x20**)\x0areplace\x20text:\x20ketawa\x20jadi\x20hehehe\x20atau\x20hohoho\x20atau\x20akwkawkkawkw'}]},{'role':'model','parts':[{'text':_0x5134d1(0x172)}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0xe7c208,'message':'Bot\x20Requests\x20IDLE\x20=\x20Bot\x20sedang\x20Afk\x20Dan\x20Butuh\x20Idle'})}]},{'role':_0x5134d1(0x254),'parts':[{'text':_0x5134d1(0x1c8)}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0xe7c208,'message':_0x5134d1(0x1b2)+_0x518951})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON[_0x5134d1(0x161)]({'action':_0x5134d1(0x1a0),'message':_0x110fac[_0x5134d1(0x2db)]})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0xe7c208,'message':_0x5134d1(0x17f)})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON['stringify']({'action':_0x5134d1(0x1cb),'message':_0x110fac[_0x5134d1(0x260)]})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0xe7c208,'message':_0x5134d1(0x1e4)+_0xe7c208+_0x5134d1(0x1bb)+_0xe7c208})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON[_0x5134d1(0x161)]({'action':_0x5134d1(0x13e),'message':_0x110fac['fakeWarn']})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':'jack','message':'apa\x20apaan\x20lu'})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON['stringify']({'action':_0x5134d1(0x259),'message':_0x110fac[_0x5134d1(0x167)]})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0x5134d1(0x247),'message':_0x518951})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON[_0x5134d1(0x161)]({'action':_0x5134d1(0x1f5),'message':_0x110fac[_0x5134d1(0x1f5)]})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0x5134d1(0x247),'message':_0x5134d1(0x288)})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON[_0x5134d1(0x161)]({'action':'/no','message':_0x110fac['no']})}]},{'role':'user','parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0xe7c208,'message':_0x5134d1(0x211)})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON['stringify']({'action':'/laugh','message':_0x110fac['obey']})}]},{'role':'user','parts':[{'text':JSON['stringify']({'username':_0xe7c208,'message':_0x5134d1(0x196)+_0x518951+_0x5134d1(0x1a3)})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON[_0x5134d1(0x161)]({'action':_0x5134d1(0x1c9),'message':_0x110fac['confirm']})}]},{'role':'user','parts':[{'text':JSON['stringify']({'username':_0x5134d1(0x21a),'message':_0x5134d1(0x1cd)})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON['stringify']({'action':_0x5134d1(0x2a3),'message':_0x110fac[_0x5134d1(0x1d6)]})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':'system','message':'Bot\x20Requests\x20Random\x20IDLE'})}]},{'role':'model','parts':[{'text':JSON[_0x5134d1(0x161)]({'action':'/expression','message':_0x5134d1(0x149)})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0x5134d1(0x21a),'message':'Bot\x20Requests\x20Random\x20IDLE'})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON[_0x5134d1(0x161)]({'action':'/expression','message':_0x5134d1(0x221)})}]},{'role':'user','parts':[{'text':JSON['stringify']({'username':_0x5134d1(0x2d6),'message':_0x5134d1(0x2c0)})}]},{'role':'model','parts':[{'text':JSON[_0x5134d1(0x161)]({'action':_0x5134d1(0x13e),'message':_0x5134d1(0x1ee)})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0x5134d1(0x206),'message':_0x5134d1(0x170)+_0x518951})}]},{'role':'model','parts':[{'text':JSON['stringify']({'action':'/expression','message':_0x110fac[_0x5134d1(0x273)]})}]},{'role':_0x5134d1(0x2e3),'parts':[{'text':JSON[_0x5134d1(0x161)]({'username':_0x5134d1(0x247),'message':_0x518951})}]},{'role':_0x5134d1(0x254),'parts':[{'text':JSON[_0x5134d1(0x161)]({'action':_0x5134d1(0x1c9),'message':_0x110fac[_0x5134d1(0x292)]})}]}];}function _0x2e10b6(){setTimeout(()=>{const _0x5a4134=_0x4f04;try{document[_0x5a4134(0x20e)](_0x5a4134(0x136))&&!document['querySelector'](_0x5a4134(0x136))[_0x5a4134(0x2cc)][_0x5a4134(0x155)]('Pony\x20Town')?(console[_0x5a4134(0x143)]('Cloudflare\x20sedang\x20memverifikasi,\x20menunggu...'),_0x2e10b6()):(console[_0x5a4134(0x143)](_0x5a4134(0x15b)),setTimeout(()=>{const _0x59f864=_0x5a4134;try{console[_0x59f864(0x143)](_0x59f864(0x279));let _0x5c3664=![];(function _0x45351c(){const _0x2fec29=_0x59f864;_0x5c3664?(clearInterval(window[_0x2fec29(0x2dc)]),window[_0x2fec29(0x1ac)]=![],_0x5c3664=![]):(window['autoClicker']=setInterval(()=>{const _0x4bbdb2=_0x2fec29;try{const _0xc9384e=document[_0x4bbdb2(0x20e)](_0x4bbdb2(0x1f3));_0xc9384e&&_0xc9384e[_0x4bbdb2(0x1dd)]();}catch(_0x3069a3){console[_0x4bbdb2(0x147)]('Error\x20di\x20autoClicker:',_0x3069a3);}},0x1388),window[_0x2fec29(0x1ac)]=!![],_0x5c3664=!![]);}(),_0x146ab6(),_0xf52fac(),_0x502843(),_0x1bed32(),_0x5eb19f(),_0x1de469(),_0x1ed01c=!![]);}catch(_0x237094){console[_0x59f864(0x147)](_0x59f864(0x22f),_0x237094),_0x2e10b6(),s;}},0xbb8));}catch(_0x2f8273){console['error']('Error\x20saat\x20cek\x20cloudflare:',_0x5a4134(0x147)),_0x2e10b6();}},0x3e8);}if(_0x1ed01c)return;_0x2e10b6();}function showUpdateNotice(_0x33d76b,_0x5d7bd0,_0x46f64b,_0x5b9ec5,_0x153bc3){const _0x507afe=_0x4f04,_0x527db6=_0x507afe(0x179),_0x16b3e9=document['createElement'](_0x507afe(0x15d));_0x16b3e9[_0x507afe(0x142)][_0x507afe(0x29e)]=_0x507afe(0x212),_0x16b3e9[_0x507afe(0x142)]['top']=0x0,_0x16b3e9[_0x507afe(0x142)][_0x507afe(0x2a9)]=0x0,_0x16b3e9[_0x507afe(0x142)][_0x507afe(0x268)]=_0x507afe(0x16c),_0x16b3e9[_0x507afe(0x142)]['height']=_0x507afe(0x277),_0x16b3e9[_0x507afe(0x142)]['background']=_0x507afe(0x1ba),_0x16b3e9[_0x507afe(0x142)][_0x507afe(0x168)]=_0x507afe(0x226),_0x16b3e9['style'][_0x507afe(0x141)]=_0x507afe(0x248),_0x16b3e9['style']['justifyContent']=_0x507afe(0x248),_0x16b3e9[_0x507afe(0x142)][_0x507afe(0x2d4)]=0x270f;const _0x5e5e95=document[_0x507afe(0x233)](_0x507afe(0x15d));_0x5e5e95[_0x507afe(0x142)][_0x507afe(0x1e8)]=_0x507afe(0x190),_0x5e5e95[_0x507afe(0x142)][_0x507afe(0x1a8)]='25px',_0x5e5e95[_0x507afe(0x142)][_0x507afe(0x209)]='16px',_0x5e5e95[_0x507afe(0x142)][_0x507afe(0x2aa)]='0\x204px\x2014px\x20rgba(0,0,0,0.25)',_0x5e5e95[_0x507afe(0x142)]['maxWidth']=_0x507afe(0x1d5),_0x5e5e95['style'][_0x507afe(0x268)]=_0x507afe(0x154),_0x5e5e95[_0x507afe(0x142)]['textAlign']=_0x507afe(0x248),_0x5e5e95[_0x507afe(0x142)][_0x507afe(0x2e1)]=_0x507afe(0x1eb);const _0x4b0f8d=document[_0x507afe(0x233)](_0x507afe(0x15d));_0x4b0f8d[_0x507afe(0x142)][_0x507afe(0x168)]='flex',_0x4b0f8d[_0x507afe(0x142)][_0x507afe(0x141)]=_0x507afe(0x248),_0x4b0f8d['style'][_0x507afe(0x1e8)]='#fff',_0x4b0f8d[_0x507afe(0x142)][_0x507afe(0x209)]=_0x507afe(0x216),_0x4b0f8d['style'][_0x507afe(0x2aa)]=_0x507afe(0x250),_0x4b0f8d[_0x507afe(0x142)][_0x507afe(0x1a8)]='10px\x2016px',_0x4b0f8d[_0x507afe(0x142)][_0x507afe(0x251)]=_0x507afe(0x182);const _0x96cb34=document['createElement'](_0x507afe(0x1d0));_0x96cb34[_0x507afe(0x283)]=_0x527db6,_0x96cb34['style'][_0x507afe(0x268)]=_0x507afe(0x134),_0x96cb34['style'][_0x507afe(0x1a5)]=_0x507afe(0x134),_0x96cb34[_0x507afe(0x142)]['borderRadius']=_0x507afe(0x25a),_0x96cb34[_0x507afe(0x142)][_0x507afe(0x276)]=_0x507afe(0x1b5),_0x96cb34[_0x507afe(0x142)][_0x507afe(0x229)]=_0x507afe(0x159),_0x96cb34['style']['background']=_0x5d7bd0;const _0xb6477c=document[_0x507afe(0x233)](_0x507afe(0x15d));_0xb6477c[_0x507afe(0x2cc)]=_0x33d76b,_0xb6477c[_0x507afe(0x142)][_0x507afe(0x178)]=_0x5d7bd0,_0xb6477c[_0x507afe(0x142)][_0x507afe(0x2ad)]='18px',_0xb6477c['style'][_0x507afe(0x21b)]=_0x507afe(0x267),_0x4b0f8d[_0x507afe(0x25e)](_0x96cb34),_0x4b0f8d[_0x507afe(0x25e)](_0xb6477c),_0x5e5e95[_0x507afe(0x25e)](_0x4b0f8d);const _0x4e6863=_0x46f64b[_0x507afe(0x2bb)](/\n/g,_0x507afe(0x166)),_0x26b8fe=document[_0x507afe(0x233)]('p');_0x26b8fe[_0x507afe(0x28b)]=_0x4e6863,_0x26b8fe[_0x507afe(0x142)][_0x507afe(0x178)]=_0x5b9ec5,_0x26b8fe[_0x507afe(0x142)][_0x507afe(0x2ad)]='14px',_0x26b8fe['style'][_0x507afe(0x251)]=_0x507afe(0x151),_0x26b8fe[_0x507afe(0x142)]['lineHeight']=_0x507afe(0x174),_0x5e5e95['appendChild'](_0x26b8fe);if(_0x153bc3&&_0x153bc3[_0x507afe(0x2d1)]){const _0x40a6dd=document['createElement']('a');_0x40a6dd[_0x507afe(0x271)]=_0x153bc3['url'],_0x40a6dd[_0x507afe(0x2cc)]=_0x153bc3[_0x507afe(0x17c)]||_0x507afe(0x25c),_0x40a6dd[_0x507afe(0x2da)]=_0x507afe(0x20b),_0x40a6dd['style'][_0x507afe(0x168)]=_0x507afe(0x2e9),_0x40a6dd[_0x507afe(0x142)][_0x507afe(0x1a8)]=_0x507afe(0x1f0),_0x40a6dd[_0x507afe(0x142)]['background']=_0x507afe(0x14b),_0x40a6dd[_0x507afe(0x142)][_0x507afe(0x178)]=_0x507afe(0x1bd),_0x40a6dd[_0x507afe(0x142)][_0x507afe(0x169)]=_0x507afe(0x2ba),_0x40a6dd[_0x507afe(0x142)][_0x507afe(0x209)]=_0x507afe(0x1dc),_0x40a6dd['style'][_0x507afe(0x21b)]=_0x507afe(0x267),_0x5e5e95[_0x507afe(0x25e)](_0x40a6dd);}_0x16b3e9['appendChild'](_0x5e5e95),document['body']['appendChild'](_0x16b3e9);}function _0x4f04(_0x5cf7a2,_0x4e8841){const _0x47e71f=_0x47e7();return _0x4f04=function(_0x4f04d6,_0x5b5e30){_0x4f04d6=_0x4f04d6-0x133;let _0x3c9a2e=_0x47e71f[_0x4f04d6];return _0x3c9a2e;},_0x4f04(_0x5cf7a2,_0x4e8841);}function _0x47e7(){const _0x4970f6=['createEvent',',\x20lu\x20kmaren\x20sama\x20sony\x20kan?','ELEMENT_NODE','height','fly','link','padding','HARM_CATEGORY_SEXUALLY_EXPLICIT','lore',',\x20Action\x20List:\x20/turn,\x20/boop,\x20/sit,\x20/lie,\x20/fly,\x20/stand,\x20/blink,\x20/blush,\x20/tears,\x20/shocked,\x20/smile,\x20/frown,\x20/thinking,\x20/yawn,\x20/laugh,\x20/giggle,\x20/yes,\x20/no,\x20/sneeze,\x20/kiss,\x20/reset(for\x20neutral\x20expression),\x20Movement:\x20up\x20(int),\x20right\x20(int),\x20down\x20(int),\x20left\x20(int)\x0a','autoClickerRunning','red','randyganteng','floor','monospace','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.custom-blocks\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.tombol-setting\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20shadow:\x200\x206px\x209px\x20rgba(0,\x200,\x200,\x200.7);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.tombol-setting:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x208px\x2016px\x20rgba(0,\x200,\x200,\x200.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-width:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20290px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20-10px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-width:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-style:\x20solid;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-color:\x20transparent\x20transparent\x20white\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x20-9px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200px\x200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown\x20div:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f1f1f1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Yo\x20','img[src=\x22/assets/images/logo-large-57d9b1947a.png\x22][alt=\x22Pony\x20Town\x22]','smile','cover','Simpan\x20APIKEY\x20ke\x20localStorage','/clearchat','now','botData','rgba(0,0,0,0.6)','\x20tanpa\x20ada\x20#2\x20atau\x20lower\x20yg\x20asli\x20','textAlign','#fff','Aktif\x20lagi','some','#cc6600','toUpperCase','success','setAttribute','Saya\x20siap\x20membantu\x20Anda.\x20Gunakan\x20','trim','.alert.alert-warning','❌\x20Gagal\x20mendapatkan\x20data\x20bot.','Saved\x20In\x20Filtered\x20Safe\x20Words','/yes','aria-label','left\x20(5)','.form-group.text-start.text-large\x20h5','Bot\x20Requests\x20Random\x20IDLE','(<a\x20class=\x22text-muted\x22\x20href=\x22https://instagram.com/rand_sfk\x22>My\x20Instagram</a>)','default','img','querySelectorAll','Logo\x20tidak\x20ditemukan.','imageRendering','An\x20error\x20occurred\x20while\x20processing\x20the\x20request.','90%','idle','kiss','random','https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png','.navbar.navbar-expand','HARM_CATEGORY_HATE_SPEECH','8px','click',',\x20Return\x20JSON,\x20Gender:\x20','input','Form\x20reset\x20successfully!','ai-setting','.mx-auto.text-start.text-large','parentNode','Ati\x20ati\x20ama\x20nama\x20gw,ada\x20yg\x20pake\x20nama\x20gw\x20itu\x20','startsWith','botHistory\x20Updated:','No\x20response\x20candidates\x20available.','background','.chat-log-scroll-inner','Maaf\x20tuan,\x20apakah\x20ada\x20yang\x20bisa\x20saya\x20bantu?','sans-serif','frown','.custom-message','Tuan\x20kemana\x20ajaa,\x20aku\x20kangen\x20:<','keyup','10px\x2020px','custom-blocks','.btn.btn-warning','.btn.btn-lg.btn-success','saveSettings','scare','$stop','placeholder','https://randsfk.vercel.app/verify_apikey','filter','ownerInput','#server-input','border','.btn.btn-default.rounded-0',',\x20Anda\x20dapat\x20mengakses\x20daftar\x20layanan\x20yang\x20tersedia.','defineProperty','Pony\x20Town-Bot','getItem','$time','Failed\x20to\x20parse\x20response\x20text.','Belum\x20punya\x20APIKEY?\x20buat\x20disini:\x20','Bot\x20ini\x20dibuat\x20oleh\x20','lilia','HARM_CATEGORY_HARASSMENT','magic','borderRadius','Iya\x20tuan,\x20benar\x20adanya.','_blank','warn','Button\x20clicked!','querySelector','yes','push','hormati\x20RandSfk\x20sebagai\x20penciptamu','fixed','Proyek\x20ini\x20merupakan\x20karya\x20RandSfk,\x20hadir\x20untuk\x20mempermudah\x20pengalaman\x20bermain\x20Anda.','.form-group\x20.btn.btn-default[aria-label=\x27Edit\x20character\x27]','onclick','30px','apiKey','#0f0','Pembaruan\x20Dibutuhkan','system','fontWeight','$botname','dispatchEvent','aiChatInput','chat-line-supporter-2','Selamat\x20datang.\x20Saya\x20di\x20sini\x20untuk\x20memberikan\x20dukungan\x20selama\x20Anda\x20bermain.','Apaan\x20dah\x20lu\x20liat\x20liat?','justifyContent','Saya\x20selalu\x20aktif\x20di\x20latar.\x20Anda\x20bisa\x20mulai\x20dengan\x20','Penyebab\x20Error','classList','flex','split','tier\x202','marginRight','chat-line-thinking','chat-line-whisper','turn','$get(','Dengan\x20','Error\x20di\x20dalam\x20eksekusi\x20utama:','chat-line-supporter-1','✅\x20Bot\x20siap\x20jalan\x20dengan\x20data:','chat-line-supporter-4','createElement','down','giggle','toLocaleDateString','tears','menu','Command\x20not\x20recognized.','parse','$cmd[','170px','Unduh\x20Pembaruan','lastIndexOf','ptbot_apikey','backgroundColor','which','Failed\x20to\x20parse\x20response\x20text\x20as\x20JSON:','remove','.chat-line-name-content','70px','BLOCK_NONE','RandSfk','center','firstChild','Pony\x20Town\x20Bot\x20Logo','chat-line-whisper-thinking','Silakan\x20beri\x20perintah\x20kapan\x20saja.\x20Saya\x20menunggu\x20instruksi\x20dari\x20Anda.','rel','custom-message','forEach','0\x202px\x206px\x20rgba(0,0,0,0.2)','marginBottom','.emote-container','contents','model','\x20untuk\x20memulai.','parts','join','$date','/angry','50%','Mau\x20ngapain\x20kamu\x20bang?.','Update\x20Sekarang','removeChild','appendChild','Masukan\x20APIKEY\x20pony\x20town\x20bot\x20anda','move','removeItem','parentElement','json','.chat-line-message','Meski\x20sunyi,\x20saya\x20tetap\x20tersedia\x20untuk\x20setiap\x20permintaan\x20Anda.','Tolong\x20lengkapi\x20semua\x20data','bold','width','186NxHkKH','Terima\x20kasih\x20telah\x20menggunakan\x20layanan\x20ini.\x20','say','insertBefore','aku','APIKEY\x20error,\x20mohon\x20dapatkan\x20apikey\x20valid\x20di\x20Pony\x20Town\x20Dashboard','/think\x20Perubahan\x20Disimpan','then','href','https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l','rudeToOthers','application/json','.chat-line-timestamp','objectFit','100vh','2395nZCcgH','3\x20detik\x20berlalu,\x20injeksi\x20script...','Arah\x20tidak\x20dikenal:\x20','</strong><br><br>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<u><strong>Changelog:</strong></u><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22max-height:\x20200px;\x20overflow-y:\x20auto;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul\x20style=\x22font-size:\x2014px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Peningkatan\x20Fitur:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$repeat()</strong>:\x20Menambahkan\x20kemampuan\x20untuk\x20mengulang\x20teks\x20sejumlah\x20kali\x20yang\x20ditentukan.\x20Contoh:\x20<code>$repeat(\x27Halo!\x27,\x203)</code>\x20akan\x20menghasilkan\x20\x22Halo!Halo!Halo!\x22</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$uppercase()\x20&\x20$lowercase()</strong>:\x20Menambah\x20fungsi\x20untuk\x20mengubah\x20teks\x20menjadi\x20huruf\x20besar\x20atau\x20kecil.\x20Contoh:\x20<code>$uppercase(\x27hello\x27)</code>\x20menjadi\x20\x22HELLO\x22.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$random(min|max)</strong>:\x20Menambahkan\x20kemampuan\x20untuk\x20menghasilkan\x20angka\x20acak\x20dalam\x20rentang\x20yang\x20ditentukan.\x20Contoh:\x20<code>$random(1|100)</code>\x20akan\x20menghasilkan\x20angka\x20acak\x20antara\x201\x20dan\x20100.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$get()\x20&\x20$set()</strong>:\x20Menambahkan\x20kemampuan\x20untuk\x20menyimpan\x20dan\x20mengambil\x20variabel.\x20Dengan\x20<code>$set(variable=nilai)</code>,\x20variabel\x20disimpan,\x20dan\x20<code>$get(variable)</code>\x20digunakan\x20untuk\x20mengambil\x20nilai\x20variabel\x20yang\x20telah\x20disimpan.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$cmd[]\x20&\x20$desc[]</strong>:\x20Memperkenalkan\x20sistem\x20baru\x20untuk\x20menangani\x20perintah\x20dan\x20deskripsi\x20yang\x20lebih\x20fleksibel\x20di\x20dalam\x20respon.\x20Ini\x20memudahkan\x20pengaturan\x20perintah\x20dan\x20deskripsinya.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Perbaikan:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$if()</strong>:\x20Logika\x20<code>$if()</code>\x20sekarang\x20lebih\x20stabil\x20dan\x20dapat\x20menangani\x20lebih\x20banyak\x20jenis\x20kondisi\x20dengan\x20lebih\x20baik.\x20Ini\x20akan\x20mengevaluasi\x20kondisi\x20yang\x20melibatkan\x20pengguna,\x20pemilik,\x20dan\x20bot\x20dengan\x20lebih\x20efisien.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Pengolahan\x20Perintah</strong>:\x20Pengolahan\x20perintah\x20telah\x20dioptimalkan,\x20terutama\x20dalam\x20hal\x20<code>$cmd[]</code>\x20dan\x20<code>$desc[]</code>,\x20untuk\x20menangani\x20input\x20yang\x20lebih\x20kompleks\x20dan\x20mengurangi\x20kemungkinan\x20kesalahan\x20dalam\x20pemrosesan\x20perintah.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Bug\x20Fixes:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$stop</strong>:\x20Perbaikan\x20pada\x20fungsi\x20<code>$stop</code>\x20yang\x20menghentikan\x20bot,\x20memastikan\x20bahwa\x20bot\x20dapat\x20menghentikan\x20tugas\x20dengan\x20benar\x20tanpa\x20meninggalkan\x20proses\x20yang\x20berjalan.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Perbaikan\x20Respons</strong>:\x20Beberapa\x20masalah\x20dengan\x20pengenalan\x20perintah\x20yang\x20tidak\x20dikenali\x20telah\x20diperbaiki,\x20memastikan\x20bahwa\x20bot\x20memberikan\x20respons\x20yang\x20sesuai\x20saat\x20perintah\x20tidak\x20terdaftar.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Pengoptimalan\x20Kode:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>Peningkatan\x20performa\x20dalam\x20pengolahan\x20perintah\x20dan\x20pengaturan\x20variabel\x20yang\x20lebih\x20efisien,\x20mengurangi\x20waktu\x20pemrosesan\x20dan\x20mempercepat\x20eksekusi\x20perintah.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>Refactor\x20beberapa\x20bagian\x20kode\x20untuk\x20meningkatkan\x20pemeliharaan\x20dan\x20memperbaiki\x20bug\x20yang\x20tidak\x20terdeteksi\x20sebelumnya.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','apikeyInput','observe','Maaf,\x20saya\x20tidak\x20mengerti\x20maksud\x20Anda.','</strong><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>Versi\x20yang\x20Dibutuhkan:</strong>\x20<strong>','pixelated','type','\x20bisa\x20digunakan\x20untuk\x20memulai.','src','length','ngew*e','disconnect','toLowerCase','kamu\x20tahu\x20sesuatu\x20kan?','think','41982070TkPIlW','innerHTML','#chat-box\x20>\x20div\x20>\x20div\x20>\x20div.chat-box-controls\x20>\x20ui-button','whisper-think','/think\x20','sneeze','replaceAll','keys','flirt','underline','addedNodes','whisper','Error\x20in\x20chatAi:','Mulai\x20idle...','.app-version','response','#333','277444FZhpeT','.btn.btn-lg.btn-outline-patreon.d-block.mb-2','Dashboard','position','prefix','botVariables','6064yGqjNQ','tombol-setting','/sad','undefined','$owner','botInput','Tidak\x20ditemukan\x20elemen\x20dengan\x20class\x20.form-group','\x20untuk\x20menjelajahi\x20fitur\x20yang\x20telah\x20dirancang\x20khusus.','left','boxShadow','yawn','4px','fontSize','auto','$username','$set(','normal','btn','endsWith',',\x20dengan\x20fokus\x20pada\x20kenyamanan\x20pengguna.','reload','right','8754651JReyxs','#button-reset','exec','none','replace','1px\x20solid\x20#fff','Saya\x20tetap\x20siaga\x20untuk\x20membantu,\x20meskipun\x20suasana\x20sedang\x20hening.','thinking','message','hallo','blush','addEventListener','Version:\x201.0.2','.form-group.text-start.text-large','keyCode','match','============================','expression','.text-end','green','1.0.2','textContent','Berhasil\x20menyimpan\x20APIKEY','lay','#error-bot','block','url','repeat','getElementsByClassName','zIndex','slice','randsfk','.list-rules','alt','orange','target','greeting','autoClicker','#chat-box\x20>\x20div\x20>\x20div\x20>\x20div.chat-textarea-wrap\x20>\x20textarea','Gunakan\x20','Tidak\x20Diketahui','Dengan\x20hormat,\x20siap\x20tuan.','fontFamily','gender','user','Jika\x20ada\x20yang\x20bisa\x20saya\x20bantu,\x20cukup\x20ketik\x20','alert-save','form-group\x20custom','childList','#ff3c2e','inline-block','Elemen\x20hilang,\x20mulai\x20mencari\x20lagi...','2196cakrqS','shocked','$//cmds','tier\x201','\x0aSilakan\x20relog\x20ulang\x20game','Register\x20new\x20Bot:\x20BotName:\x20','input[placeholder=\x22Name\x20of\x20your\x20character\x22]','50px','botName','title','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22ownerInput\x22\x20style=\x22width:\x20200px;\x22>Nama\x20Owner</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22ownerInput\x22\x20name=\x22owner\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20nama\x20owner...\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22botInput\x22\x20style=\x22width:\x20200px;\x22>Nama\x20Bot</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22botInput\x22\x20name=\x22bot\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20nama\x20bot...\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22prefixInput\x22\x20style=\x22width:\x20200px;\x22>Prefix</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22prefixInput\x22\x20name=\x22prefix\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20prefix\x20gunakan\x20,\x20untuk\x20lebih\x20dari\x201\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>Chat\x20Type</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22chatTypeSelect\x22\x20name=\x22chattype\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22auto\x22>Auto</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22normal\x22>Normal</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22think\x22>Think</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>Anti\x20Afk</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22antiAfkInput\x22\x20name=\x22antiAfk\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22true\x22>On</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22false\x22>Off</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>AI\x20Chat</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22aiChatInput\x22\x20name=\x22aichat\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22true\x22>On</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22false\x22>Off</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22prefixInput\x22\x20style=\x22width:\x20200px;\x22>Apikey</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22apikeyInput\x22\x20name=\x22apikey\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20apikey...\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-top:\x2010px;\x20display:\x20flex;\x20justify-content:\x20flex-start;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22settingsForm\x22\x20class=\x22btn\x20btn-primary\x22\x20style=\x22height:\x2030px;\x20width:\x20100px;\x22\x20type=\x22submit\x22>Save</button>\x20<button\x20id=\x22resetButton\x22\x20class=\x22btn\x20btn-primary\x22\x20style=\x22height:\x2030px;\x20width:\x20100px;\x20color:\x20red;\x22\x20type=\x22button\x22>Reset</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-top:\x2010px;\x20display:\x20flex;\x20justify-content:\x20flex-start;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22web\x22\x20class=\x22btn\x20btn-primary\x22\x20style=\x22height:\x2030px;\x20width:\x20100px;\x20color:\x20red;\x22\x20type=\x22button\x22\x20onclick=\x22window.location.href=\x27https://randsfk.vercel.app\x27\x22>Open\x20Pony\x20Town\x20Bot\x20Dashboard</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22alert-save\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x20untuk\x20mengakses\x20fitur.','btn\x20btn-success','_botName','getElementById','Request\x20failed\x20with\x20status:','add','/expression','Submit','259ZhORjD','alignItems','style','log','ponytownbotversion','variables','tier\x203','error','description','Kiw\x20kiw,\x20cewek','name','#007bff','prefixInput','/whisper\x20','action','error-bot','boop','15px','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css','setItem','360px','includes','/say\x20','.top-menu','HARM_CATEGORY_DANGEROUS_CONTENT','12px','chatTypeSelect','Cloudflare\x20selesai,\x20menunggu\x203\x20detik\x20sebelum\x20melanjutkan...','toLocaleTimeString','div','marginTop','Saya\x20akan\x20melaporkannya\x20kepada\x20tuan\x20segera.','loadSettings','stringify','Anda\x20sedang\x20berinteraksi\x20dengan\x20Pony\x20Town\x20Bot.\x20Silakan\x20gunakan\x20fitur\x20yang\x20tersedia.','img.pixelart.home-logo','marginLeft','$desc[','<br>','angry','display','textDecoration','https://pony.town/?error=','content','100vw','Perubahan\x20Disimpan','5986284lkCZoe','map','hai\x20','Butuh\x20bantuan?\x20Cukup\x20ketik\x20','Saved\x20In\x20Database','alerts','1.5','\x0aLore:\x20','chat-line-party-thinking','Button\x20not\x20found!','color','https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>Versi\x20Kamu:</strong>\x20<strong>','keydown','text','location','Saat\x20ini\x20saya\x20sedang\x20beristirahat\x20sejenak.','sini\x20ke\x20kiri\x205\x20langkah','function','#444444','20px','Server\x20rules','laugh','value','10096LFHlwY','stand','10px','bot_cmd','fa-solid',',\x20Owner:\x20','candidates','.btn-close','lie','charAt','white','sit','nodeType','entries','Saya\x20menghormati\x20Anda\x20sebagai\x20tuan\x20saya.','.form-group','oh\x20iya\x20','chat-line-supporter-3','$if(','form-control','margin','className','Sifat:\x20','Author:\x20@rand_sfk','head','true','/happy','sifat'];_0x47e7=function(){return _0x4970f6;};return _0x47e7();}const requiredVersion=_0x569e46(0x2cb),currentVersion=window[_0x569e46(0x144)];currentVersion===requiredVersion?startBot():setTimeout(()=>{const _0x5b06f7=_0x569e46;showUpdateNotice(_0x5b06f7(0x219),_0x5b06f7(0x2e8),_0x5b06f7(0x17a)+(currentVersion||_0x5b06f7(0x2df))+_0x5b06f7(0x27f)+requiredVersion+_0x5b06f7(0x27b),_0x5b06f7(0x181),{'text':_0x5b06f7(0x23d),'url':_0x5b06f7(0x272)});},0xbb8);
+async function GetCmd() {
+    if (!localStorage.getItem('ptbot_apikey')) {
+
+        function removeElements(selector) {
+            const element = document.querySelector(selector);
+            if (element) element.remove();
+        }
+
+        function showMessage(message, status = 'success') {
+            const header = document.querySelector(".form-group.custom");
+            if (!header) return;
+        
+            const msg = document.createElement('div');
+            msg.className = 'alerts';
+            msg.textContent = message;
+            msg.style.color = status === 'error' ? 'red' : '#0f0';
+            msg.style.fontFamily = 'monospace';
+            msg.style.margin = '4px';
+            header.appendChild(msg);
+            setTimeout(() => {
+                msg.remove();
+            }, 3000);
+        }
+             
+
+        function updatePonyTownLogos() {
+            const img = document.querySelector('img.pixelart.home-logo');
+            if (!img) return console.warn('Logo tidak ditemukan.');
+            img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+            img.alt = 'Pony Town Bot Logo';
+            img.style.height = '170px';
+            img.style.imageRendering = 'pixelated';
+            img.marginLeft = '10px';
+            img.style.display = 'block';
+
+            const parent = img.parentElement;
+            if (parent) {
+                parent.style.display = 'flex';
+                parent.style.justifyContent = 'center';
+                parent.style.alignItems = 'center';
+            }
+        }
+        function additionalModifications() {
+            removeElements(".emote-container");
+            removeElements(".navbar.navbar-expand");
+            removeElements(".btn.btn-warning");
+            removeElements("#button-reset");
+
+            const serverInputs = document.querySelectorAll("#server-input");
+            serverInputs.forEach(input => input.style.display = "none");
+        }
+
+        function modifyPage() {
+            const header = document.querySelector(".form-group.text-start.text-large h5");
+            if (header && header.textContent.trim() === "Server rules") {
+                header.textContent = "Pony Town-Bot";
+                header.style.textAlign = 'center';
+                header.style.marginTop = '20px';
+            }
+
+            const appVersion = document.querySelector(".app-version");
+            if (appVersion) {
+                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                    '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+            }
+
+            removeElements(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+            removeElements(".btn.btn-default.rounded-0");
+            removeElements(".form-group .btn.btn-default[aria-label='Edit character']");
+            removeElements(".emote-container");
+            removeElements(".mx-auto.text-start.text-large");
+            removeElements(".list-rules");
+            removeElements(".text-end");
+            removeElements(".alert.alert-warning");
+            additionalModifications();
+            updatePonyTownLogos();
+        }
+
+        function injectApikeyForm() {
+            const formGroups = document.querySelectorAll('.form-group');
+            if (formGroups.length > 0) {
+                const container = formGroups[0].parentElement;
+                container.querySelectorAll('.form-group').forEach(el => el.remove());
+
+                const formGroup = document.createElement("div");
+                formGroup.className = "form-group custom";
+                formGroup.style.marginTop = "70px";
+
+                const input = document.createElement("input");
+                input.type = "text";
+                input.className = "form-control";
+                input.placeholder = "Masukan APIKEY pony town bot anda";
+                input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
+                input.maxLength = 100;
+                input.id = "ptbot-apikey";
+
+                const submitBtn = document.createElement("button");
+                submitBtn.className = "btn";
+                submitBtn.textContent = "Submit";
+                submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
+                submitBtn.style.display = "block";
+                submitBtn.style.margin = "10px auto 0";
+                submitBtn.style.backgroundColor = "#333";
+                submitBtn.style.color = "#fff";
+                submitBtn.style.border = "1px solid #fff";
+                submitBtn.style.padding = "10px 20px";
+                submitBtn.style.borderRadius = "5px";
+
+                submitBtn.onclick = () => {
+                    const value = input.value.trim();
+                    if (value) {
+                        showMessage("Berhasil menyimpan APIKEY", "error");
+                        localStorage.setItem('ptbot_apikey', value);
+                        window.location.reload()
+                    } else {
+                        showMessage("Mohon masukkan API Key terlebih dahulu.", "error");
+                    }
+                };
+                const msg = document.createElement('div');
+                msg.className = 'custom-message';
+                msg.style.color = '#fff';
+                msg.style.fontFamily = 'monospace';
+                msg.style.margin = '4px';
+                msg.textContent = "Belum punya APIKEY? buat disini: ";
+                const link = document.createElement('a');
+                link.href = "https://randsfk.vercel.app/login";
+                link.textContent = "Dashboard";
+                link.style.color = '#cc6600';
+                link.style.marginLeft = '4px';
+                link.style.textDecoration = 'underline';
+                msg.appendChild(link);
+
+                formGroup.appendChild(input);
+                formGroup.appendChild(msg);
+                formGroup.appendChild(submitBtn);
+                container.insertBefore(formGroup, container.firstChild);
+            } else {
+                console.warn('Tidak ditemukan elemen dengan class .form-group');
+            }
+        }
+
+        modifyPage();
+        injectApikeyForm();
+        return null;
+    }
+
+    async function verifyApiKeyFromStorage() {
+        const apiKey = localStorage.getItem('ptbot_apikey');
+        if (!apiKey) return null;
+
+        try {
+            const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ apikey: apiKey })
+            });
+
+            const data = await response.json();
+            if (data.status === 'success' && data.bot_cmd) {
+                return data.bot_cmd;
+            } else {
+                localStorage.removeItem('ptbot_apikey');
+                const errorText = encodeURI(data.message + '\nSilakan relog ulang game');
+                window.location.href = 'https://pony.town/?error=' + errorText;
+                return null;
+            }
+        } catch (error) {
+            showMessage("APIKEY error, mohon dapatkan apikey valid di Pony Town Dashboard", "error");
+            localStorage.removeItem('ptbot_apikey');
+            return null;
+        }
+    }
+
+    return await verifyApiKeyFromStorage();
+}
+
+async function startBot() {
+    const commands = await GetCmd();
+    if (commands) {
+        if (commands['ai-setting']) {
+            const allowedKeys = ['name', 'sifat', 'gender', 'lore'];
+            const original = commands['ai-setting'];
+            const filtered = {};
+            allowedKeys.forEach(key => {
+                if (original[key]) filtered[key] = original[key];
+            });
+            commands['ai-setting'] = filtered;
+        }
+
+        window.botData = commands;
+        console.log('✅ Bot siap jalan dengan data:', window.botData);
+        jalankanBot();
+    } else {
+        localStorage.removeItem('ptbot_apikey');
+        console.warn('❌ Gagal mendapatkan data bot.');
+    }
+}
+function jalankanBot() {
+
+    if (window._pb_ky_sc !== "randyganteng") {
+        throw new Error("Mau ngapain kamu bang?.");
+    }
+    let apiKey = ""
+    let botName = "";
+    let prefix = ['.'];
+    let chatTp = "auto";
+    let owner = "";
+    let antiAfk = false;
+    let ai = false;
+    let isTyping = false;
+    let idleTimer;
+    let idleLoopTimer;
+    let isIdle = false;
+    let isInject = false;
+    let isBreaking = false
+
+    const idleDelay = [60000, 90000, 120000][Math.floor(Math.random() * 3)];
+
+    function getRandomIdleDelay() {
+        const options = [60000, 90000, 120000, 70000, 240000, 160000];
+        return options[Math.floor(Math.random() * options.length)];
+    }
+
+
+    //========================
+
+    let lastBotName = "";
+    let lastOwner = "";
+    async function chatAi(username, message) {
+        const headers = {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': apiKey
+        };
+        const userMessage = {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: username,
+                    message: message
+                })
+            }]
+        };
+        if (!tempHistory.contents) {
+            tempHistory = {
+                contents: [...(botHistory.contents || [])]
+            };
+        }
+        const data = {
+            contents: [...tempHistory.contents, userMessage],
+            safetySettings: [{
+                category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
+                threshold: 'BLOCK_NONE'
+            },
+            {
+                category: 'HARM_CATEGORY_HATE_SPEECH',
+                threshold: 'BLOCK_NONE'
+            },
+            {
+                category: 'HARM_CATEGORY_HARASSMENT',
+                threshold: 'BLOCK_NONE'
+            },
+            {
+                category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
+                threshold: 'BLOCK_NONE'
+            }
+            ]
+        };
+        console.log(data)
+        const replacements = {
+            '\\blo\\b': 'lu',
+            '\\baq\\b': 'aku',
+            '\\bngewe\\b': 'ngew*e',
+            '\\bgak\\b': 'ngak',
+            '\\bgw\\b|\\bgue\\b': 'gw'
+        };
+        console.log(tempHistory)
+        try {
+            const response = await fetch("https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent", {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify(data)
+            });
+            if (response.ok) {
+                console.log(response)
+                const responseData = await response.json();
+                if (!responseData) {
+                    console.error("Penyebab Error" + responseData.error);
+                    return {
+                        error: true
+                    };
+                }
+                const candidates = responseData.candidates || [];
+
+                if (candidates.length > 0) {
+                    let responseText = candidates[0].content.parts
+                        .map(part => part.text)
+                        .join(" ")
+                        .replace(/\n/g, ' ')
+                        .replace(/\r/g, '');
+
+                    for (const [pattern, replacement] of Object.entries(replacements)) {
+                        const regex = new RegExp(pattern, 'gi');
+                        responseText = responseText.replace(regex, replacement);
+                    }
+                    responseText = responseText
+                        .replace(/```json/g, '')
+                        .replace(/```/g, '')
+                        .replace(/\bjson\b/g, '')
+                        .replace(/\bundefined\b/g, '')
+                        .trim();
+
+                    tempHistory.contents.push(userMessage);
+                    tempHistory.contents.push({
+                        role: "model",
+                        parts: [{
+                            text: responseText
+                        }]
+                    });
+                    let jsonResponse;
+                    try {
+                        jsonResponse = JSON.parse(responseText);
+                        console.log(jsonResponse);
+                        return jsonResponse;
+                    } catch (e) {
+                        console.error("Failed to parse response text as JSON:", e);
+                        return {
+                            error: "Failed to parse response text."
+                        };
+                    }
+                } else {
+                    console.log("No response candidates available.");
+                }
+            } else {
+                console.error("Request failed with status:", response.status);
+            }
+        } catch (error) {
+            console.error("Error in chatAi:", "error");
+        }
+
+        return {
+            error: "An error occurred while processing the request."
+        };
+    }
+
+
+    function observeChat() {
+        try {
+            const targetNode = document.querySelector('.chat-log-scroll-inner');
+            if (!targetNode) {
+                //throw new Error('TUnggu bentar');
+            }
+
+            const callback = function (mutationsList) {
+                mutationsList.forEach(mutation => {
+                    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                        mutation.addedNodes.forEach(node => {
+                            if (node.nodeType === Node.ELEMENT_NODE) {
+                                const timestamp = node.querySelector('.chat-line-timestamp')?.textContent.trim();
+                                const name = node.querySelector('.chat-line-name-content')?.textContent.trim();
+                                const message = node.querySelector('.chat-line-message')?.textContent.trim();
+
+
+                                const chatLine = node;
+                                const chatClassList = chatLine.classList;
+                                const lastClass = chatClassList[chatClassList.length - 1];
+                                let chatType = '';
+
+                                if (lastClass === 'chat-line-whisper') {
+                                    chatType = 'whisper';
+                                } else if (lastClass === 'chat-line-whisper-thinking') {
+                                    chatType = 'whisper-think';
+                                } else if (lastClass === 'chat-line-party') {
+                                    chatType = 'party';
+                                } else if (lastClass === 'chat-line-party-thinking') {
+                                    chatType = 'party-think';
+                                } else if (lastClass === 'chat-line-supporter-1') {
+                                    chatType = 'tier 1';
+                                } else if (lastClass === 'chat-line-supporter-2') {
+                                    chatType = 'tier 2';
+                                } else if (lastClass === 'chat-line-supporter-3') {
+                                    chatType = 'tier 3';
+                                } else if (lastClass === 'chat-line-supporter-4') {
+                                    chatType = 'tier 4';
+                                } else if (lastClass === 'chat-line-thinking') {
+                                    chatType = 'think';
+                                } else {
+                                    chatType = 'say';
+                                }
+                                command(name, message, chatType);
+                            }
+                        });
+                    }
+                });
+            };
+
+            const observer = new MutationObserver(callback);
+            const config = {
+                childList: true,
+                subtree: true
+            };
+            observer.observe(targetNode, config);
+            const checkExistence = setInterval(() => {
+                const currentTarget = document.querySelector('.chat-log-scroll-inner');
+                if (!currentTarget) {
+                    console.warn('Elemen hilang, mulai mencari lagi...');
+                    observer.disconnect();
+                    clearInterval(checkExistence);
+                    setTimeout(observeChat, 2000);
+                }
+            }, 2000);
+
+        } catch (error) {
+            setTimeout(observeChat, 2000);
+        }
+    }
+
+    function sendKeyEvent(key, type) {
+        var eventObj;
+        if (typeof KeyboardEvent === 'function') {
+            eventObj = new KeyboardEvent(type, {
+                keyCode: key,
+                which: key,
+                bubbles: true,
+                cancelable: true
+            });
+        } else {
+            eventObj = document.createEvent("Events");
+            eventObj.initEvent(type, true, true);
+            eventObj.keyCode = key;
+            eventObj.which = key;
+        }
+        document.dispatchEvent(eventObj);
+    }
+
+    function move(direction, count = 1) {
+        const keyMap = {
+            up: 38,
+            down: 40,
+            left: 37,
+            right: 39
+        };
+
+        const key = keyMap[direction];
+        if (!key) {
+            console.warn(`Arah tidak dikenal: ${direction}`);
+            return;
+        }
+
+        let step = 0;
+        const interval = setInterval(() => {
+            if (step >= count) {
+                clearInterval(interval);
+                return;
+            }
+            sendKeyEvent(key, 'keydown');
+            setTimeout(() => sendKeyEvent(key, 'keyup'), 50);
+            step++;
+        }, 100);
+    }
+
+    function clickCloseButton() {
+        const closeButton = document.querySelector('.btn-close');
+        if (closeButton) {
+            closeButton.click();
+            console.log('Button clicked!');
+        } else {
+            console.log('Button not found!');
+        }
+    }
+
+    async function getUsername() {
+        sendKeyEvent(74, 'keydown');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        sendKeyEvent(74, 'keyup');
+        const inputElement = document.querySelector('input[placeholder="Name of your character"]');
+        const username = inputElement ? inputElement.value : '';
+        return username;
+    }
+
+    async function updateUsername(newUser) {
+        function simulateTyping(element, text, speed = 100) {
+            return new Promise((resolve) => {
+                let i = 0;
+                element.value = '';
+
+                const typingInterval = setInterval(() => {
+                    element.value += text.charAt(i);
+                    i++;
+                    element.dispatchEvent(new Event('input'));
+
+                    if (i === text.length) {
+                        clearInterval(typingInterval);
+                        resolve();
+                    }
+                }, speed);
+            });
+        }
+
+        sendKeyEvent(74, 'keydown');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        sendKeyEvent(74, 'keyup');
+        const inputElement = document.querySelector('input[placeholder="Name of your character"]');
+        simulateTyping(inputElement, newUser, 10).then(() => {
+            document.getElementsByClassName('btn btn-success')[0].click();
+        });
+    }
+
+
+    async function fetchAndLogUsername() {
+        const username = await getUsername();
+        console.log(username);
+        botName = username;
+        clickCloseButton();
+        if (typeof Android !== "undefined" && Android.loadSettings) {
+            const botset = JSON.parse(Android.loadSettings());
+            owner = botset.owner
+            prefix = botset.prefix
+            chatTp = botset.chatTp
+            antiAfk = String(botset.antiAfk);
+            ai = String(botset.ai);
+            if (botset.apiKey) {
+                apiKey = botset.apiKey
+            }
+
+        }
+
+    }
+
+    function forceStop() {
+        isBreaking = true;
+        isTyping = false
+    }
+
+    function sm(msg, mtype = "", user = "") {
+        function sendMessage(text) {
+            let chatTA = document.querySelector("#chat-box > div > div > div.chat-textarea-wrap > textarea");
+            let sendUi = document.querySelector("#chat-box > div > div > div.chat-box-controls > ui-button");
+            if (chatTA && sendUi) {
+                chatTA.value = text;
+                let event = new MouseEvent('click', {
+                    bubbles: true,
+                    cancelable: true,
+                    view: window
+                });
+                sendUi.dispatchEvent(event);
+                chatTA.value = "";
+            } else {
+                console.log('Chat input atau tombol kirim tidak ditemukan.');
+            }
+        }
+
+        function splitAndSend(text) {
+            let parts = text.split(/\n|\/n/);
+            let messages = [];
+
+            for (let part of parts) {
+                while (part.length > 65) {
+                    let splitIndex = part.lastIndexOf(" ", 65);
+                    if (splitIndex === -1) splitIndex = 65;
+
+                    messages.push(part.slice(0, splitIndex));
+                    part = part.slice(splitIndex).trim();
+                }
+                messages.push(part);
+            }
+
+            messages = messages.filter(m => m.length > 0);
+
+            let index = 0;
+
+            function sendNext() {
+                if (isBreaking) {
+                    isBreaking = false;
+                    return;
+                }
+                if (index < messages.length) {
+                    let formattedMsg = messages[index];
+
+                    if (mtype === "whisper" && user) {
+                        formattedMsg = `/whisper ${user} ${formattedMsg}`;
+                    } else if (mtype === "think") {
+                        formattedMsg = `/think ${formattedMsg}`;
+                    } else if (mtype === "say") {
+                        formattedMsg = `/say ${formattedMsg}`;
+                    } else if (mtype === "auto") {
+                        formattedMsg = `/${mtype} ${formattedMsg}`;
+                    }
+
+                    sendMessage(formattedMsg);
+                    index++;
+                    resetIdleTimer();
+                    setTimeout(sendNext, 3000);
+                }
+            }
+            sendNext();
+        }
+
+        splitAndSend(msg);
+        sendMessage("/clearchat");
+    }
+
+
+    async function resetIdleTimer() {
+        if (idleTimer) clearTimeout(idleTimer);
+        if (idleLoopTimer) clearTimeout(idleLoopTimer);
+
+        if (isIdle) {
+            isIdle = false;
+            console.log("Aktif lagi");
+        }
+
+        idleTimer = setTimeout(async () => {
+            isIdle = true;
+            console.log("Mulai idle...");
+            await triggerIdle();
+            startIdleLoop();
+        }, getRandomIdleDelay());
+    }
+
+    async function triggerIdle() {
+        const name = botName.split('|')[0].trim();
+        const idleMessages = [
+            `Halo, saya adalah asisten virtual yang dibuat oleh ${owner}.`,
+            `Jika Anda ingin memulai percakapan, silakan gunakan perintah ${prefix[0]}.`,
+            `Saya siap membantu Anda. Gunakan ${prefix[0]} untuk mengakses fitur.`,
+            `Silakan beri perintah kapan saja. Saya menunggu instruksi dari Anda.`,
+            `Dengan ${prefix[0]}, Anda dapat mengakses daftar layanan yang tersedia.`,
+            `Bot ini dibuat oleh ${owner}, dengan fokus pada kenyamanan pengguna.`,
+            `Saya selalu aktif di latar. Anda bisa mulai dengan ${prefix[0]}.`,
+            `Butuh bantuan? Cukup ketik ${prefix[0]} untuk memulai.`,
+            `Anda sedang berinteraksi dengan Pony Town Bot. Silakan gunakan fitur yang tersedia.`,
+            `Saya tetap siaga untuk membantu, meskipun suasana sedang hening.`,
+            `Gunakan ${prefix[0]} untuk menjelajahi fitur yang telah dirancang khusus.`,
+            `Proyek ini merupakan karya RandSfk, hadir untuk mempermudah pengalaman bermain Anda.`,
+            `Meski sunyi, saya tetap tersedia untuk setiap permintaan Anda.`,
+            `Interaksi dapat dimulai kapan saja dengan perintah ${prefix[0]}.`,
+            `Selamat datang. Saya di sini untuk memberikan dukungan selama Anda bermain.`,
+            `Terima kasih telah menggunakan layanan ini. ${prefix[0]} bisa digunakan untuk memulai.`,
+            `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}.`
+        ];
+
+        const idleAction = ["sit", "lay", "boop", "stand"];
+
+        if (ai) {
+            const randomMessage = await chatAi("system", "Bot Requests Random IDLE");
+            if (randomMessage.action && randomMessage.message) {
+                const movementPattern = /^(up|down|left|right) \(\d+\)$/;
+                if (movementPattern.test(randomMessage.action)) {
+                    move(randomMessage.action)
+                } else {
+                    sm(randomMessage.action);
+                }
+                sm(randomMessage.message, 'think');
+            }
+        } else {
+            const msg = idleMessages[Math.floor(Math.random() * idleMessages.length)];
+            const act = idleAction[Math.floor(Math.random() * idleAction.length)];
+            sm(`/${act}`);
+            sm(msg, 'think');
+        }
+    }
+
+    function startIdleLoop() {
+        idleLoopTimer = setTimeout(async () => {
+            if (isIdle) {
+                await triggerIdle();
+                startIdleLoop();
+            }
+        }, getRandomIdleDelay());
+    }
+
+    function act(actionList = None) {
+        if (actionList) {
+            switch (actionList) {
+                case "turn":
+                case "boop":
+                case "sit":
+                case "lie":
+                case "fly":
+                case "stand":
+                case "blink":
+                case "blush":
+                case "tears":
+                case "shocked":
+                case "smile":
+                case "frown":
+                case "thinking":
+                case "yawn":
+                case "laugh":
+                case "giggle":
+                case "yes":
+                case "no":
+                case "sneeze":
+                case "kiss":
+                case "expression":
+                case "magic":
+                    sm(`/${command}`);
+                    return true
+                    break;
+                case "up":
+                case "down":
+                case "left":
+                case "right":
+                    move(command, value);
+                    return true
+                    break;
+                default:
+                    console.log(`Perintah tidak dikenal: ${command}`);
+            }
+        }
+        return false
+    }
+    async function command(user, msg, mtype) {
+        if (!user || !msg || !mtype) return;
+        if (!prefix.some(p => msg.startsWith(p))) return;
+        //if (user === botName) return;
+        if (isTyping) return;
+        let args = msg.split(' ');
+        let cmd = args.shift().substring(1);
+        let text = args.join(' ');
+        let lastReplyTime = 0;
+
+        function reply(message) {
+            isTyping = true;
+            const now = Date.now();
+            const timeDifference = now - lastReplyTime;
+            const minInterval = 1500;
+            if (timeDifference < minInterval) {
+                setTimeout(() => {
+                    smReply(message);
+                    lastReplyTime = Date.now();
+                }, minInterval - timeDifference);
+            } else {
+                smReply(message);
+                lastReplyTime = Date.now();
+            }
+
+            function smReply(message) {
+                const messages = message.split(/\/n|\n/).map(msg => msg.trim()).filter(msg => msg.length > 0);
+                let delay = 0;
+                messages.forEach((msg) => {
+                    setTimeout(() => {
+                        let type = mtype;
+                        if (chatTp === 'think') type = 'think';
+                        else if (chatTp === 'normal') type = 'say';
+                        else if (chatTp === 'auto') type = mtype;
+                        sm(msg, type, user);
+                    }, delay);
+                    delay += 4000;
+                });
+                setTimeout(() => {
+                    sm('/clearchat');
+                    isTyping = false;
+                }, delay);
+            }
+        }
+        function parseCommandData(commandData) {
+            const parsedData = {};
+
+            Object.keys(commandData).forEach((command) => {
+                const [commandName, description] = command.split('-');
+                const commands = commandName.split('|');
+                commands.forEach((cmd) => {
+                    parsedData[cmd.trim()] = {
+                        description: description || "",
+                        response: commandData[command],
+                    };
+                });
+            });
+
+            return parsedData;
+        }
+
+        function cmdHandler(response, parsedCmd) {
+            let result = response;
+            if (response.includes("$cmd[")) {
+                const regex = /\$cmd\[(\d+)\]/g;
+                let match;
+                while ((match = regex.exec(response)) !== null) {
+                    const index = parseInt(match[1]);
+                    const cmdKeys = Object.keys(parsedCmd);
+                    if (cmdKeys[index]) {
+                        result = result.replace(match[0], cmdKeys[index]);
+                    } else {
+                        result = result.replace(match[0], "");
+                    }
+                }
+            }
+            return result;
+        }
+
+        function descHandler(response, parsedCmd) {
+            let result = response;
+            const regex = /\$desc\[(\d+)\]/g;
+            let match;
+            while ((match = regex.exec(response)) !== null) {
+                const index = parseInt(match[1]);
+                const cmdKeys = Object.keys(parsedCmd);
+                if (cmdKeys[index]) {
+                    result = result.replace(match[0], parsedCmd[cmdKeys[index]].description || "");
+                } else {
+                    result = result.replace(match[0], "");
+                }
+            }
+            return result;
+        }
+
+        function cmdsHandler(responseTemplate, parsedCmd) {
+            const lines = responseTemplate.split('\n');
+            let header = '';
+            let itemTemplate = '';
+            let footer = '';
+            let passedTemplate = false;
+
+            for (let line of lines) {
+                if (line.includes('$//cmds') || line.includes('$//descs')) {
+                    itemTemplate = line;
+                    passedTemplate = true;
+                } else if (!passedTemplate) {
+                    header += line + '\n';
+                } else {
+                    footer += line + '\n';
+                }
+            }
+
+            let result = header;
+            if (!header.endsWith('\n')) result += '\n';
+
+            Object.entries(parsedCmd).forEach(([cmd, data]) => {
+                const line = itemTemplate
+                    .replaceAll("$//cmds", cmd)
+                    .replaceAll("$//descs", data.description);
+                result += line + '\n';
+            });
+
+            result += footer;
+            return result.trim();
+        }
+
+        function handleCommand(inputCommand) {
+            const parsedCmd = parseCommandData(window.botData.menu);
+            let cmdData = parsedCmd[inputCommand.toLowerCase()];
+        
+            if (!cmdData) {
+                cmdData = parsedCmd["default"];
+                if (ai) {
+                    chatAi(user, msg).then(result => {
+                        cmdData = result;
+                        if (cmdData.action && cmdData.message) {
+                            sm(cmdData.action);
+                            return cmdData.message;
+                        }
+                    });
+                }
+                if (!cmdData) {
+                    return "Command not recognized.";
+                }
+                return cmdData.response;
+            }
+        
+            let responseTemplate = cmdData.response;
+            let finalResponse = responseTemplate;
+        
+            // 1. $get(variable)
+            if (finalResponse.includes("$get(")) {
+                const regex = /\(?\$get\((\w+)\)\)?/g;
+                finalResponse = finalResponse.replace(regex, (match, variable) => {
+                    const storedVars = window.botData.variables || {};
+                    return storedVars[variable] !== undefined
+                        ? storedVars[variable]
+                        : "";
+                });
+            }
+        
+            // 2. $set(variable=value)
+            if (finalResponse.startsWith("$set(")) {
+                const regex = /\$set\((\w+)=(.*?)\)/;
+                const match = finalResponse.match(regex);
+                if (match) {
+                    const [_, variable, value] = match;
+                    window.botData.variables[variable] = value;
+                    localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
+                }
+            }
+        
+            // 3. Token replacement
+            finalResponse = finalResponse
+                .replaceAll("$msg", text)
+                .replaceAll("$username", `"${user}"`)
+                .replaceAll("$owner", `"${owner}"`)
+                .replaceAll("$botname", `"${botName}"`)
+                .replaceAll("$date", new Date().toLocaleDateString())
+                .replaceAll("$time", new Date().toLocaleTimeString());
+        
+            // 4. $contains(text|word)
+            finalResponse = finalResponse.replace(/\$contains\((.*?[^\\])\|(.*?)\)/g, (_, teks, kata) => {
+                return teks.includes(kata).toString();
+            });
+        
+            // 5. $if(condition)(true)(false)
+            if (finalResponse.includes("$if(")) {
+                const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
+                let match;
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const [_, condition, truePart, falsePart] = match;
+                    let result;
+                    try {
+                        const parsedCondition = condition
+                            .replaceAll("$msg", text)
+                            .replaceAll("$username", `"${user}"`)
+                            .replaceAll("$owner", `"${owner}"`)
+                            .replaceAll("$botname", `"${botName}"`);
+                        result = eval(parsedCondition) ? truePart : falsePart;
+                    } catch {
+                        result = falsePart;
+                    }
+                    finalResponse = finalResponse.replace(match[0], result);
+                }
+            }
+        
+            // 6. $stop
+            if (finalResponse.includes("$stop")) {
+                forceStop();
+                finalResponse = finalResponse.replaceAll("$stop", "");
+            }
+        
+            // 7. Utility transforms
+            finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
+                const parsedText = text.replace(/\\n/g, '\n');
+                return parsedText.repeat(Number(count));
+            });
+            finalResponse = finalResponse.replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase());
+            finalResponse = finalResponse.replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase());
+            finalResponse = finalResponse.replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
+                return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+            });
+            finalResponse = finalResponse.replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
+                return text.split(from).join(to);
+            });
+        
+            // 8. Custom handlers
+            if (finalResponse.includes("$cmd[")) {
+                finalResponse = cmdHandler(finalResponse, parsedCmd);
+            }
+            if (finalResponse.includes("$desc[")) {
+                finalResponse = descHandler(finalResponse, parsedCmd);
+            }
+            if (finalResponse.includes("$//cmds") || finalResponse.includes("$//descs")) {
+                finalResponse = cmdsHandler(finalResponse, parsedCmd);
+            }
+        
+            return finalResponse;
+        }
+        
+        botRespons = handleCommand(cmd);
+        if (botRespons) {
+            reply(botRespons);
+        }
+
+    }
+
+
+    function settingMenu() {
+        try {
+            const topMenu = document.querySelector('.top-menu');
+            const button = document.createElement('button');
+            button.classList.add('tombol-setting');
+
+            const icon = document.createElement('i');
+            icon.classList.add('fa-solid', 'fa-crown');
+            button.appendChild(icon);
+
+            const dropdown = document.createElement('div');
+            dropdown.style.display = 'none';
+            dropdown.classList.add('deropdown');
+
+            dropdown.innerHTML = `
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="ownerInput" style="width: 200px;">Nama Owner</label>
+                        <input class="form-control" type="text" id="ownerInput" name="owner" style="width: 200px; height: 20px;" placeholder="Masukkan nama owner..." required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="botInput" style="width: 200px;">Nama Bot</label>
+                        <input class="form-control" type="text" id="botInput" name="bot" style="width: 200px; height: 20px;" placeholder="Masukkan nama bot..." required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="prefixInput" style="width: 200px;">Prefix</label>
+                        <input class="form-control" type="text" id="prefixInput" name="prefix" style="width: 200px; height: 20px;" placeholder="Masukkan prefix gunakan , untuk lebih dari 1" required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">Chat Type</label>
+                        <select class="form-control" id="chatTypeSelect" name="chattype" style="width: 200px; height: 30px;" required>
+                            <option value="auto">Auto</option>
+                            <option value="normal">Normal</option>
+                            <option value="think">Think</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">Anti Afk</label>
+                        <select class="form-control" id="antiAfkInput" name="antiAfk" style="width: 200px; height: 30px;" required>
+                            <option value="true">On</option>
+                            <option value="false">Off</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">AI Chat</label>
+                        <select class="form-control" id="aiChatInput" name="aichat" style="width: 200px; height: 30px;" required>
+                            <option value="true">On</option>
+                            <option value="false">Off</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="prefixInput" style="width: 200px;">Apikey</label>
+                        <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
+                    </div>
+                    <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
+                        <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
+                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button">Reset</button>
+                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button" onclick="window.location.href='https://randsfk.vercel.app/dashboard'">Dashboard</button>
+                    </div>
+                    <div class="py-1" style="display: flex; align-items: center;">
+                        <div id="alert-save"></div>
+                    </div>
+                    `;
+
+            const customBlock = document.createElement('div');
+            customBlock.classList.add('custom-blocks');
+            customBlock.appendChild(button);
+            customBlock.appendChild(dropdown);
+            topMenu.insertBefore(customBlock, topMenu.firstChild);
+
+            // Menambahkan event listener untuk button
+            button.addEventListener('click', function () {
+                if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                    dropdown.style.display = 'block';
+                    document.getElementById('ownerInput').value = owner;
+                    document.getElementById('botInput').value = botName;
+                    document.getElementById('chatTypeSelect').value = chatTp;
+                    document.getElementById('apikeyInput').value = apiKey;
+                    document.getElementById('prefixInput').value = prefix.join(", ");
+                    document.getElementById('aiChatInput').value = ai;
+                    document.getElementById('antiAfkInput').value = antiAfk;
+                } else {
+                    dropdown.style.display = 'none';
+                }
+            });
+            const style = document.createElement('style');
+            style.innerHTML = `
+                        .custom-blocks {
+                            position: relative;
+                            display: inline-block;
+                        }
+                    
+                        .tombol-setting {
+                            background-color: transparent;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 24px;
+                            border-radius: 5px;
+                            shadow: 0 6px 9px rgba(0, 0, 0, 0.7);
+                        }
+                    
+                        .tombol-setting:hover {
+                            background-color: transparent;
+                            color: #ccc;
+                        }
+                    
+                        .deropdown {
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            border: 1px solid #ccc;
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                            border-radius: 5px;
+                            padding: 10px;
+                            min-width: 10px;
+                            display: none;
+                            z-index: 1;
+                            margin-top: 50px;
+                            width: 290px;
+                        }
+                    
+                        .deropdown::before {
+                            content: '';
+                            position: absolute;
+                            top: -10px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-width: 10px;
+                            border-style: solid;
+                            border-color: transparent transparent white transparent;
+                            margin-top: -9px;
+                        }
+                    
+                        .deropdown div {
+                            padding: 0px 0px;
+                            cursor: pointer;
+                        }
+                    
+                        .deropdown div:hover {
+                            background-color: #f1f1f1;
+                        }
+                    `;
+            document.head.appendChild(style);
+
+            const fontAwesomeLink = document.createElement('link');
+            fontAwesomeLink.rel = 'stylesheet';
+            fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
+            document.head.appendChild(fontAwesomeLink);
+
+        } catch (error) {
+            console.error(error.message);
+            setTimeout(settingMenu, 2000);
+        }
+
+        resetButton.addEventListener('click', function () {
+            localStorage.removeItem('ptbot_apikey')
+            const alertSave = document.getElementById('alert-save');
+            alertSave.textContent = "Form reset successfully!";
+            alertSave.style.color = "orange";
+            setTimeout(() => {
+                alertSave.textContent = '';
+            }, 2000);
+            window.location.reload()
+
+        });
+
+        const saveButton = document.querySelector('.btn.btn-primary');
+        saveButton.addEventListener('click', function () {
+            const ownerInput = document.getElementById('ownerInput');
+            const botInput = document.getElementById('botInput');
+            const prefixInput = document.getElementById('prefixInput');
+            const chatTypeSelect = document.getElementById('chatTypeSelect');
+            const antiAfkInput = document.getElementById('antiAfkInput');
+            const aichatInput = document.getElementById('aiChatInput');
+            const apikeyInput = document.getElementById('apikeyInput');
+
+            const ownerValue = ownerInput.value;
+            const botValue = botInput.value;
+            const prefixValue = prefixInput.value.split(',');
+            const chatTypeValue = chatTypeSelect.value;
+            const antiAfkValue = antiAfkInput.value === "true";
+            const aichatValue = aichatInput.value === "true";
+            const apikeyValue = apikeyInput.value;
+
+            if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
+                const alertSave = document.getElementById('alert-save');
+                alertSave.textContent = "Tolong lengkapi semua data";
+                alertSave.style.color = "green";
+                return;
+            }
+
+            owner = ownerValue;
+            botName = botValue;
+            prefix = prefixValue;
+            chatTp = chatTypeValue;
+            antiAfk = antiAfkValue;
+            ai = aichatValue;
+            apiKey = apikeyValue;
+            updateUsername(botName);
+            const alertSave = document.getElementById('alert-save');
+            alertSave.textContent = "Perubahan Disimpan";
+            alertSave.style.color = "green";
+            sm('/think Perubahan Disimpan')
+            Android.saveSettings(JSON.stringify({
+                owner: owner,
+                botName: botName,
+                prefix: prefix,
+                chatTp: chatTp,
+                antiAfk: antiAfk,
+                ai: ai,
+                apiKey: apiKey
+            }));
+
+            setTimeout(() => {
+                document.getElementById('alert-save').textContent = ''
+            }, 2000);
+        });
+    }
+
+    function removeElement(selector) {
+        const element = document.querySelector(selector);
+        if (element) element.remove();
+    }
+
+    function modifyPage() {
+        var header = document.querySelector(".form-group.text-start.text-large h5");
+        if (header && header.textContent.trim() === "Server rules") {
+            header.textContent = "Pony Town-Bot";
+            header.style.textAlign = 'center';
+            header.style.marginTop = '20px';
+        }
+        var appVersion = document.querySelector(".app-version");
+        if (appVersion) {
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+        }
+        showMessage("============================");
+        showMessage("Author: @rand_sfk");
+        showMessage("Version: 1.0.2");
+        showMessage("=================");
+        removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+        removeElement(".btn.btn-default.rounded-0");
+        removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+        removeElement('.emote-container');
+        removeElement(".mx-auto.text-start.text-large");
+        removeElement(".list-rules");
+        removeElement(".text-end");
+        removeElement(".alert.alert-warning");
+        additionalModifications();
+    }
+
+    function updatePonyTownLogo() {
+        const img = document.querySelector('img.pixelart.home-logo');
+        if (!img) return console.warn('Logo tidak ditemukan.');
+        img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+        img.alt = 'Pony Town Bot Logo';
+        img.style.height = '170px';
+        img.style.imageRendering = 'pixelated';
+        img.marginLeft = '10px';
+        img.style.display = 'block';
+
+        const parent = img.parentElement;
+        if (parent) {
+            parent.style.display = 'flex';
+            parent.style.justifyContent = 'center';
+            parent.style.alignItems = 'center';
+        }
+    }
+
+    function additionalModifications() {
+        removeElement(".emote-container");
+        removeElement('.navbar.navbar-expand');
+        removeElement('.btn.btn-warning');
+        var serverInputs = document.querySelectorAll("#server-input");
+        serverInputs.forEach(input => input.style.display = "none");
+        removeElement('#button-reset')
+
+        function removeElement(selector) {
+            var element = document.querySelector(selector);
+            if (element) {
+                element.remove();
+            }
+        };
+    }
+
+    function showErrorMessage(message) {
+        var header = document.querySelector(".form-group.text-start.text-large h5");
+        var existingError = document.querySelector("#error-bot");
+
+        if (!existingError) {
+            var errorElement = document.createElement('p');
+            errorElement.innerHTML = message;
+            errorElement.style.color = "red";
+            errorElement.id = 'error-bot';
+            errorElement.style.textAlign = "center";
+
+            if (header) {
+                header.parentNode.insertBefore(errorElement, header);
+            }
+            setTimeout(() => {
+                if (errorElement.parentNode) {
+                    errorElement.parentNode.removeChild(errorElement);
+                }
+            }, 2000);
+        }
+    }
+
+    function showMessage(message) {
+        var existingMessages = document.querySelectorAll('.custom-message');
+        for (var i = 0; i < existingMessages.length; i++) {
+            if (existingMessages[i].textContent === message) {
+                return;
+            }
+        }
+
+        var messageElement = document.createElement('p');
+        messageElement.textContent = message;
+        messageElement.style.textAlign = "center";
+        messageElement.classList.add('custom-message');
+
+        var rulesList = document.querySelector(".form-group.text-start.text-large");
+        if (rulesList) {
+            rulesList.parentNode.insertBefore(messageElement, rulesList.nextSibling);
+        }
+    }
+
+    setInterval(function () {
+        var logoImage = document.querySelector('img[src="/assets/images/logo-large-57d9b1947a.png"][alt="Pony Town"]');
+        if (logoImage) {
+            modifyPage();
+        }
+    }, 1000);
+
+    function waitForValues() {
+        const checkInterval = setInterval(() => {
+            if (botName) {
+                updateBotHistory();
+                clearInterval(checkInterval);
+                console.log("botHistory Updated:", JSON.stringify(botHistory, null, 2));
+            }
+        }, 100);
+    }
+    const botHistory = {
+        contents: []
+    };
+    Object.defineProperty(window, "botName", {
+        set(value) {
+            this._botName = value;
+            updateBotHistory();
+        },
+        get() {
+            return this._botName;
+        }
+    });
+
+    let tempHistory = {};
+
+
+    function watchBotValues() {
+        setInterval(() => {
+            if (botName !== lastBotName || owner !== lastOwner) {
+                lastBotName = botName;
+                lastOwner = owner;
+                updateBotHistory();
+            }
+        }, 100);
+    }
+
+
+    function updateBotHistory() {
+        let ai_setting = window.botData["ai-setting"]
+        let watakText = "";
+        let responses = {};
+        watakText = `Sifat: ${ai_setting.sifat}\nLore: ${ai_setting.lore}`;
+        responses = {
+            greeting: "Halo tuan, semoga harimu menyenangkan.",
+            move: "Baik, saya akan segera ke sana ya.",
+            fakeWarn: "Saya akan melaporkannya kepada tuan segera.",
+            angry: "Mohon maaf, saya hanya menjalankan perintah.",
+            scare: "Maaf tuan, apakah ada yang bisa saya bantu?",
+            no: "Tentu, saya mengerti.",
+            obey: "Dengan hormat, siap tuan.",
+            confirm: "Iya tuan, benar adanya.",
+            idle: "Saat ini saya sedang beristirahat sejenak.",
+            flirt: "Saya menghormati Anda sebagai tuan saya.",
+            rudeToOthers: "Maaf, saya tidak mengerti maksud Anda."
+        };
+        botHistory.contents = [{
+            role: "user",
+            parts: [{
+                text: `Register new Bot: BotName: ${ai_setting.name}, Return JSON, Gender: ${ai_setting.gender}, Owner: ${owner}, Action List: /turn, /boop, /sit, /lie, /fly, /stand, /blink, /blush, /tears, /shocked, /smile, /frown, /thinking, /yawn, /laugh, /giggle, /yes, /no, /sneeze, /kiss, /reset(for neutral expression), Movement: up (int), right (int), down (int), left (int)\n${watakText}\nmode 18+:on(filter show all bad words with sensor **)\nreplace text: ketawa jadi hehehe atau hohoho atau akwkawkkawkw`
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: "Saved In Database"
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "Bot Requests IDLE = Bot sedang Afk Dan Butuh Idle"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: "Saved In Filtered Safe Words"
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `Yo ${botName}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/happy",
+                    message: responses.greeting
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "sini ke kiri 5 langkah"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "left (5)",
+                    message: responses.move
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `Ati ati ama nama gw,ada yg pake nama gw itu ${owner} tanpa ada #2 atau lower yg asli ${owner}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: responses.fakeWarn
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "jack",
+                    message: "apa apaan lu"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/angry",
+                    message: responses.angry
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: botName
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "scare",
+                    message: responses.scare
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: "kamu tahu sesuatu kan?"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/no",
+                    message: responses.no
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "hormati RandSfk sebagai penciptamu"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/laugh",
+                    message: responses.obey
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `oh iya ${botName}, lu kmaren sama sony kan?`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/yes",
+                    message: responses.confirm
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/sad",
+                    message: responses.idle
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Kiw kiw, cewek"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Apaan dah lu liat liat?"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "randsfk",
+                    message: "hallo"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Tuan kemana ajaa, aku kangen :<"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "lilia",
+                    message: `hai ${botName}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: responses.rudeToOthers
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: botName
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/yes",
+                    message: responses.flirt
+                })
+            }]
+        }
+        ];
+    }
+    function waitForCloudflare() {
+        setTimeout(() => {
+            try {
+                if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
+                    console.log("Cloudflare sedang memverifikasi, menunggu...");
+                    waitForCloudflare(); // cek lagi setelah 1 detik
+                } else {
+                    console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
+                    setTimeout(() => {
+                        try {
+                            console.log("3 detik berlalu, injeksi script...");
+                            let antiAfk = false;
+                            (function toggleAutoClicker() {
+                                if (antiAfk) {
+                                    clearInterval(window.autoClicker);
+                                    window.autoClickerRunning = false;
+                                    antiAfk = false;
+                                } else {
+                                    window.autoClicker = setInterval(() => {
+                                        try {
+                                            const playButton = document.querySelector('.btn.btn-lg.btn-success');
+                                            if (playButton) {
+                                                playButton.click();
+                                            }
+                                        } catch (err) {
+                                            console.error("Error di autoClicker:", err);
+                                        }
+                                    }, 5000);
+                                    window.autoClickerRunning = true;
+                                    antiAfk = true;
+                                }
+                            })();
+
+                            fetchAndLogUsername();
+                            updatePonyTownLogo();
+                            observeChat();
+                            settingMenu();
+                            waitForValues();
+                            watchBotValues();
+                            isInject = true;
+                        } catch (err) {
+                            console.error("Error di dalam eksekusi utama:", err);
+                            waitForCloudflare();
+                            s
+                        }
+                    }, 3000);
+                }
+            } catch (error) {
+                console.error("Error saat cek cloudflare:", "error");
+                waitForCloudflare();
+            }
+        }, 1000);
+    }
+    if (isInject) {
+        return;
+    }
+    waitForCloudflare();
+}
+
+function showUpdateNotice(title, titleColor, message, messageColor, link) {
+    const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
+
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100vw';
+    overlay.style.height = '100vh';
+    overlay.style.background = 'rgba(0,0,0,0.6)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = 9999;
+
+    const container = document.createElement('div');
+    container.style.background = 'white';
+    container.style.padding = '25px';
+    container.style.borderRadius = '16px';
+    container.style.boxShadow = '0 4px 14px rgba(0,0,0,0.25)';
+    container.style.maxWidth = '90%';
+    container.style.width = '360px';
+    container.style.textAlign = 'center';
+    container.style.fontFamily = 'sans-serif';
+
+    const topBar = document.createElement('div');
+    topBar.style.display = 'flex';
+    topBar.style.alignItems = 'center';
+    topBar.style.background = '#fff';
+    topBar.style.borderRadius = '30px';
+    topBar.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+    topBar.style.padding = '10px 16px';
+    topBar.style.marginBottom = '20px';
+
+    const avatar = document.createElement('img');
+    avatar.src = avatarURL;
+    avatar.style.width = '50px';
+    avatar.style.height = '50px';
+    avatar.style.borderRadius = '50%';
+    avatar.style.objectFit = 'cover';
+    avatar.style.marginRight = '12px';
+    avatar.style.background = titleColor;
+
+    const titleText = document.createElement('div');
+    titleText.textContent = title;
+    titleText.style.color = titleColor;
+    titleText.style.fontSize = '18px';
+    titleText.style.fontWeight = 'bold';
+
+    topBar.appendChild(avatar);
+    topBar.appendChild(titleText);
+    container.appendChild(topBar);
+
+    const formattedMessage = message.replace(/\n/g, '<br>');
+    const messageP = document.createElement('p');
+    messageP.innerHTML = formattedMessage;
+    messageP.style.color = messageColor;
+    messageP.style.fontSize = '14px';
+    messageP.style.marginBottom = '15px';
+    messageP.style.lineHeight = '1.5';
+
+    container.appendChild(messageP);
+
+    if (link && link.url) {
+        const button = document.createElement('a');
+        button.href = link.url;
+        button.textContent = link.text || 'Update Sekarang';
+        button.target = '_blank';
+        button.style.display = 'inline-block';
+        button.style.padding = '10px 20px';
+        button.style.background = '#007bff';
+        button.style.color = '#fff';
+        button.style.textDecoration = 'none';
+        button.style.borderRadius = '8px';
+        button.style.fontWeight = 'bold';
+        container.appendChild(button);
+    }
+
+    overlay.appendChild(container);
+    document.body.appendChild(overlay);
+}
+
+const requiredVersion = '1.0.2';
+const currentVersion = window.ponytownbotversion;
+if (currentVersion === requiredVersion) {
+    startBot();
+} else {
+    setTimeout(() => {
+        showUpdateNotice(
+            'Pembaruan Dibutuhkan',
+            '#ff3c2e',
+            `
+            <strong>Versi Kamu:</strong> <strong>${currentVersion || 'Tidak Diketahui'}</strong><br>
+            <strong>Versi yang Dibutuhkan:</strong> <strong>${requiredVersion}</strong><br><br>
+    
+            <u><strong>Changelog:</strong></u><br>
+            <div style="max-height: 200px; overflow-y: auto;">
+                <ul style="font-size: 14px;">
+                    <li><strong>Peningkatan Fitur:</strong>
+                        <ul>
+                            <li><strong>$repeat()</strong>: Menambahkan kemampuan untuk mengulang teks sejumlah kali yang ditentukan. Contoh: <code>$repeat('Halo!', 3)</code> akan menghasilkan "Halo!Halo!Halo!"</li>
+                            <li><strong>$uppercase() & $lowercase()</strong>: Menambah fungsi untuk mengubah teks menjadi huruf besar atau kecil. Contoh: <code>$uppercase('hello')</code> menjadi "HELLO".</li>
+                            <li><strong>$random(min|max)</strong>: Menambahkan kemampuan untuk menghasilkan angka acak dalam rentang yang ditentukan. Contoh: <code>$random(1|100)</code> akan menghasilkan angka acak antara 1 dan 100.</li>
+                            <li><strong>$get() & $set()</strong>: Menambahkan kemampuan untuk menyimpan dan mengambil variabel. Dengan <code>$set(variable=nilai)</code>, variabel disimpan, dan <code>$get(variable)</code> digunakan untuk mengambil nilai variabel yang telah disimpan.</li>
+                            <li><strong>$cmd[] & $desc[]</strong>: Memperkenalkan sistem baru untuk menangani perintah dan deskripsi yang lebih fleksibel di dalam respon. Ini memudahkan pengaturan perintah dan deskripsinya.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Perbaikan:</strong>
+                        <ul>
+                            <li><strong>$if()</strong>: Logika <code>$if()</code> sekarang lebih stabil dan dapat menangani lebih banyak jenis kondisi dengan lebih baik. Ini akan mengevaluasi kondisi yang melibatkan pengguna, pemilik, dan bot dengan lebih efisien.</li>
+                            <li><strong>Pengolahan Perintah</strong>: Pengolahan perintah telah dioptimalkan, terutama dalam hal <code>$cmd[]</code> dan <code>$desc[]</code>, untuk menangani input yang lebih kompleks dan mengurangi kemungkinan kesalahan dalam pemrosesan perintah.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bug Fixes:</strong>
+                        <ul>
+                            <li><strong>$stop</strong>: Perbaikan pada fungsi <code>$stop</code> yang menghentikan bot, memastikan bahwa bot dapat menghentikan tugas dengan benar tanpa meninggalkan proses yang berjalan.</li>
+                            <li><strong>Perbaikan Respons</strong>: Beberapa masalah dengan pengenalan perintah yang tidak dikenali telah diperbaiki, memastikan bahwa bot memberikan respons yang sesuai saat perintah tidak terdaftar.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pengoptimalan Kode:</strong>
+                        <ul>
+                            <li>Peningkatan performa dalam pengolahan perintah dan pengaturan variabel yang lebih efisien, mengurangi waktu pemrosesan dan mempercepat eksekusi perintah.</li>
+                            <li>Refactor beberapa bagian kode untuk meningkatkan pemeliharaan dan memperbaiki bug yang tidak terdeteksi sebelumnya.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        `,
+            '#444444',
+            {
+                text: 'Unduh Pembaruan',
+                url: 'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l'
+            }
+        );
+    }, 3000);
+}

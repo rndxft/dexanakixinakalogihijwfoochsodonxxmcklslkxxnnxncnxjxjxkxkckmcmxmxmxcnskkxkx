@@ -839,18 +839,17 @@ function jalankanBot() {
             alert(inputCommand)
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
-            alert("ini AI"+ai)
+            alert("ini AI "+ai)
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
                     const aiResult = chatAi(user, msg);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
-                        alert(aiResult)
+                        alert(aiResult.action, aiResult.message)
                         return aiResult.message;
                     }
-                }
-                if (!cmdData) {
+                }else if (!cmdData) {
                     return "Command not recognized.";
                 }
                 return cmdData.response;

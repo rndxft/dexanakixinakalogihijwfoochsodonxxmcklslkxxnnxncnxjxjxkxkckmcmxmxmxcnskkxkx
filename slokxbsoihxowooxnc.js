@@ -1013,8 +1013,8 @@ function jalankanBot() {
                     </div>
                     <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
                         <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
-                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; background-color: red;" type="button">Reset</button>
-                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px; " type="button">Dashboard</button>
+                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px;" type="button">Reset</button>
+                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px;" type="button">Dashboard</button>
                     </div>
                     <div class="py-1" style="display: flex; align-items: center;">
                         <div id="alert-save"></div>

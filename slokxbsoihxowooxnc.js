@@ -1122,7 +1122,6 @@ function jalankanBot() {
             setTimeout(() => {
                 alertSave.textContent = '';
             }, 2000);
-            sm('/leave')
             window.location.href = "https://randsfk.vercel.app/login"
         });
 
@@ -1667,7 +1666,7 @@ function jalankanBot() {
                                         } catch (err) {
                                             console.error("Error di autoClicker:", err);
                                         }
-                                    }, 5000);
+                                    }, 2000);
                                     window.autoClickerRunning = true;
                                     antiAfk = true;
                                 }

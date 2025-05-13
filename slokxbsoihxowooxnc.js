@@ -1026,16 +1026,13 @@ function jalankanBot() {
                 alertBox.style.padding = '10px';
                 alertBox.style.margin = '10px 0';
                 alertBox.style.borderRadius = '5px';
-                alertBox.style.color = '#fff';
                 alertBox.style.fontWeight = 'bold';
 
                 if (type === 'success') {
-                    alertBox.style.backgroundColor = '#4CAF50';
+                    alertBox.style.color = '#4CAF50';
                 } else if (type === 'error') {
-                    alertBox.style.backgroundColor = '#f44336';
+                    alertBox.style.color = '#f44336';
                 }
-
-                // Auto-hide after 3 seconds
                 setTimeout(() => {
                     alertBox.textContent = '';
                     alertBox.style.padding = '';

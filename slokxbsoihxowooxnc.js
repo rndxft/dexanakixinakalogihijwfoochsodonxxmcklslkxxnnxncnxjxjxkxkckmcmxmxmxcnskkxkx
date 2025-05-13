@@ -1,6 +1,5 @@
 async function GetCmd() {
     if (!localStorage.getItem('ptbot_apikey')) {
-
         function removeElements(selector) {
             const element = document.querySelector(selector);
             if (element) element.remove();
@@ -9,7 +8,6 @@ async function GetCmd() {
         function showMessage(message, status = 'success') {
             const header = document.querySelector(".form-group.custom");
             if (!header) return;
-        
             const msg = document.createElement('div');
             msg.className = 'alerts';
             msg.textContent = message;
@@ -21,8 +19,6 @@ async function GetCmd() {
                 msg.remove();
             }, 3000);
         }
-             
-
         function updatePonyTownLogos() {
             const img = document.querySelector('img.pixelart.home-logo');
             if (!img) return console.warn('Logo tidak ditemukan.');
@@ -1017,8 +1013,8 @@ function jalankanBot() {
                     </div>
                     <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
                         <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
-                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button">Reset</button>
-                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px; color: red;" type="button" onclick="window.location.href='https://randsfk.vercel.app/dashboard'">Dashboard</button>
+                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; background-color: red;" type="button">Reset</button>
+                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px; " type="button">Dashboard</button>
                     </div>
                     <div class="py-1" style="display: flex; align-items: center;">
                         <div id="alert-save"></div>
@@ -1030,8 +1026,8 @@ function jalankanBot() {
             customBlock.appendChild(button);
             customBlock.appendChild(dropdown);
             topMenu.insertBefore(customBlock, topMenu.firstChild);
+            const Dashboard = getElementById('web');
 
-            // Menambahkan event listener untuk button
             button.addEventListener('click', function () {
                 if (dropdown.style.display === 'none' || dropdown.style.display === '') {
                     dropdown.style.display = 'block';
@@ -1046,6 +1042,11 @@ function jalankanBot() {
                     dropdown.style.display = 'none';
                 }
             });
+
+            Dashboard.addEventListener('click', function () {
+                window.location.href = "https://randsfk.vercel.app/login"
+            });
+
             const style = document.createElement('style');
             style.innerHTML = `
                         .custom-blocks {
@@ -1637,7 +1638,7 @@ function jalankanBot() {
             try {
                 if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
                     console.log("Cloudflare sedang memverifikasi, menunggu...");
-                    waitForCloudflare(); // cek lagi setelah 1 detik
+                    waitForCloudflare();
                 } else {
                     console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
                     setTimeout(() => {
@@ -1772,9 +1773,14 @@ function showUpdateNotice(title, titleColor, message, messageColor, link) {
     overlay.appendChild(container);
     document.body.appendChild(overlay);
 }
-
+if (localStorage.getItem('pt_version')) {
+    window.ponytownbotversion = localStorage.getItem('pt_version')
+}
 const requiredVersion = '1.0.2';
 const currentVersion = window.ponytownbotversion;
+if (currentVersion){
+    localStorage.setItem('pt_version') = currentVersion;
+}
 if (currentVersion === requiredVersion) {
     startBot();
 } else {

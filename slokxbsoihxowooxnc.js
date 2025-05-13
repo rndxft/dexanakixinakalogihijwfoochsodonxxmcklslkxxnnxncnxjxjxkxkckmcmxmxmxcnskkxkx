@@ -854,11 +854,11 @@ function jalankanBot() {
                 cmdData = parsedCmd["default"];
                 if (ai) {
                     const aiResult = chatWAI(user, msg);
+                    alert(aiResult)
                     if (aiResult) {
-                        alert(aiResult.action + aiResult.message)
+                        alert(aiResult.action + aiResult.message);
                         if (aiResult.action) sm(aiResult.action);
-                        if (aiResult.message) return aiResult.message
-                        return mmk;
+                        if (aiResult.message) return aiResult.message;
                     }
                 }else if (!cmdData) {
                     return "Command not recognized.";

@@ -852,7 +852,6 @@ function jalankanBot() {
                 cmdData = parsedCmd["default"];
                 if (ai) {
                     const aiResult = chatWAI(user, msg);
-                    alert(aiResult)
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
                         if (aiResult.message) return aiResult.message;

@@ -839,7 +839,7 @@ function jalankanBot() {
             alert(inputCommand)
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
-        
+            alert("ini AI"+ai)
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
@@ -850,7 +850,6 @@ function jalankanBot() {
                         return aiResult.message;
                     }
                 }
-                alert(ai)
                 if (!cmdData) {
                     return "Command not recognized.";
                 }

@@ -842,13 +842,12 @@ function jalankanBot() {
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
-                    chatAi(user, msg).then(result => {
-                        cmdData = result;
-                        if (cmdData.action && cmdData.message) {
-                            sm(cmdData.action);
-                            return cmdData.message;
-                        }
-                    });
+                    cmdData = chatAi(user, msg);
+                    if (cmdData){
+                        sm(cmdData.action);
+                        return cmdData.message;
+                    }
+                    sm(cmdData);
                 }
                 if (!cmdData) {
                     return "Command not recognized.";

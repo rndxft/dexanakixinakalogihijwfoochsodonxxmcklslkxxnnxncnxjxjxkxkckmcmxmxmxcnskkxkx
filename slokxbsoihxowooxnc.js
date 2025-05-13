@@ -835,7 +835,7 @@ function jalankanBot() {
             return result.trim();
         }
 
-        function handleCommand(inputCommand) {
+        async function handleCommand(inputCommand) {
             alert(inputCommand)
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
@@ -843,7 +843,7 @@ function jalankanBot() {
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
-                    const aiResult = chatAi(user, msg);
+                    const aiResult = await chatAi(user, msg);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
                         alert(aiResult.action, aiResult.message)

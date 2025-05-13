@@ -836,6 +836,7 @@ function jalankanBot() {
         }
 
         function handleCommand(inputCommand) {
+            alert(inputCommand)
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
         
@@ -853,7 +854,6 @@ function jalankanBot() {
                 if (!cmdData) {
                     return "Command not recognized.";
                 }
-        
                 return cmdData.response;
             }
         

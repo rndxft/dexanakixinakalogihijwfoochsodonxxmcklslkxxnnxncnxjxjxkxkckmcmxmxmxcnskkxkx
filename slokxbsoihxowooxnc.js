@@ -879,14 +879,14 @@ function jalankanBot() {
             alert(inputCommand);
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
-                alert(cmdData.response);
                 if (ai) {
                     chatAi(user, msg).then(aiResult => {
-                        showErrors(String(aiResult));
+                        showErrors(JSON.stringify(aiResult, null, 2));
                         if (aiResult) {
                             showErrors(String(aiResult));
                             if (aiResult.action) sm(aiResult.action);
-                            return aiResult.message || "Command not recognized.";
+                            if (aiResult.message) sm(aiResult.message);
+                            "Command not recognized.";
                         } else {
                             return "Command not recognized.";
                         }

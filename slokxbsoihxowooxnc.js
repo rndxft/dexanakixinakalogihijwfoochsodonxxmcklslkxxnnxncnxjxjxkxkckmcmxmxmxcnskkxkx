@@ -685,6 +685,10 @@ function jalankanBot() {
     async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
+        if (isBreaking) {
+            isBreaking = false;
+            return;
+        }
         //if (user === botName) return;
         if (isTyping) return;
         let args = msg.split(' ');
@@ -721,7 +725,6 @@ function jalankanBot() {
                     delay += 4000;
                 });
                 setTimeout(() => {
-                    sm('/clearchat');
                     isTyping = false;
                 }, delay);
             }
@@ -879,18 +882,16 @@ function jalankanBot() {
                 if (ai) {
                     return chatAi(user, msg).then(aiResult => {
                         if (aiResult) {
-                            showErrors(JSON.stringify(aiResult, null, 2));
                             if (aiResult.action) {
                                 sm(aiResult.action);
                             }
                             if (aiResult.message) {
-                                reply(aiResult.message);
+                                //reply(aiResult.message);
                                 return aiResult.message;
                             }
                         }
                         return "Command not recognized.";
                     }).catch(error => {
-                        console.error('Error:', error);
                         return "An error occurred while processing the command.";
                     });
                 } else {

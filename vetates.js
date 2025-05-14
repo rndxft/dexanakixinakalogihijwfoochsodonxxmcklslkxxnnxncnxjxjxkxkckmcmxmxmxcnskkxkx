@@ -56,7 +56,7 @@ async function GetCmd() {
 
             const appVersion = document.querySelector(".app-version");
             if (appVersion) {
-                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Beta</b> ' +
+                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
                     '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
             }
 
@@ -514,8 +514,8 @@ function jalankanBot() {
             owner = botset.owner
             prefix = botset.prefix
             chatTp = botset.chatTp
-            antiAfk = String(botset.antiAfk);
-            ai = String(botset.ai);
+            antiAfk = botset.antiAfk
+            ai = botset.ai
             if (botset.apiKey) {
                 apiKey = botset.apiKey
             }
@@ -616,9 +616,8 @@ function jalankanBot() {
     }
 
     async function triggerIdle() {
-        const name = botName.split('|')[0].trim();
         const idleMessages = [
-            `Halo, saya adalah asisten virtual yang dibuat oleh ${owner}.`,
+            `Halo, saya adalah ${botName} asisten virtual yang dibuat oleh ${owner}.`,
             `Jika Anda ingin memulai percakapan, silakan gunakan perintah ${prefix[0]}.`,
             `Saya siap membantu Anda. Gunakan ${prefix[0]} untuk mengakses fitur.`,
             `Silakan beri perintah kapan saja. Saya menunggu instruksi dari Anda.`,
@@ -626,15 +625,14 @@ function jalankanBot() {
             `Bot ini dibuat oleh ${owner}, dengan fokus pada kenyamanan pengguna.`,
             `Saya selalu aktif di latar. Anda bisa mulai dengan ${prefix[0]}.`,
             `Butuh bantuan? Cukup ketik ${prefix[0]} untuk memulai.`,
-            `Anda sedang berinteraksi dengan Pony Town Bot. Silakan gunakan fitur yang tersedia.`,
-            `Saya tetap siaga untuk membantu, meskipun suasana sedang hening.`,
+            `Anda sedang berinteraksi dengan ${botName}. Silakan gunakan fitur yang tersedia.`,
             `Gunakan ${prefix[0]} untuk menjelajahi fitur yang telah dirancang khusus.`,
             `Proyek ini merupakan karya RandSfk, hadir untuk mempermudah pengalaman bermain Anda.`,
             `Meski sunyi, saya tetap tersedia untuk setiap permintaan Anda.`,
             `Interaksi dapat dimulai kapan saja dengan perintah ${prefix[0]}.`,
             `Selamat datang. Saya di sini untuk memberikan dukungan selama Anda bermain.`,
-            `Terima kasih telah menggunakan layanan ini. ${prefix[0]} bisa digunakan untuk memulai.`,
-            `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}.`
+            `Terima kasih telah menggunakan layanan ini. gunakan ${prefix[0]} untuk memulai.`,
+            `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}help.`
         ];
 
         const idleAction = ["sit", "lay", "boop", "stand"];
@@ -834,31 +832,29 @@ function jalankanBot() {
             result += footer;
             return result.trim();
         }
-
         function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
-        
+            alert(inputCommand)
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
+                alert(cmdData)
                 if (ai) {
-                    chatAi(user, msg).then(result => {
-                        cmdData = result;
-                        if (cmdData.action && cmdData.message) {
-                            sm(cmdData.action);
-                            return cmdData.message;
-                        }
-                    });
+                    const aiResult = chatAi(user, msg);
+                    if (aiResult) {
+                        if (aiResult.action) sm(aiResult.action);
+                        return aiResult.message || "Command not recognized.";
+                    } else {
+                        return "Command not recognized.";
+                    }
+                } else {
+                    return cmdData?.response || "Command not recognized.";
                 }
-                if (!cmdData) {
-                    return "Command not recognized.";
-                }
-                return cmdData.response;
             }
-        
-            let responseTemplate = cmdData.response;
+
+            let responseTemplate = cmdData.response || "";
             let finalResponse = responseTemplate;
-        
+
             // 1. $get(variable)
             if (finalResponse.includes("$get(")) {
                 const regex = /\(?\$get\((\w+)\)\)?/g;
@@ -869,7 +865,7 @@ function jalankanBot() {
                         : "";
                 });
             }
-        
+
             // 2. $set(variable=value)
             if (finalResponse.startsWith("$set(")) {
                 const regex = /\$set\((\w+)=(.*?)\)/;
@@ -880,21 +876,21 @@ function jalankanBot() {
                     localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
                 }
             }
-        
+
             // 3. Token replacement
             finalResponse = finalResponse
                 .replaceAll("$msg", text)
-                .replaceAll("$username", `"${user}"`)
-                .replaceAll("$owner", `"${owner}"`)
-                .replaceAll("$botname", `"${botName}"`)
+                .replaceAll("$username", user)
+                .replaceAll("$owner", owner)
+                .replaceAll("$botname", botName)
                 .replaceAll("$date", new Date().toLocaleDateString())
                 .replaceAll("$time", new Date().toLocaleTimeString());
-        
+
             // 4. $contains(text|word)
             finalResponse = finalResponse.replace(/\$contains\((.*?[^\\])\|(.*?)\)/g, (_, teks, kata) => {
                 return teks.includes(kata).toString();
             });
-        
+
             // 5. $if(condition)(true)(false)
             if (finalResponse.includes("$if(")) {
                 const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
@@ -905,9 +901,9 @@ function jalankanBot() {
                     try {
                         const parsedCondition = condition
                             .replaceAll("$msg", text)
-                            .replaceAll("$username", `"${user}"`)
-                            .replaceAll("$owner", `"${owner}"`)
-                            .replaceAll("$botname", `"${botName}"`);
+                            .replaceAll("$username", user)
+                            .replaceAll("$owner", owner)
+                            .replaceAll("$botname", botName);
                         result = eval(parsedCondition) ? truePart : falsePart;
                     } catch {
                         result = falsePart;
@@ -915,13 +911,13 @@ function jalankanBot() {
                     finalResponse = finalResponse.replace(match[0], result);
                 }
             }
-        
+
             // 6. $stop
             if (finalResponse.includes("$stop")) {
                 forceStop();
                 finalResponse = finalResponse.replaceAll("$stop", "");
             }
-        
+
             // 7. Utility transforms
             finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
                 const parsedText = text.replace(/\\n/g, '\n');
@@ -935,7 +931,7 @@ function jalankanBot() {
             finalResponse = finalResponse.replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
                 return text.split(from).join(to);
             });
-        
+
             // 8. Custom handlers
             if (finalResponse.includes("$cmd[")) {
                 finalResponse = cmdHandler(finalResponse, parsedCmd);
@@ -946,10 +942,10 @@ function jalankanBot() {
             if (finalResponse.includes("$//cmds") || finalResponse.includes("$//descs")) {
                 finalResponse = cmdsHandler(finalResponse, parsedCmd);
             }
-        
+
             return finalResponse;
         }
-        
+
         botRespons = handleCommand(cmd);
         if (botRespons) {
             reply(botRespons);
@@ -1008,25 +1004,47 @@ function jalankanBot() {
                         </select>
                     </div>
                     <div class="text-success py-1" style="display: flex; align-items: center;">
-                        <label for="prefixInput" style="width: 200px;">Apikey</label>
+                        <label for="prefixInput" style="width: 200px;">Gemini Apikey</label>
                         <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
                     </div>
                     <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
                         <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
-                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px; background-color: red;" type="button">Reset</button>
-                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px; " type="button">Dashboard</button>
+                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px;" type="button">Reset</button>
+                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px;" type="button">Dashboard</button>
                     </div>
                     <div class="py-1" style="display: flex; align-items: center;">
                         <div id="alert-save"></div>
                     </div>
                     `;
 
+            function showAlert(message, type = 'success') {
+                const alertBox = document.getElementById('alert-save');
+                alertBox.textContent = message;
+                alertBox.style.padding = '10px';
+                alertBox.style.margin = '10px 0';
+                alertBox.style.borderRadius = '5px';
+                alertBox.style.fontWeight = 'bold';
+                alertBox.style.backgroundColor = 'transparent';
+
+                if (type === 'success') {
+                    alertBox.style.color = '#4CAF50';
+                } else if (type === 'error') {
+                    alertBox.style.color = '#f44336';
+                }
+
+                setTimeout(() => {
+                    alertBox.textContent = '';
+                    alertBox.style = '';
+                }, 3000);
+            }
+
+
             const customBlock = document.createElement('div');
             customBlock.classList.add('custom-blocks');
             customBlock.appendChild(button);
             customBlock.appendChild(dropdown);
             topMenu.insertBefore(customBlock, topMenu.firstChild);
-            const Dashboard = getElementById('web');
+            const Dashboard = document.getElementById('web');
 
             button.addEventListener('click', function () {
                 if (dropdown.style.display === 'none' || dropdown.style.display === '') {
@@ -1044,6 +1062,7 @@ function jalankanBot() {
             });
 
             Dashboard.addEventListener('click', function () {
+                showAlert("Mengalihkan ke dashboard")
                 window.location.href = "https://randsfk.vercel.app/login"
             });
 
@@ -1108,7 +1127,6 @@ function jalankanBot() {
                         }
                     `;
             document.head.appendChild(style);
-
             const fontAwesomeLink = document.createElement('link');
             fontAwesomeLink.rel = 'stylesheet';
             fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
@@ -1121,12 +1139,7 @@ function jalankanBot() {
 
         resetButton.addEventListener('click', function () {
             localStorage.removeItem('ptbot_apikey')
-            const alertSave = document.getElementById('alert-save');
-            alertSave.textContent = "Form reset successfully!";
-            alertSave.style.color = "orange";
-            setTimeout(() => {
-                alertSave.textContent = '';
-            }, 2000);
+            showAlert("Form reset berhasil!")
             window.location.reload()
 
         });
@@ -1150,9 +1163,7 @@ function jalankanBot() {
             const apikeyValue = apikeyInput.value;
 
             if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
-                const alertSave = document.getElementById('alert-save');
-                alertSave.textContent = "Tolong lengkapi semua data";
-                alertSave.style.color = "green";
+                showAlert("Tolong lengkapi semua data telebih dahulu")
                 return;
             }
 
@@ -1164,9 +1175,6 @@ function jalankanBot() {
             ai = aichatValue;
             apiKey = apikeyValue;
             updateUsername(botName);
-            const alertSave = document.getElementById('alert-save');
-            alertSave.textContent = "Perubahan Disimpan";
-            alertSave.style.color = "green";
             sm('/think Perubahan Disimpan')
             Android.saveSettings(JSON.stringify({
                 owner: owner,
@@ -1177,10 +1185,7 @@ function jalankanBot() {
                 ai: ai,
                 apiKey: apiKey
             }));
-
-            setTimeout(() => {
-                document.getElementById('alert-save').textContent = ''
-            }, 2000);
+            showAlert("Perubahan berhasil disimpan")
         });
     }
 
@@ -1198,7 +1203,7 @@ function jalankanBot() {
         }
         var appVersion = document.querySelector(".app-version");
         if (appVersion) {
-            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Beta</b> ' +
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
                 '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
         }
         showMessage("============================");
@@ -1774,12 +1779,14 @@ function showUpdateNotice(title, titleColor, message, messageColor, link) {
     document.body.appendChild(overlay);
 }
 if (localStorage.getItem('pt_version')) {
-    window.ponytownbotversion = localStorage.getItem('pt_version')
+    window.ponytownbotversion = localStorage.getItem('pt_version');
 }
+
 const requiredVersion = '1.0.2';
 const currentVersion = window.ponytownbotversion;
-if (currentVersion){
-    localStorage.setItem('pt_version') = currentVersion;
+
+if (currentVersion) {
+    localStorage.setItem('pt_version', currentVersion);
 }
 if (currentVersion === requiredVersion) {
     startBot();

@@ -594,11 +594,9 @@ function jalankanBot() {
             }
             sendNext();
         }
-
         splitAndSend(msg);
         sendMessage("/clearchat");
     }
-
 
     async function resetIdleTimer() {
         if (idleTimer) clearTimeout(idleTimer);
@@ -670,31 +668,6 @@ function jalankanBot() {
     function act(actionList = None) {
         if (actionList) {
             switch (actionList) {
-                case "turn":
-                case "boop":
-                case "sit":
-                case "lie":
-                case "fly":
-                case "stand":
-                case "blink":
-                case "blush":
-                case "tears":
-                case "shocked":
-                case "smile":
-                case "frown":
-                case "thinking":
-                case "yawn":
-                case "laugh":
-                case "giggle":
-                case "yes":
-                case "no":
-                case "sneeze":
-                case "kiss":
-                case "expression":
-                case "magic":
-                    sm(`/${command}`);
-                    return true
-                    break;
                 case "up":
                 case "down":
                 case "left":
@@ -708,6 +681,7 @@ function jalankanBot() {
         }
         return false
     }
+
     async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
@@ -908,9 +882,9 @@ function jalankanBot() {
                 alert(cmdData.response);
                 if (ai) {
                     const aiResult = chatAi(user, msg);
-                    showErrors(cmdData);
+                    showErrors(String(cmdData));
                     if (aiResult) {
-                        showErrors(aiResult);
+                        showErrors(String(aiResult));
                         if (aiResult.action) sm(aiResult.action);
                         return aiResult.message || "Command not recognized.";
                     } else {

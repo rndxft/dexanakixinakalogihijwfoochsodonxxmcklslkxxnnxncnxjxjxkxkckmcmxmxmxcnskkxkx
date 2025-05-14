@@ -685,7 +685,7 @@ function jalankanBot() {
     async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
-        if (user === botName) return;
+        //if (user === botName) return;
         if (isTyping) return;
         let args = msg.split(' ');
         let cmd = args.shift().substring(1);

@@ -835,8 +835,11 @@ function jalankanBot() {
         function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
+            alert(inputCommand);
+            reply(inputCommand);
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
+                alert(cmdData);
                 if (ai) {
                     const aiResult = chatAi(user, msg);
                     if (aiResult) {

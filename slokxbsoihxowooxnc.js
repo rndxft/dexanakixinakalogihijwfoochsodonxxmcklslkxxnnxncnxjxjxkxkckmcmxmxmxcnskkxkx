@@ -834,20 +834,9 @@ function jalankanBot() {
             result += footer;
             return result.trim();
         }
-
-        async function chatWAI(users, msgs) {
-            const respon = await chatAi(users, msgs);
-            if (respon && respon.action && respon.message) {
-                return respon;
-            } else {
-                return null;
-            }
-        }
         function handleCommand(inputCommand) {
-            alert(inputCommand)
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
-            alert("ini AI "+ai)
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
@@ -864,9 +853,6 @@ function jalankanBot() {
         
                 return cmdData?.response || "Command not recognized.";
             }
-        
-            if (cmdData.action) sm(cmdData.action);
-            return cmdData.response;
         
             let responseTemplate = cmdData.response;
             let finalResponse = responseTemplate;

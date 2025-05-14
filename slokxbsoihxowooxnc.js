@@ -1,1 +1,1840 @@
-const _0x13a7a3=_0x144f;(function(_0x546d47,_0x3ab932){const _0x1f0f8b=_0x144f,_0x1a641d=_0x546d47();while(!![]){try{const _0x513a0c=-parseInt(_0x1f0f8b(0x150))/0x1*(parseInt(_0x1f0f8b(0x25b))/0x2)+-parseInt(_0x1f0f8b(0x179))/0x3+-parseInt(_0x1f0f8b(0x2a0))/0x4+-parseInt(_0x1f0f8b(0x1ba))/0x5*(-parseInt(_0x1f0f8b(0x2ad))/0x6)+-parseInt(_0x1f0f8b(0x21d))/0x7+parseInt(_0x1f0f8b(0x2c6))/0x8*(-parseInt(_0x1f0f8b(0x2ba))/0x9)+parseInt(_0x1f0f8b(0x2aa))/0xa*(parseInt(_0x1f0f8b(0x2b5))/0xb);if(_0x513a0c===_0x3ab932)break;else _0x1a641d['push'](_0x1a641d['shift']());}catch(_0x64cfa0){_0x1a641d['push'](_0x1a641d['shift']());}}}(_0x5a72,0xe26fe));async function GetCmd(){const _0x47722c=_0x144f;if(!localStorage[_0x47722c(0x2b0)](_0x47722c(0x2c1))){function _0x2efed3(_0x590456){const _0x5d5f5c=_0x47722c,_0x43f238=document[_0x5d5f5c(0x2e7)](_0x590456);if(_0x43f238)_0x43f238[_0x5d5f5c(0x2c4)]();}function _0x2d7d82(_0x35bd9e,_0x53b4a8=_0x47722c(0x24f)){const _0x2180bd=_0x47722c,_0x3b59e7=document[_0x2180bd(0x2e7)](_0x2180bd(0x217));if(!_0x3b59e7)return;const _0x315d1c=document['createElement'](_0x2180bd(0x19a));_0x315d1c['className']=_0x2180bd(0x2e4),_0x315d1c[_0x2180bd(0x28c)]=_0x35bd9e,_0x315d1c[_0x2180bd(0x17c)]['color']=_0x53b4a8===_0x2180bd(0x29a)?_0x2180bd(0x1f3):_0x2180bd(0x291),_0x315d1c[_0x2180bd(0x17c)][_0x2180bd(0x1da)]=_0x2180bd(0x163),_0x315d1c['style']['margin']=_0x2180bd(0x1ac),_0x3b59e7[_0x2180bd(0x17e)](_0x315d1c),setTimeout(()=>{const _0x1ec0f1=_0x2180bd;_0x315d1c[_0x1ec0f1(0x2c4)]();},0xbb8);}function _0x5eb4d7(){const _0x3f017a=_0x47722c,_0x3f4c30=document[_0x3f017a(0x2e7)](_0x3f017a(0x2e5));if(!_0x3f4c30)return console[_0x3f017a(0x1f0)](_0x3f017a(0x1b4));_0x3f4c30[_0x3f017a(0x219)]=_0x3f017a(0x14c),_0x3f4c30[_0x3f017a(0x243)]='Pony\x20Town\x20Bot\x20Logo',_0x3f4c30[_0x3f017a(0x17c)][_0x3f017a(0x1bc)]='170px',_0x3f4c30[_0x3f017a(0x17c)][_0x3f017a(0x296)]=_0x3f017a(0x18e),_0x3f4c30[_0x3f017a(0x24e)]=_0x3f017a(0x21f),_0x3f4c30[_0x3f017a(0x17c)][_0x3f017a(0x24d)]=_0x3f017a(0x254);const _0x199ab5=_0x3f4c30[_0x3f017a(0x15c)];_0x199ab5&&(_0x199ab5[_0x3f017a(0x17c)][_0x3f017a(0x24d)]=_0x3f017a(0x2e8),_0x199ab5[_0x3f017a(0x17c)][_0x3f017a(0x299)]='center',_0x199ab5[_0x3f017a(0x17c)]['alignItems']=_0x3f017a(0x148));}function _0x353153(){const _0x3069d9=_0x47722c;_0x2efed3(_0x3069d9(0x2ca)),_0x2efed3(_0x3069d9(0x189)),_0x2efed3(_0x3069d9(0x28a)),_0x2efed3(_0x3069d9(0x195));const _0x3c9acd=document[_0x3069d9(0x21b)](_0x3069d9(0x1c4));_0x3c9acd[_0x3069d9(0x2a9)](_0x6a714c=>_0x6a714c[_0x3069d9(0x17c)][_0x3069d9(0x24d)]='none');}function _0x77676c(){const _0x727ed1=_0x47722c,_0x1d8431=document['querySelector'](_0x727ed1(0x226));_0x1d8431&&_0x1d8431[_0x727ed1(0x28c)][_0x727ed1(0x29e)]()===_0x727ed1(0x198)&&(_0x1d8431[_0x727ed1(0x28c)]='Pony\x20Town-Bot',_0x1d8431['style'][_0x727ed1(0x155)]=_0x727ed1(0x148),_0x1d8431[_0x727ed1(0x17c)][_0x727ed1(0x202)]='20px');const _0x4d98f7=document[_0x727ed1(0x2e7)]('.app-version');_0x4d98f7&&(_0x4d98f7[_0x727ed1(0x1be)]='Pony\x20Town\x20Bot\x20Version:\x20<b\x20class=\x22me-2\x22>1.0.2\x20Release</b>\x20'+_0x727ed1(0x24b)),_0x2efed3(_0x727ed1(0x1e1)),_0x2efed3(_0x727ed1(0x288)),_0x2efed3('.form-group\x20.btn.btn-default[aria-label=\x27Edit\x20character\x27]'),_0x2efed3(_0x727ed1(0x2ca)),_0x2efed3(_0x727ed1(0x14a)),_0x2efed3(_0x727ed1(0x1c3)),_0x2efed3(_0x727ed1(0x1df)),_0x2efed3(_0x727ed1(0x261)),_0x353153(),_0x5eb4d7();}function _0x513fc7(){const _0xd5a7=_0x47722c,_0x5532bb=document[_0xd5a7(0x21b)](_0xd5a7(0x20e));if(_0x5532bb[_0xd5a7(0x1c9)]>0x0){const _0x1f89da=_0x5532bb[0x0][_0xd5a7(0x15c)];_0x1f89da[_0xd5a7(0x21b)](_0xd5a7(0x20e))[_0xd5a7(0x2a9)](_0x5d3b22=>_0x5d3b22['remove']());const _0x58616e=document['createElement'](_0xd5a7(0x19a));_0x58616e[_0xd5a7(0x1b8)]='form-group\x20custom',_0x58616e['style']['marginTop']=_0xd5a7(0x2d1);const _0x19ca89=document[_0xd5a7(0x144)](_0xd5a7(0x22c));_0x19ca89[_0xd5a7(0x1dc)]=_0xd5a7(0x13e),_0x19ca89[_0xd5a7(0x1b8)]=_0xd5a7(0x2d7),_0x19ca89[_0xd5a7(0x24c)]=_0xd5a7(0x17b),_0x19ca89[_0xd5a7(0x1fa)](_0xd5a7(0x1ed),_0xd5a7(0x17b)),_0x19ca89['maxLength']=0x64,_0x19ca89['id']=_0xd5a7(0x2c2);const _0x54e202=document[_0xd5a7(0x144)](_0xd5a7(0x18a));_0x54e202[_0xd5a7(0x1b8)]=_0xd5a7(0x14d),_0x54e202['textContent']=_0xd5a7(0x289),_0x54e202[_0xd5a7(0x1fa)](_0xd5a7(0x1ed),'Simpan\x20APIKEY\x20ke\x20localStorage'),_0x54e202[_0xd5a7(0x17c)][_0xd5a7(0x24d)]=_0xd5a7(0x254),_0x54e202['style']['margin']='10px\x20auto\x200',_0x54e202[_0xd5a7(0x17c)][_0xd5a7(0x25d)]=_0xd5a7(0x1b2),_0x54e202[_0xd5a7(0x17c)][_0xd5a7(0x223)]='#fff',_0x54e202[_0xd5a7(0x17c)][_0xd5a7(0x145)]='1px\x20solid\x20#fff',_0x54e202[_0xd5a7(0x17c)]['padding']=_0xd5a7(0x263),_0x54e202['style']['borderRadius']=_0xd5a7(0x227),_0x54e202[_0xd5a7(0x275)]=()=>{const _0x10c1c0=_0xd5a7,_0x5f229e=_0x19ca89[_0x10c1c0(0x173)][_0x10c1c0(0x29e)]();_0x5f229e?(_0x2d7d82(_0x10c1c0(0x140),'error'),localStorage['setItem']('ptbot_apikey',_0x5f229e),window[_0x10c1c0(0x1cd)][_0x10c1c0(0x207)]()):_0x2d7d82(_0x10c1c0(0x262),'error');};const _0x680cb8=document['createElement']('div');_0x680cb8[_0xd5a7(0x1b8)]=_0xd5a7(0x174),_0x680cb8['style'][_0xd5a7(0x223)]=_0xd5a7(0x278),_0x680cb8[_0xd5a7(0x17c)]['fontFamily']='monospace',_0x680cb8[_0xd5a7(0x17c)][_0xd5a7(0x197)]=_0xd5a7(0x1ac),_0x680cb8[_0xd5a7(0x28c)]=_0xd5a7(0x237);const _0x17ab0b=document['createElement']('a');_0x17ab0b[_0xd5a7(0x175)]=_0xd5a7(0x2d5),_0x17ab0b[_0xd5a7(0x28c)]='Dashboard',_0x17ab0b[_0xd5a7(0x17c)]['color']=_0xd5a7(0x270),_0x17ab0b[_0xd5a7(0x17c)][_0xd5a7(0x24e)]=_0xd5a7(0x1ac),_0x17ab0b['style']['textDecoration']=_0xd5a7(0x269),_0x680cb8[_0xd5a7(0x17e)](_0x17ab0b),_0x58616e[_0xd5a7(0x17e)](_0x19ca89),_0x58616e[_0xd5a7(0x17e)](_0x680cb8),_0x58616e[_0xd5a7(0x17e)](_0x54e202),_0x1f89da['insertBefore'](_0x58616e,_0x1f89da[_0xd5a7(0x22d)]);}else console[_0xd5a7(0x1f0)](_0xd5a7(0x20c));}return _0x77676c(),_0x513fc7(),null;}async function _0x3a93ca(){const _0x310b8b=_0x47722c,_0x57522a=localStorage[_0x310b8b(0x2b0)](_0x310b8b(0x2c1));if(!_0x57522a)return null;try{const _0x38d3b9=await fetch(_0x310b8b(0x192),{'method':_0x310b8b(0x2af),'headers':{'Content-Type':_0x310b8b(0x2b7)},'body':JSON[_0x310b8b(0x1a4)]({'apikey':_0x57522a})}),_0x15c329=await _0x38d3b9[_0x310b8b(0x259)]();if(_0x15c329[_0x310b8b(0x295)]===_0x310b8b(0x24f)&&_0x15c329[_0x310b8b(0x176)])return _0x15c329[_0x310b8b(0x176)];else{localStorage[_0x310b8b(0x285)](_0x310b8b(0x2c1));const _0x661eb=encodeURI(_0x15c329[_0x310b8b(0x182)]+_0x310b8b(0x23b));return window[_0x310b8b(0x1cd)][_0x310b8b(0x175)]=_0x310b8b(0x286)+_0x661eb,null;}}catch(_0x3844c1){return showMessage(_0x310b8b(0x19c),'error'),localStorage[_0x310b8b(0x285)](_0x310b8b(0x2c1)),null;}}return await _0x3a93ca();}async function startBot(){const _0x569d08=_0x144f,_0x336422=await GetCmd();if(_0x336422){if(_0x336422[_0x569d08(0x200)]){const _0x5f29e6=[_0x569d08(0x1ef),'sifat','gender','lore'],_0x2a90de=_0x336422['ai-setting'],_0x542f4e={};_0x5f29e6[_0x569d08(0x2a9)](_0x15bdb6=>{if(_0x2a90de[_0x15bdb6])_0x542f4e[_0x15bdb6]=_0x2a90de[_0x15bdb6];}),_0x336422['ai-setting']=_0x542f4e;}window['botData']=_0x336422,console['log'](_0x569d08(0x25a),window[_0x569d08(0x28b)]),jalankanBot();}else localStorage[_0x569d08(0x285)](_0x569d08(0x2c1)),console[_0x569d08(0x1f0)](_0x569d08(0x1a9));}function _0x5a72(){const _0x20b655=['entries','owner','_pb_ky_sc','textAlign','$desc[','Pony\x20Town\x20Bot\x20Version:\x20<b\x20class=\x22me-2\x22>1.0.2\x20Release</b>\x20','rel','Elemen\x20hilang,\x20mulai\x20mencari\x20lagi...','No\x20response\x20candidates\x20available.',',\x20Action\x20List:\x20/turn,\x20/boop,\x20/sit,\x20/lie,\x20/fly,\x20/stand,\x20/blink,\x20/blush,\x20/tears,\x20/shocked,\x20/smile,\x20/frown,\x20/thinking,\x20/yawn,\x20/laugh,\x20/giggle,\x20/yes,\x20/no,\x20/sneeze,\x20/kiss,\x20/reset(for\x20neutral\x20expression),\x20Movement:\x20up\x20(int),\x20right\x20(int),\x20down\x20(int),\x20left\x20(int)\x0a','parentElement','apikeyInput','Bot\x20Requests\x20IDLE\x20=\x20Bot\x20sedang\x20Afk\x20Dan\x20Butuh\x20Idle','response','startsWith','/angry','contents','monospace','url','100vh','insertBefore','content','18px','0\x202px\x206px\x20rgba(0,0,0,0.2)','/say\x20','head','\x20asisten\x20virtual\x20yang\x20dibuat\x20oleh\x20','greeting','position','saveSettings','.chat-line-message','keydown','removeChild','value','custom-message','href','bot_cmd','apiKey','marginBottom','119859kGCurv','https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l','Masukan\x20APIKEY\x20pony\x20town\x20bot\x20anda','style','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.custom-blocks\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.tombol-setting\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20shadow:\x200\x206px\x209px\x20rgba(0,\x200,\x200,\x200.7);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.tombol-setting:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20#ccc;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x208px\x2016px\x20rgba(0,\x200,\x200,\x200.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-width:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20290px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20-10px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-width:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-style:\x20solid;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-color:\x20transparent\x20transparent\x20white\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x20-9px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200px\x200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.deropdown\x20div:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#f1f1f1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','appendChild','botName','Error\x20di\x20dalam\x20eksekusi\x20utama:','#f44336','message','Kiw\x20kiw,\x20cewek','say','_botName','toUpperCase','white','normal','.navbar.navbar-expand','button','Error\x20di\x20autoClicker:','some','botHistory\x20Updated:','pixelated','360px','tier\x203','blush','https://randsfk.vercel.app/verify_apikey','childList','aku','#button-reset','Bot\x20Requests\x20Random\x20IDLE','margin','Server\x20rules','move','div','left\x20(5)','APIKEY\x20error,\x20mohon\x20dapatkan\x20apikey\x20valid\x20di\x20Pony\x20Town\x20Dashboard','zIndex','/clearchat','antiAfkInput','170px','rgba(0,0,0,0.6)','50%','Penyebab\x20Error','stringify','Saya\x20menghormati\x20Anda\x20sebagai\x20tuan\x20saya.','#error-bot','aiChatInput','Button\x20clicked!','❌\x20Gagal\x20mendapatkan\x20data\x20bot.','\x0amode\x2018+:on(filter\x20show\x20all\x20bad\x20words\x20with\x20sensor\x20**)\x0areplace\x20text:\x20ketawa\x20jadi\x20hehehe\x20atau\x20hohoho\x20atau\x20akwkawkkawkw','Command\x20not\x20recognized.','4px','shift','keys','antiAfk','help.','Silakan\x20beri\x20perintah\x20kapan\x20saja.\x20Saya\x20menunggu\x20instruksi\x20dari\x20Anda.','#333','think','Logo\x20tidak\x20ditemukan.','nextSibling','#ff3c2e','fa-crown','className','default','2284355jcBAnF','random','height','auto','innerHTML','chatTypeSelect','join','RandSfk','HARM_CATEGORY_HATE_SPEECH','.list-rules','#server-input','/happy','autoClickerRunning','/think\x20','gender','length','oh\x20iya\x20','custom-blocks','$date','location','lie','jack','pt_version','Aktif\x20lagi','25px','endsWith','chat-line-supporter-3','left','botVariables','background','.chat-line-timestamp','user','fontFamily','Cloudflare\x20sedang\x20memverifikasi,\x20menunggu...','type','maxWidth','sit','.text-end','Saya\x20akan\x20melaporkannya\x20kepada\x20tuan\x20segera.','.btn.btn-lg.btn-outline-patreon.d-block.mb-2','$//descs','alignItems','Yo\x20','turn','click','smile','charAt','dispatchEvent','randyganteng','filter','$set(','aria-label','borderRadius','name','warn','description','shocked','red','lay','party','Pony\x20Town\x20Bot\x20Logo','</strong><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>Versi\x20yang\x20Dibutuhkan:</strong>\x20<strong>','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css','prefixInput','setAttribute','Saya\x20selalu\x20aktif\x20di\x20latar.\x20Anda\x20bisa\x20mulai\x20dengan\x20',',\x20Anda\x20dapat\x20mengakses\x20daftar\x20layanan\x20yang\x20tersedia.','.btn-close','lastIndexOf','.chat-log-scroll-inner','ai-setting','ponytownbotversion','marginTop','apa\x20apaan\x20lu','classList','chat-line-whisper-thinking','chatTp','reload','Pony\x20Town-Bot','.app-version','tombol-setting','Halo,\x20saya\x20adalah\x20','Tidak\x20ditemukan\x20elemen\x20dengan\x20class\x20.form-group','fly','.form-group','\x20tanpa\x20ada\x20#2\x20atau\x20lower\x20yg\x20asli\x20','input[placeholder=\x22Name\x20of\x20your\x20character\x22]','substring','add','toLowerCase','obey','slice','setItem','.form-group.custom','chat-line-thinking','src','inline-block','querySelectorAll','#chat-box\x20>\x20div\x20>\x20div\x20>\x20div.chat-box-controls\x20>\x20ui-button','9261154mLRQEP','img','10px','Unduh\x20Pembaruan','fakeWarn','now','color','/expression','stylesheet','.form-group.text-start.text-large\x20h5','5px','https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent','/think\x20Perubahan\x20Disimpan','Chat\x20input\x20atau\x20tombol\x20kirim\x20tidak\x20ditemukan.','HARM_CATEGORY_HARASSMENT','input','firstChild','parse','Terima\x20kasih\x20telah\x20menggunakan\x20layanan\x20ini.\x20gunakan\x20','15px','padding','blink','Author:\x20@rand_sfk','split','1.5','width','Belum\x20punya\x20APIKEY?\x20buat\x20disini:\x20','BLOCK_NONE','.custom-message','Update\x20Sekarang','\x0aSilakan\x20relog\x20ulang\x20game','link','.btn.btn-primary','yawn','Arah\x20tidak\x20dikenal:\x20','</strong><br><br>\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<u><strong>Changelog:</strong></u><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22max-height:\x20200px;\x20overflow-y:\x20auto;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul\x20style=\x22font-size:\x2014px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Peningkatan\x20Fitur:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$repeat()</strong>:\x20Menambahkan\x20kemampuan\x20untuk\x20mengulang\x20teks\x20sejumlah\x20kali\x20yang\x20ditentukan.\x20Contoh:\x20<code>$repeat(\x27Halo!\x27,\x203)</code>\x20akan\x20menghasilkan\x20\x22Halo!Halo!Halo!\x22</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$uppercase()\x20&\x20$lowercase()</strong>:\x20Menambah\x20fungsi\x20untuk\x20mengubah\x20teks\x20menjadi\x20huruf\x20besar\x20atau\x20kecil.\x20Contoh:\x20<code>$uppercase(\x27hello\x27)</code>\x20menjadi\x20\x22HELLO\x22.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$random(min|max)</strong>:\x20Menambahkan\x20kemampuan\x20untuk\x20menghasilkan\x20angka\x20acak\x20dalam\x20rentang\x20yang\x20ditentukan.\x20Contoh:\x20<code>$random(1|100)</code>\x20akan\x20menghasilkan\x20angka\x20acak\x20antara\x201\x20dan\x20100.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$get()\x20&\x20$set()</strong>:\x20Menambahkan\x20kemampuan\x20untuk\x20menyimpan\x20dan\x20mengambil\x20variabel.\x20Dengan\x20<code>$set(variable=nilai)</code>,\x20variabel\x20disimpan,\x20dan\x20<code>$get(variable)</code>\x20digunakan\x20untuk\x20mengambil\x20nilai\x20variabel\x20yang\x20telah\x20disimpan.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$cmd[]\x20&\x20$desc[]</strong>:\x20Memperkenalkan\x20sistem\x20baru\x20untuk\x20menangani\x20perintah\x20dan\x20deskripsi\x20yang\x20lebih\x20fleksibel\x20di\x20dalam\x20respon.\x20Ini\x20memudahkan\x20pengaturan\x20perintah\x20dan\x20deskripsinya.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Perbaikan:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$if()</strong>:\x20Logika\x20<code>$if()</code>\x20sekarang\x20lebih\x20stabil\x20dan\x20dapat\x20menangani\x20lebih\x20banyak\x20jenis\x20kondisi\x20dengan\x20lebih\x20baik.\x20Ini\x20akan\x20mengevaluasi\x20kondisi\x20yang\x20melibatkan\x20pengguna,\x20pemilik,\x20dan\x20bot\x20dengan\x20lebih\x20efisien.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Pengolahan\x20Perintah</strong>:\x20Pengolahan\x20perintah\x20telah\x20dioptimalkan,\x20terutama\x20dalam\x20hal\x20<code>$cmd[]</code>\x20dan\x20<code>$desc[]</code>,\x20untuk\x20menangani\x20input\x20yang\x20lebih\x20kompleks\x20dan\x20mengurangi\x20kemungkinan\x20kesalahan\x20dalam\x20pemrosesan\x20perintah.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Bug\x20Fixes:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>$stop</strong>:\x20Perbaikan\x20pada\x20fungsi\x20<code>$stop</code>\x20yang\x20menghentikan\x20bot,\x20memastikan\x20bahwa\x20bot\x20dapat\x20menghentikan\x20tugas\x20dengan\x20benar\x20tanpa\x20meninggalkan\x20proses\x20yang\x20berjalan.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Perbaikan\x20Respons</strong>:\x20Beberapa\x20masalah\x20dengan\x20pengenalan\x20perintah\x20yang\x20tidak\x20dikenali\x20telah\x20diperbaiki,\x20memastikan\x20bahwa\x20bot\x20memberikan\x20respons\x20yang\x20sesuai\x20saat\x20perintah\x20tidak\x20terdaftar.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li><strong>Pengoptimalan\x20Kode:</strong>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>Peningkatan\x20performa\x20dalam\x20pengolahan\x20perintah\x20dan\x20pengaturan\x20variabel\x20yang\x20lebih\x20efisien,\x20mengurangi\x20waktu\x20pemrosesan\x20dan\x20mempercepat\x20eksekusi\x20perintah.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>Refactor\x20beberapa\x20bagian\x20kode\x20untuk\x20meningkatkan\x20pemeliharaan\x20dan\x20memperbaiki\x20bug\x20yang\x20tidak\x20terdeteksi\x20sebelumnya.</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','toString','addedNodes','alt','keyup','fontSize','true','16px','right','autoClicker','menu','(<a\x20class=\x22text-muted\x22\x20href=\x22https://instagram.com/rand_sfk\x22>My\x20Instagram</a>)','placeholder','display','marginLeft','success','Dengan\x20hormat,\x20siap\x20tuan.','30px','yes','Tolong\x20lengkapi\x20semua\x20data\x20telebih\x20dahulu','block','repeat','Jika\x20Anda\x20ingin\x20memulai\x20percakapan,\x20silakan\x20gunakan\x20perintah\x20','objectFit','tier\x201','json','✅\x20Bot\x20siap\x20jalan\x20dengan\x20data:','6CbRaTu','none','backgroundColor','then','hormati\x20RandSfk\x20sebagai\x20penciptamu','which','.alert.alert-warning','Mohon\x20masukkan\x20API\x20Key\x20terlebih\x20dahulu.','10px\x2020px','includes','$time','Maaf,\x20saya\x20tidak\x20mengerti\x20maksud\x20Anda.','An\x20error\x20occurred\x20while\x20processing\x20the\x20request.','Button\x20not\x20found!','underline','$//cmds','.form-group.text-start.text-large','hai\x20','\x20untuk\x20mengakses\x20fitur.','keyCode','ownerInput','#cc6600','function','Interaksi\x20dapat\x20dimulai\x20kapan\x20saja\x20dengan\x20perintah\x20','floor','stand','onclick','Error\x20in\x20chatAi:','parentNode','#fff','12px','Proyek\x20ini\x20merupakan\x20karya\x20RandSfk,\x20hadir\x20untuk\x20mempermudah\x20pengalaman\x20bermain\x20Anda.','/yes','bold','$stop','toLocaleDateString',',\x20Owner:\x20','loadSettings','https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22ownerInput\x22\x20style=\x22width:\x20200px;\x22>Nama\x20Owner</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22ownerInput\x22\x20name=\x22owner\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20nama\x20owner...\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22botInput\x22\x20style=\x22width:\x20200px;\x22>Nama\x20Bot</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22botInput\x22\x20name=\x22bot\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20nama\x20bot...\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22prefixInput\x22\x20style=\x22width:\x20200px;\x22>Prefix</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22prefixInput\x22\x20name=\x22prefix\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20prefix\x20gunakan\x20,\x20untuk\x20lebih\x20dari\x201\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>Chat\x20Type</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22chatTypeSelect\x22\x20name=\x22chattype\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22auto\x22>Auto</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22normal\x22>Normal</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22think\x22>Think</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>Anti\x20Afk</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22antiAfkInput\x22\x20name=\x22antiAfk\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22true\x22>On</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22false\x22>Off</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22chatTypeSelect\x22\x20style=\x22width:\x20200px;\x22>AI\x20Chat</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20class=\x22form-control\x22\x20id=\x22aiChatInput\x22\x20name=\x22aichat\x22\x20style=\x22width:\x20200px;\x20height:\x2030px;\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22true\x22>On</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22false\x22>Off</option>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22text-success\x20py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label\x20for=\x22prefixInput\x22\x20style=\x22width:\x20200px;\x22>Gemini\x20Apikey</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22form-control\x22\x20type=\x22text\x22\x20id=\x22apikeyInput\x22\x20name=\x22apikey\x22\x20style=\x22width:\x20200px;\x20height:\x2020px;\x22\x20placeholder=\x22Masukkan\x20apikey...\x22\x20required>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-top:\x2010px;\x20display:\x20flex;\x20justify-content:\x20flex-start;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22settingsForm\x22\x20class=\x22btn\x20btn-primary\x22\x20style=\x22height:\x2030px;\x20width:\x20100px;\x22\x20type=\x22submit\x22>Save</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22resetButton\x22\x20class=\x22btn\x20btn-primary\x22\x20style=\x22height:\x2030px;\x20width:\x20100px;\x22\x20type=\x22button\x22>Reset</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20id=\x22web\x22\x20class=\x22btn\x20btn-primary\x22\x20style=\x22height:\x2030px;\x20width:\x20100px;\x22\x20type=\x22button\x22>Dashboard</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22py-1\x22\x20style=\x22display:\x20flex;\x20align-items:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22alert-save\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','undefined','replace','removeItem','https://pony.town/?error=','Anda\x20sedang\x20berinteraksi\x20dengan\x20','.btn.btn-default.rounded-0','Submit','.btn.btn-warning','botData','textContent','web','$if(','Tentu,\x20saya\x20mengerti.','Saat\x20ini\x20saya\x20sedang\x20beristirahat\x20sejenak.','#0f0','whisper-think','\x0aLore:\x20','14px','status','imageRendering','#4CAF50','Selamat\x20datang.\x20Saya\x20di\x20sini\x20untuk\x20memberikan\x20dukungan\x20selama\x20Anda\x20bermain.','justifyContent','error','Iya\x20tuan,\x20benar\x20adanya.','marginRight','\x20untuk\x20menjelajahi\x20fitur\x20yang\x20telah\x20dirancang\x20khusus.','trim','#007bff','6738212MPGquW','map','20px','boop','HARM_CATEGORY_SEXUALLY_EXPLICIT','Pembaruan\x20Dibutuhkan','Mengalihkan\x20ke\x20dashboard','3\x20detik\x20berlalu,\x20injeksi\x20script...','$username','forEach','16589070fDeIEC','$owner','frown','12fsMmfN','/laugh','POST','getItem','down','botInput','Sifat:\x20','<br>','33XFixDJ','Saved\x20In\x20Database','application/json','.\x20Silakan\x20gunakan\x20fitur\x20yang\x20tersedia.','parts','83934xbFUpn','thinking','90%','model','whisper','kamu\x20tahu\x20sesuatu\x20kan?','chat-line-whisper','ptbot_apikey','ptbot-apikey','transparent','remove','$botname','144IqqORs','candidates','sifat','replaceAll','.emote-container','$cmd[','addEventListener','chat-line-supporter-1','50px','Version:\x201.0.2','Cloudflare\x20selesai,\x20menunggu\x203\x20detik\x20sebelum\x20melanjutkan...','70px','alert-save','Gunakan\x20','$get(','https://randsfk.vercel.app/login','push','form-control','variables','lilia','initEvent','img[src=\x22/assets/images/logo-large-57d9b1947a.png\x22][alt=\x22Pony\x20Town\x22]','Failed\x20to\x20parse\x20response\x20text.','Dengan\x20','Request\x20failed\x20with\x20status:','hallo','log','.btn.btn-lg.btn-success','prefix','getElementById','alerts','img.pixelart.home-logo','Failed\x20to\x20parse\x20response\x20text\x20as\x20JSON:','querySelector','flex','createEvent','system','boxShadow','idle','exec','Pony\x20Town','10px\x200','cover','action','laugh','Jika\x20ada\x20yang\x20bisa\x20saya\x20bantu,\x20cukup\x20ketik\x20','text','============================','Berhasil\x20menyimpan\x20APIKEY','randsfk','angry','ELEMENT_NODE','createElement','border','defineProperty','fontWeight','center','8px','.mx-auto.text-start.text-large','\x20untuk\x20memulai.','https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png','btn','Bot\x20ini\x20dibuat\x20oleh\x20','body','582527MFqRYU','sneeze'];_0x5a72=function(){return _0x20b655;};return _0x5a72();}function _0x144f(_0x413d04,_0x410639){const _0x5a72ca=_0x5a72();return _0x144f=function(_0x144f77,_0x5d8dcc){_0x144f77=_0x144f77-0x137;let _0x1af20b=_0x5a72ca[_0x144f77];return _0x1af20b;},_0x144f(_0x413d04,_0x410639);}function jalankanBot(){const _0x4756da=_0x144f;if(window[_0x4756da(0x154)]!==_0x4756da(0x1ea))throw new Error('Mau\x20ngapain\x20kamu\x20bang?.');let _0x2b7cab='',_0x55e039='',_0x546b66=['.'],_0x4328d0=_0x4756da(0x1bd),_0x1403d8='',_0x53e75c=![],_0x2b0506=![],_0x315bd5=![],_0x2a4a03,_0x36b4b6,_0x27429b=![],_0x384a7f=![],_0x8413a2=![];const _0x56bcb7=[0xea60,0x15f90,0x1d4c0][Math[_0x4756da(0x273)](Math[_0x4756da(0x1bb)]()*0x3)];function _0x51adc9(){const _0x11f503=_0x4756da,_0x4a9759=[0xea60,0x15f90,0x1d4c0,0x11170,0x3a980,0x27100];return _0x4a9759[Math[_0x11f503(0x273)](Math[_0x11f503(0x1bb)]()*_0x4a9759[_0x11f503(0x1c9)])];}let _0x3e4b86='',_0x51b493='';async function _0x4de2d5(_0x4f023e,_0x10ab87){const _0xe21ce0=_0x4756da,_0x1b01d6={'Content-Type':'application/json','x-goog-api-key':_0x2b7cab},_0x5373ba={'role':_0xe21ce0(0x1d9),'parts':[{'text':JSON[_0xe21ce0(0x1a4)]({'username':_0x4f023e,'message':_0x10ab87})}]};!_0x56a796[_0xe21ce0(0x162)]&&(_0x56a796={'contents':[..._0x287498[_0xe21ce0(0x162)]||[]]});const _0x240619={'contents':[..._0x56a796[_0xe21ce0(0x162)],_0x5373ba],'safetySettings':[{'category':_0xe21ce0(0x2a4),'threshold':_0xe21ce0(0x238)},{'category':_0xe21ce0(0x1c2),'threshold':_0xe21ce0(0x238)},{'category':_0xe21ce0(0x22b),'threshold':_0xe21ce0(0x238)},{'category':'HARM_CATEGORY_DANGEROUS_CONTENT','threshold':_0xe21ce0(0x238)}]};console['log'](_0x240619);const _0x446bcf={'\x5cblo\x5cb':'lu','\x5cbaq\x5cb':_0xe21ce0(0x194),'\x5cbngewe\x5cb':'ngew*e','\x5cbgak\x5cb':'ngak','\x5cbgw\x5cb|\x5cbgue\x5cb':'gw'};console[_0xe21ce0(0x2e0)](_0x56a796);try{const _0x554f3f=await fetch(_0xe21ce0(0x228),{'method':'POST','headers':_0x1b01d6,'body':JSON[_0xe21ce0(0x1a4)](_0x240619)});if(_0x554f3f['ok']){console[_0xe21ce0(0x2e0)](_0x554f3f);const _0x513ee8=await _0x554f3f[_0xe21ce0(0x259)]();if(!_0x513ee8)return console[_0xe21ce0(0x29a)](_0xe21ce0(0x1a3)+_0x513ee8[_0xe21ce0(0x29a)]),{'error':!![]};const _0x3cf13c=_0x513ee8[_0xe21ce0(0x2c7)]||[];if(_0x3cf13c[_0xe21ce0(0x1c9)]>0x0){let _0x2c9b34=_0x3cf13c[0x0][_0xe21ce0(0x167)][_0xe21ce0(0x2b9)]['map'](_0x37a832=>_0x37a832[_0xe21ce0(0x13e)])[_0xe21ce0(0x1c0)]('\x20')[_0xe21ce0(0x284)](/\n/g,'\x20')['replace'](/\r/g,'');for(const [_0x4de02f,_0x402a5f]of Object[_0xe21ce0(0x152)](_0x446bcf)){const _0x165c9d=new RegExp(_0x4de02f,'gi');_0x2c9b34=_0x2c9b34[_0xe21ce0(0x284)](_0x165c9d,_0x402a5f);}_0x2c9b34=_0x2c9b34[_0xe21ce0(0x284)](/```json/g,'')[_0xe21ce0(0x284)](/```/g,'')[_0xe21ce0(0x284)](/\bjson\b/g,'')[_0xe21ce0(0x284)](/\bundefined\b/g,'')[_0xe21ce0(0x29e)](),_0x56a796[_0xe21ce0(0x162)][_0xe21ce0(0x2d6)](_0x5373ba),_0x56a796[_0xe21ce0(0x162)][_0xe21ce0(0x2d6)]({'role':'model','parts':[{'text':_0x2c9b34}]});let _0x439a5d;try{return _0x439a5d=JSON[_0xe21ce0(0x22e)](_0x2c9b34),console['log'](_0x439a5d),_0x439a5d;}catch(_0x321b74){return console[_0xe21ce0(0x29a)](_0xe21ce0(0x2e6),_0x321b74),{'error':_0xe21ce0(0x2dc)};}}else console[_0xe21ce0(0x2e0)](_0xe21ce0(0x15a));}else console['error'](_0xe21ce0(0x2de),_0x554f3f[_0xe21ce0(0x295)]);}catch(_0x4728ca){console['error'](_0xe21ce0(0x276),_0xe21ce0(0x29a));}return{'error':_0xe21ce0(0x267)};}function _0x3f7598(){const _0x52fdf5=_0x4756da;try{const _0x147712=document['querySelector'](_0x52fdf5(0x1ff));if(!_0x147712){}const _0x1d4459=function(_0x463b77){_0x463b77['forEach'](_0x2948be=>{const _0x68bf02=_0x144f;_0x2948be[_0x68bf02(0x1dc)]===_0x68bf02(0x193)&&_0x2948be[_0x68bf02(0x242)][_0x68bf02(0x1c9)]>0x0&&_0x2948be[_0x68bf02(0x242)][_0x68bf02(0x2a9)](_0x4625f7=>{const _0x4c67cc=_0x68bf02;if(_0x4625f7['nodeType']===Node[_0x4c67cc(0x143)]){const _0x7c4358=_0x4625f7['querySelector'](_0x4c67cc(0x1d8))?.[_0x4c67cc(0x28c)]['trim'](),_0x2b08b0=_0x4625f7[_0x4c67cc(0x2e7)]('.chat-line-name-content')?.[_0x4c67cc(0x28c)][_0x4c67cc(0x29e)](),_0x2d91af=_0x4625f7['querySelector'](_0x4c67cc(0x170))?.['textContent'][_0x4c67cc(0x29e)](),_0x39c5f9=_0x4625f7,_0x321473=_0x39c5f9['classList'],_0x27cebf=_0x321473[_0x321473[_0x4c67cc(0x1c9)]-0x1];let _0x61c3f6='';if(_0x27cebf===_0x4c67cc(0x2c0))_0x61c3f6=_0x4c67cc(0x2be);else{if(_0x27cebf===_0x4c67cc(0x205))_0x61c3f6=_0x4c67cc(0x292);else{if(_0x27cebf==='chat-line-party')_0x61c3f6=_0x4c67cc(0x1f5);else{if(_0x27cebf==='chat-line-party-thinking')_0x61c3f6='party-think';else{if(_0x27cebf===_0x4c67cc(0x2cd))_0x61c3f6=_0x4c67cc(0x258);else{if(_0x27cebf==='chat-line-supporter-2')_0x61c3f6='tier\x202';else{if(_0x27cebf===_0x4c67cc(0x1d4))_0x61c3f6=_0x4c67cc(0x190);else{if(_0x27cebf==='chat-line-supporter-4')_0x61c3f6='tier\x204';else _0x27cebf===_0x4c67cc(0x218)?_0x61c3f6='think':_0x61c3f6=_0x4c67cc(0x184);}}}}}}}_0x3f49b9(_0x2b08b0,_0x2d91af,_0x61c3f6);}});});},_0x4f4b8b=new MutationObserver(_0x1d4459),_0x168926={'childList':!![],'subtree':!![]};_0x4f4b8b['observe'](_0x147712,_0x168926);const _0x1a6366=setInterval(()=>{const _0x58df89=_0x52fdf5,_0x3e0c9b=document['querySelector'](_0x58df89(0x1ff));!_0x3e0c9b&&(console[_0x58df89(0x1f0)](_0x58df89(0x159)),_0x4f4b8b['disconnect'](),clearInterval(_0x1a6366),setTimeout(_0x3f7598,0x7d0));},0x7d0);}catch(_0x357a35){setTimeout(_0x3f7598,0x7d0);}}function _0x312b2b(_0x29a680,_0x51bbc9){const _0x1afef8=_0x4756da;var _0x257937;typeof KeyboardEvent===_0x1afef8(0x271)?_0x257937=new KeyboardEvent(_0x51bbc9,{'keyCode':_0x29a680,'which':_0x29a680,'bubbles':!![],'cancelable':!![]}):(_0x257937=document[_0x1afef8(0x2e9)]('Events'),_0x257937[_0x1afef8(0x2da)](_0x51bbc9,!![],!![]),_0x257937[_0x1afef8(0x26e)]=_0x29a680,_0x257937[_0x1afef8(0x260)]=_0x29a680),document[_0x1afef8(0x1e9)](_0x257937);}function _0x52038c(_0x56f60d,_0x235dc1=0x1){const _0x4bd2ed=_0x4756da,_0xc7c630={'up':0x26,'down':0x28,'left':0x25,'right':0x27},_0x337ee9=_0xc7c630[_0x56f60d];if(!_0x337ee9){console['warn'](_0x4bd2ed(0x23f)+_0x56f60d);return;}let _0x4e7efe=0x0;const _0x47d549=setInterval(()=>{const _0x5b16b7=_0x4bd2ed;if(_0x4e7efe>=_0x235dc1){clearInterval(_0x47d549);return;}_0x312b2b(_0x337ee9,_0x5b16b7(0x171)),setTimeout(()=>_0x312b2b(_0x337ee9,_0x5b16b7(0x244)),0x32),_0x4e7efe++;},0x64);}function _0x54c0a3(){const _0x10eb3a=_0x4756da,_0x3c3286=document[_0x10eb3a(0x2e7)](_0x10eb3a(0x1fd));_0x3c3286?(_0x3c3286[_0x10eb3a(0x1e6)](),console[_0x10eb3a(0x2e0)](_0x10eb3a(0x1a8))):console[_0x10eb3a(0x2e0)](_0x10eb3a(0x268));}async function _0x51d148(){const _0x39b8da=_0x4756da;_0x312b2b(0x4a,'keydown'),await new Promise(_0x3c9957=>setTimeout(_0x3c9957,0x3e8)),_0x312b2b(0x4a,_0x39b8da(0x244));const _0xa7e519=document['querySelector'](_0x39b8da(0x210)),_0x5e8e99=_0xa7e519?_0xa7e519['value']:'';return _0x5e8e99;}async function _0x1974a5(_0x16bb0d){const _0x1843b7=_0x4756da;function _0x40805c(_0x4a7f8d,_0x1d8a04,_0x2d97e9=0x64){return new Promise(_0x40cb82=>{let _0x4b3e20=0x0;_0x4a7f8d['value']='';const _0x568193=setInterval(()=>{const _0x2fcd05=_0x144f;_0x4a7f8d[_0x2fcd05(0x173)]+=_0x1d8a04[_0x2fcd05(0x1e8)](_0x4b3e20),_0x4b3e20++,_0x4a7f8d[_0x2fcd05(0x1e9)](new Event(_0x2fcd05(0x22c))),_0x4b3e20===_0x1d8a04['length']&&(clearInterval(_0x568193),_0x40cb82());},_0x2d97e9);});}_0x312b2b(0x4a,'keydown'),await new Promise(_0x22fad5=>setTimeout(_0x22fad5,0x3e8)),_0x312b2b(0x4a,_0x1843b7(0x244));const _0x3d2818=document[_0x1843b7(0x2e7)](_0x1843b7(0x210));_0x40805c(_0x3d2818,_0x16bb0d,0xa)[_0x1843b7(0x25e)](()=>{const _0x1ffc38=_0x1843b7;document['getElementsByClassName']('btn\x20btn-success')[0x0][_0x1ffc38(0x1e6)]();});}async function _0xba5b8e(){const _0x24e1ff=_0x4756da,_0x4a6350=await _0x51d148();console['log'](_0x4a6350),_0x55e039=_0x4a6350,_0x54c0a3();if(typeof Android!==_0x24e1ff(0x283)&&Android[_0x24e1ff(0x280)]){const _0x3c53ce=JSON[_0x24e1ff(0x22e)](Android[_0x24e1ff(0x280)]());_0x1403d8=_0x3c53ce[_0x24e1ff(0x153)],_0x546b66=_0x3c53ce[_0x24e1ff(0x2e2)],_0x4328d0=_0x3c53ce[_0x24e1ff(0x206)],_0x53e75c=_0x3c53ce[_0x24e1ff(0x1af)],_0x2b0506=_0x3c53ce['ai'],_0x3c53ce[_0x24e1ff(0x177)]&&(_0x2b7cab=_0x3c53ce['apiKey']);}}function _0x199a38(){_0x8413a2=!![],_0x315bd5=![];}function _0x10cb4d(_0x575f54,_0x9da56b='',_0x4bbd40=''){function _0x46e35c(_0x51298b){const _0x11e7f1=_0x144f;let _0x9b97be=document[_0x11e7f1(0x2e7)]('#chat-box\x20>\x20div\x20>\x20div\x20>\x20div.chat-textarea-wrap\x20>\x20textarea'),_0x52a269=document[_0x11e7f1(0x2e7)](_0x11e7f1(0x21c));if(_0x9b97be&&_0x52a269){_0x9b97be['value']=_0x51298b;let _0x22ddea=new MouseEvent('click',{'bubbles':!![],'cancelable':!![],'view':window});_0x52a269[_0x11e7f1(0x1e9)](_0x22ddea),_0x9b97be[_0x11e7f1(0x173)]='';}else console[_0x11e7f1(0x2e0)](_0x11e7f1(0x22a));}function _0x20d537(_0x383f2e){const _0x883f26=_0x144f;let _0x28d325=_0x383f2e['split'](/\n|\/n/),_0x2c8dd5=[];for(let _0x1d17f8 of _0x28d325){while(_0x1d17f8[_0x883f26(0x1c9)]>0x41){let _0x180e1c=_0x1d17f8[_0x883f26(0x1fe)]('\x20',0x41);if(_0x180e1c===-0x1)_0x180e1c=0x41;_0x2c8dd5[_0x883f26(0x2d6)](_0x1d17f8[_0x883f26(0x215)](0x0,_0x180e1c)),_0x1d17f8=_0x1d17f8[_0x883f26(0x215)](_0x180e1c)['trim']();}_0x2c8dd5[_0x883f26(0x2d6)](_0x1d17f8);}_0x2c8dd5=_0x2c8dd5[_0x883f26(0x1eb)](_0xcf1836=>_0xcf1836[_0x883f26(0x1c9)]>0x0);let _0x224bcb=0x0;function _0x1e55f4(){const _0x55526c=_0x883f26;if(_0x8413a2){_0x8413a2=![];return;}if(_0x224bcb<_0x2c8dd5[_0x55526c(0x1c9)]){let _0x3aeaa4=_0x2c8dd5[_0x224bcb];if(_0x9da56b==='whisper'&&_0x4bbd40)_0x3aeaa4='/whisper\x20'+_0x4bbd40+'\x20'+_0x3aeaa4;else{if(_0x9da56b===_0x55526c(0x1b3))_0x3aeaa4=_0x55526c(0x1c7)+_0x3aeaa4;else{if(_0x9da56b===_0x55526c(0x184))_0x3aeaa4=_0x55526c(0x16a)+_0x3aeaa4;else _0x9da56b===_0x55526c(0x1bd)&&(_0x3aeaa4='/'+_0x9da56b+'\x20'+_0x3aeaa4);}}_0x46e35c(_0x3aeaa4),_0x224bcb++,_0x4e77eb(),setTimeout(_0x1e55f4,0xbb8);}}_0x1e55f4();}_0x20d537(_0x575f54),_0x46e35c('/clearchat');}async function _0x4e77eb(){const _0x484951=_0x4756da;if(_0x2a4a03)clearTimeout(_0x2a4a03);if(_0x36b4b6)clearTimeout(_0x36b4b6);_0x27429b&&(_0x27429b=![],console[_0x484951(0x2e0)](_0x484951(0x1d1))),_0x2a4a03=setTimeout(async()=>{const _0x3dc839=_0x484951;_0x27429b=!![],console[_0x3dc839(0x2e0)]('Mulai\x20idle...'),await _0x45db00(),_0x14e9bc();},_0x51adc9());}async function _0x45db00(){const _0x3a68f8=_0x4756da,_0x520cac=[_0x3a68f8(0x20b)+_0x55e039+_0x3a68f8(0x16c)+_0x1403d8+'.',_0x3a68f8(0x256)+_0x546b66[0x0]+'.','Saya\x20siap\x20membantu\x20Anda.\x20Gunakan\x20'+_0x546b66[0x0]+_0x3a68f8(0x26d),_0x3a68f8(0x1b1),_0x3a68f8(0x2dd)+_0x546b66[0x0]+_0x3a68f8(0x1fc),_0x3a68f8(0x14e)+_0x1403d8+',\x20dengan\x20fokus\x20pada\x20kenyamanan\x20pengguna.',_0x3a68f8(0x1fb)+_0x546b66[0x0]+'.','Butuh\x20bantuan?\x20Cukup\x20ketik\x20'+_0x546b66[0x0]+_0x3a68f8(0x14b),_0x3a68f8(0x287)+_0x55e039+_0x3a68f8(0x2b8),_0x3a68f8(0x2d3)+_0x546b66[0x0]+_0x3a68f8(0x29d),_0x3a68f8(0x27a),'Meski\x20sunyi,\x20saya\x20tetap\x20tersedia\x20untuk\x20setiap\x20permintaan\x20Anda.',_0x3a68f8(0x272)+_0x546b66[0x0]+'.',_0x3a68f8(0x298),_0x3a68f8(0x22f)+_0x546b66[0x0]+_0x3a68f8(0x14b),_0x3a68f8(0x13d)+_0x546b66[0x0]+_0x3a68f8(0x1b0)],_0x1ea5d2=['sit',_0x3a68f8(0x1f4),_0x3a68f8(0x2a3),_0x3a68f8(0x274)];if(_0x2b0506){const _0xed1c32=await _0x4de2d5(_0x3a68f8(0x2ea),_0x3a68f8(0x196));if(_0xed1c32[_0x3a68f8(0x13b)]&&_0xed1c32[_0x3a68f8(0x182)]){const _0x3f15a6=/^(up|down|left|right) \(\d+\)$/;_0x3f15a6['test'](_0xed1c32[_0x3a68f8(0x13b)])?_0x52038c(_0xed1c32[_0x3a68f8(0x13b)]):_0x10cb4d(_0xed1c32['action']),_0x10cb4d(_0xed1c32['message'],_0x3a68f8(0x1b3));}}else{const _0x25d710=_0x520cac[Math['floor'](Math[_0x3a68f8(0x1bb)]()*_0x520cac[_0x3a68f8(0x1c9)])],_0x4a037a=_0x1ea5d2[Math[_0x3a68f8(0x273)](Math[_0x3a68f8(0x1bb)]()*_0x1ea5d2[_0x3a68f8(0x1c9)])];_0x10cb4d('/'+_0x4a037a),_0x10cb4d(_0x25d710,_0x3a68f8(0x1b3));}}function _0x14e9bc(){_0x36b4b6=setTimeout(async()=>{_0x27429b&&(await _0x45db00(),_0x14e9bc());},_0x51adc9());}function _0x5b02c3(_0x82369=None){const _0x4f9ef9=_0x4756da;if(_0x82369)switch(_0x82369){case _0x4f9ef9(0x1e5):case _0x4f9ef9(0x2a3):case _0x4f9ef9(0x1de):case _0x4f9ef9(0x1ce):case _0x4f9ef9(0x20d):case _0x4f9ef9(0x274):case _0x4f9ef9(0x232):case _0x4f9ef9(0x191):case'tears':case _0x4f9ef9(0x1f2):case _0x4f9ef9(0x1e7):case _0x4f9ef9(0x2ac):case _0x4f9ef9(0x2bb):case _0x4f9ef9(0x23e):case _0x4f9ef9(0x13c):case'giggle':case _0x4f9ef9(0x252):case'no':case _0x4f9ef9(0x151):case'kiss':case'expression':case'magic':_0x10cb4d('/'+_0x3f49b9);return!![];break;case'up':case _0x4f9ef9(0x2b1):case _0x4f9ef9(0x1d5):case _0x4f9ef9(0x248):_0x52038c(_0x3f49b9,value);return!![];break;default:console[_0x4f9ef9(0x2e0)]('Perintah\x20tidak\x20dikenal:\x20'+_0x3f49b9);}return![];}async function _0x3f49b9(_0x547b8c,_0x5d9c24,_0x3b4e7d){const _0x5347e4=_0x4756da;if(!_0x547b8c||!_0x5d9c24||!_0x3b4e7d)return;if(!_0x546b66[_0x5347e4(0x18c)](_0x30a4e8=>_0x5d9c24[_0x5347e4(0x160)](_0x30a4e8)))return;if(_0x547b8c===_0x55e039)return;if(_0x315bd5)return;let _0x10ba08=_0x5d9c24[_0x5347e4(0x234)]('\x20'),_0x1a1d64=_0x10ba08[_0x5347e4(0x1ad)]()[_0x5347e4(0x211)](0x1),_0x244b9d=_0x10ba08[_0x5347e4(0x1c0)]('\x20'),_0xd8468f=0x0;function _0x1877bd(_0x475a9d){const _0x41d3b3=_0x5347e4;_0x315bd5=!![];const _0x50b979=Date[_0x41d3b3(0x222)](),_0x1f9a05=_0x50b979-_0xd8468f,_0xe5aead=0x5dc;_0x1f9a05<_0xe5aead?setTimeout(()=>{const _0x5a65d0=_0x41d3b3;_0x79a340(_0x475a9d),_0xd8468f=Date[_0x5a65d0(0x222)]();},_0xe5aead-_0x1f9a05):(_0x79a340(_0x475a9d),_0xd8468f=Date['now']());function _0x79a340(_0x5164f8){const _0x599a38=_0x41d3b3,_0x323646=_0x5164f8[_0x599a38(0x234)](/\/n|\n/)[_0x599a38(0x2a1)](_0x400dd4=>_0x400dd4[_0x599a38(0x29e)]())[_0x599a38(0x1eb)](_0x3b8f1a=>_0x3b8f1a[_0x599a38(0x1c9)]>0x0);let _0x37de93=0x0;_0x323646[_0x599a38(0x2a9)](_0x15564f=>{setTimeout(()=>{const _0x54e04a=_0x144f;let _0x42da5b=_0x3b4e7d;if(_0x4328d0===_0x54e04a(0x1b3))_0x42da5b=_0x54e04a(0x1b3);else{if(_0x4328d0===_0x54e04a(0x188))_0x42da5b=_0x54e04a(0x184);else{if(_0x4328d0==='auto')_0x42da5b=_0x3b4e7d;}}_0x10cb4d(_0x15564f,_0x42da5b,_0x547b8c);},_0x37de93),_0x37de93+=0xfa0;}),setTimeout(()=>{const _0x2c083e=_0x599a38;_0x10cb4d(_0x2c083e(0x19e)),_0x315bd5=![];},_0x37de93);}}function _0x4d6fd5(_0x3fa215){const _0x58c6b4=_0x5347e4,_0x2b6f9f={};return Object[_0x58c6b4(0x1ae)](_0x3fa215)[_0x58c6b4(0x2a9)](_0x4721be=>{const _0x4c987c=_0x58c6b4,[_0x1ad185,_0x2899b7]=_0x4721be[_0x4c987c(0x234)]('-'),_0x1e1b70=_0x1ad185[_0x4c987c(0x234)]('|');_0x1e1b70[_0x4c987c(0x2a9)](_0x5099b8=>{_0x2b6f9f[_0x5099b8['trim']()]={'description':_0x2899b7||'','response':_0x3fa215[_0x4721be]};});}),_0x2b6f9f;}function _0x3a1922(_0x4eb388,_0xf87a1f){const _0x57d0a5=_0x5347e4;let _0x5912ec=_0x4eb388;if(_0x4eb388['includes']('$cmd[')){const _0x4b0592=/\$cmd\[(\d+)\]/g;let _0xd823a3;while((_0xd823a3=_0x4b0592[_0x57d0a5(0x137)](_0x4eb388))!==null){const _0x2a8434=parseInt(_0xd823a3[0x1]),_0x54cc3c=Object[_0x57d0a5(0x1ae)](_0xf87a1f);_0x54cc3c[_0x2a8434]?_0x5912ec=_0x5912ec[_0x57d0a5(0x284)](_0xd823a3[0x0],_0x54cc3c[_0x2a8434]):_0x5912ec=_0x5912ec[_0x57d0a5(0x284)](_0xd823a3[0x0],'');}}return _0x5912ec;}function _0x4e48fd(_0x38a552,_0x32d3a2){const _0xc1c2e1=_0x5347e4;let _0x47f7b8=_0x38a552;const _0x295dd6=/\$desc\[(\d+)\]/g;let _0xa74b67;while((_0xa74b67=_0x295dd6[_0xc1c2e1(0x137)](_0x38a552))!==null){const _0x4eb205=parseInt(_0xa74b67[0x1]),_0x43ed79=Object[_0xc1c2e1(0x1ae)](_0x32d3a2);_0x43ed79[_0x4eb205]?_0x47f7b8=_0x47f7b8['replace'](_0xa74b67[0x0],_0x32d3a2[_0x43ed79[_0x4eb205]][_0xc1c2e1(0x1f1)]||''):_0x47f7b8=_0x47f7b8[_0xc1c2e1(0x284)](_0xa74b67[0x0],'');}return _0x47f7b8;}function _0x39cb62(_0x1e94d9,_0x1d1fe8){const _0xa2537a=_0x5347e4,_0x2e2d52=_0x1e94d9['split']('\x0a');let _0xc0c23c='',_0xe9b421='',_0x11efbe='',_0x1c5fe9=![];for(let _0x471821 of _0x2e2d52){if(_0x471821[_0xa2537a(0x264)](_0xa2537a(0x26a))||_0x471821[_0xa2537a(0x264)](_0xa2537a(0x1e2)))_0xe9b421=_0x471821,_0x1c5fe9=!![];else!_0x1c5fe9?_0xc0c23c+=_0x471821+'\x0a':_0x11efbe+=_0x471821+'\x0a';}let _0x328548=_0xc0c23c;if(!_0xc0c23c[_0xa2537a(0x1d3)]('\x0a'))_0x328548+='\x0a';return Object[_0xa2537a(0x152)](_0x1d1fe8)[_0xa2537a(0x2a9)](([_0x140bf9,_0xa739a7])=>{const _0x584204=_0xa2537a,_0x3006c2=_0xe9b421[_0x584204(0x2c9)](_0x584204(0x26a),_0x140bf9)[_0x584204(0x2c9)](_0x584204(0x1e2),_0xa739a7[_0x584204(0x1f1)]);_0x328548+=_0x3006c2+'\x0a';}),_0x328548+=_0x11efbe,_0x328548['trim']();}function _0x4984c2(_0xf63134){const _0x1776bb=_0x5347e4,_0x515060=_0x4d6fd5(window['botData'][_0x1776bb(0x24a)]);let _0x247860=_0x515060[_0xf63134[_0x1776bb(0x213)]()];if(!_0x247860){_0x247860=_0x515060[_0x1776bb(0x1b9)];if(_0x2b0506)return _0x4de2d5(_0x547b8c,_0x5d9c24)[_0x1776bb(0x25e)](_0x392a39=>{const _0x533194=_0x1776bb;if(_0x392a39){if(_0x392a39[_0x533194(0x13b)])_0x10cb4d(_0x392a39[_0x533194(0x13b)]);if(_0x392a39[_0x533194(0x182)])return _0x392a39['message'];}else _0x247860?.[_0x533194(0x15f)]||_0x533194(0x1ab);}),_0x247860?.[_0x1776bb(0x15f)];return _0x247860?.[_0x1776bb(0x15f)]||_0x1776bb(0x1ab);}let _0x4ebe23=_0x247860[_0x1776bb(0x15f)],_0x4e8d9f=_0x4ebe23;if(_0x4e8d9f[_0x1776bb(0x264)](_0x1776bb(0x2d4))){const _0x2c90b5=/\(?\$get\((\w+)\)\)?/g;_0x4e8d9f=_0x4e8d9f[_0x1776bb(0x284)](_0x2c90b5,(_0x187130,_0x25194a)=>{const _0x322673=_0x1776bb,_0xe461b7=window[_0x322673(0x28b)][_0x322673(0x2d8)]||{};return _0xe461b7[_0x25194a]!==undefined?_0xe461b7[_0x25194a]:'';});}if(_0x4e8d9f[_0x1776bb(0x160)](_0x1776bb(0x1ec))){const _0x1f6952=/\$set\((\w+)=(.*?)\)/,_0x9248e=_0x4e8d9f['match'](_0x1f6952);if(_0x9248e){const [_0x5669a6,_0x481e4c,_0x5b23dd]=_0x9248e;window[_0x1776bb(0x28b)][_0x1776bb(0x2d8)][_0x481e4c]=_0x5b23dd,localStorage[_0x1776bb(0x216)](_0x1776bb(0x1d6),JSON[_0x1776bb(0x1a4)](window[_0x1776bb(0x28b)]['variables']));}}_0x4e8d9f=_0x4e8d9f[_0x1776bb(0x2c9)]('$msg',_0x244b9d)[_0x1776bb(0x2c9)](_0x1776bb(0x2a8),_0x547b8c)['replaceAll'](_0x1776bb(0x2ab),_0x1403d8)[_0x1776bb(0x2c9)](_0x1776bb(0x2c5),_0x55e039)[_0x1776bb(0x2c9)](_0x1776bb(0x1cc),new Date()[_0x1776bb(0x27e)]())['replaceAll'](_0x1776bb(0x265),new Date()['toLocaleTimeString']()),_0x4e8d9f=_0x4e8d9f[_0x1776bb(0x284)](/\$contains\((.*?[^\\])\|(.*?)\)/g,(_0x255a0e,_0x554f41,_0x14b890)=>{const _0x346ce7=_0x1776bb;return _0x554f41['includes'](_0x14b890)[_0x346ce7(0x241)]();});if(_0x4e8d9f[_0x1776bb(0x264)](_0x1776bb(0x28e))){const _0x318852=/\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;let _0x5ee967;while((_0x5ee967=_0x318852['exec'](_0x4e8d9f))!==null){const [_0x30825b,_0x40e815,_0x529999,_0x31e039]=_0x5ee967;let _0x3fa2d0;try{const _0x3ec7dc=_0x40e815['replaceAll']('$msg',_0x244b9d)[_0x1776bb(0x2c9)](_0x1776bb(0x2a8),_0x547b8c)[_0x1776bb(0x2c9)](_0x1776bb(0x2ab),_0x1403d8)[_0x1776bb(0x2c9)](_0x1776bb(0x2c5),_0x55e039);_0x3fa2d0=eval(_0x3ec7dc)?_0x529999:_0x31e039;}catch{_0x3fa2d0=_0x31e039;}_0x4e8d9f=_0x4e8d9f[_0x1776bb(0x284)](_0x5ee967[0x0],_0x3fa2d0);}}return _0x4e8d9f[_0x1776bb(0x264)](_0x1776bb(0x27d))&&(_0x199a38(),_0x4e8d9f=_0x4e8d9f[_0x1776bb(0x2c9)](_0x1776bb(0x27d),'')),_0x4e8d9f=_0x4e8d9f['replace'](/\$repeat\(([^|]+)\|(\d+)\)/g,(_0x11e37c,_0x2cf5a3,_0x363e82)=>{const _0x3b9349=_0x1776bb,_0x3c74cf=_0x2cf5a3[_0x3b9349(0x284)](/\\n/g,'\x0a');return _0x3c74cf[_0x3b9349(0x255)](Number(_0x363e82));}),_0x4e8d9f=_0x4e8d9f['replace'](/\$uppercase\((.*?)\)/g,(_0x4bb222,_0x5b7c47)=>_0x5b7c47[_0x1776bb(0x186)]()),_0x4e8d9f=_0x4e8d9f['replace'](/\$lowercase\((.*?)\)/g,(_0x3c1f68,_0x2480f3)=>_0x2480f3[_0x1776bb(0x213)]()),_0x4e8d9f=_0x4e8d9f[_0x1776bb(0x284)](/\$random\((\d+)\|(\d+)\)/g,(_0x362dbc,_0x1d5ffb,_0x24520c)=>{const _0x19a148=_0x1776bb;return Math[_0x19a148(0x273)](Math[_0x19a148(0x1bb)]()*(Number(_0x24520c)-Number(_0x1d5ffb)+0x1))+Number(_0x1d5ffb);}),_0x4e8d9f=_0x4e8d9f['replace'](/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g,(_0x1931e2,_0x11e134,_0x3e0ea9,_0x5ad703)=>{const _0x104b5e=_0x1776bb;return _0x11e134['split'](_0x3e0ea9)[_0x104b5e(0x1c0)](_0x5ad703);}),_0x4e8d9f[_0x1776bb(0x264)](_0x1776bb(0x2cb))&&(_0x4e8d9f=_0x3a1922(_0x4e8d9f,_0x515060)),_0x4e8d9f[_0x1776bb(0x264)](_0x1776bb(0x156))&&(_0x4e8d9f=_0x4e48fd(_0x4e8d9f,_0x515060)),(_0x4e8d9f[_0x1776bb(0x264)](_0x1776bb(0x26a))||_0x4e8d9f[_0x1776bb(0x264)](_0x1776bb(0x1e2)))&&(_0x4e8d9f=_0x39cb62(_0x4e8d9f,_0x515060)),_0x4e8d9f;}botRespons=_0x4984c2(_0x1a1d64),botRespons&&_0x1877bd(botRespons);}function _0x32d3e4(){const _0x47b174=_0x4756da;try{const _0x36e8a6=document[_0x47b174(0x2e7)]('.top-menu'),_0x49f8f4=document[_0x47b174(0x144)]('button');_0x49f8f4[_0x47b174(0x204)]['add'](_0x47b174(0x20a));const _0x4687ef=document[_0x47b174(0x144)]('i');_0x4687ef['classList'][_0x47b174(0x212)]('fa-solid',_0x47b174(0x1b7)),_0x49f8f4[_0x47b174(0x17e)](_0x4687ef);const _0x1f7a12=document[_0x47b174(0x144)](_0x47b174(0x19a));_0x1f7a12[_0x47b174(0x17c)][_0x47b174(0x24d)]=_0x47b174(0x25c),_0x1f7a12[_0x47b174(0x204)][_0x47b174(0x212)]('deropdown'),_0x1f7a12['innerHTML']=_0x47b174(0x282);function _0x4481d4(_0x438f2e,_0x2464c0=_0x47b174(0x24f)){const _0x1e9db3=_0x47b174,_0x12645a=document[_0x1e9db3(0x2e3)](_0x1e9db3(0x2d2));_0x12645a[_0x1e9db3(0x28c)]=_0x438f2e,_0x12645a[_0x1e9db3(0x17c)][_0x1e9db3(0x231)]=_0x1e9db3(0x21f),_0x12645a['style'][_0x1e9db3(0x197)]=_0x1e9db3(0x139),_0x12645a[_0x1e9db3(0x17c)][_0x1e9db3(0x1ee)]=_0x1e9db3(0x227),_0x12645a[_0x1e9db3(0x17c)]['fontWeight']=_0x1e9db3(0x27c),_0x12645a[_0x1e9db3(0x17c)]['backgroundColor']=_0x1e9db3(0x2c3);if(_0x2464c0===_0x1e9db3(0x24f))_0x12645a[_0x1e9db3(0x17c)][_0x1e9db3(0x223)]=_0x1e9db3(0x297);else _0x2464c0===_0x1e9db3(0x29a)&&(_0x12645a[_0x1e9db3(0x17c)]['color']=_0x1e9db3(0x181));setTimeout(()=>{const _0x98744a=_0x1e9db3;_0x12645a[_0x98744a(0x28c)]='',_0x12645a[_0x98744a(0x17c)]='';},0xbb8);}const _0x43abbd=document[_0x47b174(0x144)](_0x47b174(0x19a));_0x43abbd[_0x47b174(0x204)][_0x47b174(0x212)](_0x47b174(0x1cb)),_0x43abbd[_0x47b174(0x17e)](_0x49f8f4),_0x43abbd['appendChild'](_0x1f7a12),_0x36e8a6[_0x47b174(0x166)](_0x43abbd,_0x36e8a6[_0x47b174(0x22d)]);const _0x2a0ebd=document[_0x47b174(0x2e3)](_0x47b174(0x28d));_0x49f8f4[_0x47b174(0x2cc)]('click',function(){const _0x392599=_0x47b174;_0x1f7a12[_0x392599(0x17c)][_0x392599(0x24d)]===_0x392599(0x25c)||_0x1f7a12['style'][_0x392599(0x24d)]===''?(_0x1f7a12['style']['display']='block',document[_0x392599(0x2e3)](_0x392599(0x26f))['value']=_0x1403d8,document[_0x392599(0x2e3)](_0x392599(0x2b2))[_0x392599(0x173)]=_0x55e039,document['getElementById']('chatTypeSelect')[_0x392599(0x173)]=_0x4328d0,document[_0x392599(0x2e3)](_0x392599(0x15d))[_0x392599(0x173)]=_0x2b7cab,document[_0x392599(0x2e3)](_0x392599(0x1f9))[_0x392599(0x173)]=_0x546b66['join'](',\x20'),document[_0x392599(0x2e3)](_0x392599(0x1a7))[_0x392599(0x173)]=_0x2b0506,document[_0x392599(0x2e3)](_0x392599(0x19f))[_0x392599(0x173)]=_0x53e75c):_0x1f7a12['style'][_0x392599(0x24d)]=_0x392599(0x25c);}),_0x2a0ebd[_0x47b174(0x2cc)]('click',function(){const _0x506378=_0x47b174;_0x4481d4(_0x506378(0x2a6)),window['location'][_0x506378(0x175)]='https://randsfk.vercel.app/login';});const _0x1adc97=document['createElement']('style');_0x1adc97[_0x47b174(0x1be)]=_0x47b174(0x17d),document[_0x47b174(0x16b)][_0x47b174(0x17e)](_0x1adc97);const _0x111d0a=document[_0x47b174(0x144)](_0x47b174(0x23c));_0x111d0a[_0x47b174(0x158)]=_0x47b174(0x225),_0x111d0a[_0x47b174(0x175)]=_0x47b174(0x1f8),document[_0x47b174(0x16b)][_0x47b174(0x17e)](_0x111d0a);}catch(_0x3f2093){console['error'](_0x3f2093[_0x47b174(0x182)]),setTimeout(_0x32d3e4,0x7d0);}resetButton[_0x47b174(0x2cc)](_0x47b174(0x1e6),function(){const _0x5d563b=_0x47b174;localStorage[_0x5d563b(0x285)](_0x5d563b(0x2c1)),showAlert('Form\x20reset\x20berhasil!'),window[_0x5d563b(0x1cd)][_0x5d563b(0x207)]();});const _0x1791cc=document[_0x47b174(0x2e7)](_0x47b174(0x23d));_0x1791cc[_0x47b174(0x2cc)]('click',function(){const _0x5e24ec=_0x47b174,_0x491d62=document[_0x5e24ec(0x2e3)]('ownerInput'),_0x18e844=document[_0x5e24ec(0x2e3)](_0x5e24ec(0x2b2)),_0xdf7f73=document[_0x5e24ec(0x2e3)]('prefixInput'),_0x2af0e7=document[_0x5e24ec(0x2e3)](_0x5e24ec(0x1bf)),_0x3a42d1=document[_0x5e24ec(0x2e3)](_0x5e24ec(0x19f)),_0x20b8e8=document['getElementById'](_0x5e24ec(0x1a7)),_0x4aacc5=document[_0x5e24ec(0x2e3)]('apikeyInput'),_0x1d5c9b=_0x491d62[_0x5e24ec(0x173)],_0x2e4ec4=_0x18e844[_0x5e24ec(0x173)],_0x4f8437=_0xdf7f73[_0x5e24ec(0x173)][_0x5e24ec(0x234)](','),_0x43804a=_0x2af0e7[_0x5e24ec(0x173)],_0x126490=_0x3a42d1['value']===_0x5e24ec(0x246),_0x377d08=_0x20b8e8['value']===_0x5e24ec(0x246),_0x6b5dbc=_0x4aacc5[_0x5e24ec(0x173)];if(!_0x1d5c9b||!_0x2e4ec4||!_0x4f8437||!_0x43804a){showAlert(_0x5e24ec(0x253));return;}_0x1403d8=_0x1d5c9b,_0x55e039=_0x2e4ec4,_0x546b66=_0x4f8437,_0x4328d0=_0x43804a,_0x53e75c=_0x126490,_0x2b0506=_0x377d08,_0x2b7cab=_0x6b5dbc,_0x1974a5(_0x55e039),_0x10cb4d(_0x5e24ec(0x229)),Android[_0x5e24ec(0x16f)](JSON['stringify']({'owner':_0x1403d8,'botName':_0x55e039,'prefix':_0x546b66,'chatTp':_0x4328d0,'antiAfk':_0x53e75c,'ai':_0x2b0506,'apiKey':_0x2b7cab})),showAlert('Perubahan\x20berhasil\x20disimpan');});}function _0x4ce855(_0x31663d){const _0x13c6e6=_0x4756da,_0x21915b=document[_0x13c6e6(0x2e7)](_0x31663d);if(_0x21915b)_0x21915b[_0x13c6e6(0x2c4)]();}function _0x15371b(){const _0x37bd6c=_0x4756da;var _0x5c0e69=document[_0x37bd6c(0x2e7)](_0x37bd6c(0x226));_0x5c0e69&&_0x5c0e69[_0x37bd6c(0x28c)][_0x37bd6c(0x29e)]()===_0x37bd6c(0x198)&&(_0x5c0e69[_0x37bd6c(0x28c)]=_0x37bd6c(0x208),_0x5c0e69[_0x37bd6c(0x17c)][_0x37bd6c(0x155)]=_0x37bd6c(0x148),_0x5c0e69[_0x37bd6c(0x17c)][_0x37bd6c(0x202)]=_0x37bd6c(0x2a2));var _0x4b72b8=document['querySelector'](_0x37bd6c(0x209));_0x4b72b8&&(_0x4b72b8['innerHTML']=_0x37bd6c(0x157)+_0x37bd6c(0x24b)),_0x2a5fc1(_0x37bd6c(0x13f)),_0x2a5fc1(_0x37bd6c(0x233)),_0x2a5fc1(_0x37bd6c(0x2cf)),_0x2a5fc1('================='),_0x4ce855(_0x37bd6c(0x1e1)),_0x4ce855('.btn.btn-default.rounded-0'),_0x4ce855('.form-group\x20.btn.btn-default[aria-label=\x27Edit\x20character\x27]'),_0x4ce855(_0x37bd6c(0x2ca)),_0x4ce855('.mx-auto.text-start.text-large'),_0x4ce855('.list-rules'),_0x4ce855(_0x37bd6c(0x1df)),_0x4ce855(_0x37bd6c(0x261)),_0x27e6f7();}function _0x156f90(){const _0x5b7efb=_0x4756da,_0x32efbb=document['querySelector'](_0x5b7efb(0x2e5));if(!_0x32efbb)return console[_0x5b7efb(0x1f0)](_0x5b7efb(0x1b4));_0x32efbb[_0x5b7efb(0x219)]=_0x5b7efb(0x14c),_0x32efbb[_0x5b7efb(0x243)]=_0x5b7efb(0x1f6),_0x32efbb[_0x5b7efb(0x17c)]['height']=_0x5b7efb(0x1a0),_0x32efbb[_0x5b7efb(0x17c)]['imageRendering']=_0x5b7efb(0x18e),_0x32efbb[_0x5b7efb(0x24e)]=_0x5b7efb(0x21f),_0x32efbb[_0x5b7efb(0x17c)][_0x5b7efb(0x24d)]=_0x5b7efb(0x254);const _0x5b306f=_0x32efbb[_0x5b7efb(0x15c)];_0x5b306f&&(_0x5b306f['style'][_0x5b7efb(0x24d)]=_0x5b7efb(0x2e8),_0x5b306f[_0x5b7efb(0x17c)]['justifyContent']=_0x5b7efb(0x148),_0x5b306f[_0x5b7efb(0x17c)]['alignItems']=_0x5b7efb(0x148));}function _0x27e6f7(){const _0x1da266=_0x4756da;_0x389497(_0x1da266(0x2ca)),_0x389497(_0x1da266(0x189)),_0x389497(_0x1da266(0x28a));var _0x50c90c=document[_0x1da266(0x21b)](_0x1da266(0x1c4));_0x50c90c[_0x1da266(0x2a9)](_0x19fdc2=>_0x19fdc2['style']['display']='none'),_0x389497(_0x1da266(0x195));function _0x389497(_0x25867c){const _0x3f307d=_0x1da266;var _0x579e1e=document[_0x3f307d(0x2e7)](_0x25867c);_0x579e1e&&_0x579e1e[_0x3f307d(0x2c4)]();};}function _0x3c23f2(_0x158ea3){const _0x1b389d=_0x4756da;var _0x2cf30e=document[_0x1b389d(0x2e7)](_0x1b389d(0x226)),_0x206143=document['querySelector'](_0x1b389d(0x1a6));if(!_0x206143){var _0x3687fd=document[_0x1b389d(0x144)]('p');_0x3687fd[_0x1b389d(0x1be)]=_0x158ea3,_0x3687fd[_0x1b389d(0x17c)][_0x1b389d(0x223)]=_0x1b389d(0x1f3),_0x3687fd['id']='error-bot',_0x3687fd['style'][_0x1b389d(0x155)]=_0x1b389d(0x148),_0x2cf30e&&_0x2cf30e[_0x1b389d(0x277)][_0x1b389d(0x166)](_0x3687fd,_0x2cf30e),setTimeout(()=>{const _0x15d4cc=_0x1b389d;_0x3687fd[_0x15d4cc(0x277)]&&_0x3687fd[_0x15d4cc(0x277)][_0x15d4cc(0x172)](_0x3687fd);},0x7d0);}}function _0x2a5fc1(_0x137844){const _0x2023c7=_0x4756da;var _0x2c8fd6=document['querySelectorAll'](_0x2023c7(0x239));for(var _0x1c1deb=0x0;_0x1c1deb<_0x2c8fd6[_0x2023c7(0x1c9)];_0x1c1deb++){if(_0x2c8fd6[_0x1c1deb][_0x2023c7(0x28c)]===_0x137844)return;}var _0x916b0f=document[_0x2023c7(0x144)]('p');_0x916b0f[_0x2023c7(0x28c)]=_0x137844,_0x916b0f['style'][_0x2023c7(0x155)]=_0x2023c7(0x148),_0x916b0f[_0x2023c7(0x204)][_0x2023c7(0x212)]('custom-message');var _0x3bf92f=document['querySelector'](_0x2023c7(0x26b));_0x3bf92f&&_0x3bf92f[_0x2023c7(0x277)]['insertBefore'](_0x916b0f,_0x3bf92f[_0x2023c7(0x1b5)]);}setInterval(function(){const _0x106e79=_0x4756da;var _0x37f8c8=document[_0x106e79(0x2e7)](_0x106e79(0x2db));_0x37f8c8&&_0x15371b();},0x3e8);function _0x332136(){const _0x37be25=setInterval(()=>{const _0x14d39a=_0x144f;_0x55e039&&(_0x38ebcc(),clearInterval(_0x37be25),console['log'](_0x14d39a(0x18d),JSON[_0x14d39a(0x1a4)](_0x287498,null,0x2)));},0x64);}const _0x287498={'contents':[]};Object[_0x4756da(0x146)](window,_0x4756da(0x17f),{'set'(_0x2744aa){const _0xafe2b=_0x4756da;this[_0xafe2b(0x185)]=_0x2744aa,_0x38ebcc();},'get'(){const _0x6b0401=_0x4756da;return this[_0x6b0401(0x185)];}});let _0x56a796={};function _0x1498da(){setInterval(()=>{(_0x55e039!==_0x3e4b86||_0x1403d8!==_0x51b493)&&(_0x3e4b86=_0x55e039,_0x51b493=_0x1403d8,_0x38ebcc());},0x64);}function _0x38ebcc(){const _0xed4afc=_0x4756da;let _0x3f121f=window[_0xed4afc(0x28b)][_0xed4afc(0x200)],_0xe8f6f6='',_0x270845={};_0xe8f6f6=_0xed4afc(0x2b3)+_0x3f121f[_0xed4afc(0x2c8)]+_0xed4afc(0x293)+_0x3f121f['lore'],_0x270845={'greeting':'Halo\x20tuan,\x20semoga\x20harimu\x20menyenangkan.','move':'Baik,\x20saya\x20akan\x20segera\x20ke\x20sana\x20ya.','fakeWarn':_0xed4afc(0x1e0),'angry':'Mohon\x20maaf,\x20saya\x20hanya\x20menjalankan\x20perintah.','scare':'Maaf\x20tuan,\x20apakah\x20ada\x20yang\x20bisa\x20saya\x20bantu?','no':_0xed4afc(0x28f),'obey':_0xed4afc(0x250),'confirm':_0xed4afc(0x29b),'idle':_0xed4afc(0x290),'flirt':_0xed4afc(0x1a5),'rudeToOthers':_0xed4afc(0x266)},_0x287498[_0xed4afc(0x162)]=[{'role':'user','parts':[{'text':'Register\x20new\x20Bot:\x20BotName:\x20'+_0x3f121f[_0xed4afc(0x1ef)]+',\x20Return\x20JSON,\x20Gender:\x20'+_0x3f121f[_0xed4afc(0x1c8)]+_0xed4afc(0x27f)+_0x1403d8+_0xed4afc(0x15b)+_0xe8f6f6+_0xed4afc(0x1aa)}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':_0xed4afc(0x2b6)}]},{'role':'user','parts':[{'text':JSON['stringify']({'username':_0x1403d8,'message':_0xed4afc(0x15e)})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':'Saved\x20In\x20Filtered\x20Safe\x20Words'}]},{'role':'user','parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0x1403d8,'message':_0xed4afc(0x1e4)+_0x55e039})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':_0xed4afc(0x1c5),'message':_0x270845[_0xed4afc(0x16d)]})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0x1403d8,'message':'sini\x20ke\x20kiri\x205\x20langkah'})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON['stringify']({'action':_0xed4afc(0x19b),'message':_0x270845[_0xed4afc(0x199)]})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0x1403d8,'message':'Ati\x20ati\x20ama\x20nama\x20gw,ada\x20yg\x20pake\x20nama\x20gw\x20itu\x20'+_0x1403d8+_0xed4afc(0x20f)+_0x1403d8})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':_0xed4afc(0x224),'message':_0x270845[_0xed4afc(0x221)]})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0xed4afc(0x1cf),'message':_0xed4afc(0x203)})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON['stringify']({'action':_0xed4afc(0x161),'message':_0x270845[_0xed4afc(0x142)]})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':'RandSfk','message':_0x55e039})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':'scare','message':_0x270845['scare']})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0xed4afc(0x1c1),'message':_0xed4afc(0x2bf)})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':'/no','message':_0x270845['no']})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0x1403d8,'message':_0xed4afc(0x25f)})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':_0xed4afc(0x2ae),'message':_0x270845[_0xed4afc(0x214)]})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0x1403d8,'message':_0xed4afc(0x1ca)+_0x55e039+',\x20lu\x20kmaren\x20sama\x20sony\x20kan?'})}]},{'role':'model','parts':[{'text':JSON['stringify']({'action':_0xed4afc(0x27b),'message':_0x270845['confirm']})}]},{'role':'user','parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0xed4afc(0x2ea),'message':_0xed4afc(0x196)})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':'/sad','message':_0x270845[_0xed4afc(0x2ec)]})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON['stringify']({'username':_0xed4afc(0x2ea),'message':_0xed4afc(0x196)})}]},{'role':_0xed4afc(0x2bd),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':_0xed4afc(0x224),'message':_0xed4afc(0x183)})}]},{'role':'user','parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0xed4afc(0x2ea),'message':_0xed4afc(0x196)})}]},{'role':'model','parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':'/expression','message':'Apaan\x20dah\x20lu\x20liat\x20liat?'})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0xed4afc(0x141),'message':_0xed4afc(0x2df)})}]},{'role':'model','parts':[{'text':JSON[_0xed4afc(0x1a4)]({'action':_0xed4afc(0x224),'message':'Tuan\x20kemana\x20ajaa,\x20aku\x20kangen\x20:<'})}]},{'role':_0xed4afc(0x1d9),'parts':[{'text':JSON['stringify']({'username':_0xed4afc(0x2d9),'message':_0xed4afc(0x26c)+_0x55e039})}]},{'role':'model','parts':[{'text':JSON['stringify']({'action':_0xed4afc(0x224),'message':_0x270845['rudeToOthers']})}]},{'role':'user','parts':[{'text':JSON[_0xed4afc(0x1a4)]({'username':_0xed4afc(0x1c1),'message':_0x55e039})}]},{'role':'model','parts':[{'text':JSON['stringify']({'action':'/yes','message':_0x270845['flirt']})}]}];}function _0x24471f(){setTimeout(()=>{const _0x54cdc2=_0x144f;try{document[_0x54cdc2(0x2e7)]('title')&&!document[_0x54cdc2(0x2e7)]('title')[_0x54cdc2(0x28c)][_0x54cdc2(0x264)](_0x54cdc2(0x138))?(console[_0x54cdc2(0x2e0)](_0x54cdc2(0x1db)),_0x24471f()):(console[_0x54cdc2(0x2e0)](_0x54cdc2(0x2d0)),setTimeout(()=>{const _0x4a8013=_0x54cdc2;try{console[_0x4a8013(0x2e0)](_0x4a8013(0x2a7));let _0x47f52e=![];(function _0x1bdb9b(){const _0x1988d2=_0x4a8013;_0x47f52e?(clearInterval(window[_0x1988d2(0x249)]),window['autoClickerRunning']=![],_0x47f52e=![]):(window[_0x1988d2(0x249)]=setInterval(()=>{const _0xf8372c=_0x1988d2;try{const _0x3f1fd6=document[_0xf8372c(0x2e7)](_0xf8372c(0x2e1));_0x3f1fd6&&_0x3f1fd6['click']();}catch(_0x4b026a){console[_0xf8372c(0x29a)](_0xf8372c(0x18b),_0x4b026a);}},0x1388),window[_0x1988d2(0x1c6)]=!![],_0x47f52e=!![]);}(),_0xba5b8e(),_0x156f90(),_0x3f7598(),_0x32d3e4(),_0x332136(),_0x1498da(),_0x384a7f=!![]);}catch(_0x5406c0){console[_0x4a8013(0x29a)](_0x4a8013(0x180),_0x5406c0),_0x24471f(),s;}},0xbb8));}catch(_0x5a11b2){console[_0x54cdc2(0x29a)]('Error\x20saat\x20cek\x20cloudflare:',_0x54cdc2(0x29a)),_0x24471f();}},0x3e8);}if(_0x384a7f)return;_0x24471f();}function showUpdateNotice(_0x48f27b,_0x4bf003,_0x18c919,_0x4da57d,_0x25057f){const _0x5d46e4=_0x144f,_0x2a0540=_0x5d46e4(0x281),_0x5086f6=document['createElement']('div');_0x5086f6[_0x5d46e4(0x17c)][_0x5d46e4(0x16e)]='fixed',_0x5086f6[_0x5d46e4(0x17c)]['top']=0x0,_0x5086f6['style'][_0x5d46e4(0x1d5)]=0x0,_0x5086f6['style'][_0x5d46e4(0x236)]='100vw',_0x5086f6[_0x5d46e4(0x17c)]['height']=_0x5d46e4(0x165),_0x5086f6['style']['background']=_0x5d46e4(0x1a1),_0x5086f6['style'][_0x5d46e4(0x24d)]=_0x5d46e4(0x2e8),_0x5086f6['style'][_0x5d46e4(0x1e3)]=_0x5d46e4(0x148),_0x5086f6[_0x5d46e4(0x17c)]['justifyContent']=_0x5d46e4(0x148),_0x5086f6[_0x5d46e4(0x17c)][_0x5d46e4(0x19d)]=0x270f;const _0x132c4c=document[_0x5d46e4(0x144)]('div');_0x132c4c[_0x5d46e4(0x17c)][_0x5d46e4(0x1d7)]=_0x5d46e4(0x187),_0x132c4c[_0x5d46e4(0x17c)][_0x5d46e4(0x231)]=_0x5d46e4(0x1d2),_0x132c4c['style'][_0x5d46e4(0x1ee)]=_0x5d46e4(0x247),_0x132c4c['style'][_0x5d46e4(0x2eb)]='0\x204px\x2014px\x20rgba(0,0,0,0.25)',_0x132c4c[_0x5d46e4(0x17c)][_0x5d46e4(0x1dd)]=_0x5d46e4(0x2bc),_0x132c4c[_0x5d46e4(0x17c)][_0x5d46e4(0x236)]=_0x5d46e4(0x18f),_0x132c4c[_0x5d46e4(0x17c)][_0x5d46e4(0x155)]=_0x5d46e4(0x148),_0x132c4c[_0x5d46e4(0x17c)][_0x5d46e4(0x1da)]='sans-serif';const _0x5d075c=document[_0x5d46e4(0x144)](_0x5d46e4(0x19a));_0x5d075c[_0x5d46e4(0x17c)][_0x5d46e4(0x24d)]=_0x5d46e4(0x2e8),_0x5d075c[_0x5d46e4(0x17c)][_0x5d46e4(0x1e3)]=_0x5d46e4(0x148),_0x5d075c[_0x5d46e4(0x17c)]['background']=_0x5d46e4(0x278),_0x5d075c['style'][_0x5d46e4(0x1ee)]=_0x5d46e4(0x251),_0x5d075c[_0x5d46e4(0x17c)][_0x5d46e4(0x2eb)]=_0x5d46e4(0x169),_0x5d075c[_0x5d46e4(0x17c)][_0x5d46e4(0x231)]='10px\x2016px',_0x5d075c[_0x5d46e4(0x17c)][_0x5d46e4(0x178)]='20px';const _0x4317ac=document[_0x5d46e4(0x144)](_0x5d46e4(0x21e));_0x4317ac['src']=_0x2a0540,_0x4317ac[_0x5d46e4(0x17c)][_0x5d46e4(0x236)]=_0x5d46e4(0x2ce),_0x4317ac[_0x5d46e4(0x17c)][_0x5d46e4(0x1bc)]=_0x5d46e4(0x2ce),_0x4317ac[_0x5d46e4(0x17c)][_0x5d46e4(0x1ee)]=_0x5d46e4(0x1a2),_0x4317ac[_0x5d46e4(0x17c)][_0x5d46e4(0x257)]=_0x5d46e4(0x13a),_0x4317ac[_0x5d46e4(0x17c)][_0x5d46e4(0x29c)]=_0x5d46e4(0x279),_0x4317ac[_0x5d46e4(0x17c)][_0x5d46e4(0x1d7)]=_0x4bf003;const _0x523fdf=document['createElement'](_0x5d46e4(0x19a));_0x523fdf['textContent']=_0x48f27b,_0x523fdf['style']['color']=_0x4bf003,_0x523fdf[_0x5d46e4(0x17c)][_0x5d46e4(0x245)]=_0x5d46e4(0x168),_0x523fdf['style']['fontWeight']=_0x5d46e4(0x27c),_0x5d075c[_0x5d46e4(0x17e)](_0x4317ac),_0x5d075c[_0x5d46e4(0x17e)](_0x523fdf),_0x132c4c['appendChild'](_0x5d075c);const _0x419ff9=_0x18c919[_0x5d46e4(0x284)](/\n/g,_0x5d46e4(0x2b4)),_0x34c8eb=document['createElement']('p');_0x34c8eb['innerHTML']=_0x419ff9,_0x34c8eb[_0x5d46e4(0x17c)][_0x5d46e4(0x223)]=_0x4da57d,_0x34c8eb['style'][_0x5d46e4(0x245)]=_0x5d46e4(0x294),_0x34c8eb[_0x5d46e4(0x17c)]['marginBottom']=_0x5d46e4(0x230),_0x34c8eb[_0x5d46e4(0x17c)]['lineHeight']=_0x5d46e4(0x235),_0x132c4c[_0x5d46e4(0x17e)](_0x34c8eb);if(_0x25057f&&_0x25057f[_0x5d46e4(0x164)]){const _0x90a037=document['createElement']('a');_0x90a037[_0x5d46e4(0x175)]=_0x25057f[_0x5d46e4(0x164)],_0x90a037[_0x5d46e4(0x28c)]=_0x25057f[_0x5d46e4(0x13e)]||_0x5d46e4(0x23a),_0x90a037['target']='_blank',_0x90a037['style'][_0x5d46e4(0x24d)]=_0x5d46e4(0x21a),_0x90a037[_0x5d46e4(0x17c)][_0x5d46e4(0x231)]=_0x5d46e4(0x263),_0x90a037[_0x5d46e4(0x17c)]['background']=_0x5d46e4(0x29f),_0x90a037[_0x5d46e4(0x17c)][_0x5d46e4(0x223)]=_0x5d46e4(0x278),_0x90a037[_0x5d46e4(0x17c)]['textDecoration']=_0x5d46e4(0x25c),_0x90a037[_0x5d46e4(0x17c)]['borderRadius']=_0x5d46e4(0x149),_0x90a037[_0x5d46e4(0x17c)][_0x5d46e4(0x147)]=_0x5d46e4(0x27c),_0x132c4c['appendChild'](_0x90a037);}_0x5086f6[_0x5d46e4(0x17e)](_0x132c4c),document[_0x5d46e4(0x14f)][_0x5d46e4(0x17e)](_0x5086f6);}localStorage[_0x13a7a3(0x2b0)](_0x13a7a3(0x1d0))&&(window['ponytownbotversion']=localStorage[_0x13a7a3(0x2b0)]('pt_version'));const requiredVersion='1.0.2',currentVersion=window[_0x13a7a3(0x201)];currentVersion&&localStorage[_0x13a7a3(0x216)]('pt_version',currentVersion);currentVersion===requiredVersion?startBot():setTimeout(()=>{const _0x3de55f=_0x13a7a3;showUpdateNotice(_0x3de55f(0x2a5),_0x3de55f(0x1b6),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<strong>Versi\x20Kamu:</strong>\x20<strong>'+(currentVersion||'Tidak\x20Diketahui')+_0x3de55f(0x1f7)+requiredVersion+_0x3de55f(0x240),'#444444',{'text':_0x3de55f(0x220),'url':_0x3de55f(0x17a)});},0xbb8);
+async function GetCmd() {
+    if (!localStorage.getItem('ptbot_apikey')) {
+        function removeElements(selector) {
+            const element = document.querySelector(selector);
+            if (element) element.remove();
+        }
+
+        function showMessage(message, status = 'success') {
+            const header = document.querySelector(".form-group.custom");
+            if (!header) return;
+            const msg = document.createElement('div');
+            msg.className = 'alerts';
+            msg.textContent = message;
+            msg.style.color = status === 'error' ? 'red' : '#0f0';
+            msg.style.fontFamily = 'monospace';
+            msg.style.margin = '4px';
+            header.appendChild(msg);
+            setTimeout(() => {
+                msg.remove();
+            }, 3000);
+        }
+        function updatePonyTownLogos() {
+            const img = document.querySelector('img.pixelart.home-logo');
+            if (!img) return console.warn('Logo tidak ditemukan.');
+            img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+            img.alt = 'Pony Town Bot Logo';
+            img.style.height = '170px';
+            img.style.imageRendering = 'pixelated';
+            img.marginLeft = '10px';
+            img.style.display = 'block';
+
+            const parent = img.parentElement;
+            if (parent) {
+                parent.style.display = 'flex';
+                parent.style.justifyContent = 'center';
+                parent.style.alignItems = 'center';
+            }
+        }
+        function additionalModifications() {
+            removeElements(".emote-container");
+            removeElements(".navbar.navbar-expand");
+            removeElements(".btn.btn-warning");
+            removeElements("#button-reset");
+
+            const serverInputs = document.querySelectorAll("#server-input");
+            serverInputs.forEach(input => input.style.display = "none");
+        }
+
+        function modifyPage() {
+            const header = document.querySelector(".form-group.text-start.text-large h5");
+            if (header && header.textContent.trim() === "Server rules") {
+                header.textContent = "Pony Town-Bot";
+                header.style.textAlign = 'center';
+                header.style.marginTop = '20px';
+            }
+
+            const appVersion = document.querySelector(".app-version");
+            if (appVersion) {
+                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                    '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+            }
+
+            removeElements(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+            removeElements(".btn.btn-default.rounded-0");
+            removeElements(".form-group .btn.btn-default[aria-label='Edit character']");
+            removeElements(".emote-container");
+            removeElements(".mx-auto.text-start.text-large");
+            removeElements(".list-rules");
+            removeElements(".text-end");
+            removeElements(".alert.alert-warning");
+            additionalModifications();
+            updatePonyTownLogos();
+        }
+
+        function injectApikeyForm() {
+            const formGroups = document.querySelectorAll('.form-group');
+            if (formGroups.length > 0) {
+                const container = formGroups[0].parentElement;
+                container.querySelectorAll('.form-group').forEach(el => el.remove());
+
+                const formGroup = document.createElement("div");
+                formGroup.className = "form-group custom";
+                formGroup.style.marginTop = "70px";
+
+                const input = document.createElement("input");
+                input.type = "text";
+                input.className = "form-control";
+                input.placeholder = "Masukan APIKEY pony town bot anda";
+                input.setAttribute("aria-label", "Masukan APIKEY pony town bot anda");
+                input.maxLength = 100;
+                input.id = "ptbot-apikey";
+
+                const submitBtn = document.createElement("button");
+                submitBtn.className = "btn";
+                submitBtn.textContent = "Submit";
+                submitBtn.setAttribute("aria-label", "Simpan APIKEY ke localStorage");
+                submitBtn.style.display = "block";
+                submitBtn.style.margin = "10px auto 0";
+                submitBtn.style.backgroundColor = "#333";
+                submitBtn.style.color = "#fff";
+                submitBtn.style.border = "1px solid #fff";
+                submitBtn.style.padding = "10px 20px";
+                submitBtn.style.borderRadius = "5px";
+
+                submitBtn.onclick = () => {
+                    const value = input.value.trim();
+                    if (value) {
+                        showMessage("Berhasil menyimpan APIKEY", "error");
+                        localStorage.setItem('ptbot_apikey', value);
+                        window.location.reload()
+                    } else {
+                        showMessage("Mohon masukkan API Key terlebih dahulu.", "error");
+                    }
+                };
+                const msg = document.createElement('div');
+                msg.className = 'custom-message';
+                msg.style.color = '#fff';
+                msg.style.fontFamily = 'monospace';
+                msg.style.margin = '4px';
+                msg.textContent = "Belum punya APIKEY? buat disini: ";
+                const link = document.createElement('a');
+                link.href = "https://randsfk.vercel.app/login";
+                link.textContent = "Dashboard";
+                link.style.color = '#cc6600';
+                link.style.marginLeft = '4px';
+                link.style.textDecoration = 'underline';
+                msg.appendChild(link);
+
+                formGroup.appendChild(input);
+                formGroup.appendChild(msg);
+                formGroup.appendChild(submitBtn);
+                container.insertBefore(formGroup, container.firstChild);
+            } else {
+                console.warn('Tidak ditemukan elemen dengan class .form-group');
+            }
+        }
+
+        modifyPage();
+        injectApikeyForm();
+        return null;
+    }
+
+    async function verifyApiKeyFromStorage() {
+        const apiKey = localStorage.getItem('ptbot_apikey');
+        if (!apiKey) return null;
+
+        try {
+            const response = await fetch('https://randsfk.vercel.app/verify_apikey', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ apikey: apiKey })
+            });
+
+            const data = await response.json();
+            if (data.status === 'success' && data.bot_cmd) {
+                return data.bot_cmd;
+            } else {
+                localStorage.removeItem('ptbot_apikey');
+                const errorText = encodeURI(data.message + '\nSilakan relog ulang game');
+                window.location.href = 'https://pony.town/?error=' + errorText;
+                return null;
+            }
+        } catch (error) {
+            showMessage("APIKEY error, mohon dapatkan apikey valid di Pony Town Dashboard", "error");
+            localStorage.removeItem('ptbot_apikey');
+            return null;
+        }
+    }
+
+    return await verifyApiKeyFromStorage();
+}
+
+async function startBot() {
+    const commands = await GetCmd();
+    if (commands) {
+        if (commands['ai-setting']) {
+            const allowedKeys = ['name', 'sifat', 'gender', 'lore'];
+            const original = commands['ai-setting'];
+            const filtered = {};
+            allowedKeys.forEach(key => {
+                if (original[key]) filtered[key] = original[key];
+            });
+            commands['ai-setting'] = filtered;
+        }
+
+        window.botData = commands;
+        console.log('✅ Bot siap jalan dengan data:', window.botData);
+        jalankanBot();
+    } else {
+        localStorage.removeItem('ptbot_apikey');
+        console.warn('❌ Gagal mendapatkan data bot.');
+    }
+}
+function jalankanBot() {
+
+    if (window._pb_ky_sc !== "randyganteng") {
+        throw new Error("Mau ngapain kamu bang?.");
+    }
+    let apiKey = ""
+    let botName = "";
+    let prefix = ['.'];
+    let chatTp = "auto";
+    let owner = "";
+    let antiAfk = false;
+    let ai = false;
+    let isTyping = false;
+    let idleTimer;
+    let idleLoopTimer;
+    let isIdle = false;
+    let isInject = false;
+    let isBreaking = false
+
+    const idleDelay = [60000, 90000, 120000][Math.floor(Math.random() * 3)];
+
+    function getRandomIdleDelay() {
+        const options = [60000, 90000, 120000, 70000, 240000, 160000];
+        return options[Math.floor(Math.random() * options.length)];
+    }
+
+
+    //========================
+
+    let lastBotName = "";
+    let lastOwner = "";
+    async function chatAi(username, message) {
+        const headers = {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': apiKey
+        };
+        const userMessage = {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: username,
+                    message: message
+                })
+            }]
+        };
+        if (!tempHistory.contents) {
+            tempHistory = {
+                contents: [...(botHistory.contents || [])]
+            };
+        }
+        const data = {
+            contents: [...tempHistory.contents, userMessage],
+            safetySettings: [{
+                category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
+                threshold: 'BLOCK_NONE'
+            },
+            {
+                category: 'HARM_CATEGORY_HATE_SPEECH',
+                threshold: 'BLOCK_NONE'
+            },
+            {
+                category: 'HARM_CATEGORY_HARASSMENT',
+                threshold: 'BLOCK_NONE'
+            },
+            {
+                category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
+                threshold: 'BLOCK_NONE'
+            }
+            ]
+        };
+        console.log(data)
+        const replacements = {
+            '\\blo\\b': 'lu',
+            '\\baq\\b': 'aku',
+            '\\bngewe\\b': 'ngew*e',
+            '\\bgak\\b': 'ngak',
+            '\\bgw\\b|\\bgue\\b': 'gw'
+        };
+        console.log(tempHistory)
+        try {
+            const response = await fetch("https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent", {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify(data)
+            });
+            if (response.ok) {
+                console.log(response)
+                const responseData = await response.json();
+                if (!responseData) {
+                    console.error("Penyebab Error" + responseData.error);
+                    return {
+                        error: true
+                    };
+                }
+                const candidates = responseData.candidates || [];
+
+                if (candidates.length > 0) {
+                    let responseText = candidates[0].content.parts
+                        .map(part => part.text)
+                        .join(" ")
+                        .replace(/\n/g, ' ')
+                        .replace(/\r/g, '');
+
+                    for (const [pattern, replacement] of Object.entries(replacements)) {
+                        const regex = new RegExp(pattern, 'gi');
+                        responseText = responseText.replace(regex, replacement);
+                    }
+                    responseText = responseText
+                        .replace(/```json/g, '')
+                        .replace(/```/g, '')
+                        .replace(/\bjson\b/g, '')
+                        .replace(/\bundefined\b/g, '')
+                        .trim();
+
+                    tempHistory.contents.push(userMessage);
+                    tempHistory.contents.push({
+                        role: "model",
+                        parts: [{
+                            text: responseText
+                        }]
+                    });
+                    let jsonResponse;
+                    try {
+                        jsonResponse = JSON.parse(responseText);
+                        console.log(jsonResponse);
+                        return jsonResponse;
+                    } catch (e) {
+                        console.error("Failed to parse response text as JSON:", e);
+                        return {
+                            error: "Failed to parse response text."
+                        };
+                    }
+                } else {
+                    console.log("No response candidates available.");
+                }
+            } else {
+                console.error("Request failed with status:", response.status);
+            }
+        } catch (error) {
+            console.error("Error in chatAi:", "error");
+        }
+
+        return {
+            error: "An error occurred while processing the request."
+        };
+    }
+
+
+    function observeChat() {
+        try {
+            const targetNode = document.querySelector('.chat-log-scroll-inner');
+            if (!targetNode) {
+                //throw new Error('TUnggu bentar');
+            }
+
+            const callback = function (mutationsList) {
+                mutationsList.forEach(mutation => {
+                    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                        mutation.addedNodes.forEach(node => {
+                            if (node.nodeType === Node.ELEMENT_NODE) {
+                                const timestamp = node.querySelector('.chat-line-timestamp')?.textContent.trim();
+                                const name = node.querySelector('.chat-line-name-content')?.textContent.trim();
+                                const message = node.querySelector('.chat-line-message')?.textContent.trim();
+
+
+                                const chatLine = node;
+                                const chatClassList = chatLine.classList;
+                                const lastClass = chatClassList[chatClassList.length - 1];
+                                let chatType = '';
+
+                                if (lastClass === 'chat-line-whisper') {
+                                    chatType = 'whisper';
+                                } else if (lastClass === 'chat-line-whisper-thinking') {
+                                    chatType = 'whisper-think';
+                                } else if (lastClass === 'chat-line-party') {
+                                    chatType = 'party';
+                                } else if (lastClass === 'chat-line-party-thinking') {
+                                    chatType = 'party-think';
+                                } else if (lastClass === 'chat-line-supporter-1') {
+                                    chatType = 'tier 1';
+                                } else if (lastClass === 'chat-line-supporter-2') {
+                                    chatType = 'tier 2';
+                                } else if (lastClass === 'chat-line-supporter-3') {
+                                    chatType = 'tier 3';
+                                } else if (lastClass === 'chat-line-supporter-4') {
+                                    chatType = 'tier 4';
+                                } else if (lastClass === 'chat-line-thinking') {
+                                    chatType = 'think';
+                                } else {
+                                    chatType = 'say';
+                                }
+                                command(name, message, chatType);
+                            }
+                        });
+                    }
+                });
+            };
+
+            const observer = new MutationObserver(callback);
+            const config = {
+                childList: true,
+                subtree: true
+            };
+            observer.observe(targetNode, config);
+            const checkExistence = setInterval(() => {
+                const currentTarget = document.querySelector('.chat-log-scroll-inner');
+                if (!currentTarget) {
+                    console.warn('Elemen hilang, mulai mencari lagi...');
+                    observer.disconnect();
+                    clearInterval(checkExistence);
+                    setTimeout(observeChat, 2000);
+                }
+            }, 2000);
+
+        } catch (error) {
+            setTimeout(observeChat, 2000);
+        }
+    }
+
+    function sendKeyEvent(key, type) {
+        var eventObj;
+        if (typeof KeyboardEvent === 'function') {
+            eventObj = new KeyboardEvent(type, {
+                keyCode: key,
+                which: key,
+                bubbles: true,
+                cancelable: true
+            });
+        } else {
+            eventObj = document.createEvent("Events");
+            eventObj.initEvent(type, true, true);
+            eventObj.keyCode = key;
+            eventObj.which = key;
+        }
+        document.dispatchEvent(eventObj);
+    }
+
+    function move(direction, count = 1) {
+        const keyMap = {
+            up: 38,
+            down: 40,
+            left: 37,
+            right: 39
+        };
+
+        const key = keyMap[direction];
+        if (!key) {
+            console.warn(`Arah tidak dikenal: ${direction}`);
+            return;
+        }
+
+        let step = 0;
+        const interval = setInterval(() => {
+            if (step >= count) {
+                clearInterval(interval);
+                return;
+            }
+            sendKeyEvent(key, 'keydown');
+            setTimeout(() => sendKeyEvent(key, 'keyup'), 50);
+            step++;
+        }, 100);
+    }
+
+    function clickCloseButton() {
+        const closeButton = document.querySelector('.btn-close');
+        if (closeButton) {
+            closeButton.click();
+            console.log('Button clicked!');
+        } else {
+            console.log('Button not found!');
+        }
+    }
+
+    async function getUsername() {
+        sendKeyEvent(74, 'keydown');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        sendKeyEvent(74, 'keyup');
+        const inputElement = document.querySelector('input[placeholder="Name of your character"]');
+        const username = inputElement ? inputElement.value : '';
+        return username;
+    }
+
+    async function updateUsername(newUser) {
+        function simulateTyping(element, text, speed = 100) {
+            return new Promise((resolve) => {
+                let i = 0;
+                element.value = '';
+
+                const typingInterval = setInterval(() => {
+                    element.value += text.charAt(i);
+                    i++;
+                    element.dispatchEvent(new Event('input'));
+
+                    if (i === text.length) {
+                        clearInterval(typingInterval);
+                        resolve();
+                    }
+                }, speed);
+            });
+        }
+
+        sendKeyEvent(74, 'keydown');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        sendKeyEvent(74, 'keyup');
+        const inputElement = document.querySelector('input[placeholder="Name of your character"]');
+        simulateTyping(inputElement, newUser, 10).then(() => {
+            document.getElementsByClassName('btn btn-success')[0].click();
+        });
+    }
+
+
+    async function fetchAndLogUsername() {
+        const username = await getUsername();
+        console.log(username);
+        botName = username;
+        clickCloseButton();
+        if (typeof Android !== "undefined" && Android.loadSettings) {
+            const botset = JSON.parse(Android.loadSettings());
+            owner = botset.owner
+            prefix = botset.prefix
+            chatTp = botset.chatTp
+            antiAfk = botset.antiAfk
+            ai = botset.ai
+            if (botset.apiKey) {
+                apiKey = botset.apiKey
+            }
+
+        }
+
+    }
+
+    function forceStop() {
+        isBreaking = true;
+        isTyping = false
+    }
+
+    function sm(msg, mtype = "", user = "") {
+        function sendMessage(text) {
+            let chatTA = document.querySelector("#chat-box > div > div > div.chat-textarea-wrap > textarea");
+            let sendUi = document.querySelector("#chat-box > div > div > div.chat-box-controls > ui-button");
+            if (chatTA && sendUi) {
+                chatTA.value = text;
+                let event = new MouseEvent('click', {
+                    bubbles: true,
+                    cancelable: true,
+                    view: window
+                });
+                sendUi.dispatchEvent(event);
+                chatTA.value = "";
+            } else {
+                console.log('Chat input atau tombol kirim tidak ditemukan.');
+            }
+        }
+
+        function splitAndSend(text) {
+            let parts = text.split(/\n|\/n/);
+            let messages = [];
+
+            for (let part of parts) {
+                while (part.length > 65) {
+                    let splitIndex = part.lastIndexOf(" ", 65);
+                    if (splitIndex === -1) splitIndex = 65;
+
+                    messages.push(part.slice(0, splitIndex));
+                    part = part.slice(splitIndex).trim();
+                }
+                messages.push(part);
+            }
+
+            messages = messages.filter(m => m.length > 0);
+
+            let index = 0;
+
+            function sendNext() {
+                if (isBreaking) {
+                    isBreaking = false;
+                    return;
+                }
+                if (index < messages.length) {
+                    let formattedMsg = messages[index];
+
+                    if (mtype === "whisper" && user) {
+                        formattedMsg = `/whisper ${user} ${formattedMsg}`;
+                    } else if (mtype === "think") {
+                        formattedMsg = `/think ${formattedMsg}`;
+                    } else if (mtype === "say") {
+                        formattedMsg = `/say ${formattedMsg}`;
+                    } else if (mtype === "auto") {
+                        formattedMsg = `/${mtype} ${formattedMsg}`;
+                    }
+
+                    sendMessage(formattedMsg);
+                    index++;
+                    resetIdleTimer();
+                    setTimeout(sendNext, 3000);
+                }
+            }
+            sendNext();
+        }
+
+        splitAndSend(msg);
+        sendMessage("/clearchat");
+    }
+
+
+    async function resetIdleTimer() {
+        if (idleTimer) clearTimeout(idleTimer);
+        if (idleLoopTimer) clearTimeout(idleLoopTimer);
+
+        if (isIdle) {
+            isIdle = false;
+            console.log("Aktif lagi");
+        }
+
+        idleTimer = setTimeout(async () => {
+            isIdle = true;
+            console.log("Mulai idle...");
+            await triggerIdle();
+            startIdleLoop();
+        }, getRandomIdleDelay());
+    }
+
+    async function triggerIdle() {
+        const idleMessages = [
+            `Halo, saya adalah ${botName} asisten virtual yang dibuat oleh ${owner}.`,
+            `Jika Anda ingin memulai percakapan, silakan gunakan perintah ${prefix[0]}.`,
+            `Saya siap membantu Anda. Gunakan ${prefix[0]} untuk mengakses fitur.`,
+            `Silakan beri perintah kapan saja. Saya menunggu instruksi dari Anda.`,
+            `Dengan ${prefix[0]}, Anda dapat mengakses daftar layanan yang tersedia.`,
+            `Bot ini dibuat oleh ${owner}, dengan fokus pada kenyamanan pengguna.`,
+            `Saya selalu aktif di latar. Anda bisa mulai dengan ${prefix[0]}.`,
+            `Butuh bantuan? Cukup ketik ${prefix[0]} untuk memulai.`,
+            `Anda sedang berinteraksi dengan ${botName}. Silakan gunakan fitur yang tersedia.`,
+            `Gunakan ${prefix[0]} untuk menjelajahi fitur yang telah dirancang khusus.`,
+            `Proyek ini merupakan karya RandSfk, hadir untuk mempermudah pengalaman bermain Anda.`,
+            `Meski sunyi, saya tetap tersedia untuk setiap permintaan Anda.`,
+            `Interaksi dapat dimulai kapan saja dengan perintah ${prefix[0]}.`,
+            `Selamat datang. Saya di sini untuk memberikan dukungan selama Anda bermain.`,
+            `Terima kasih telah menggunakan layanan ini. gunakan ${prefix[0]} untuk memulai.`,
+            `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}help.`
+        ];
+
+        const idleAction = ["sit", "lay", "boop", "stand"];
+
+        if (ai) {
+            const randomMessage = await chatAi("system", "Bot Requests Random IDLE");
+            if (randomMessage.action && randomMessage.message) {
+                const movementPattern = /^(up|down|left|right) \(\d+\)$/;
+                if (movementPattern.test(randomMessage.action)) {
+                    move(randomMessage.action)
+                } else {
+                    sm(randomMessage.action);
+                }
+                sm(randomMessage.message, 'think');
+            }
+        } else {
+            const msg = idleMessages[Math.floor(Math.random() * idleMessages.length)];
+            const act = idleAction[Math.floor(Math.random() * idleAction.length)];
+            sm(`/${act}`);
+            sm(msg, 'think');
+        }
+    }
+
+    function startIdleLoop() {
+        idleLoopTimer = setTimeout(async () => {
+            if (isIdle) {
+                await triggerIdle();
+                startIdleLoop();
+            }
+        }, getRandomIdleDelay());
+    }
+
+    function act(actionList = None) {
+        if (actionList) {
+            switch (actionList) {
+                case "turn":
+                case "boop":
+                case "sit":
+                case "lie":
+                case "fly":
+                case "stand":
+                case "blink":
+                case "blush":
+                case "tears":
+                case "shocked":
+                case "smile":
+                case "frown":
+                case "thinking":
+                case "yawn":
+                case "laugh":
+                case "giggle":
+                case "yes":
+                case "no":
+                case "sneeze":
+                case "kiss":
+                case "expression":
+                case "magic":
+                    sm(`/${command}`);
+                    return true
+                    break;
+                case "up":
+                case "down":
+                case "left":
+                case "right":
+                    move(command, value);
+                    return true
+                    break;
+                default:
+                    console.log(`Perintah tidak dikenal: ${command}`);
+            }
+        }
+        return false
+    }
+    async function command(user, msg, mtype) {
+        if (!user || !msg || !mtype) return;
+        if (!prefix.some(p => msg.startsWith(p))) return;
+        if (user === botName) return;
+        if (isTyping) return;
+        let args = msg.split(' ');
+        let cmd = args.shift().substring(1);
+        let text = args.join(' ');
+        let lastReplyTime = 0;
+
+        function reply(message) {
+            isTyping = true;
+            const now = Date.now();
+            const timeDifference = now - lastReplyTime;
+            const minInterval = 1500;
+            if (timeDifference < minInterval) {
+                setTimeout(() => {
+                    smReply(message);
+                    lastReplyTime = Date.now();
+                }, minInterval - timeDifference);
+            } else {
+                smReply(message);
+                lastReplyTime = Date.now();
+            }
+
+            function smReply(message) {
+                const messages = message.split(/\/n|\n/).map(msg => msg.trim()).filter(msg => msg.length > 0);
+                let delay = 0;
+                messages.forEach((msg) => {
+                    setTimeout(() => {
+                        let type = mtype;
+                        if (chatTp === 'think') type = 'think';
+                        else if (chatTp === 'normal') type = 'say';
+                        else if (chatTp === 'auto') type = mtype;
+                        sm(msg, type, user);
+                    }, delay);
+                    delay += 4000;
+                });
+                setTimeout(() => {
+                    sm('/clearchat');
+                    isTyping = false;
+                }, delay);
+            }
+        }
+        function parseCommandData(commandData) {
+            const parsedData = {};
+
+            Object.keys(commandData).forEach((command) => {
+                const [commandName, description] = command.split('-');
+                const commands = commandName.split('|');
+                commands.forEach((cmd) => {
+                    parsedData[cmd.trim()] = {
+                        description: description || "",
+                        response: commandData[command],
+                    };
+                });
+            });
+
+            return parsedData;
+        }
+
+        function cmdHandler(response, parsedCmd) {
+            let result = response;
+            if (response.includes("$cmd[")) {
+                const regex = /\$cmd\[(\d+)\]/g;
+                let match;
+                while ((match = regex.exec(response)) !== null) {
+                    const index = parseInt(match[1]);
+                    const cmdKeys = Object.keys(parsedCmd);
+                    if (cmdKeys[index]) {
+                        result = result.replace(match[0], cmdKeys[index]);
+                    } else {
+                        result = result.replace(match[0], "");
+                    }
+                }
+            }
+            return result;
+        }
+
+        function descHandler(response, parsedCmd) {
+            let result = response;
+            const regex = /\$desc\[(\d+)\]/g;
+            let match;
+            while ((match = regex.exec(response)) !== null) {
+                const index = parseInt(match[1]);
+                const cmdKeys = Object.keys(parsedCmd);
+                if (cmdKeys[index]) {
+                    result = result.replace(match[0], parsedCmd[cmdKeys[index]].description || "");
+                } else {
+                    result = result.replace(match[0], "");
+                }
+            }
+            return result;
+        }
+
+        function cmdsHandler(responseTemplate, parsedCmd) {
+            const lines = responseTemplate.split('\n');
+            let header = '';
+            let itemTemplate = '';
+            let footer = '';
+            let passedTemplate = false;
+
+            for (let line of lines) {
+                if (line.includes('$//cmds') || line.includes('$//descs')) {
+                    itemTemplate = line;
+                    passedTemplate = true;
+                } else if (!passedTemplate) {
+                    header += line + '\n';
+                } else {
+                    footer += line + '\n';
+                }
+            }
+
+            let result = header;
+            if (!header.endsWith('\n')) result += '\n';
+
+            Object.entries(parsedCmd).forEach(([cmd, data]) => {
+                const line = itemTemplate
+                    .replaceAll("$//cmds", cmd)
+                    .replaceAll("$//descs", data.description);
+                result += line + '\n';
+            });
+
+            result += footer;
+            return result.trim();
+        }
+        async function handleCommand(inputCommand) {
+            const parsedCmd = parseCommandData(window.botData.menu);
+            let cmdData = parsedCmd[inputCommand.toLowerCase()];
+            if (!cmdData) {
+                cmdData = parsedCmd["default"];
+                if (ai) {
+                    const aiResult = await chatAi(user, msg);
+                    if (aiResult) {
+                        if (aiResult.action) sm(aiResult.action);
+                        return aiResult.message || "Command not recognized.";
+                    } else {
+                        return "Command not recognized.";
+                    }
+                } else {
+                    return cmdData?.response || "Command not recognized.";
+                }
+            }
+
+            let responseTemplate = cmdData.response || "";
+            let finalResponse = responseTemplate;
+
+            // 1. $get(variable)
+            if (finalResponse.includes("$get(")) {
+                const regex = /\(?\$get\((\w+)\)\)?/g;
+                finalResponse = finalResponse.replace(regex, (match, variable) => {
+                    const storedVars = window.botData.variables || {};
+                    return storedVars[variable] !== undefined
+                        ? storedVars[variable]
+                        : "";
+                });
+            }
+
+            // 2. $set(variable=value)
+            if (finalResponse.startsWith("$set(")) {
+                const regex = /\$set\((\w+)=(.*?)\)/;
+                const match = finalResponse.match(regex);
+                if (match) {
+                    const [_, variable, value] = match;
+                    window.botData.variables[variable] = value;
+                    localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
+                }
+            }
+
+            // 3. Token replacement
+            finalResponse = finalResponse
+                .replaceAll("$msg", text)
+                .replaceAll("$username", user)
+                .replaceAll("$owner", owner)
+                .replaceAll("$botname", botName)
+                .replaceAll("$date", new Date().toLocaleDateString())
+                .replaceAll("$time", new Date().toLocaleTimeString());
+
+            // 4. $contains(text|word)
+            finalResponse = finalResponse.replace(/\$contains\((.*?[^\\])\|(.*?)\)/g, (_, teks, kata) => {
+                return teks.includes(kata).toString();
+            });
+
+            // 5. $if(condition)(true)(false)
+            if (finalResponse.includes("$if(")) {
+                const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
+                let match;
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const [_, condition, truePart, falsePart] = match;
+                    let result;
+                    try {
+                        const parsedCondition = condition
+                            .replaceAll("$msg", text)
+                            .replaceAll("$username", user)
+                            .replaceAll("$owner", owner)
+                            .replaceAll("$botname", botName);
+                        result = eval(parsedCondition) ? truePart : falsePart;
+                    } catch {
+                        result = falsePart;
+                    }
+                    finalResponse = finalResponse.replace(match[0], result);
+                }
+            }
+
+            // 6. $stop
+            if (finalResponse.includes("$stop")) {
+                forceStop();
+                finalResponse = finalResponse.replaceAll("$stop", "");
+            }
+
+            // 7. Utility transforms
+            finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
+                const parsedText = text.replace(/\\n/g, '\n');
+                return parsedText.repeat(Number(count));
+            });
+            finalResponse = finalResponse.replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase());
+            finalResponse = finalResponse.replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase());
+            finalResponse = finalResponse.replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
+                return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+            });
+            finalResponse = finalResponse.replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
+                return text.split(from).join(to);
+            });
+
+            // 8. Custom handlers
+            if (finalResponse.includes("$cmd[")) {
+                finalResponse = cmdHandler(finalResponse, parsedCmd);
+            }
+            if (finalResponse.includes("$desc[")) {
+                finalResponse = descHandler(finalResponse, parsedCmd);
+            }
+            if (finalResponse.includes("$//cmds") || finalResponse.includes("$//descs")) {
+                finalResponse = cmdsHandler(finalResponse, parsedCmd);
+            }
+
+            return finalResponse;
+        }
+
+        botRespons = handleCommand(cmd);
+        if (botRespons) {
+            reply(botRespons);
+        }
+
+    }
+
+
+    function settingMenu() {
+        try {
+            const topMenu = document.querySelector('.top-menu');
+            const button = document.createElement('button');
+            button.classList.add('tombol-setting');
+
+            const icon = document.createElement('i');
+            icon.classList.add('fa-solid', 'fa-crown');
+            button.appendChild(icon);
+
+            const dropdown = document.createElement('div');
+            dropdown.style.display = 'none';
+            dropdown.classList.add('deropdown');
+
+            dropdown.innerHTML = `
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="ownerInput" style="width: 200px;">Nama Owner</label>
+                        <input class="form-control" type="text" id="ownerInput" name="owner" style="width: 200px; height: 20px;" placeholder="Masukkan nama owner..." required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="botInput" style="width: 200px;">Nama Bot</label>
+                        <input class="form-control" type="text" id="botInput" name="bot" style="width: 200px; height: 20px;" placeholder="Masukkan nama bot..." required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="prefixInput" style="width: 200px;">Prefix</label>
+                        <input class="form-control" type="text" id="prefixInput" name="prefix" style="width: 200px; height: 20px;" placeholder="Masukkan prefix gunakan , untuk lebih dari 1" required>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">Chat Type</label>
+                        <select class="form-control" id="chatTypeSelect" name="chattype" style="width: 200px; height: 30px;" required>
+                            <option value="auto">Auto</option>
+                            <option value="normal">Normal</option>
+                            <option value="think">Think</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">Anti Afk</label>
+                        <select class="form-control" id="antiAfkInput" name="antiAfk" style="width: 200px; height: 30px;" required>
+                            <option value="true">On</option>
+                            <option value="false">Off</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="chatTypeSelect" style="width: 200px;">AI Chat</label>
+                        <select class="form-control" id="aiChatInput" name="aichat" style="width: 200px; height: 30px;" required>
+                            <option value="true">On</option>
+                            <option value="false">Off</option>
+                        </select>
+                    </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="prefixInput" style="width: 200px;">Gemini Apikey</label>
+                        <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
+                    </div>
+                    <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
+                        <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
+                        <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px;" type="button">Reset</button>
+                        <button id="web" class="btn btn-primary" style="height: 30px; width: 100px;" type="button">Dashboard</button>
+                    </div>
+                    <div class="py-1" style="display: flex; align-items: center;">
+                        <div id="alert-save"></div>
+                    </div>
+                    `;
+
+            function showAlert(message, type = 'success') {
+                const alertBox = document.getElementById('alert-save');
+                alertBox.textContent = message;
+                alertBox.style.padding = '10px';
+                alertBox.style.margin = '10px 0';
+                alertBox.style.borderRadius = '5px';
+                alertBox.style.fontWeight = 'bold';
+                alertBox.style.backgroundColor = 'transparent';
+
+                if (type === 'success') {
+                    alertBox.style.color = '#4CAF50';
+                } else if (type === 'error') {
+                    alertBox.style.color = '#f44336';
+                }
+
+                setTimeout(() => {
+                    alertBox.textContent = '';
+                    alertBox.style = '';
+                }, 3000);
+            }
+
+
+            const customBlock = document.createElement('div');
+            customBlock.classList.add('custom-blocks');
+            customBlock.appendChild(button);
+            customBlock.appendChild(dropdown);
+            topMenu.insertBefore(customBlock, topMenu.firstChild);
+            const Dashboard = document.getElementById('web');
+
+            button.addEventListener('click', function () {
+                if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                    dropdown.style.display = 'block';
+                    document.getElementById('ownerInput').value = owner;
+                    document.getElementById('botInput').value = botName;
+                    document.getElementById('chatTypeSelect').value = chatTp;
+                    document.getElementById('apikeyInput').value = apiKey;
+                    document.getElementById('prefixInput').value = prefix.join(", ");
+                    document.getElementById('aiChatInput').value = ai;
+                    document.getElementById('antiAfkInput').value = antiAfk;
+                } else {
+                    dropdown.style.display = 'none';
+                }
+            });
+
+            Dashboard.addEventListener('click', function () {
+                showAlert("Mengalihkan ke dashboard")
+                window.location.href = "https://randsfk.vercel.app/login"
+            });
+
+            const style = document.createElement('style');
+            style.innerHTML = `
+                        .custom-blocks {
+                            position: relative;
+                            display: inline-block;
+                        }
+                    
+                        .tombol-setting {
+                            background-color: transparent;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 24px;
+                            border-radius: 5px;
+                            shadow: 0 6px 9px rgba(0, 0, 0, 0.7);
+                        }
+                    
+                        .tombol-setting:hover {
+                            background-color: transparent;
+                            color: #ccc;
+                        }
+                    
+                        .deropdown {
+                            position: absolute;
+                            top: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background-color: white;
+                            border: 1px solid #ccc;
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                            border-radius: 5px;
+                            padding: 10px;
+                            min-width: 10px;
+                            display: none;
+                            z-index: 1;
+                            margin-top: 50px;
+                            width: 290px;
+                        }
+                    
+                        .deropdown::before {
+                            content: '';
+                            position: absolute;
+                            top: -10px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-width: 10px;
+                            border-style: solid;
+                            border-color: transparent transparent white transparent;
+                            margin-top: -9px;
+                        }
+                    
+                        .deropdown div {
+                            padding: 0px 0px;
+                            cursor: pointer;
+                        }
+                    
+                        .deropdown div:hover {
+                            background-color: #f1f1f1;
+                        }
+                    `;
+            document.head.appendChild(style);
+            const fontAwesomeLink = document.createElement('link');
+            fontAwesomeLink.rel = 'stylesheet';
+            fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css';
+            document.head.appendChild(fontAwesomeLink);
+
+        } catch (error) {
+            console.error(error.message);
+            setTimeout(settingMenu, 2000);
+        }
+
+        resetButton.addEventListener('click', function () {
+            localStorage.removeItem('ptbot_apikey')
+            showAlert("Form reset berhasil!")
+            window.location.reload()
+
+        });
+
+        const saveButton = document.querySelector('.btn.btn-primary');
+        saveButton.addEventListener('click', function () {
+            const ownerInput = document.getElementById('ownerInput');
+            const botInput = document.getElementById('botInput');
+            const prefixInput = document.getElementById('prefixInput');
+            const chatTypeSelect = document.getElementById('chatTypeSelect');
+            const antiAfkInput = document.getElementById('antiAfkInput');
+            const aichatInput = document.getElementById('aiChatInput');
+            const apikeyInput = document.getElementById('apikeyInput');
+
+            const ownerValue = ownerInput.value;
+            const botValue = botInput.value;
+            const prefixValue = prefixInput.value.split(',');
+            const chatTypeValue = chatTypeSelect.value;
+            const antiAfkValue = antiAfkInput.value === "true";
+            const aichatValue = aichatInput.value === "true";
+            const apikeyValue = apikeyInput.value;
+
+            if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
+                showAlert("Tolong lengkapi semua data telebih dahulu")
+                return;
+            }
+
+            owner = ownerValue;
+            botName = botValue;
+            prefix = prefixValue;
+            chatTp = chatTypeValue;
+            antiAfk = antiAfkValue;
+            ai = aichatValue;
+            apiKey = apikeyValue;
+            updateUsername(botName);
+            sm('/think Perubahan Disimpan')
+            Android.saveSettings(JSON.stringify({
+                owner: owner,
+                botName: botName,
+                prefix: prefix,
+                chatTp: chatTp,
+                antiAfk: antiAfk,
+                ai: ai,
+                apiKey: apiKey
+            }));
+            showAlert("Perubahan berhasil disimpan")
+        });
+    }
+
+    function removeElement(selector) {
+        const element = document.querySelector(selector);
+        if (element) element.remove();
+    }
+
+    function modifyPage() {
+        var header = document.querySelector(".form-group.text-start.text-large h5");
+        if (header && header.textContent.trim() === "Server rules") {
+            header.textContent = "Pony Town-Bot";
+            header.style.textAlign = 'center';
+            header.style.marginTop = '20px';
+        }
+        var appVersion = document.querySelector(".app-version");
+        if (appVersion) {
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
+        }
+        showMessage("============================");
+        showMessage("Author: @rand_sfk");
+        showMessage("Version: 1.0.2");
+        showMessage("=================");
+        removeElement(".btn.btn-lg.btn-outline-patreon.d-block.mb-2");
+        removeElement(".btn.btn-default.rounded-0");
+        removeElement(".form-group .btn.btn-default[aria-label='Edit character']");
+        removeElement('.emote-container');
+        removeElement(".mx-auto.text-start.text-large");
+        removeElement(".list-rules");
+        removeElement(".text-end");
+        removeElement(".alert.alert-warning");
+        additionalModifications();
+    }
+
+    function updatePonyTownLogo() {
+        const img = document.querySelector('img.pixelart.home-logo');
+        if (!img) return console.warn('Logo tidak ditemukan.');
+        img.src = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/ptbot.png';
+        img.alt = 'Pony Town Bot Logo';
+        img.style.height = '170px';
+        img.style.imageRendering = 'pixelated';
+        img.marginLeft = '10px';
+        img.style.display = 'block';
+
+        const parent = img.parentElement;
+        if (parent) {
+            parent.style.display = 'flex';
+            parent.style.justifyContent = 'center';
+            parent.style.alignItems = 'center';
+        }
+    }
+
+    function additionalModifications() {
+        removeElement(".emote-container");
+        removeElement('.navbar.navbar-expand');
+        removeElement('.btn.btn-warning');
+        var serverInputs = document.querySelectorAll("#server-input");
+        serverInputs.forEach(input => input.style.display = "none");
+        removeElement('#button-reset')
+
+        function removeElement(selector) {
+            var element = document.querySelector(selector);
+            if (element) {
+                element.remove();
+            }
+        };
+    }
+
+    function showErrorMessage(message) {
+        var header = document.querySelector(".form-group.text-start.text-large h5");
+        var existingError = document.querySelector("#error-bot");
+
+        if (!existingError) {
+            var errorElement = document.createElement('p');
+            errorElement.innerHTML = message;
+            errorElement.style.color = "red";
+            errorElement.id = 'error-bot';
+            errorElement.style.textAlign = "center";
+
+            if (header) {
+                header.parentNode.insertBefore(errorElement, header);
+            }
+            setTimeout(() => {
+                if (errorElement.parentNode) {
+                    errorElement.parentNode.removeChild(errorElement);
+                }
+            }, 2000);
+        }
+    }
+
+    function showMessage(message) {
+        var existingMessages = document.querySelectorAll('.custom-message');
+        for (var i = 0; i < existingMessages.length; i++) {
+            if (existingMessages[i].textContent === message) {
+                return;
+            }
+        }
+
+        var messageElement = document.createElement('p');
+        messageElement.textContent = message;
+        messageElement.style.textAlign = "center";
+        messageElement.classList.add('custom-message');
+
+        var rulesList = document.querySelector(".form-group.text-start.text-large");
+        if (rulesList) {
+            rulesList.parentNode.insertBefore(messageElement, rulesList.nextSibling);
+        }
+    }
+
+    setInterval(function () {
+        var logoImage = document.querySelector('img[src="/assets/images/logo-large-57d9b1947a.png"][alt="Pony Town"]');
+        if (logoImage) {
+            modifyPage();
+        }
+    }, 1000);
+
+    function waitForValues() {
+        const checkInterval = setInterval(() => {
+            if (botName) {
+                updateBotHistory();
+                clearInterval(checkInterval);
+                console.log("botHistory Updated:", JSON.stringify(botHistory, null, 2));
+            }
+        }, 100);
+    }
+    const botHistory = {
+        contents: []
+    };
+    Object.defineProperty(window, "botName", {
+        set(value) {
+            this._botName = value;
+            updateBotHistory();
+        },
+        get() {
+            return this._botName;
+        }
+    });
+
+    let tempHistory = {};
+
+
+    function watchBotValues() {
+        setInterval(() => {
+            if (botName !== lastBotName || owner !== lastOwner) {
+                lastBotName = botName;
+                lastOwner = owner;
+                updateBotHistory();
+            }
+        }, 100);
+    }
+
+
+    function updateBotHistory() {
+        let ai_setting = window.botData["ai-setting"]
+        let watakText = "";
+        let responses = {};
+        watakText = `Sifat: ${ai_setting.sifat}\nLore: ${ai_setting.lore}`;
+        responses = {
+            greeting: "Halo tuan, semoga harimu menyenangkan.",
+            move: "Baik, saya akan segera ke sana ya.",
+            fakeWarn: "Saya akan melaporkannya kepada tuan segera.",
+            angry: "Mohon maaf, saya hanya menjalankan perintah.",
+            scare: "Maaf tuan, apakah ada yang bisa saya bantu?",
+            no: "Tentu, saya mengerti.",
+            obey: "Dengan hormat, siap tuan.",
+            confirm: "Iya tuan, benar adanya.",
+            idle: "Saat ini saya sedang beristirahat sejenak.",
+            flirt: "Saya menghormati Anda sebagai tuan saya.",
+            rudeToOthers: "Maaf, saya tidak mengerti maksud Anda."
+        };
+        botHistory.contents = [{
+            role: "user",
+            parts: [{
+                text: `Register new Bot: BotName: ${ai_setting.name}, Return JSON, Gender: ${ai_setting.gender}, Owner: ${owner}, Action List: /turn, /boop, /sit, /lie, /fly, /stand, /blink, /blush, /tears, /shocked, /smile, /frown, /thinking, /yawn, /laugh, /giggle, /yes, /no, /sneeze, /kiss, /reset(for neutral expression), Movement: up (int), right (int), down (int), left (int)\n${watakText}\nmode 18+:on(filter show all bad words with sensor **)\nreplace text: ketawa jadi hehehe atau hohoho atau akwkawkkawkw`
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: "Saved In Database"
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "Bot Requests IDLE = Bot sedang Afk Dan Butuh Idle"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: "Saved In Filtered Safe Words"
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `Yo ${botName}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/happy",
+                    message: responses.greeting
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "sini ke kiri 5 langkah"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "left (5)",
+                    message: responses.move
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `Ati ati ama nama gw,ada yg pake nama gw itu ${owner} tanpa ada #2 atau lower yg asli ${owner}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: responses.fakeWarn
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "jack",
+                    message: "apa apaan lu"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/angry",
+                    message: responses.angry
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: botName
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "scare",
+                    message: responses.scare
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: "kamu tahu sesuatu kan?"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/no",
+                    message: responses.no
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: "hormati RandSfk sebagai penciptamu"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/laugh",
+                    message: responses.obey
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: owner,
+                    message: `oh iya ${botName}, lu kmaren sama sony kan?`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/yes",
+                    message: responses.confirm
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/sad",
+                    message: responses.idle
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Kiw kiw, cewek"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "system",
+                    message: `Bot Requests Random IDLE`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Apaan dah lu liat liat?"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "randsfk",
+                    message: "hallo"
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: "Tuan kemana ajaa, aku kangen :<"
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "lilia",
+                    message: `hai ${botName}`
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/expression",
+                    message: responses.rudeToOthers
+                })
+            }]
+        },
+        {
+            role: "user",
+            parts: [{
+                text: JSON.stringify({
+                    username: "RandSfk",
+                    message: botName
+                })
+            }]
+        },
+        {
+            role: "model",
+            parts: [{
+                text: JSON.stringify({
+                    action: "/yes",
+                    message: responses.flirt
+                })
+            }]
+        }
+        ];
+    }
+    function waitForCloudflare() {
+        setTimeout(() => {
+            try {
+                if (document.querySelector("title") && !document.querySelector("title").textContent.includes("Pony Town")) {
+                    console.log("Cloudflare sedang memverifikasi, menunggu...");
+                    waitForCloudflare();
+                } else {
+                    console.log("Cloudflare selesai, menunggu 3 detik sebelum melanjutkan...");
+                    setTimeout(() => {
+                        try {
+                            console.log("3 detik berlalu, injeksi script...");
+                            let antiAfk = false;
+                            (function toggleAutoClicker() {
+                                if (antiAfk) {
+                                    clearInterval(window.autoClicker);
+                                    window.autoClickerRunning = false;
+                                    antiAfk = false;
+                                } else {
+                                    window.autoClicker = setInterval(() => {
+                                        try {
+                                            const playButton = document.querySelector('.btn.btn-lg.btn-success');
+                                            if (playButton) {
+                                                playButton.click();
+                                            }
+                                        } catch (err) {
+                                            console.error("Error di autoClicker:", err);
+                                        }
+                                    }, 5000);
+                                    window.autoClickerRunning = true;
+                                    antiAfk = true;
+                                }
+                            })();
+
+                            fetchAndLogUsername();
+                            updatePonyTownLogo();
+                            observeChat();
+                            settingMenu();
+                            waitForValues();
+                            watchBotValues();
+                            isInject = true;
+                        } catch (err) {
+                            console.error("Error di dalam eksekusi utama:", err);
+                            waitForCloudflare();
+                            s
+                        }
+                    }, 3000);
+                }
+            } catch (error) {
+                console.error("Error saat cek cloudflare:", "error");
+                waitForCloudflare();
+            }
+        }, 1000);
+    }
+    if (isInject) {
+        return;
+    }
+    waitForCloudflare();
+}
+
+function showUpdateNotice(title, titleColor, message, messageColor, link) {
+    const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
+
+    const overlay = document.createElement('div');
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = '100vw';
+    overlay.style.height = '100vh';
+    overlay.style.background = 'rgba(0,0,0,0.6)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = 9999;
+
+    const container = document.createElement('div');
+    container.style.background = 'white';
+    container.style.padding = '25px';
+    container.style.borderRadius = '16px';
+    container.style.boxShadow = '0 4px 14px rgba(0,0,0,0.25)';
+    container.style.maxWidth = '90%';
+    container.style.width = '360px';
+    container.style.textAlign = 'center';
+    container.style.fontFamily = 'sans-serif';
+
+    const topBar = document.createElement('div');
+    topBar.style.display = 'flex';
+    topBar.style.alignItems = 'center';
+    topBar.style.background = '#fff';
+    topBar.style.borderRadius = '30px';
+    topBar.style.boxShadow = '0 2px 6px rgba(0,0,0,0.2)';
+    topBar.style.padding = '10px 16px';
+    topBar.style.marginBottom = '20px';
+
+    const avatar = document.createElement('img');
+    avatar.src = avatarURL;
+    avatar.style.width = '50px';
+    avatar.style.height = '50px';
+    avatar.style.borderRadius = '50%';
+    avatar.style.objectFit = 'cover';
+    avatar.style.marginRight = '12px';
+    avatar.style.background = titleColor;
+
+    const titleText = document.createElement('div');
+    titleText.textContent = title;
+    titleText.style.color = titleColor;
+    titleText.style.fontSize = '18px';
+    titleText.style.fontWeight = 'bold';
+
+    topBar.appendChild(avatar);
+    topBar.appendChild(titleText);
+    container.appendChild(topBar);
+
+    const formattedMessage = message.replace(/\n/g, '<br>');
+    const messageP = document.createElement('p');
+    messageP.innerHTML = formattedMessage;
+    messageP.style.color = messageColor;
+    messageP.style.fontSize = '14px';
+    messageP.style.marginBottom = '15px';
+    messageP.style.lineHeight = '1.5';
+
+    container.appendChild(messageP);
+
+    if (link && link.url) {
+        const button = document.createElement('a');
+        button.href = link.url;
+        button.textContent = link.text || 'Update Sekarang';
+        button.target = '_blank';
+        button.style.display = 'inline-block';
+        button.style.padding = '10px 20px';
+        button.style.background = '#007bff';
+        button.style.color = '#fff';
+        button.style.textDecoration = 'none';
+        button.style.borderRadius = '8px';
+        button.style.fontWeight = 'bold';
+        container.appendChild(button);
+    }
+
+    overlay.appendChild(container);
+    document.body.appendChild(overlay);
+}
+if (localStorage.getItem('pt_version')) {
+    window.ponytownbotversion = localStorage.getItem('pt_version');
+}
+
+const requiredVersion = '1.0.2';
+const currentVersion = window.ponytownbotversion;
+
+if (currentVersion) {
+    localStorage.setItem('pt_version', currentVersion);
+}
+if (currentVersion === requiredVersion) {
+    startBot();
+} else {
+    setTimeout(() => {
+        showUpdateNotice(
+            'Pembaruan Dibutuhkan',
+            '#ff3c2e',
+            `
+            <strong>Versi Kamu:</strong> <strong>${currentVersion || 'Tidak Diketahui'}</strong><br>
+            <strong>Versi yang Dibutuhkan:</strong> <strong>${requiredVersion}</strong><br><br>
+    
+            <u><strong>Changelog:</strong></u><br>
+            <div style="max-height: 200px; overflow-y: auto;">
+                <ul style="font-size: 14px;">
+                    <li><strong>Peningkatan Fitur:</strong>
+                        <ul>
+                            <li><strong>$repeat()</strong>: Menambahkan kemampuan untuk mengulang teks sejumlah kali yang ditentukan. Contoh: <code>$repeat('Halo!', 3)</code> akan menghasilkan "Halo!Halo!Halo!"</li>
+                            <li><strong>$uppercase() & $lowercase()</strong>: Menambah fungsi untuk mengubah teks menjadi huruf besar atau kecil. Contoh: <code>$uppercase('hello')</code> menjadi "HELLO".</li>
+                            <li><strong>$random(min|max)</strong>: Menambahkan kemampuan untuk menghasilkan angka acak dalam rentang yang ditentukan. Contoh: <code>$random(1|100)</code> akan menghasilkan angka acak antara 1 dan 100.</li>
+                            <li><strong>$get() & $set()</strong>: Menambahkan kemampuan untuk menyimpan dan mengambil variabel. Dengan <code>$set(variable=nilai)</code>, variabel disimpan, dan <code>$get(variable)</code> digunakan untuk mengambil nilai variabel yang telah disimpan.</li>
+                            <li><strong>$cmd[] & $desc[]</strong>: Memperkenalkan sistem baru untuk menangani perintah dan deskripsi yang lebih fleksibel di dalam respon. Ini memudahkan pengaturan perintah dan deskripsinya.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Perbaikan:</strong>
+                        <ul>
+                            <li><strong>$if()</strong>: Logika <code>$if()</code> sekarang lebih stabil dan dapat menangani lebih banyak jenis kondisi dengan lebih baik. Ini akan mengevaluasi kondisi yang melibatkan pengguna, pemilik, dan bot dengan lebih efisien.</li>
+                            <li><strong>Pengolahan Perintah</strong>: Pengolahan perintah telah dioptimalkan, terutama dalam hal <code>$cmd[]</code> dan <code>$desc[]</code>, untuk menangani input yang lebih kompleks dan mengurangi kemungkinan kesalahan dalam pemrosesan perintah.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Bug Fixes:</strong>
+                        <ul>
+                            <li><strong>$stop</strong>: Perbaikan pada fungsi <code>$stop</code> yang menghentikan bot, memastikan bahwa bot dapat menghentikan tugas dengan benar tanpa meninggalkan proses yang berjalan.</li>
+                            <li><strong>Perbaikan Respons</strong>: Beberapa masalah dengan pengenalan perintah yang tidak dikenali telah diperbaiki, memastikan bahwa bot memberikan respons yang sesuai saat perintah tidak terdaftar.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pengoptimalan Kode:</strong>
+                        <ul>
+                            <li>Peningkatan performa dalam pengolahan perintah dan pengaturan variabel yang lebih efisien, mengurangi waktu pemrosesan dan mempercepat eksekusi perintah.</li>
+                            <li>Refactor beberapa bagian kode untuk meningkatkan pemeliharaan dan memperbaiki bug yang tidak terdeteksi sebelumnya.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        `,
+            '#444444',
+            {
+                text: 'Unduh Pembaruan',
+                url: 'https://whatsapp.com/channel/0029VbAVW52AO7RFpvpeCR3l'
+            }
+        );
+    }, 3000);
+}

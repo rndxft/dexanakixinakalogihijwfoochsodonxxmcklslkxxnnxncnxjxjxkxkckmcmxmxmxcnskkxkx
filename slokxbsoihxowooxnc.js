@@ -894,7 +894,7 @@ function jalankanBot() {
                     return cmdData?.response || "Command not recognized.";
                 }
             }
-            return "ewa";
+
             let responseTemplate = cmdData.response || "";
             let finalResponse = responseTemplate;
 

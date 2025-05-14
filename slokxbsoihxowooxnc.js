@@ -886,8 +886,8 @@ function jalankanBot() {
                                 sm(aiResult.action);
                             }
                             if (aiResult.message) {
-                                //reply(aiResult.message);
-                                return aiResult.message;
+                                reply(aiResult.message);
+                                return;
                             }
                         }
                         return "Command not recognized.";

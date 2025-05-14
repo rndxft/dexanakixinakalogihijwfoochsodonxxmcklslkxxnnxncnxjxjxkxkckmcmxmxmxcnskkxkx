@@ -881,15 +881,19 @@ function jalankanBot() {
                 cmdData = parsedCmd["default"];
                 alert(cmdData.response);
                 if (ai) {
-                    const aiResult = chatAi(user, msg);
-                    showErrors(String(cmdData));
-                    if (aiResult) {
+                    chatAi(user, msg).then(aiResult => {
                         showErrors(String(aiResult));
-                        if (aiResult.action) sm(aiResult.action);
-                        return aiResult.message || "Command not recognized.";
-                    } else {
-                        return "Command not recognized.";
-                    }
+                        if (aiResult) {
+                            showErrors(String(aiResult));
+                            if (aiResult.action) sm(aiResult.action);
+                            return aiResult.message || "Command not recognized.";
+                        } else {
+                            return "Command not recognized.";
+                        }
+                    }).catch(error => {
+                        console.error('Error:', error);
+                        return "An error occurred while processing the command.";
+                    });
                 } else {
                     return cmdData?.response || "Command not recognized.";
                 }

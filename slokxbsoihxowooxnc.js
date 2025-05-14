@@ -616,9 +616,8 @@ function jalankanBot() {
     }
 
     async function triggerIdle() {
-        const name = botName.split('|')[0].trim();
         const idleMessages = [
-            `Halo, saya adalah asisten virtual yang dibuat oleh ${owner}.`,
+            `Halo, saya adalah ${botName} asisten virtual yang dibuat oleh ${owner}.`,
             `Jika Anda ingin memulai percakapan, silakan gunakan perintah ${prefix[0]}.`,
             `Saya siap membantu Anda. Gunakan ${prefix[0]} untuk mengakses fitur.`,
             `Silakan beri perintah kapan saja. Saya menunggu instruksi dari Anda.`,
@@ -626,15 +625,14 @@ function jalankanBot() {
             `Bot ini dibuat oleh ${owner}, dengan fokus pada kenyamanan pengguna.`,
             `Saya selalu aktif di latar. Anda bisa mulai dengan ${prefix[0]}.`,
             `Butuh bantuan? Cukup ketik ${prefix[0]} untuk memulai.`,
-            `Anda sedang berinteraksi dengan Pony Town Bot. Silakan gunakan fitur yang tersedia.`,
-            `Saya tetap siaga untuk membantu, meskipun suasana sedang hening.`,
+            `Anda sedang berinteraksi dengan ${botName}. Silakan gunakan fitur yang tersedia.`,
             `Gunakan ${prefix[0]} untuk menjelajahi fitur yang telah dirancang khusus.`,
             `Proyek ini merupakan karya RandSfk, hadir untuk mempermudah pengalaman bermain Anda.`,
             `Meski sunyi, saya tetap tersedia untuk setiap permintaan Anda.`,
             `Interaksi dapat dimulai kapan saja dengan perintah ${prefix[0]}.`,
             `Selamat datang. Saya di sini untuk memberikan dukungan selama Anda bermain.`,
-            `Terima kasih telah menggunakan layanan ini. ${prefix[0]} bisa digunakan untuk memulai.`,
-            `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}.`
+            `Terima kasih telah menggunakan layanan ini. gunakan ${prefix[0]} untuk memulai.`,
+            `Jika ada yang bisa saya bantu, cukup ketik ${prefix[0]}help.`
         ];
 
         const idleAction = ["sit", "lay", "boop", "stand"];
@@ -843,20 +841,19 @@ function jalankanBot() {
                     chatAi(user, msg).then(aiResult => {
                         if (aiResult) {
                             if (aiResult.action) sm(aiResult.action);
-                            if (aiResult.message) sm(aiResult.message);
+                            if (aiResult.message) return aiResult.message;
                         } else {
-                            sm("Command not recognized.");
+                            cmdData?.response || "Command not recognized.";
                         }
                     });
-                    return;
+                    return cmdData?.response;
                 }
-        
                 return cmdData?.response || "Command not recognized.";
             }
-        
+
             let responseTemplate = cmdData.response;
             let finalResponse = responseTemplate;
-        
+
             // 1. $get(variable)
             if (finalResponse.includes("$get(")) {
                 const regex = /\(?\$get\((\w+)\)\)?/g;
@@ -867,7 +864,7 @@ function jalankanBot() {
                         : "";
                 });
             }
-        
+
             // 2. $set(variable=value)
             if (finalResponse.startsWith("$set(")) {
                 const regex = /\$set\((\w+)=(.*?)\)/;
@@ -878,21 +875,21 @@ function jalankanBot() {
                     localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
                 }
             }
-        
+
             // 3. Token replacement
             finalResponse = finalResponse
                 .replaceAll("$msg", text)
-                .replaceAll("$username", `"${user}"`)
-                .replaceAll("$owner", `"${owner}"`)
-                .replaceAll("$botname", `"${botName}"`)
+                .replaceAll("$username", user)
+                .replaceAll("$owner", owner)
+                .replaceAll("$botname", botName)
                 .replaceAll("$date", new Date().toLocaleDateString())
                 .replaceAll("$time", new Date().toLocaleTimeString());
-        
+
             // 4. $contains(text|word)
             finalResponse = finalResponse.replace(/\$contains\((.*?[^\\])\|(.*?)\)/g, (_, teks, kata) => {
                 return teks.includes(kata).toString();
             });
-        
+
             // 5. $if(condition)(true)(false)
             if (finalResponse.includes("$if(")) {
                 const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
@@ -903,9 +900,9 @@ function jalankanBot() {
                     try {
                         const parsedCondition = condition
                             .replaceAll("$msg", text)
-                            .replaceAll("$username", `"${user}"`)
-                            .replaceAll("$owner", `"${owner}"`)
-                            .replaceAll("$botname", `"${botName}"`);
+                            .replaceAll("$username", user)
+                            .replaceAll("$owner", owner)
+                            .replaceAll("$botname", botName);
                         result = eval(parsedCondition) ? truePart : falsePart;
                     } catch {
                         result = falsePart;
@@ -913,13 +910,13 @@ function jalankanBot() {
                     finalResponse = finalResponse.replace(match[0], result);
                 }
             }
-        
+
             // 6. $stop
             if (finalResponse.includes("$stop")) {
                 forceStop();
                 finalResponse = finalResponse.replaceAll("$stop", "");
             }
-        
+
             // 7. Utility transforms
             finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
                 const parsedText = text.replace(/\\n/g, '\n');
@@ -933,7 +930,7 @@ function jalankanBot() {
             finalResponse = finalResponse.replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
                 return text.split(from).join(to);
             });
-        
+
             // 8. Custom handlers
             if (finalResponse.includes("$cmd[")) {
                 finalResponse = cmdHandler(finalResponse, parsedCmd);
@@ -944,10 +941,10 @@ function jalankanBot() {
             if (finalResponse.includes("$//cmds") || finalResponse.includes("$//descs")) {
                 finalResponse = cmdsHandler(finalResponse, parsedCmd);
             }
-        
+
             return finalResponse;
         }
-        
+
         botRespons = handleCommand(cmd);
         if (botRespons) {
             reply(botRespons);

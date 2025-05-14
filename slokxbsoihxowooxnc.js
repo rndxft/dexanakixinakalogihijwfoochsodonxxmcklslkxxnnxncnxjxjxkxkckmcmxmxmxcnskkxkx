@@ -875,17 +875,20 @@ function jalankanBot() {
             alert(inputCommand);
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
+                
                 if (ai) {
-                    chatAi(user, msg).then(aiResult => {
-                        showErrors(JSON.stringify(aiResult, null, 2));
+                    return chatAi(user, msg).then(aiResult => {
                         if (aiResult) {
-                            showErrors(String(aiResult.action+" :"+aiResult.message));
-                            if (aiResult.action) sm(aiResult.action);
-                            if (aiResult.message) reply(aiResult.message);
-                            return "Command not recognized.";
-                        } else {
-                            return "Command not recognized.";
+                            showErrors(JSON.stringify(aiResult, null, 2));
+                            if (aiResult.action) {
+                                sm(aiResult.action);
+                            }
+                            if (aiResult.message) {
+                                reply(aiResult.message);
+                                return aiResult.message;
+                            }
                         }
+                        return "Command not recognized.";
                     }).catch(error => {
                         console.error('Error:', error);
                         return "An error occurred while processing the command.";
@@ -894,6 +897,7 @@ function jalankanBot() {
                     return cmdData?.response || "Command not recognized.";
                 }
             }
+            
 
             let responseTemplate = cmdData.response || "";
             let finalResponse = responseTemplate;

@@ -862,14 +862,10 @@ function jalankanBot() {
                     }
                 `;
                 document.head.appendChild(style);
-        
-                // Event tombol close
                 closeBtn.addEventListener('click', () => {
                     errorBox.remove();
                 });
             }
-        
-            // Set teks error
             document.getElementById('errorText').textContent = error;
         }
         
@@ -883,7 +879,7 @@ function jalankanBot() {
                     chatAi(user, msg).then(aiResult => {
                         showErrors(JSON.stringify(aiResult, null, 2));
                         if (aiResult) {
-                            showErrors(String(aiResult));
+                            showErrors(String(aiResult.action+" :"+aiResult.message));
                             if (aiResult.action) sm(aiResult.action);
                             if (aiResult.message) reply(aiResult.message);
                             return "Command not recognized.";

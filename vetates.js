@@ -56,7 +56,7 @@ async function GetCmd() {
 
             const appVersion = document.querySelector(".app-version");
             if (appVersion) {
-                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+                appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Beta</b> ' +
                     '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
             }
 
@@ -1198,7 +1198,7 @@ function jalankanBot() {
         }
         var appVersion = document.querySelector(".app-version");
         if (appVersion) {
-            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Release</b> ' +
+            appVersion.innerHTML = 'Pony Town Bot Version: <b class="me-2">1.0.2 Beta</b> ' +
                 '(<a class="text-muted" href="https://instagram.com/rand_sfk">My Instagram</a>)';
         }
         showMessage("============================");

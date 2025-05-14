@@ -193,6 +193,8 @@ async function startBot() {
         console.warn('❌ Gagal mendapatkan data bot.');
     }
 }
+
+
 function jalankanBot() {
 
     if (window._pb_ky_sc !== "randyganteng") {
@@ -709,7 +711,7 @@ function jalankanBot() {
     async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
-        //if (user === botName) return;
+        if (user === botName) return;
         if (isTyping) return;
         let args = msg.split(' ');
         let cmd = args.shift().substring(1);
@@ -832,6 +834,71 @@ function jalankanBot() {
             result += footer;
             return result.trim();
         }
+        function showErrors(error) {
+            let errorBox = document.getElementById('errorBox');
+        
+            // Kalau belum ada, buat elemen dan style-nya
+            if (!errorBox) {
+                // Buat elemen utama
+                errorBox = document.createElement('div');
+                errorBox.id = 'errorBox';
+        
+                // Tambahkan tombol close
+                const closeBtn = document.createElement('span');
+                closeBtn.innerHTML = '&times;';
+                closeBtn.id = 'errorCloseBtn';
+        
+                // Tambahkan isi error
+                const errorText = document.createElement('span');
+                errorText.id = 'errorText';
+        
+                // Gabungkan elemen
+                errorBox.appendChild(errorText);
+                errorBox.appendChild(closeBtn);
+                document.body.appendChild(errorBox);
+        
+                // Tambahkan styling
+                const style = document.createElement('style');
+                style.textContent = `
+                    #errorBox {
+                        position: fixed;
+                        top: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: #f44336;
+                        color: white;
+                        padding: 15px 25px;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+                        font-size: 16px;
+                        z-index: 9999;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                        max-width: 90%;
+                        min-width: 200px;
+                        pointer-events: auto;
+                    }
+                    #errorCloseBtn {
+                        cursor: pointer;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-left: 10px;
+                    }
+                `;
+                document.head.appendChild(style);
+        
+                // Event tombol close
+                closeBtn.addEventListener('click', () => {
+                    errorBox.remove();
+                });
+            }
+        
+            // Set teks error
+            document.getElementById('errorText').textContent = error;
+        }
+        
         function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
@@ -841,8 +908,9 @@ function jalankanBot() {
                 alert(cmdData.response);
                 if (ai) {
                     const aiResult = chatAi(user, msg);
-                    showUpdateNotice('Alert', 'white', cmdData, white);
+                    showErrors(cmdData);
                     if (aiResult) {
+                        showErrors(aiResult);
                         if (aiResult.action) sm(aiResult.action);
                         return aiResult.message || "Command not recognized.";
                     } else {
@@ -1684,7 +1752,6 @@ function jalankanBot() {
                         } catch (err) {
                             console.error("Error di dalam eksekusi utama:", err);
                             waitForCloudflare();
-                            s
                         }
                     }, 3000);
                 }

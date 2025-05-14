@@ -709,7 +709,7 @@ function jalankanBot() {
     async function command(user, msg, mtype) {
         if (!user || !msg || !mtype) return;
         if (!prefix.some(p => msg.startsWith(p))) return;
-        if (user === botName) return;
+        //if (user === botName) return;
         if (isTyping) return;
         let args = msg.split(' ');
         let cmd = args.shift().substring(1);
@@ -832,13 +832,13 @@ function jalankanBot() {
             result += footer;
             return result.trim();
         }
-        async function handleCommand(inputCommand) {
+        function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
-                    const aiResult = await chatAi(user, msg);
+                    const aiResult = chatAi(user, msg);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
                         return aiResult.message || "Command not recognized.";

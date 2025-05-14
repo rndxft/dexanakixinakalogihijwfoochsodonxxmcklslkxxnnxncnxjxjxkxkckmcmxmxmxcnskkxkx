@@ -841,8 +841,7 @@ function jalankanBot() {
                 alert(cmdData.response);
                 if (ai) {
                     const aiResult = chatAi(user, msg);
-                    alert(cmdData)
-                    reply(cmdData);
+                    showUpdateNotice('Alert', 'white', cmdData, white);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
                         return aiResult.message || "Command not recognized.";
@@ -1701,7 +1700,7 @@ function jalankanBot() {
     waitForCloudflare();
 }
 
-function showUpdateNotice(title, titleColor, message, messageColor, link) {
+function showUpdateNotice(title, titleColor, message, messageColor, link=None) {
     const avatarURL = 'https://raw.githubusercontent.com/jelianakhfjakjxllwuufoplakj927hfoks/dexanakixinakalogihijwfoochsodonxxmcklslkxxnnxncnxjxjxkxkckmcmxmxmxcnskkxkx/refs/heads/main/randsfk.png';
 
     const overlay = document.createElement('div');

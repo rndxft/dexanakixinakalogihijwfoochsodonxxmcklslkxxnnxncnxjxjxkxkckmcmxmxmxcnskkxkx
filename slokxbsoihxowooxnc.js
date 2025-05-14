@@ -841,6 +841,7 @@ function jalankanBot() {
                 alert(cmdData.response);
                 if (ai) {
                     const aiResult = chatAi(user, msg);
+                    alert(cmdData)
                     reply(cmdData);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
@@ -852,7 +853,7 @@ function jalankanBot() {
                     return cmdData?.response || "Command not recognized.";
                 }
             }
-            return;
+            return "ewa";
             let responseTemplate = cmdData.response || "";
             let finalResponse = responseTemplate;
 
@@ -1169,13 +1170,15 @@ function jalankanBot() {
             }
 
             owner = ownerValue;
+            if (botName != botValue) {
+                updateUsername(botName);
+            }
             botName = botValue;
             prefix = prefixValue;
             chatTp = chatTypeValue;
             antiAfk = antiAfkValue;
             ai = aichatValue;
             apiKey = apikeyValue;
-            updateUsername(botName);
             sm('/think Perubahan Disimpan')
             Android.saveSettings(JSON.stringify({
                 owner: owner,

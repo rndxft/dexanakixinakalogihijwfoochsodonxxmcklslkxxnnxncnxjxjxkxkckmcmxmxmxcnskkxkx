@@ -951,7 +951,9 @@ function jalankanBot() {
             let cmdData = parsedCmd[inputCommand.toLowerCase()] || parsedCmd["default"];
             let responseTemplate = cmdData?.response || "Command not recognized.";
         
-            if (!cmdData && ai) {
+            if (cmdData) {
+                responseTemplate = cmdData.response || "Command not recognized.";
+            } else if (ai) {
                 try {
                     const aiResult = await chatAi(user, msg);
                     if (aiResult) {
@@ -964,6 +966,8 @@ function jalankanBot() {
                 } catch {
                     responseTemplate = "An error occurred while processing the command.";
                 }
+            } else {
+                cmdData.response || "Command not recognized.";
             }
         
             let finalResponse = responseTemplate;

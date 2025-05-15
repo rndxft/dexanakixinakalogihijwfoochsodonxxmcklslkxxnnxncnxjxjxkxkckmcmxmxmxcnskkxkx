@@ -952,7 +952,8 @@ function jalankanBot() {
             let cmdData = parsedCmd[inputCommand.toLowerCase()] || parsedCmd["default"];
             let responseTemplate = cmdData?.response || "Command not recognized.";
             if (cmdData) {
-                responseTemplate = cmdData.response || "";
+                responseTemplate = cmdData.response || "Command not recognized.";
+            } else {
                 if (ai) {
                     try {
                         const aiResult = await chatAi(user, msg);
@@ -972,8 +973,8 @@ function jalankanBot() {
                         responseTemplate = "An error occurred while processing the command.";
                     }
                 } else {
-                    cmdData = parsedCmd["default"];
-                    responseTemplate = cmdData?.response || "Command not recognized.";
+                    const defaultCmd = parsedCmd["default"];
+                    responseTemplate = defaultCmd?.response || "Command not recognized.";
                 }
             }
         

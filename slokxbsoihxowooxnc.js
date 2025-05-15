@@ -953,7 +953,6 @@ function jalankanBot() {
             let responseTemplate = cmdData?.response || "Command not recognized.";
             if (cmdData) {
                 responseTemplate = cmdData.response || "";
-            } else {
                 if (ai) {
                     try {
                         const aiResult = await chatAi(user, msg);

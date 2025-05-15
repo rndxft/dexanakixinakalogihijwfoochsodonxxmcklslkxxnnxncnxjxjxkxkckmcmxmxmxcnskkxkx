@@ -1323,7 +1323,7 @@ function jalankanBot() {
 
             owner = ownerValue;
             if (botName != botValue) {
-                updateUsername(botName);
+                updateUsername(botValue);
             }
             botName = botValue;
             prefix = prefixValue;

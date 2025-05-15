@@ -871,20 +871,90 @@ function jalankanBot() {
             }
             document.getElementById('errorText').textContent = error;
         }
+        async function rget(url, data = {}, headers = {}, callback) {
+            let queryString = '';
+            if (Object.keys(data).length > 0) {
+                queryString = '?' + new URLSearchParams(data).toString();
+            }
+            const fullUrl = url + queryString;
+            let jsonHeaders = headers;
+            if (typeof headers !== 'object') {
+                try {
+                    jsonHeaders = JSON.parse(headers);
+                } catch (error) {
+                    return callback("Error: Invalid headers format.", null);
+                }
+            }
+            fetch(fullUrl, {
+                method: 'GET',
+                headers: jsonHeaders,
+            })
+            .then(response => response.json())
+            .then(data => {
+                callback(null, data);
+            })
+            .catch(error => {
+                callback(error, null);
+            });
+        }
+        async function rpost(url, data = {}, headers = {}, callback) {
+            let jsonData = data;
+            if (typeof data !== 'object') {
+                try {
+                    jsonData = JSON.parse(data);
+                } catch (error) {
+                    return callback("Error: Invalid JSON input.", null);
+                }
+            }
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    ...headers,
+                },
+                body: JSON.stringify(jsonData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                callback(null, data);
+            })
+            .catch(error => {
+                callback(error, null);
+            });
+        }  
+        const rjson = {
+            toJson: function(input) {
+                let result;
+                try {
+                    result = JSON.parse(input);
+                } catch (error) {
+                    result = "Error parsing JSON: " + error.message;
+                }
+                return result;
+            },
         
-        function handleCommand(inputCommand) {
+            toString: function(input) {
+                let result;
+                try {
+                    result = JSON.stringify(input);
+                } catch (error) {
+                    result = "Error stringifying JSON: " + error.message;
+                }
+                return result;
+            }
+        };
+        function delay(ms) {
+            return new Promise(res => setTimeout(res, ms));
+          }
+        async function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
             let cmdData = parsedCmd[inputCommand.toLowerCase()];
-            alert(inputCommand);
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
-                
                 if (ai) {
                     return chatAi(user, msg).then(aiResult => {
                         if (aiResult) {
-                            if (aiResult.action) {
-                                sm(aiResult.action);
-                            }
+                            if (aiResult.action) sm(aiResult.action);
                             if (aiResult.message) {
                                 reply(aiResult.message);
                                 return;
@@ -898,23 +968,23 @@ function jalankanBot() {
                     return cmdData?.response || "Command not recognized.";
                 }
             }
-            
-
             let responseTemplate = cmdData.response || "";
             let finalResponse = responseTemplate;
-
-            // 1. $get(variable)
+            while (response.includes("$wait(")) {
+                const regex = /\$wait\((\d+)\)/;
+                const match = response.match(regex);
+                if (!match) break;
+                const ms = Number(match[1]);
+                response = response.replace(regex, "");
+                await delay(ms);
+              }
             if (finalResponse.includes("$get(")) {
                 const regex = /\(?\$get\((\w+)\)\)?/g;
                 finalResponse = finalResponse.replace(regex, (match, variable) => {
                     const storedVars = window.botData.variables || {};
-                    return storedVars[variable] !== undefined
-                        ? storedVars[variable]
-                        : "";
+                    return storedVars[variable] !== undefined ? storedVars[variable] : "";
                 });
             }
-
-            // 2. $set(variable=value)
             if (finalResponse.startsWith("$set(")) {
                 const regex = /\$set\((\w+)=(.*?)\)/;
                 const match = finalResponse.match(regex);
@@ -924,8 +994,6 @@ function jalankanBot() {
                     localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
                 }
             }
-
-            // 3. Token replacement
             finalResponse = finalResponse
                 .replaceAll("$msg", text)
                 .replaceAll("$username", user)
@@ -933,13 +1001,6 @@ function jalankanBot() {
                 .replaceAll("$botname", botName)
                 .replaceAll("$date", new Date().toLocaleDateString())
                 .replaceAll("$time", new Date().toLocaleTimeString());
-
-            // 4. $contains(text|word)
-            finalResponse = finalResponse.replace(/\$contains\((.*?[^\\])\|(.*?)\)/g, (_, teks, kata) => {
-                return teks.includes(kata).toString();
-            });
-
-            // 5. $if(condition)(true)(false)
             if (finalResponse.includes("$if(")) {
                 const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
                 let match;
@@ -951,7 +1012,10 @@ function jalankanBot() {
                             .replaceAll("$msg", text)
                             .replaceAll("$username", user)
                             .replaceAll("$owner", owner)
-                            .replaceAll("$botname", botName);
+                            .replaceAll("$botname", botName)
+                            .replaceAll(/\$get\((\w+)\)/g, (_, variable) => {
+                                return window.botData.variables[variable] || "";
+                            });
                         result = eval(parsedCondition) ? truePart : falsePart;
                     } catch {
                         result = falsePart;
@@ -959,49 +1023,93 @@ function jalankanBot() {
                     finalResponse = finalResponse.replace(match[0], result);
                 }
             }
-
-            // 6. $stop
-            if (finalResponse.includes("$stop")) {
-                forceStop();
-                finalResponse = finalResponse.replaceAll("$stop", "");
+            finalResponse = finalResponse
+                .replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
+                    const parsedText = text.replace(/\\n/g, '\n');
+                    return parsedText.repeat(Number(count));
+                })
+                .replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase())
+                .replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase())
+                .replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
+                    return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+                })
+                .replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
+                    return text.split(from).join(to);
+                });
+            if (finalResponse.includes("$rget(")) {
+                const regex = /\$rget\((.*?)\)/g;
+                let match;
+                const promises = [];
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const url = match[1].trim();
+                    const promise = rget(url).then(data => {
+                        const jsonResponse = rjson.toString(data);
+                        finalResponse = finalResponse.replace(match[0], jsonResponse);
+                    }).catch(error => {
+                        finalResponse = finalResponse.replace(match[0], `Error: ${error.message}`);
+                    });
+                    promises.push(promise);
+                }
+                Promise.all(promises).then(() => {
+                    return finalResponse;
+                }).catch(error => {
+                    return `Error in $rget: ${error.message}`;
+                });
             }
-
-            // 7. Utility transforms
-            finalResponse = finalResponse.replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
-                const parsedText = text.replace(/\\n/g, '\n');
-                return parsedText.repeat(Number(count));
-            });
-            finalResponse = finalResponse.replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase());
-            finalResponse = finalResponse.replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase());
-            finalResponse = finalResponse.replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
-                return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
-            });
-            finalResponse = finalResponse.replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
-                return text.split(from).join(to);
-            });
-
-            // 8. Custom handlers
-            if (finalResponse.includes("$cmd[")) {
-                finalResponse = cmdHandler(finalResponse, parsedCmd);
+            if (finalResponse.includes("$rpost(")) {
+                const regex = /\$rpost\((.*?)\)/g;
+                let match;
+                const promises = [];
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const data = match[1].trim();
+                    const promise = rpost('https://api.example.com/endpoint', JSON.parse(data))
+                        .then(responseData => {
+                            const jsonResponse = rjson.toString(responseData);
+                            finalResponse = finalResponse.replace(match[0], jsonResponse);
+                        }).catch(error => {
+                            finalResponse = finalResponse.replace(match[0], `Error: ${error.message}`);
+                        });
+                    promises.push(promise);
+                }
+                Promise.all(promises).then(() => {
+                    return finalResponse;
+                }).catch(error => {
+                    return `Error in $rpost: ${error.message}`;
+                });
             }
-            if (finalResponse.includes("$desc[")) {
-                finalResponse = descHandler(finalResponse, parsedCmd);
+            if (finalResponse.includes("$rjson.toJson(")) {
+                const regex = /\$rjson\.toJson\((.*?)\)/g;
+                let match;
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const inputData = match[1].trim();
+                    try {
+                        const jsonData = rjson.toJson(inputData);
+                        finalResponse = finalResponse.replace(match[0], JSON.stringify(jsonData));
+                    } catch (error) {
+                        finalResponse = finalResponse.replace(match[0], `Error parsing JSON: ${error.message}`);
+                    }
+                }
             }
-            if (finalResponse.includes("$//cmds") || finalResponse.includes("$//descs")) {
-                finalResponse = cmdsHandler(finalResponse, parsedCmd);
+            if (finalResponse.includes("$rjson.toString(")) {
+                const regex = /\$rjson\.toString\((.*?)\)/g;
+                let match;
+                while ((match = regex.exec(finalResponse)) !== null) {
+                    const inputData = match[1].trim();
+                    try {
+                        const jsonString = rjson.toString(inputData);
+                        finalResponse = finalResponse.replace(match[0], jsonString);
+                    } catch (error) {
+                        finalResponse = finalResponse.replace(match[0], `Error stringifying JSON: ${error.message}`);
+                    }
+                }
             }
-
             return finalResponse;
         }
-
-        botRespons = handleCommand(cmd);
+        const botRespons = await handleCommand(cmd);
         if (botRespons) {
-            reply(botRespons);
-        }
-
+          reply(botRespons);
+        }        
     }
-
-
     function settingMenu() {
         try {
             const topMenu = document.querySelector('.top-menu');
@@ -1064,7 +1172,6 @@ function jalankanBot() {
                         <div id="alert-save"></div>
                     </div>
                     `;
-
             function showAlert(message, type = 'success') {
                 const alertBox = document.getElementById('alert-save');
                 alertBox.textContent = message;
@@ -1108,12 +1215,10 @@ function jalankanBot() {
                     dropdown.style.display = 'none';
                 }
             });
-
             Dashboard.addEventListener('click', function () {
                 showAlert("Mengalihkan ke dashboard")
                 window.location.href = "https://randsfk.vercel.app/login"
             });
-
             const style = document.createElement('style');
             style.innerHTML = `
                         .custom-blocks {

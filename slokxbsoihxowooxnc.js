@@ -952,20 +952,22 @@ function jalankanBot() {
             if (!cmdData) {
                 cmdData = parsedCmd["default"];
                 if (ai) {
-                    return chatAi(user, msg).then(aiResult => {
-                        if (aiResult) {
-                            if (aiResult.action) sm(aiResult.action);
-                            if (aiResult.message) {
-                                reply(aiResult.message);
-                            }
+                    const aiResult = await chatAi(user, msg).catch(error => null);
+                    if (aiResult) {
+                        if (aiResult.action) sm(aiResult.action);
+                        if (aiResult.message) {
+                            return aiResult.message;
+                        } else {
+                            responseTemplate = "Command not recognized.";
                         }
-                        return "Command not recognized.";
-                    }).catch(error => {
-                        return "An error occurred while processing the command.";
-                    });
+                    } else {
+                        responseTemplate = "An error occurred while processing the command.";
+                    }
                 } else {
-                    return cmdData?.response || "Command not recognized.";
+                    responseTemplate = cmdData?.response || "Command not recognized.";
                 }
+            } else {
+                responseTemplate = cmdData.response || "";
             }
             let responseTemplate = cmdData.response || "";
             let finalResponse = responseTemplate;

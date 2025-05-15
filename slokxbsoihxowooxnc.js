@@ -961,10 +961,15 @@ function jalankanBot() {
                             if (aiResult.message) {
                                 reply(aiResult.message);
                                 return;
+                            } else {
+                                responseTemplate = "Command not recognized.";
                             }
+                        } else {
+                            responseTemplate = "An error occurred while processing the command.";
                         }
                     } catch (error) {
                         console.error("AI error:", error);
+                        responseTemplate = "An error occurred while processing the command.";
                     }
                 } else {
                     cmdData = parsedCmd["default"];

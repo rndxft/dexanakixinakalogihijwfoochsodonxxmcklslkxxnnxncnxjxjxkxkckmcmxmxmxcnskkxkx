@@ -946,55 +946,52 @@ function jalankanBot() {
         function delay(ms) {
             return new Promise(res => setTimeout(res, ms));
           }
-        async function handleCommand(inputCommand) {
+          async function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
-            let cmdData = parsedCmd[inputCommand.toLowerCase()];
-            if (!cmdData) {
-                cmdData = parsedCmd["default"];
-                if (ai) {
-                    const aiResult = await chatAi(user, msg).catch(error => null);
+            let cmdData = parsedCmd[inputCommand.toLowerCase()] || parsedCmd["default"];
+            let responseTemplate = cmdData?.response || "Command not recognized.";
+        
+            if (!cmdData && ai) {
+                try {
+                    const aiResult = await chatAi(user, msg);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
-                        if (aiResult.message) {
-                            return aiResult.message;
-                        } else {
-                            responseTemplate = "Command not recognized.";
-                        }
+                        if (aiResult.message) return aiResult.message;
+                        else responseTemplate = "Command not recognized.";
                     } else {
                         responseTemplate = "An error occurred while processing the command.";
                     }
-                } else {
-                    responseTemplate = cmdData?.response || "Command not recognized.";
+                } catch {
+                    responseTemplate = "An error occurred while processing the command.";
                 }
-            } else {
-                responseTemplate = cmdData.response || "";
             }
-            let responseTemplate = cmdData.response || "";
+        
             let finalResponse = responseTemplate;
-            while (response.includes("$wait(")) {
-                const regex = /\$wait\((\d+)\)/;
-                const match = response.match(regex);
+        
+            // Delay
+            while (finalResponse.includes("$wait(")) {
+                const match = finalResponse.match(/\$wait\((\d+)\)/);
                 if (!match) break;
                 const ms = Number(match[1]);
-                response = response.replace(regex, "");
+                finalResponse = finalResponse.replace(match[0], "");
                 await delay(ms);
-              }
-            if (finalResponse.includes("$get(")) {
-                const regex = /\(?\$get\((\w+)\)\)?/g;
-                finalResponse = finalResponse.replace(regex, (match, variable) => {
-                    const storedVars = window.botData.variables || {};
-                    return storedVars[variable] !== undefined ? storedVars[variable] : "";
-                });
             }
-            if (finalResponse.startsWith("$set(")) {
-                const regex = /\$set\((\w+)=(.*?)\)/;
-                const match = finalResponse.match(regex);
-                if (match) {
-                    const [_, variable, value] = match;
-                    window.botData.variables[variable] = value;
-                    localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
-                }
+        
+            // Replace $get
+            finalResponse = finalResponse.replace(/\$get\((\w+)\)/g, (_, v) => {
+                return window.botData.variables?.[v] || "";
+            });
+        
+            // Handle $set
+            const setMatch = finalResponse.match(/\$set\((\w+)=(.*?)\)/);
+            if (setMatch) {
+                const [, variable, value] = setMatch;
+                window.botData.variables[variable] = value;
+                localStorage.setItem('botVariables', JSON.stringify(window.botData.variables));
+                finalResponse = finalResponse.replace(setMatch[0], "");
             }
+        
+            // Replace general vars
             finalResponse = finalResponse
                 .replaceAll("$msg", text)
                 .replaceAll("$username", user)
@@ -1002,110 +999,76 @@ function jalankanBot() {
                 .replaceAll("$botname", botName)
                 .replaceAll("$date", new Date().toLocaleDateString())
                 .replaceAll("$time", new Date().toLocaleTimeString());
-            if (finalResponse.includes("$if(")) {
-                const regex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
-                let match;
-                while ((match = regex.exec(finalResponse)) !== null) {
-                    const [_, condition, truePart, falsePart] = match;
-                    let result;
-                    try {
-                        const parsedCondition = condition
-                            .replaceAll("$msg", text)
-                            .replaceAll("$username", user)
-                            .replaceAll("$owner", owner)
-                            .replaceAll("$botname", botName)
-                            .replaceAll(/\$get\((\w+)\)/g, (_, variable) => {
-                                return window.botData.variables[variable] || "";
-                            });
-                        result = eval(parsedCondition) ? truePart : falsePart;
-                    } catch {
-                        result = falsePart;
-                    }
-                    finalResponse = finalResponse.replace(match[0], result);
+        
+            // $if(cond)(true)(false)
+            const ifRegex = /\$if\((.*?)\)\((.*?)\)\((.*?)\)/g;
+            finalResponse = finalResponse.replaceAll(ifRegex, (_, cond, t, f) => {
+                try {
+                    const evaluated = cond
+                        .replaceAll("$msg", text)
+                        .replaceAll("$username", user)
+                        .replaceAll("$owner", owner)
+                        .replaceAll("$botname", botName)
+                        .replace(/\$get\((\w+)\)/g, (_, v) => window.botData.variables?.[v] || "");
+                    return eval(evaluated) ? t : f;
+                } catch {
+                    return f;
                 }
-            }
+            });
+        
+            // Built-in transforms
             finalResponse = finalResponse
-                .replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, text, count) => {
-                    const parsedText = text.replace(/\\n/g, '\n');
-                    return parsedText.repeat(Number(count));
-                })
-                .replace(/\$uppercase\((.*?)\)/g, (_, text) => text.toUpperCase())
-                .replace(/\$lowercase\((.*?)\)/g, (_, text) => text.toLowerCase())
+                .replace(/\$repeat\(([^|]+)\|(\d+)\)/g, (_, t, c) => t.replace(/\\n/g, '\n').repeat(Number(c)))
+                .replace(/\$uppercase\((.*?)\)/g, (_, t) => t.toUpperCase())
+                .replace(/\$lowercase\((.*?)\)/g, (_, t) => t.toLowerCase())
                 .replace(/\$random\((\d+)\|(\d+)\)/g, (_, min, max) => {
-                    return Math.floor(Math.random() * (Number(max) - Number(min) + 1)) + Number(min);
+                    return Math.floor(Math.random() * (max - min + 1)) + Number(min);
                 })
-                .replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, text, from, to) => {
-                    return text.split(from).join(to);
-                });
-            if (finalResponse.includes("$rget(")) {
-                const regex = /\$rget\((.*?)\)/g;
-                let match;
-                const promises = [];
-                while ((match = regex.exec(finalResponse)) !== null) {
+                .replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, t, f, r) => t.split(f).join(r));
+        
+            // Handle $rget
+            const rgetMatches = [...finalResponse.matchAll(/\$rget\((.*?)\)/g)];
+            for (const match of rgetMatches) {
+                try {
                     const url = match[1].trim();
-                    const promise = rget(url).then(data => {
-                        const jsonResponse = rjson.toString(data);
-                        finalResponse = finalResponse.replace(match[0], jsonResponse);
-                    }).catch(error => {
-                        finalResponse = finalResponse.replace(match[0], `Error: ${error.message}`);
-                    });
-                    promises.push(promise);
+                    const data = await rget(url);
+                    finalResponse = finalResponse.replace(match[0], rjson.toString(data));
+                } catch (e) {
+                    finalResponse = finalResponse.replace(match[0], `Error: ${e.message}`);
                 }
-                Promise.all(promises).then(() => {
-                    return finalResponse;
-                }).catch(error => {
-                    return `Error in $rget: ${error.message}`;
-                });
             }
-            if (finalResponse.includes("$rpost(")) {
-                const regex = /\$rpost\((.*?)\)/g;
-                let match;
-                const promises = [];
-                while ((match = regex.exec(finalResponse)) !== null) {
-                    const data = match[1].trim();
-                    const promise = rpost('https://api.example.com/endpoint', JSON.parse(data))
-                        .then(responseData => {
-                            const jsonResponse = rjson.toString(responseData);
-                            finalResponse = finalResponse.replace(match[0], jsonResponse);
-                        }).catch(error => {
-                            finalResponse = finalResponse.replace(match[0], `Error: ${error.message}`);
-                        });
-                    promises.push(promise);
+        
+            // Handle $rpost
+            const rpostMatches = [...finalResponse.matchAll(/\$rpost\((.*?)\)/g)];
+            for (const match of rpostMatches) {
+                try {
+                    const json = JSON.parse(match[1].trim());
+                    const response = await rpost('https://api.example.com/endpoint', json);
+                    finalResponse = finalResponse.replace(match[0], rjson.toString(response));
+                } catch (e) {
+                    finalResponse = finalResponse.replace(match[0], `Error: ${e.message}`);
                 }
-                Promise.all(promises).then(() => {
-                    return finalResponse;
-                }).catch(error => {
-                    return `Error in $rpost: ${error.message}`;
-                });
             }
-            if (finalResponse.includes("$rjson.toJson(")) {
-                const regex = /\$rjson\.toJson\((.*?)\)/g;
-                let match;
-                while ((match = regex.exec(finalResponse)) !== null) {
-                    const inputData = match[1].trim();
+        
+            // JSON utilities
+            finalResponse = finalResponse
+                .replace(/\$rjson\.toJson\((.*?)\)/g, (_, d) => {
                     try {
-                        const jsonData = rjson.toJson(inputData);
-                        finalResponse = finalResponse.replace(match[0], JSON.stringify(jsonData));
-                    } catch (error) {
-                        finalResponse = finalResponse.replace(match[0], `Error parsing JSON: ${error.message}`);
+                        return JSON.stringify(rjson.toJson(d.trim()));
+                    } catch (e) {
+                        return `Error parsing JSON: ${e.message}`;
                     }
-                }
-            }
-            if (finalResponse.includes("$rjson.toString(")) {
-                const regex = /\$rjson\.toString\((.*?)\)/g;
-                let match;
-                while ((match = regex.exec(finalResponse)) !== null) {
-                    const inputData = match[1].trim();
+                })
+                .replace(/\$rjson\.toString\((.*?)\)/g, (_, d) => {
                     try {
-                        const jsonString = rjson.toString(inputData);
-                        finalResponse = finalResponse.replace(match[0], jsonString);
-                    } catch (error) {
-                        finalResponse = finalResponse.replace(match[0], `Error stringifying JSON: ${error.message}`);
+                        return rjson.toString(d.trim());
+                    } catch (e) {
+                        return `Error stringifying JSON: ${e.message}`;
                     }
-                }
-            }
+                });
+        
             return finalResponse;
-        }
+        }        
         const botRespons = await handleCommand(cmd);
         if (botRespons) {
           reply(botRespons);
@@ -1181,27 +1144,22 @@ function jalankanBot() {
                 alertBox.style.borderRadius = '5px';
                 alertBox.style.fontWeight = 'bold';
                 alertBox.style.backgroundColor = 'transparent';
-
                 if (type === 'success') {
                     alertBox.style.color = '#4CAF50';
                 } else if (type === 'error') {
                     alertBox.style.color = '#f44336';
                 }
-
                 setTimeout(() => {
                     alertBox.textContent = '';
                     alertBox.style = '';
                 }, 3000);
             }
-
-
             const customBlock = document.createElement('div');
             customBlock.classList.add('custom-blocks');
             customBlock.appendChild(button);
             customBlock.appendChild(dropdown);
             topMenu.insertBefore(customBlock, topMenu.firstChild);
             const Dashboard = document.getElementById('web');
-
             button.addEventListener('click', function () {
                 if (dropdown.style.display === 'none' || dropdown.style.display === '') {
                     dropdown.style.display = 'block';

@@ -1035,31 +1035,7 @@ function jalankanBot() {
                     return Math.floor(Math.random() * (max - min + 1)) + Number(min);
                 })
                 .replace(/\$replace\((.*?),\s*(.*?),\s*(.*?)\)/g, (_, t, f, r) => t.split(f).join(r));
-        
-            // Handle $rget
-            const rgetMatches = [...finalResponse.matchAll(/\$rget\((.*?)\)/g)];
-            for (const match of rgetMatches) {
-                try {
-                    const url = match[1].trim();
-                    const data = await rget(url);
-                    finalResponse = finalResponse.replace(match[0], rjson.toString(data));
-                } catch (e) {
-                    finalResponse = finalResponse.replace(match[0], `Error: ${e.message}`);
-                }
-            }
-        
-            // Handle $rpost
-            const rpostMatches = [...finalResponse.matchAll(/\$rpost\((.*?)\)/g)];
-            for (const match of rpostMatches) {
-                try {
-                    const json = JSON.parse(match[1].trim());
-                    const response = await rpost('https://api.example.com/endpoint', json);
-                    finalResponse = finalResponse.replace(match[0], rjson.toString(response));
-                } catch (e) {
-                    finalResponse = finalResponse.replace(match[0], `Error: ${e.message}`);
-                }
-            }
-        
+
             // JSON utilities
             finalResponse = finalResponse
                 .replace(/\$rjson\.toJson\((.*?)\)/g, (_, d) => {

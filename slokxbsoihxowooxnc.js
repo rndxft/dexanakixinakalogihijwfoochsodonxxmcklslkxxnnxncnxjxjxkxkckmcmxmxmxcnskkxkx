@@ -953,21 +953,22 @@ function jalankanBot() {
             if (cmdData) {
                 responseTemplate = cmdData.response || "";
             } else {
-                cmdData = parsedCmd["default"];
-                responseTemplate = cmdData?.response || "Command not recognized.";
-            }
-            if (ai) {
-                try {
-                    const aiResult = await chatAi(user, msg);
-                    if (aiResult) {
-                        if (aiResult.action) sm(aiResult.action);
-                        if (aiResult.message) {
-                            reply(aiResult.message);
-                            return;
+                if (ai) {
+                    try {
+                        const aiResult = await chatAi(user, msg);
+                        if (aiResult) {
+                            if (aiResult.action) sm(aiResult.action);
+                            if (aiResult.message) {
+                                reply(aiResult.message);
+                                return;
+                            }
                         }
+                    } catch (error) {
+                        console.error("AI error:", error);
                     }
-                } catch (error) {
-                    console.error("AI error:", error);
+                } else {
+                    cmdData = parsedCmd["default"];
+                    responseTemplate = cmdData?.response || "Command not recognized.";
                 }
             }
         

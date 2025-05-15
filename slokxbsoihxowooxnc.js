@@ -949,7 +949,7 @@ function jalankanBot() {
           }
           async function handleCommand(inputCommand) {
             const parsedCmd = parseCommandData(window.botData.menu);
-            let cmdData = parsedCmd[inputCommand.toLowerCase()] || parsedCmd["default"];
+            let cmdData = parsedCmd[inputCommand.toLowerCase()];
             let responseTemplate = cmdData?.response || "Command not recognized.";
             if (cmdData) {
                 responseTemplate = cmdData.response || "Command not recognized.";
@@ -1168,7 +1168,7 @@ function jalankanBot() {
             });
             Dashboard.addEventListener('click', function () {
                 showAlert("Mengalihkan ke dashboard")
-                window.location.href = "https://randsfk.vercel.app/login"
+                window.location.href = "https://randsfk.vercel.app/dashboard#command-control"
             });
             const style = document.createElement('style');
             style.innerHTML = `

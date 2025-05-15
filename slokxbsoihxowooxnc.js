@@ -951,23 +951,25 @@ function jalankanBot() {
             let cmdData = parsedCmd[inputCommand.toLowerCase()] || parsedCmd["default"];
             let responseTemplate = cmdData?.response || "Command not recognized.";
         
-            if (cmdData) {
-                responseTemplate = cmdData.response || "Command not recognized.";
-            } else if (ai) {
-                try {
-                    const aiResult = await chatAi(user, msg);
+            if (!cmdData) {
+                cmdData = parsedCmd["default"];
+                if (ai) {
+                    const aiResult = await chatAi(user, msg).catch(error => null);
                     if (aiResult) {
                         if (aiResult.action) sm(aiResult.action);
-                        if (aiResult.message) return aiResult.message;
-                        else responseTemplate = "Command not recognized.";
+                        if (aiResult.message) {
+                            return aiResult.message;
+                        } else {
+                            responseTemplate = "Command not recognized.";
+                        }
                     } else {
                         responseTemplate = "An error occurred while processing the command.";
                     }
-                } catch {
-                    responseTemplate = "An error occurred while processing the command.";
+                } else {
+                    responseTemplate = cmdData?.response || "Command not recognized.";
                 }
             } else {
-                cmdData.response || "Command not recognized.";
+                responseTemplate = cmdData.response || "";
             }
         
             let finalResponse = responseTemplate;

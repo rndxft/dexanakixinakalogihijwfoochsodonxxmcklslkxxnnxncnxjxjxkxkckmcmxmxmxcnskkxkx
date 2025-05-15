@@ -200,6 +200,7 @@ function jalankanBot() {
     if (window._pb_ky_sc !== "randyganteng") {
         throw new Error("Mau ngapain kamu bang?.");
     }
+    let currentUa = navigator.userAgent;
     let apiKey = ""
     let botName = "";
     let prefix = ['.'];
@@ -1136,6 +1137,10 @@ function jalankanBot() {
                         <label for="prefixInput" style="width: 200px;">Gemini Apikey</label>
                         <input class="form-control" type="text" id="apikeyInput" name="apikey" style="width: 200px; height: 20px;" placeholder="Masukkan apikey..." required>
                     </div>
+                    <div class="text-success py-1" style="display: flex; align-items: center;">
+                        <label for="prefixInput" style="width: 200px;">User-Agent</label>
+                        <input class="form-control" type="text" id="uaInput" name=uanew" style="width: 200px; height: 20px;" placeholder="Masukkan useragent...">
+                    </div>
                     <div style="margin-top: 10px; display: flex; justify-content: flex-start; align-items: center;">
                         <button id="settingsForm" class="btn btn-primary" style="height: 30px; width: 100px;" type="submit">Save</button>
                         <button id="resetButton" class="btn btn-primary" style="height: 30px; width: 100px;" type="button">Reset</button>
@@ -1179,6 +1184,8 @@ function jalankanBot() {
                     document.getElementById('prefixInput').value = prefix.join(", ");
                     document.getElementById('aiChatInput').value = ai;
                     document.getElementById('antiAfkInput').value = antiAfk;
+                    document.getElementById('uaInput').value = currentUa;
+                    ;
                 } else {
                     dropdown.style.display = 'none';
                 }
@@ -1274,6 +1281,7 @@ function jalankanBot() {
             const antiAfkInput = document.getElementById('antiAfkInput');
             const aichatInput = document.getElementById('aiChatInput');
             const apikeyInput = document.getElementById('apikeyInput');
+            const uaInput = document.getElementById('uaInput');
 
             const ownerValue = ownerInput.value;
             const botValue = botInput.value;
@@ -1282,6 +1290,7 @@ function jalankanBot() {
             const antiAfkValue = antiAfkInput.value === "true";
             const aichatValue = aichatInput.value === "true";
             const apikeyValue = apikeyInput.value;
+            const uaValue = uaInput.value;
 
             if (!ownerValue || !botValue || !prefixValue || !chatTypeValue) {
                 showAlert("Tolong lengkapi semua data telebih dahulu")
@@ -1298,6 +1307,7 @@ function jalankanBot() {
             antiAfk = antiAfkValue;
             ai = aichatValue;
             apiKey = apikeyValue;
+            currentUa = uaValue;
             sm('/think Perubahan Disimpan')
             Android.saveSettings(JSON.stringify({
                 owner: owner,
@@ -1306,7 +1316,8 @@ function jalankanBot() {
                 chatTp: chatTp,
                 antiAfk: antiAfk,
                 ai: ai,
-                apiKey: apiKey
+                apiKey: apiKey,
+                userAgent: currentUa
             }));
             showAlert("Perubahan berhasil disimpan")
         });
